@@ -1,11 +1,14 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/screens/home_page.dart';
 
 class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(fontFamily: 'IranYekan'),
       home: MySplash(),
       debugShowCheckedModeBanner: false,
     );
@@ -22,15 +25,43 @@ class _MySplashState extends State<MySplash> {
   void initState() {
     super.initState();
     Timer(
-        const Duration(seconds: 3),
-        () => Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => HomePage())));
+      const Duration(seconds: 10),
+      () => Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => HomePage(),
+        ),
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        color: Colors.white,
-        child: FlutterLogo(size: MediaQuery.of(context).size.height));
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Column(
+              children: [
+                SvgPicture.asset(
+                  "assets/images/svg_splash.svg",
+                ),
+                Text(
+                  "تکنوساز",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 48),
+                ),
+              ],
+            ),
+            SpinKitWave(
+              size: 40,
+              color: Color.fromRGBO(164, 99, 77, 1),
+
+            )
+            ,Text("Made with 🤎 by U.D")
+          ],
+        ),
+      ),
+    );
   }
 }

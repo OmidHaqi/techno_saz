@@ -5,10 +5,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-          child: Text(
-        "MyHomePage",
-        textScaleFactor: 2,
-      )),
+        child: Text(
+          "MyHomePage",
+        ),
+      ),
     );
   }
 }
