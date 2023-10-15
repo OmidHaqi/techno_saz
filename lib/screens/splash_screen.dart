@@ -2,6 +2,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:techno_saz/res/colors.dart';
+import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/screens/home_page.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -47,18 +49,17 @@ class _MySplashState extends State<MySplash> {
                 SvgPicture.asset(
                   "assets/images/svg_splash.svg",
                 ),
-                Text(
-                  "تکنوساز",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 48),
+                Text(Strings.technoSaz_str,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 48,color: SolidColors.textColor),
                 ),
               ],
             ),
             SpinKitWave(
               size: 40,
-              color: Color.fromRGBO(164, 99, 77, 1),
+              color:SolidColors.primaryColor,
 
             )
-            ,Text("Made with 🤎 by U.D")
+            ,Text(Strings.madeWith_str,style: TextStyle(color: SolidColors.textColor),)
           ],
         ),
       ),

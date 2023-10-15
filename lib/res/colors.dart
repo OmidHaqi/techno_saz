@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Colors {
+class SolidColors {
   static const Color textColor = Color.fromARGB(255, 54, 47, 47);
   static const Color secondTextColor = Color.fromRGBO(0, 0, 0, 0.6);
   static const Color primaryColor = Color.fromARGB(255, 164, 99, 77);

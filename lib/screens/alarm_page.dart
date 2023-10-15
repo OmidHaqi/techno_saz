@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:techno_saz/screens/home_page.dart';
 
 class AlarmPage extends StatelessWidget {
   @override
@@ -11,19 +10,9 @@ class AlarmPage extends StatelessWidget {
         child: Center(
           child: Column(
             children: [
-              Text(
-                "MyAlarmPage",
+              Text(                       
+                "instagramId",
               ),
-              ElevatedButton(onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context){
-                          return HomePage();
-                        },
-                      ),
-                    );
-                  }, child: Text("Next Page"),)
             ],
           ),
         ),
