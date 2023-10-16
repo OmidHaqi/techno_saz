@@ -6,6 +6,6 @@ class Adress {
   static const feather ="assets/icons/ic_feather.svg";
   static const menu ="assets/icons/ic_menu.svg";
   static const search ="assets/icons/ic_search.svg";
-  static const baner1 ="assets/images/img_baner1.png";
+  static const baner ="assets/images/img_baner.png";
 
 }

@@ -24,16 +24,19 @@ class HomePage extends StatelessWidget {
                       itemCount: 5,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Stack(
-                          children: [
+                        return Container(
+                          color: Colors.cyanAccent,
+                          height: size.height / 4.8,
+                          width: size.width / 1.09,
+                          child: Stack(children: [
                             Container(
-                              height: size.height / 4.8,
-                              width: size.width / 1.09,
                               decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage(Adress.baner1))),
+                                image: DecorationImage(
+                                  image: AssetImage(Adress.baner),
+                                ),
+                              ),
                             )
-                          ],
+                          ]),
                         );
                       }),
                 ),
