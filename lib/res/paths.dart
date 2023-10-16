@@ -10,4 +10,5 @@ class Adress {
   static const wave ="assets/images/vc_wave.svg";
   static const arrowLeft ="assets/icons/ic_arrow_left.svg";
 
+  static const spelashLogo = "assets/images/svg_splash.svg";
 }
