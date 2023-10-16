@@ -20,6 +20,7 @@ class Strings {
   static const String published_str = ".مقاله‌ی جدیدی منتشر کرد";
   static const String comment_str = ".به مقاله‌ی شما نظر داد";
   static const String daysAgo_str = "روز پیش";
+  static const String articleName_str = "زبان دارت";
   static const String hoursAgo_str = "ساعت پیش";
   static const String pm_str = "بعدازظهر";
   static const String am_str = "صبح";

@@ -35,7 +35,7 @@ class HomePagesBanner extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(18),
                       image: DecorationImage(
-                          image: AssetImage(Adress.baner),
+                          image: AssetImage(Adress.banner),
                           fit: BoxFit.cover),
                     ),
                     child: Container(
