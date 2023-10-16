@@ -25,5 +25,6 @@ class Strings {
   static const String pm_str = "بعدازظهر";
   static const String am_str = "صبح";
   static const String new_str = "جدید";
+  static const String writerName_str = "هری پاتر.";
 
 }

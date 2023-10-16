@@ -13,4 +13,5 @@ class Adress {
   static const recentArticle = "assets/images/img_recent_article.png";
   static const more = "assets/icons/ic_more.svg";
   static const profilePhoto = "assets/images/img_profile_photo.png";
+  static const myArticles = "assets/images/img_my_article.png";
 }
