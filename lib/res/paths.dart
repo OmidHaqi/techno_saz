@@ -7,5 +7,7 @@ class Adress {
   static const menu ="assets/icons/ic_menu.svg";
   static const search ="assets/icons/ic_search.svg";
   static const baner ="assets/images/img_baner.png";
+  static const wave ="assets/images/vc_wave.svg";
+  static const arrowLeft ="assets/icons/ic_arrow_left.svg";
 
 }
