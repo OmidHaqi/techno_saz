@@ -17,18 +17,19 @@ class HomePage extends StatelessWidget {
     double titleSize = 20;
     return SafeArea(
       child: Scaffold(
+        backgroundColor: SolidColors.white,
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: SolidColors.onPrimaryColor,
-          title:  Padding(
-                padding: const EdgeInsets.fromLTRB(12, 15, 12, 15),
-                child: appBar(titleSize: titleSize),
-              ),),
+          backgroundColor: SolidColors.white,
+          title: Padding(
+            padding: const EdgeInsets.fromLTRB(12, 15, 12, 15),
+            child: appBar(titleSize: titleSize),
+          ),
+        ),
         body: SingleChildScrollView(
           physics: BouncingScrollPhysics(),
           child: Column(
             children: [
-             
               HomePagesBanner(size: size),
               Hashtag(size: size),
               RecentArticle(size: size),
@@ -36,6 +37,19 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
+        bottomNavigationBar: Container(
+            width: double.infinity,
+            height: size.height / 13,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                SvgPicture.asset(Adress.home,color: SolidColors.primaryColor,height: size.height/31.06,width: size.width/14.4,),
+                SvgPicture.asset(Adress.discover),
+                SvgPicture.asset(Adress.addArticle),
+                SvgPicture.asset(Adress.myArticlesIc),
+                SvgPicture.asset(Adress.myProfile),
+              ],
+            )),
       ),
     );
   }
