@@ -5,6 +5,7 @@ import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/screens/components/appBar.dart';
 
+import 'components/bottom_nav_bar.dart';
 import 'components/hashtag.dart';
 import 'components/home_pages_banner.dart';
 import 'components/my_articles.dart';
@@ -37,19 +38,7 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
-        bottomNavigationBar: Container(
-            width: double.infinity,
-            height: size.height / 13,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                SvgPicture.asset(Adress.home,color: SolidColors.primaryColor,height: size.height/31.06,width: size.width/14.4,),
-                SvgPicture.asset(Adress.discover),
-                SvgPicture.asset(Adress.addArticle),
-                SvgPicture.asset(Adress.myArticlesIc),
-                SvgPicture.asset(Adress.myProfile),
-              ],
-            )),
+        bottomNavigationBar: BottomNavBar(size: size),
       ),
     );
   }
