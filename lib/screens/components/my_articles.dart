@@ -56,7 +56,7 @@ class MyArticles extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(35),
                     image: DecorationImage(
-                        image: AssetImage(Adress.myArticles),
+                        image: AssetImage(Adress.myArticlesImg),
                         fit: BoxFit.cover),
                   ),
                 ),
