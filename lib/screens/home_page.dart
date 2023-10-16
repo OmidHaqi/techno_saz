@@ -15,15 +15,20 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     double titleSize = 20;
-    return Scaffold(
-      body: SafeArea(
-        child: SingleChildScrollView(
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          elevation: 0,
+          backgroundColor: SolidColors.onPrimaryColor,
+          title:  Padding(
+                padding: const EdgeInsets.fromLTRB(12, 15, 12, 15),
+                child: appBar(titleSize: titleSize),
+              ),),
+        body: SingleChildScrollView(
+          physics: BouncingScrollPhysics(),
           child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.fromLTRB(12, 15, 12, 0),
-                child: appBar(titleSize: titleSize),
-              ),
+             
               HomePagesBanner(size: size),
               Hashtag(size: size),
               RecentArticle(size: size),

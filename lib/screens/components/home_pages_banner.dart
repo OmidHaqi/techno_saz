@@ -18,7 +18,7 @@ class HomePagesBanner extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Padding(
-          padding: const EdgeInsets.fromLTRB(0, 16, 0, 16),
+          padding: const EdgeInsets.fromLTRB(0, 1, 0, 16),
           child: SizedBox(
             height: size.height / 4.5,
             width: size.width / 1.02,
@@ -37,6 +37,7 @@ class HomePagesBanner extends StatelessWidget {
                       image: DecorationImage(
                           image: AssetImage(Adress.banner),
                           fit: BoxFit.cover),
+                          
                     ),
                     child: Container(
                       decoration: BoxDecoration(
