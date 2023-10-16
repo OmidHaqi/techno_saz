@@ -1,4 +1,5 @@
 import 'package:flutter_svg/svg.dart';
+import 'package:techno_saz/screens/components/my_articles.dart';
 
 class Adress {
   static const save ="assets/icons/ic_save.svg";
@@ -12,6 +13,12 @@ class Adress {
   static const spelashLogo = "assets/images/svg_splash.svg";
   static const recentArticle = "assets/images/img_recent_article.png";
   static const more = "assets/icons/ic_more.svg";
+  static const home = "assets/icons/ic_home.svg";
+  static const discover = "assets/icons/ic_discover.svg";
+  static const addArticle = "assets/icons/ic_techno_saz.svg";
+  static const myArticlesIc = "assets/icons/ic_my_article.svg";
+  static const myProfile = "assets/icons/ic_profile.svg";
   static const profilePhoto = "assets/images/img_profile_photo.png";
-  static const myArticles = "assets/images/img_my_article.png";
+  static const myArticlesImg = "assets/images/img_my_article.png";
+
 }
