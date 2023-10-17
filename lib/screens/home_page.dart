@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
         body: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
+          physics:BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
           child: Column(
             children: [
               HomePagesBanner(size: size),

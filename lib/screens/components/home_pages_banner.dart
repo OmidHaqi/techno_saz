@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
+import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
 
@@ -35,7 +36,7 @@ class HomePagesBanner extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(18),
                       image: DecorationImage(
-                          image: AssetImage(Adress.banner),
+                          image: AssetImage(homePagePosterMap["imageAsset"],),
                           fit: BoxFit.cover),
                           
                     ),
@@ -57,8 +58,7 @@ class HomePagesBanner extends StatelessWidget {
                           Positioned(
                             right: 10,
                             top: 75,
-                            child: Text(
-                              "چطور میتونیم نویسنده خوبی باشیم؟",
+                            child: Text(homePagePosterMap["titleOnBanner"],
                               style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
