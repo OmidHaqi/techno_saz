@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class HashTagModel {
   String title;
   HashTagModel({required this.title});
@@ -13,6 +15,7 @@ class ArticlePageModel {
   String ContentArticleUr;
   String likedArticleUr;
   String commentArticleUr;
+  String writersName;
 
   ArticlePageModel({
     required this.idArticleUr,
@@ -24,5 +27,6 @@ class ArticlePageModel {
     required this.ContentArticleUr,
     required this.likedArticleUr,
     required this.commentArticleUr,
+    required this.writersName,
   });
 }
