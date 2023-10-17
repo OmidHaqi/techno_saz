@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:techno_saz/models/data_models.dart';
 import 'package:techno_saz/res/colors.dart';
+import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
 
@@ -33,19 +35,18 @@ class RecentArticle extends StatelessWidget {
           ),
         ),
         Container(
-          height: size.height / 3,
+          height: size.height / 2.78,
           width: size.width / 1.02,
           child: ListView.builder(
             physics: BouncingScrollPhysics(),
-            itemCount: 5,
+            itemCount: ArticlePageModelList.length,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
               return Padding(
                 padding: const EdgeInsets.fromLTRB(8, 0, 4, 0),
                 child: Container(
-                  width: size.width/2.10,
-                          height: size.height/3.96,
-                  
+                  width: size.width / 2.10,
+                  height: size.height / 2.78,
                   child: Column(
                     children: [
                       Padding(
@@ -56,30 +57,35 @@ class RecentArticle extends StatelessWidget {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(35),
                             image: DecorationImage(
-                                image: AssetImage(Adress.recentArticle),
+                                image: AssetImage(
+                                    ArticlePageModelList[index].imageArticleUr),
                                 fit: BoxFit.cover),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(12.0),
+                        padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              Strings.articleName_str,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: SolidColors.textColor),
+                            SizedBox(
+                              width: size.width / 2.8,
+                              child: Text(
+                                ArticlePageModelList[index].titleArticleUr,
+                                overflow: TextOverflow.ellipsis,
+                                maxLines: 3,
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: SolidColors.textColor),
+                              ),
                             ),
-                            
                             SvgPicture.asset(Adress.more)
                           ],
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(8, 8, 0, 8),
+                        padding: const EdgeInsets.fromLTRB(8, 0, 1, 0),
                         child: Row(
                           children: [
                             Padding(
@@ -90,15 +96,23 @@ class RecentArticle extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(100),
                                   image: DecorationImage(
-                                    image: AssetImage(Adress.profilePhoto),
+                                    image: AssetImage(
+                                        ArticlePageModelList[index]
+                                            .writerProfilePhotoUr),
                                   ),
                                 ),
                               ),
                             ),
-                           
-                            Text(Strings.writerName_str,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                            SizedBox(width: 5,),
-                            Text(" 4 "+Strings.daysAgo_str),
+                            Text(
+                              ArticlePageModelList[index].writersName,
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              width: 5,
+                            ),
+                            Text(ArticlePageModelList[index]
+                                .PublicationDateArticleUr),
                           ],
                         ),
                       )

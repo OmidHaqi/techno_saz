@@ -26,26 +26,25 @@ List<ArticlePageModel> ArticlePageModelList = [
       idArticleUr: "1",
       imageArticleUr: Adress.articlesImageidOne,
       titleArticleUr: """
-رژیم 15 روز تا سلامتی استاد 
-جمشید خدادادی
+رژیم 15 روز تا سلامتی استاد جمشید خدادادی
 """,
       writerProfilePhotoUr: Adress.writersImageOne,
-      PublicationDateArticleUr: "3" + Strings.daysAgo_str,
+      PublicationDateArticleUr: "3" + "  " + Strings.daysAgo_str,
       readingTime: "5" + Strings.minutes,
       ContentArticleUr: """
 باانجام یک رژیم پانزده روزه می توانیداز بیشتر بیماریها نجات پیدا کنید و سلامتی و نشاط خود را بدست آورید و طعم سلامتی جسم و روح را بچشید!اگر رژیم پانزده روزه زیر را دقیقا انجام دهید، با نتایج خیره کننده ای مواجه شد و اثرات فوق العاده مفید آن را به چشم خواهید دید.از این رژیم برای لاغری و تناسب اندام نیز می توان استفاده کرد.با این رژیم، در عرض پانزده روز حدود 4 تا 5 کیلو گرم وزن کم خواهید کرد و پوستی روشن و چهره ای با نشاط پیدا خواهید نمود. و مهمتر از همه، آرامش جالب و خواب عمیق و راحتی پیدا خواهید کرد و از زندگی لذت خواهید برد. حسن این رژیم این است که از غذاهای متنوعی برخوردار است و هر روز غذای مخصوصی میل خواهید کرد؛ زیرا تنوع در غذا باعث می شود که کلیه مواد غذایی لازم به بدن برسد و انسان از فقر غذایی نجات پیدا کند و از مغزی فعال و روانی سالم و جسمی سبک برخوردار شود. امید است با رعایت موارد ذیل سلامتی و نشاط را برای خود به ارمغان بیاورید. افرادی که دچار یبوست مزاج هستند نیز می توانند توصیه های زیر را دقیقا انجام دهند تا از این معضل که خود ام الامراض است نجات پیدا کنند.
  """,
       likedArticleUr: "65",
-      commentArticleUr: "5"),
+      commentArticleUr: "5",
+      writersName: "هری پاتر"),
   ArticlePageModel(
       idArticleUr: "2",
       imageArticleUr: Adress.articlesImageidTwo,
       titleArticleUr: """
-عسل دارویی چیست و چه 
-تفاوتی با عسل معمولی دارد؟
+عسل دارویی چیست و چه تفاوتی با عسل معمولی دارد؟
 """,
       writerProfilePhotoUr: Adress.writersImageTwo,
-      PublicationDateArticleUr: "2" + Strings.daysAgo_str,
+      PublicationDateArticleUr: "2" + "  " + Strings.daysAgo_str,
       readingTime: "10" + Strings.minutes,
       ContentArticleUr: """
 عسل دارویی یا عسل طبی اهمیت زیادی برای بدن انسان دارد. این نوع عسل به عنوان یک ملین خفیف، سوء هاضمه و عفونت های روده ای، درمان بسیاری از ناراحتی های معده از جمله یبوست محسوب می شود. عسل دارویی دارایی ویژگی هایی است که آن را از عسل معمولی متمایز می کند.
@@ -78,16 +77,16 @@ List<ArticlePageModel> ArticlePageModelList = [
 این عسل از اختلاط انواع عسل تهیه می‌شود و انواع عسل‌هایی که مخلوط شده‌اند از نظر رنگ، طعم، تراکم، منشاء جغرافیایی و منبع گل متفاوت هستند.
  """,
       likedArticleUr: "84",
-      commentArticleUr: "78"),
-      ArticlePageModel(
+      commentArticleUr: "78",
+      writersName: "اَ.ویلسون"),
+  ArticlePageModel(
       idArticleUr: "3",
       imageArticleUr: Adress.articlesImageidThree,
       titleArticleUr: """
 کنترل همروندی چیست؟ 
-(Concurrency Control)
 """,
       writerProfilePhotoUr: Adress.writersImageThree,
-      PublicationDateArticleUr: "1" + Strings.daysAgo_str,
+      PublicationDateArticleUr: "4" + "  " + Strings.daysAgo_str,
       readingTime: "14" + Strings.minutes,
       ContentArticleUr: """
 در فناوری اطلاعات و علوم رایانه‌ای، به‌خصوص در شاخه‌های برنامه‌نویسی رایانه‌ای، سیستم عامل، چندپردازشی، و پایگاه‌داده‌ها، کنترل همروندی (به انگلیسی: Concurrency Control)، از نتایج تولید شده ناشی از عملیات هم‌زمان اطمینان حاصل کرده، درحالی که سعی می کند در سریع ترین زمان ممکن به نتایج برسد.
@@ -95,16 +94,16 @@ List<ArticlePageModel> ArticlePageModelList = [
 به عنوان مثال، شکست در کنترل هم‌روندی، ممکن است منجر به خراب‌شدن داده‌ها شود، که ناشی از گسست عملیات خواندن یا نوشتن است.
  """,
       likedArticleUr: "96",
-      commentArticleUr: "23"),
-      ArticlePageModel(
+      commentArticleUr: "23",
+      writersName: "شایرا"),
+  ArticlePageModel(
       idArticleUr: "4",
       imageArticleUr: Adress.articlesImageidFour,
       titleArticleUr: """
 هوش احساسی چیست؟
- (emotional intelligence)
 """,
       writerProfilePhotoUr: Adress.writersImageFour,
-      PublicationDateArticleUr: "5" + Strings.daysAgo_str,
+      PublicationDateArticleUr: "5" + "  " + Strings.daysAgo_str,
       readingTime: "13" + Strings.minutes,
       ContentArticleUr: """
 در ابتدا بهتر است یک تعریف کلی از هوش هیجانی ارائه کنیم. هوش احساسی یا هوش هیجانی به انگلیسی Emotional Intelligence، به توانایی شناسایی و مدیریت احساسات خود و احساسات دیگران اشاره دارد. در واقع هوش هیجانی به معنای توانایی مهار احساسات و به کار بردن آنها در کارهایی مانند تفکر و حل مسئله است.
@@ -121,5 +120,6 @@ List<ArticlePageModel> ArticlePageModelList = [
 دکتر بار-ان از دیگر افرادی بود که حدود ۲۰ سال از وقت خود را صرف معرفی شیوه‌ای برای اندازه‌گیری EI کرد. بار-ان در طول این مدت مطالعاتی را بر روی بیش از ۱۱۰۰۰۰ نفر در سراسر جهان انجام داد. تست ای کیو بار-ان (آزمون هوش هیجانی بار آن) رفتار هوش هیجانی و اجتماعی را اندازه‌گیری می‌کند. این تست ۱۳۳ آیتم را بر اساس پنج شاخص مورد بررسی قرار می‌دهد.
  """,
       likedArticleUr: "84",
-      commentArticleUr: "14"),
+      commentArticleUr: "14",
+      writersName: "وانتونز"),
 ];

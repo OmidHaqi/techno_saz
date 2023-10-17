@@ -20,15 +20,12 @@ class Adress {
   static const myProfile = "assets/icons/ic_profile.svg";
   static const profilePhoto = "assets/images/img_profile_photo.png";
   static const myArticlesImg = "assets/images/img_my_article.png";
-  static const articlesImageidOne = "assets/images/img_ConcurrencyControl.png";
-  static const articlesImageidTwo = "assets/images/img_emotionalIntelligence.png";
-  static const articlesImageidThree = "assets/images/img_honey.png";
-  static const articlesImageidFour = "assets/images/img_rezhim.png";
+  static const articlesImageidOne = "assets/images/img_rezhim.png";
+  static const articlesImageidTwo = "assets/images/img_honey.png";
+  static const articlesImageidThree = "assets/images/img_ConcurrencyControl.png";
+  static const articlesImageidFour = "assets/images/img_emotionalIntelligence.png";
   static const writersImageOne = "assets/images/img_writersImageOne.png";
   static const writersImageTwo = "assets/images/img-writersImageTwo.png";
   static const writersImageThree = "assets/images/img_writersImageThree.png";
   static const writersImageFour = "assets/images/img_writersImageFour.png";
-
-
-
 }
