@@ -24,6 +24,10 @@ class Adress {
   static const articlesImageidTwo = "assets/images/img_emotionalIntelligence.png";
   static const articlesImageidThree = "assets/images/img_honey.png";
   static const articlesImageidFour = "assets/images/img_rezhim.png";
+  static const writersImageOne = "assets/images/img_writersImageOne.png";
+  static const writersImageTwo = "assets/images/img-writersImageTwo.png";
+  static const writersImageThree = "assets/images/img_writersImageThree.png";
+  static const writersImageFour = "assets/images/img_writersImageFour.png";
 
 
 
