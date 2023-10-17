@@ -12,7 +12,7 @@ class Hashtag extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: size.height / 27.34,
+      height: size.height / 27.0,
       width: size.width / 1.02,
       child: ListView.builder(
         physics: BouncingScrollPhysics(),
@@ -21,28 +21,32 @@ class Hashtag extends StatelessWidget {
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.fromLTRB(2, 0, 4, 0),
-            child: TextButton(
-              onPressed: () {},
-              style: ButtonStyle(
-                overlayColor: MaterialStateProperty.all(
-                    Color.fromARGB(81, 240, 217, 210)),
-                backgroundColor:
-                    MaterialStateProperty.all(SolidColors.primaryColor),
-                shape:
-                    MaterialStateProperty.all<RoundedRectangleBorder>(
-                  RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(18),
+            child: SizedBox(
+              width: size.width/4.83,
+              height: size.height/27.0,
+              child: TextButton(
+                onPressed: () {},
+                style: ButtonStyle( 
+                  overlayColor: MaterialStateProperty.all(
+                      Color.fromARGB(81, 240, 217, 210)),
+                  backgroundColor:
+                      MaterialStateProperty.all(SolidColors.primaryColor),
+                  shape:
+                      MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18),
+                    ),
                   ),
                 ),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
-                child: Text(
-                  "#فلاتر",
-                  style: TextStyle(
-                      color: SolidColors.onPrimaryColor,
-                      fontSize: 17,
-                      fontWeight: FontWeight.w300),
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Text(
+                    "#فلاتر",
+                    style: TextStyle(
+                        color: SolidColors.onPrimaryColor,
+                        fontSize: 17,
+                        fontWeight: FontWeight.w300),
+                  ),
                 ),
               ),
             ),

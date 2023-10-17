@@ -20,7 +20,7 @@ class HomePagesBanner extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.fromLTRB(0, 1, 0, 16),
           child: SizedBox(
-            height: size.height / 4.5,
+            height: size.height / 3.9,
             width: size.width / 1.02,
             child: ListView.builder(
               physics: BouncingScrollPhysics(),
