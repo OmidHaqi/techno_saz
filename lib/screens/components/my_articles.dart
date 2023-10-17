@@ -17,7 +17,7 @@ class MyArticles extends StatelessWidget {
     return Column(
     children: [
           Padding(
-            padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
+            padding: const EdgeInsets.fromLTRB(15, 15, 20, 15),
             child: Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: [
