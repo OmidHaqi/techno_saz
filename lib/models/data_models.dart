@@ -9,7 +9,7 @@ class ArticlePageModel {
   String titleArticleUr;
   String writerProfilePhotoUr;
   String PublicationDateArticleUr;
-  String PublicationTimeArticleUr;
+  String readingTime;
   String ContentArticleUr;
   String likedArticleUr;
   String commentArticleUr;
@@ -20,7 +20,7 @@ class ArticlePageModel {
     required this.titleArticleUr,
     required this.writerProfilePhotoUr,
     required this.PublicationDateArticleUr,
-    required this.PublicationTimeArticleUr,
+    required this.readingTime,
     required this.ContentArticleUr,
     required this.likedArticleUr,
     required this.commentArticleUr,
