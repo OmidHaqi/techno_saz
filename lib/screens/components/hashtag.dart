@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:techno_saz/res/colors.dart';
+import 'package:techno_saz/res/data_class.dart';
 
 class Hashtag extends StatelessWidget {
   const Hashtag({
@@ -16,28 +17,39 @@ class Hashtag extends StatelessWidget {
       width: size.width / 1.02,
       child: ListView.builder(
         physics: BouncingScrollPhysics(),
-        itemCount: 30,
+        itemCount: tagList.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.fromLTRB(2, 0, 4, 0),
-            child: SizedBox(
-              width: size.width / 4.83,
-              height: size.height / 27.0,
-              child: Container(
-                decoration: BoxDecoration(color: SolidColors.primaryColor,borderRadius: BorderRadius.circular(100),),
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
-                  child: Align(alignment: Alignment.center,
+            child: Container(
+              decoration: BoxDecoration(
+                color: SolidColors.primaryColor,
+                borderRadius: BorderRadius.circular(100),
+              ),
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 8, 12, 4),
                     child: Text(
-                      "#فلاتر",
+                      "# ",
                       style: TextStyle(
                           color: SolidColors.onPrimaryColor,
                           fontSize: 17,
                           fontWeight: FontWeight.w300),
                     ),
                   ),
-                ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(12, 8, 0, 8),
+                    child: Text(
+                      tagList[index].title,
+                      style: TextStyle(
+                          color: SolidColors.onPrimaryColor,
+                          fontSize: 17,
+                          fontWeight: FontWeight.w300),
+                    ),
+                  ),
+                ],
               ),
             ),
           );
