@@ -22,30 +22,20 @@ class Hashtag extends StatelessWidget {
           return Padding(
             padding: const EdgeInsets.fromLTRB(2, 0, 4, 0),
             child: SizedBox(
-              width: size.width/4.83,
-              height: size.height/27.0,
-              child: TextButton(
-                onPressed: () {},
-                style: ButtonStyle( 
-                  overlayColor: MaterialStateProperty.all(
-                      Color.fromARGB(81, 240, 217, 210)),
-                  backgroundColor:
-                      MaterialStateProperty.all(SolidColors.primaryColor),
-                  shape:
-                      MaterialStateProperty.all<RoundedRectangleBorder>(
-                    RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18),
-                    ),
-                  ),
-                ),
+              width: size.width / 4.83,
+              height: size.height / 27.0,
+              child: Container(
+                decoration: BoxDecoration(color: SolidColors.primaryColor,borderRadius: BorderRadius.circular(100),),
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
-                  child: Text(
-                    "#فلاتر",
-                    style: TextStyle(
-                        color: SolidColors.onPrimaryColor,
-                        fontSize: 17,
-                        fontWeight: FontWeight.w300),
+                  child: Align(alignment: Alignment.center,
+                    child: Text(
+                      "#فلاتر",
+                      style: TextStyle(
+                          color: SolidColors.onPrimaryColor,
+                          fontSize: 17,
+                          fontWeight: FontWeight.w300),
+                    ),
                   ),
                 ),
               ),
