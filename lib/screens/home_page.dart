@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
-import 'package:techno_saz/res/paths.dart';
-import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/screens/components/appBar.dart';
 
 import 'components/bottom_nav_bar.dart';

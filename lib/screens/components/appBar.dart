@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/paths.dart';
-import 'package:techno_saz/screens/splash_screen.dart';
-
 import '../../res/strings.dart';
 
+// ignore: must_be_immutable
 class appBar extends StatelessWidget {
   double titleSize;
   appBar({required this.titleSize});
