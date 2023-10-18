@@ -17,7 +17,7 @@ class Hashtag extends StatelessWidget {
       width: size.width / 1.02,
       child: ListView.builder(
         physics: BouncingScrollPhysics(),
-        itemCount: tagList.length,
+        itemCount: Data_Class.tagList.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           return Padding(
@@ -40,9 +40,9 @@ class Hashtag extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(12, 8, 0, 8),
+                    padding: const EdgeInsets.fromLTRB(12,2, 0, 0),
                     child: Text(
-                      tagList[index].title,
+                      Data_Class.tagList[index].title,
                       style: TextStyle(
                           color: SolidColors.onPrimaryColor,
                           fontSize: 17,

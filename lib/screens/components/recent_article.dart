@@ -35,18 +35,18 @@ class RecentArticle extends StatelessWidget {
           ),
         ),
         Container(
-          height: size.height / 2.78,
+          height: size.height / 3,
           width: size.width / 1.02,
           child: ListView.builder(
             physics: BouncingScrollPhysics(),
-            itemCount: ArticlePageModelList.length,
+            itemCount: Data_Class.ArticlePageModelList.length,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
               return Padding(
-                padding: const EdgeInsets.fromLTRB(8, 0, 4, 0),
+                padding: const EdgeInsets.fromLTRB(8, 2, 0, 0),
                 child: Container(
-                  width: size.width / 2.10,
-                  height: size.height / 2.78,
+                  width: size.width / 2,
+                  height: size.height / 3,
                   child: Column(
                     children: [
                       Padding(
@@ -55,10 +55,16 @@ class RecentArticle extends StatelessWidget {
                           width: size.width / 2.22,
                           height: size.height / 4.75,
                           decoration: BoxDecoration(
+                            boxShadow: <BoxShadow>[
+                              BoxShadow(
+                                  blurRadius: 4,
+                                  color: Color.fromARGB(78, 164, 99, 77),offset: Offset(2, 4)),
+                            ],
                             borderRadius: BorderRadius.circular(35),
                             image: DecorationImage(
-                                image: AssetImage(
-                                    ArticlePageModelList[index].imageArticleUr),
+                                image: AssetImage(Data_Class
+                                    .ArticlePageModelList[index]
+                                    .imageArticleUr),
                                 fit: BoxFit.cover),
                           ),
                         ),
@@ -71,9 +77,10 @@ class RecentArticle extends StatelessWidget {
                             SizedBox(
                               width: size.width / 2.8,
                               child: Text(
-                                ArticlePageModelList[index].titleArticleUr,
+                                Data_Class
+                                    .ArticlePageModelList[index].titleArticleUr,
                                 overflow: TextOverflow.ellipsis,
-                                maxLines: 3,
+                                maxLines: 2,
                                 style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
@@ -94,24 +101,26 @@ class RecentArticle extends StatelessWidget {
                                 height: size.height / 37.28,
                                 width: size.width / 17.2,
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(100),
+                                  borderRadius: BorderRadius.circular(400),
                                   image: DecorationImage(
-                                    image: AssetImage(
-                                        ArticlePageModelList[index]
-                                            .writerProfilePhotoUr),
+                                    image: AssetImage(Data_Class
+                                        .ArticlePageModelList[index]
+                                        .writerProfilePhotoUr),
+                                        fit: BoxFit.cover
                                   ),
                                 ),
                               ),
                             ),
                             Text(
-                              ArticlePageModelList[index].writersName,
+                              Data_Class
+                                  .ArticlePageModelList[index].writersName,
                               style: TextStyle(
                                   fontSize: 20, fontWeight: FontWeight.bold),
                             ),
                             SizedBox(
                               width: 5,
                             ),
-                            Text(ArticlePageModelList[index]
+                            Text(Data_Class.ArticlePageModelList[index]
                                 .PublicationDateArticleUr),
                           ],
                         ),

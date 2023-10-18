@@ -36,7 +36,7 @@ class HomePagesBanner extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(18),
                       image: DecorationImage(
-                          image: AssetImage(homePagePosterMap["imageAsset"],),
+                          image: AssetImage(Data_Class.homePagePosterMap["imageAsset"],),
                           fit: BoxFit.cover),
                           
                     ),
@@ -58,7 +58,7 @@ class HomePagesBanner extends StatelessWidget {
                           Positioned(
                             right: 10,
                             top: 75,
-                            child: Text(homePagePosterMap["titleOnBanner"],
+                            child: Text(Data_Class.homePagePosterMap["titleOnBanner"],
                               style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
