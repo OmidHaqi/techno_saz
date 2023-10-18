@@ -2,51 +2,52 @@ import 'package:techno_saz/models/data_models.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
 
-Map homePagePosterMap = {
-  "imageAsset": Adress.banner,
-  "titleOnBanner": Strings.titleOnBanner,
-};
+class Data_Class {
+  static Map homePagePosterMap = {
+    "imageAsset": Adress.banner,
+    "titleOnBanner": Strings.titleOnBanner,
+  };
 
-List<HashTagModel> tagList = [
-  HashTagModel(title: "جاوا"),
-  HashTagModel(title: "کاتلین"),
-  HashTagModel(title: "وب"),
-  HashTagModel(title: "سلامتی"),
-  HashTagModel(title: "هوش مصنوعی"),
-  HashTagModel(title: "دارت"),
-  HashTagModel(title: "فلاتر"),
-  HashTagModel(title: "تکنولوژی"),
-  HashTagModel(title: "هنر"),
-  HashTagModel(title: "ورزش"),
-  HashTagModel(title: "بیزنس"),
-];
+  static List<HashTagModel> tagList = [
+    HashTagModel(title: "جاوا"),
+    HashTagModel(title: "کاتلین"),
+    HashTagModel(title: "وب"),
+    HashTagModel(title: "سلامتی"),
+    HashTagModel(title: "هوش مصنوعی"),
+    HashTagModel(title: "دارت"),
+    HashTagModel(title: "فلاتر"),
+    HashTagModel(title: "تکنولوژی"),
+    HashTagModel(title: "هنر"),
+    HashTagModel(title: "ورزش"),
+    HashTagModel(title: "بیزنس"),
+  ];
 
-List<ArticlePageModel> ArticlePageModelList = [
-  ArticlePageModel(
-      idArticleUr: "1",
-      imageArticleUr: Adress.articlesImageidOne,
-      titleArticleUr: """
+  static List<ArticlePageModel> ArticlePageModelList = [
+    ArticlePageModel(
+        idArticleUr: "1",
+        imageArticleUr: Adress.articlesImageidOne,
+        titleArticleUr: """
 رژیم 15 روز تا سلامتی استاد جمشید خدادادی
 """,
-      writerProfilePhotoUr: Adress.writersImageOne,
-      PublicationDateArticleUr: "3" + "  " + Strings.daysAgo_str,
-      readingTime: "5" + Strings.minutes,
-      ContentArticleUr: """
+        writerProfilePhotoUr: Adress.writersImageOne,
+        PublicationDateArticleUr: "3" + "  " + Strings.daysAgo_str,
+        readingTime: "5" + Strings.minutes,
+        ContentArticleUr: """
 باانجام یک رژیم پانزده روزه می توانیداز بیشتر بیماریها نجات پیدا کنید و سلامتی و نشاط خود را بدست آورید و طعم سلامتی جسم و روح را بچشید!اگر رژیم پانزده روزه زیر را دقیقا انجام دهید، با نتایج خیره کننده ای مواجه شد و اثرات فوق العاده مفید آن را به چشم خواهید دید.از این رژیم برای لاغری و تناسب اندام نیز می توان استفاده کرد.با این رژیم، در عرض پانزده روز حدود 4 تا 5 کیلو گرم وزن کم خواهید کرد و پوستی روشن و چهره ای با نشاط پیدا خواهید نمود. و مهمتر از همه، آرامش جالب و خواب عمیق و راحتی پیدا خواهید کرد و از زندگی لذت خواهید برد. حسن این رژیم این است که از غذاهای متنوعی برخوردار است و هر روز غذای مخصوصی میل خواهید کرد؛ زیرا تنوع در غذا باعث می شود که کلیه مواد غذایی لازم به بدن برسد و انسان از فقر غذایی نجات پیدا کند و از مغزی فعال و روانی سالم و جسمی سبک برخوردار شود. امید است با رعایت موارد ذیل سلامتی و نشاط را برای خود به ارمغان بیاورید. افرادی که دچار یبوست مزاج هستند نیز می توانند توصیه های زیر را دقیقا انجام دهند تا از این معضل که خود ام الامراض است نجات پیدا کنند.
  """,
-      likedArticleUr: "65",
-      commentArticleUr: "5",
-      writersName: "هری پاتر"),
-  ArticlePageModel(
-      idArticleUr: "2",
-      imageArticleUr: Adress.articlesImageidTwo,
-      titleArticleUr: """
+        likedArticleUr: "65",
+        commentArticleUr: "5",
+        writersName: "هری پاتر"),
+    ArticlePageModel(
+        idArticleUr: "2",
+        imageArticleUr: Adress.articlesImageidTwo,
+        titleArticleUr: """
 عسل دارویی چیست و چه تفاوتی با عسل معمولی دارد؟
 """,
-      writerProfilePhotoUr: Adress.writersImageTwo,
-      PublicationDateArticleUr: "2" + "  " + Strings.daysAgo_str,
-      readingTime: "10" + Strings.minutes,
-      ContentArticleUr: """
+        writerProfilePhotoUr: Adress.writersImageTwo,
+        PublicationDateArticleUr: "2" + "  " + Strings.daysAgo_str,
+        readingTime: "10" + Strings.minutes,
+        ContentArticleUr: """
 عسل دارویی یا عسل طبی اهمیت زیادی برای بدن انسان دارد. این نوع عسل به عنوان یک ملین خفیف، سوء هاضمه و عفونت های روده ای، درمان بسیاری از ناراحتی های معده از جمله یبوست محسوب می شود. عسل دارویی دارایی ویژگی هایی است که آن را از عسل معمولی متمایز می کند.
 
 در واقع عسل یک ماده غذایی طبیعی با طعم شیرین با بافت چسبناک است. زنبورها این عسل را از شهد گلها که ترشحات شیرین گیاهی است تولید می کنند.
@@ -76,36 +77,36 @@ List<ArticlePageModel> ArticlePageModelList = [
 عسل مخلوط
 این عسل از اختلاط انواع عسل تهیه می‌شود و انواع عسل‌هایی که مخلوط شده‌اند از نظر رنگ، طعم، تراکم، منشاء جغرافیایی و منبع گل متفاوت هستند.
  """,
-      likedArticleUr: "84",
-      commentArticleUr: "78",
-      writersName: "اَ.ویلسون"),
-  ArticlePageModel(
-      idArticleUr: "3",
-      imageArticleUr: Adress.articlesImageidThree,
-      titleArticleUr: """
+        likedArticleUr: "84",
+        commentArticleUr: "78",
+        writersName: "اَ.ویلسون"),
+    ArticlePageModel(
+        idArticleUr: "3",
+        imageArticleUr: Adress.articlesImageidThree,
+        titleArticleUr: """
 کنترل همروندی چیست؟ 
 """,
-      writerProfilePhotoUr: Adress.writersImageThree,
-      PublicationDateArticleUr: "4" + "  " + Strings.daysAgo_str,
-      readingTime: "14" + Strings.minutes,
-      ContentArticleUr: """
+        writerProfilePhotoUr: Adress.writersImageThree,
+        PublicationDateArticleUr: "4" + "  " + Strings.daysAgo_str,
+        readingTime: "14" + Strings.minutes,
+        ContentArticleUr: """
 در فناوری اطلاعات و علوم رایانه‌ای، به‌خصوص در شاخه‌های برنامه‌نویسی رایانه‌ای، سیستم عامل، چندپردازشی، و پایگاه‌داده‌ها، کنترل همروندی (به انگلیسی: Concurrency Control)، از نتایج تولید شده ناشی از عملیات هم‌زمان اطمینان حاصل کرده، درحالی که سعی می کند در سریع ترین زمان ممکن به نتایج برسد.
 سیستم‌های رایانه‌ای، چه نرم‌افزاری و چه سخت‌افزاری، شامل ماژول‌ها یا مؤلفه‌هایی اند. هر مؤلفه به گونه‌ای طراحی شده که به طرز صحیحی عمل کند، یعنی، از قوانین سازگاری بخصوصی تبعیت نموده، یا با آن ها تطابق داشته باشند. هنگامی که مؤلفه‌های هم‌روند با یکدیگر به وسیله پیام‌دهی یا اشتراک‌گذاری داده‌های دسترسی شده برهمکنش کنند (در حافظه یا محل ذخیره‌سازی)، هم‌روندی برخی از مؤلفه‌ها ممکن است توسط مؤلفه‌های دیگری مورد تجاوز و تخطی قرار گیرد. به طور کلی، مبحث هم‌روندی به ارائه قواعد، روش‌ها، روش‌شناسی‌های طراحی و نظریاتی می پردازد که به حفظ سازگاری مؤلفه‌های هم‌روندی، طی اجرای عملیاتشان کمک کند؛ بدین طریق سازگاری و صحت کل سیستم حفظ خواهد شد. معرفی کنترل هم‌روندی به یک سامانه، به معنای اعمال محدودیت‌های عملیاتیست که اغلب منجر به کاهش یافتن برخی از کارایی‌های سامانه می گردد. دستیابی به سازگاری عملیاتی و صحت باید تا حد امکان همراه با بهره‌وری باشد، به گونه‌ای که کارایی از حد معقول خاصی کمتر نشود. ممکن است کنترل همروندی در مقایسه با الگوریتم‌های سری (Sequential Algorithms) (که ساده‌ترند) نیازمند افزودن به پیچیدگی و سربار در قالب یک الگوریتم همروندی باشد.
 به عنوان مثال، شکست در کنترل هم‌روندی، ممکن است منجر به خراب‌شدن داده‌ها شود، که ناشی از گسست عملیات خواندن یا نوشتن است.
  """,
-      likedArticleUr: "96",
-      commentArticleUr: "23",
-      writersName: "شایرا"),
-  ArticlePageModel(
-      idArticleUr: "4",
-      imageArticleUr: Adress.articlesImageidFour,
-      titleArticleUr: """
+        likedArticleUr: "96",
+        commentArticleUr: "23",
+        writersName: "شایرا"),
+    ArticlePageModel(
+        idArticleUr: "4",
+        imageArticleUr: Adress.articlesImageidFour,
+        titleArticleUr: """
 هوش احساسی چیست؟
 """,
-      writerProfilePhotoUr: Adress.writersImageFour,
-      PublicationDateArticleUr: "5" + "  " + Strings.daysAgo_str,
-      readingTime: "13" + Strings.minutes,
-      ContentArticleUr: """
+        writerProfilePhotoUr: Adress.writersImageFour,
+        PublicationDateArticleUr: "5" + "  " + Strings.daysAgo_str,
+        readingTime: "13" + Strings.minutes,
+        ContentArticleUr: """
 در ابتدا بهتر است یک تعریف کلی از هوش هیجانی ارائه کنیم. هوش احساسی یا هوش هیجانی به انگلیسی Emotional Intelligence، به توانایی شناسایی و مدیریت احساسات خود و احساسات دیگران اشاره دارد. در واقع هوش هیجانی به معنای توانایی مهار احساسات و به کار بردن آنها در کارهایی مانند تفکر و حل مسئله است.
 
 امروزه از هوش هیجانی به عنوان یکی از مؤلفه‌های ذاتی موفقیت در افراد یاد می‌شود. پیش‌بینی و درک رفتار دیگران به ما کمک می‌کند تا در مواقع ضروری بهترین تصمیم را بگیریم. بنابراین مهم است که بدانیم هوش عاطفی چیست و چه مؤلفه‌هایی را در برمی‌گیرد؟
@@ -119,7 +120,8 @@ List<ArticlePageModel> ArticlePageModelList = [
 
 دکتر بار-ان از دیگر افرادی بود که حدود ۲۰ سال از وقت خود را صرف معرفی شیوه‌ای برای اندازه‌گیری EI کرد. بار-ان در طول این مدت مطالعاتی را بر روی بیش از ۱۱۰۰۰۰ نفر در سراسر جهان انجام داد. تست ای کیو بار-ان (آزمون هوش هیجانی بار آن) رفتار هوش هیجانی و اجتماعی را اندازه‌گیری می‌کند. این تست ۱۳۳ آیتم را بر اساس پنج شاخص مورد بررسی قرار می‌دهد.
  """,
-      likedArticleUr: "84",
-      commentArticleUr: "14",
-      writersName: "وانتونز"),
-];
+        likedArticleUr: "84",
+        commentArticleUr: "14",
+        writersName: "وانتونز"),
+  ];
+}
