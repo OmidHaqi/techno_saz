@@ -28,5 +28,6 @@ class Strings {
   static const String writerName_str = "هری پاتر.";
   static const String titleOnBanner = "چطور میتونیم نویسنده خوبی باشیم ؟";
   static const String minutes = "دقیقه";
+  static const String article_str = "مقاله";
 
 }
