@@ -1,6 +1,3 @@
-import 'package:flutter_svg/svg.dart';
-import 'package:techno_saz/screens/components/my_articles.dart';
-
 class Adress {
   static const save ="assets/icons/ic_save.svg";
   static const bell ="assets/icons/ic_bell.svg";

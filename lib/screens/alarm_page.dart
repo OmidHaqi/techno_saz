@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:techno_saz/screens/home_page.dart';
 
+// ignore: must_be_immutable
 class AlarmPage extends StatelessWidget {
   var instaId;
   AlarmPage(this.instaId);
