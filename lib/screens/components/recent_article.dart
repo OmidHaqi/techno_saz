@@ -58,7 +58,8 @@ class RecentArticle extends StatelessWidget {
                             boxShadow: <BoxShadow>[
                               BoxShadow(
                                   blurRadius: 4,
-                                  color: Color.fromARGB(78, 164, 99, 77),offset: Offset(2, 4)),
+                                  color: Color.fromARGB(78, 164, 99, 77),
+                                  offset: Offset(2, 4)),
                             ],
                             borderRadius: BorderRadius.circular(35),
                             image: DecorationImage(
@@ -103,19 +104,23 @@ class RecentArticle extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(400),
                                   image: DecorationImage(
-                                    image: AssetImage(Data_Class
-                                        .ArticlePageModelList[index]
-                                        .writerProfilePhotoUr),
-                                        fit: BoxFit.cover
-                                  ),
+                                      image: AssetImage(Data_Class
+                                          .ArticlePageModelList[index]
+                                          .writerProfilePhotoUr),
+                                      fit: BoxFit.cover),
                                 ),
                               ),
                             ),
-                            Text(
-                              Data_Class
-                                  .ArticlePageModelList[index].writersName,
-                              style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            SizedBox(
+                              width: size.width / 5.60,
+                              child: Text(
+                                Data_Class
+                                    .ArticlePageModelList[index].writersName,
+                                overflow: TextOverflow.ellipsis,
+                                maxLines: 1,
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold),
+                              ),
                             ),
                             SizedBox(
                               width: 5,
