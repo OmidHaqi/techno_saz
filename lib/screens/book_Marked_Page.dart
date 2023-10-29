@@ -13,48 +13,63 @@ class BookMarkedPage extends StatelessWidget {
   BookMarkedPage({required this.titleSize});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: SolidColors.white,
-        title: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(0, 15, 0, 0),
-              child: Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
-                    child: SvgPicture.asset(Adress.save),
-                  ),
-                  Text(
-                    Strings.bookmarked_str,
-                    style: TextStyle(
-                        fontSize: titleSize,
-                        color: SolidColors.textColor,
-                        fontWeight: FontWeight.bold),
-                  ),
-                  Expanded(
-                      child: Align(
-                          alignment: Alignment.centerLeft,
-                          child: SvgPicture.asset(Adress.arrowLeft))),
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(0, 8, 0, 0),
-              child: Align(alignment: Alignment.centerLeft,
-                child: Text(
-                  "24" + Strings.article_str,
-                  style: TextStyle(
-                      fontSize: 14,
-                      color: SolidColors.textColor,
-                      fontWeight: FontWeight.w300),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          toolbarHeight: 90.0,
+          elevation: 0,
+          backgroundColor: SolidColors.white,
+          title: Container(
+            decoration: BoxDecoration(
+              border: Border(
+                bottom: BorderSide(
+                  color: Colors.black,
+                  width: 1.0,
                 ),
               ),
             ),
-        
-          ],
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                        child: SvgPicture.asset(Adress.save),
+                      ),
+                      Text(
+                        Strings.bookmarked_str,
+                        style: TextStyle(
+                            fontSize: titleSize,
+                            color: SolidColors.textColor,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Expanded(
+                          child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: SvgPicture.asset(Adress.arrowLeft))),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "24" + Strings.article_str,
+                      style: TextStyle(
+                          fontSize: 14,
+                          color: SolidColors.textColor,
+                          fontWeight: FontWeight.w300),
+                    ),
+                  ),
+                  
+                ),
+                
+              ],
+            ),
+          ),
         ),
       ),
     );
