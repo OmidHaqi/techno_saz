@@ -4,8 +4,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
-import 'package:techno_saz/screens/components/appBar.dart';
-import 'package:techno_saz/screens/home_page.dart';
 
 // ignore: must_be_immutable
 class BookMarkedPage extends StatelessWidget {
