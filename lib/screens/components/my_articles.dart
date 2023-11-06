@@ -23,7 +23,7 @@ class MyArticles extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                Strings.recentArticles_str,
+                Strings.myArticles_str,
                 style: TextStyle(
                     color: SolidColors.textColor,
                     fontSize: 20,
@@ -38,7 +38,7 @@ class MyArticles extends StatelessWidget {
           width: size.width / 1.02,
           child: ListView.builder(
             physics: BouncingScrollPhysics(),
-            itemCount: Data_Class.ArticlePageModelList.length,
+            itemCount: Data_Class.MyArticlePageModelList.length,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
               return Padding(
@@ -63,7 +63,7 @@ class MyArticles extends StatelessWidget {
                             borderRadius: BorderRadius.circular(35),
                             image: DecorationImage(
                                 image: AssetImage(Data_Class
-                                    .ArticlePageModelList[index]
+                                    .MyArticlePageModelList[index]
                                     .imageArticleUr),
                                 fit: BoxFit.cover),
                           ),
@@ -78,7 +78,7 @@ class MyArticles extends StatelessWidget {
                               width: size.width / 2.8,
                               child: Text(
                                 Data_Class
-                                    .ArticlePageModelList[index].titleArticleUr,
+                                    .MyArticlePageModelList[index].titleArticleUr,
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
                                 style: TextStyle(
@@ -104,7 +104,7 @@ class MyArticles extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(400),
                                   image: DecorationImage(
                                       image: AssetImage(Data_Class
-                                          .ArticlePageModelList[index]
+                                          .MyArticlePageModelList[index]
                                           .writerProfilePhotoUr),
                                       fit: BoxFit.cover),
                                 ),
@@ -114,7 +114,7 @@ class MyArticles extends StatelessWidget {
                               width: size.width / 5.60,
                               child: Text(
                                 Data_Class
-                                    .ArticlePageModelList[index].writersName,
+                                    .MyArticlePageModelList[index].writersName,
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 1,
                                 style: TextStyle(
@@ -124,7 +124,7 @@ class MyArticles extends StatelessWidget {
                             SizedBox(
                               width: 5,
                             ),
-                            Text(Data_Class.ArticlePageModelList[index]
+                            Text(Data_Class.MyArticlePageModelList[index]
                                 .PublicationDateArticleUr),
                           ],
                         ),
