@@ -25,4 +25,10 @@ class Adress {
   static const writersImageTwo = "assets/images/img-writersImageTwo.png";
   static const writersImageThree = "assets/images/img_writersImageThree.png";
   static const writersImageFour = "assets/images/img_writersImageFour.png";
+  static const writersImageFive = "assets/images/img_writersImageFive.png";
+  static const writersImageSix = "assets/images/img_writersImageSix.png";
+  static const writersImageSeven = "assets/images/img_writersImageSeven.png";
+  static const writersImageEight = "assets/images/img_writersImageEight.png";
+  static const writersImageNine = "assets/images/img_writersImageNine.png";
+  static const writersImageTen = "assets/images/img_writersImageTen.png";
 }
