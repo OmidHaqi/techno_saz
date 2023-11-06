@@ -53,4 +53,8 @@ class Adress {
   static const writersImageEight = "assets/images/img_writersImageEight.png";
   static const writersImageNine = "assets/images/img_writersImageNine.png";
   static const writersImageTen = "assets/images/img_writersImageTen.png";
+  static const myArticlesImageIdOne = "assets/images/img_imac.jpg";
+  static const myArticlesImageIdTwo = "assets/images/img_nasa_sahabi.jpg";
+  static const myArticlesImageIdThree = "assets/images/img_photo_lab.jpg";
+  static const myArticlesImageIdFour = "assets/images/img_car_game.jpg";
 }
