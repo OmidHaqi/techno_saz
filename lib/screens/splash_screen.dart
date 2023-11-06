@@ -42,7 +42,7 @@ class _MySplashState extends State<MySplash> {
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => BookMarkedPage(titleSize: 20,),
+          builder: (context) => HomePage(),
         ),
       ),
     );
