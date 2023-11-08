@@ -104,7 +104,7 @@ class MyArticles extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(400),
                                   image: DecorationImage(
                                       image: AssetImage(Data_Class
-                                          .MyArticlePageModelList[index]
+                                          .MyArticlePageModelList[1]
                                           .writerProfilePhotoUr),
                                       fit: BoxFit.cover),
                                 ),
@@ -114,7 +114,7 @@ class MyArticles extends StatelessWidget {
                               width: size.width / 5.60,
                               child: Text(
                                 Data_Class
-                                    .MyArticlePageModelList[index].writersName,
+                                    .MyArticlePageModelList[1].writersName,
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 1,
                                 style: TextStyle(
