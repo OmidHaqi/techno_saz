@@ -18,6 +18,7 @@ class HomePage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: SolidColors.white,
         appBar: AppBar(
+          automaticallyImplyLeading: false,
           elevation: 0,
           backgroundColor: SolidColors.white,
           title: Padding(
