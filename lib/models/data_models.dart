@@ -31,7 +31,6 @@ class ArticlePageModel {
   });
 }
 
-
 class ArticleBookmarkedPage {
   String idArticleUr;
   String imageArticleUr;
