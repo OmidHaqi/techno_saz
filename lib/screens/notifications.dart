@@ -85,6 +85,7 @@ class _NotificationsState extends State<Notifications> with TickerProviderStateM
           Center(
             child: Text("It's cloudy here"),
           ),
+          
           Center(
             child: Text("It's rainy here"),
           )
