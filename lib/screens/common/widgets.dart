@@ -25,6 +25,8 @@ Future customDialoge(
       });
       Timer(
         Duration(seconds: 1),
+
+        
         () {
           Navigator.pop(context);
           Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage()),);
