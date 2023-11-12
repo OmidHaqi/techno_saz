@@ -1,5 +1,6 @@
 class Adress {
   static const save = "assets/icons/ic_save.svg";
+  static const notification = "assets/icons/ic_notification.svg";
   static const bell = "assets/icons/ic_bell.svg";
   static const feather = "assets/icons/ic_feather.svg";
   static const menu = "assets/icons/ic_menu.svg";

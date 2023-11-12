@@ -1,5 +1,3 @@
-
-
 class HashTagModel {
   String title;
   HashTagModel({required this.title});
@@ -54,5 +52,26 @@ class ArticleBookmarkedPage {
     required this.likedArticleUr,
     required this.commentArticleUr,
     required this.writersName,
+  });
+}
+
+class NotificationsPagePublic {
+  String idArticleUr;
+  String imageArticleUr;
+  String writerProfilePhotoUr;
+  String aFewDaysOrHoursAgo;
+  String writersName;
+  String noticeTitle;
+  String more;
+  String whatTimeOfDay;
+  NotificationsPagePublic({
+    required this.idArticleUr,
+    required this.imageArticleUr,
+    required this.writerProfilePhotoUr,
+    required this.aFewDaysOrHoursAgo,
+    required this.writersName,
+    required this.more,
+    required this.whatTimeOfDay,
+    required this.noticeTitle,
   });
 }
