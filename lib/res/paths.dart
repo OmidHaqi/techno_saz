@@ -62,4 +62,6 @@ class Adress {
   static const ic_mail = "assets/icons/ic_mail.svg";
   static const welcom_vc = "assets/images/svg_welcome.svg";
 
+  
+
 }
