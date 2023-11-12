@@ -40,10 +40,12 @@ class appBar extends StatelessWidget {
                           },
             child: SvgPicture.asset(Adress.search)),
           Padding(
+
             padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
             child: InkWell(
               onTap:() {
               Navigator.push(
+                
                 
                 context,
                 MaterialPageRoute(
