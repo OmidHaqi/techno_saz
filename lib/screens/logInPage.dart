@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
+import 'package:techno_saz/screens/common/widgets.dart';
 
 class logInPage extends StatelessWidget {
   @override
@@ -81,26 +82,30 @@ class logInPage extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
-                margin: EdgeInsets.fromLTRB(0, size.height / 109.647058823, 0,
-                    size.height / 25.88888888888889),
-                width: size.width / 1.0969387,
-                height: size.height / 14.5625,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 242, 242, 242),
-                  borderRadius: BorderRadius.circular(1000),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      Strings.skip_str,
-                      style: TextStyle(
-                          fontWeight: FontWeight.w400,
-                          fontSize: 20,
-                          color: SolidColors.textColor),
-                    ),
-                  ],
+              InkWell(onTap: () async {
+                            await customDialoge(context);
+                          },
+                child: Container(
+                  margin: EdgeInsets.fromLTRB(0, size.height / 109.647058823, 0,
+                      size.height / 25.88888888888889),
+                  width: size.width / 1.0969387,
+                  height: size.height / 14.5625,
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 242, 242, 242),
+                    borderRadius: BorderRadius.circular(1000),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        Strings.skip_str,
+                        style: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            fontSize: 20,
+                            color: SolidColors.textColor),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               Row(
