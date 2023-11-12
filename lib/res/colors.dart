@@ -10,17 +10,11 @@ class SolidColors {
   static const Color iconColor = Color.fromARGB(255, 113, 40, 16);
   static const Color white = Color.fromARGB(255, 255, 255, 255);
   static const Color black = Color.fromARGB(255, 0, 0, 0);
-  
-  
-
 }
 
 class GradientColors {
   static const List<Color> onBaner = [
     const Color.fromARGB(255, 50, 26, 18),
     const Color.fromRGBO(50, 26, 18, 0.12),
-
-
-
   ];
 }
