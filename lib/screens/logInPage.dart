@@ -82,9 +82,10 @@ class logInPage extends StatelessWidget {
                   ],
                 ),
               ),
-              InkWell(onTap: () async {
-                            await customDialoge(context);
-                          },
+              InkWell(
+                onTap: () async {
+                  await customDialoge(context);
+                },
                 child: Container(
                   margin: EdgeInsets.fromLTRB(0, size.height / 109.647058823, 0,
                       size.height / 25.88888888888889),
@@ -180,8 +181,6 @@ class logInPage extends StatelessWidget {
                       fontWeight: FontWeight.w400,
                       fontSize: 15,
                       color: SolidColors.primaryColor),
-
-                      
                 ),
               ),
             ],
