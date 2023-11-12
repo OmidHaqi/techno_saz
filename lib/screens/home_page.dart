@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
-    
+
     double titleSize = 20;
     return SafeArea(
       child: Scaffold(
@@ -21,10 +21,6 @@ class HomePage extends StatelessWidget {
           automaticallyImplyLeading: false,
           elevation: 0,
           backgroundColor: SolidColors.white,
-
-          
-
-
           title: Padding(
             padding: const EdgeInsets.fromLTRB(12, 15, 12, 15),
             child: appBar(titleSize: titleSize),
