@@ -124,7 +124,7 @@ class _NotificationsState extends State<Notifications>
                                 padding: EdgeInsets.fromLTRB(
                                     size.width / 21.5, 0, 0, 0),
                                 child: Container(
-                                  height:50,
+                                  height: 50,
                                   width: 50,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(1000),
@@ -160,11 +160,18 @@ class _NotificationsState extends State<Notifications>
                                   Row(
                                     children: [
                                       Text(
-                                        Data_Class.NotificationsPagePublicModelList[index].aFewDaysOrHoursAgo+" | ",
+                                        Data_Class
+                                                .NotificationsPagePublicModelList[
+                                                    index]
+                                                .aFewDaysOrHoursAgo +
+                                            " | ",
                                         style: TextStyle(fontSize: 14),
                                       ),
                                       Text(
-                                        Data_Class.NotificationsPagePublicModelList[index].whatTimeOfDay ,
+                                        Data_Class
+                                            .NotificationsPagePublicModelList[
+                                                index]
+                                            .whatTimeOfDay,
                                         style: TextStyle(fontSize: 14),
                                       )
                                     ],
