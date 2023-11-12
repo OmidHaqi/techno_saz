@@ -163,6 +163,8 @@ class BookMarkedPage extends StatelessWidget {
                                                   .BookMarkedArticlePageModelList[index]
                                                   .writerProfilePhotoUr),
                                               fit: BoxFit.cover),
+
+                                              
                                         ),
                                       ),
                                     ),
