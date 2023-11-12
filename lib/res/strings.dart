@@ -1,12 +1,13 @@
 class Strings {
   static const String technoSaz_str = "تکنوساز";
   static const String madeWith_str = "Made with 🤎 by U.D";
-  static const String letsGo_str = "!بزن بریم";
+  static const String letsGo_str = "بزن بریم!";
   static const String byGoogle_str = "با گوگلت وارد شو";
   static const String byEmail_str = "با ایمیلت وارد شو";
   static const String skip_str = "فعلا بیخیال ، مهمون ما باش.";
   static const String or_str = "یا";
   static const String enterPassword_str = "پسوردتو وارد کن";
+  static const String creatAccont = "از اینجا ثبت نام کن";
   static const String createAccount_str = "فعلا بیخیال ، مهمون ما باش.";
   static const String more_str = "بیشتر";
   static const String recentArticles_str = "مقالات اخیر";
