@@ -7,7 +7,6 @@ import 'package:techno_saz/res/strings.dart';
 
 class MyArticles extends StatelessWidget {
   const MyArticles({
-    
     super.key,
     required this.size,
   });
@@ -17,7 +16,6 @@ class MyArticles extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-
       children: [
         Padding(
           padding: const EdgeInsets.fromLTRB(15, 15, 20, 15),
@@ -79,8 +77,8 @@ class MyArticles extends StatelessWidget {
                             SizedBox(
                               width: size.width / 2.8,
                               child: Text(
-                                Data_Class
-                                    .MyArticlePageModelList[index].titleArticleUr,
+                                Data_Class.MyArticlePageModelList[index]
+                                    .titleArticleUr,
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
                                 style: TextStyle(
