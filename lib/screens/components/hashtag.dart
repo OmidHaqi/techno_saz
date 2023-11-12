@@ -12,7 +12,6 @@ class Hashtag extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return SizedBox(
       height: size.height / 27.0,
       width: size.width / 1.02,
@@ -41,7 +40,7 @@ class Hashtag extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(12,2, 0, 0),
+                    padding: const EdgeInsets.fromLTRB(12, 2, 0, 0),
                     child: Text(
                       Data_Class.tagList[index].title,
                       style: TextStyle(
