@@ -27,7 +27,7 @@ Future customDialoge(
         Duration(seconds: 5),
         () {
           Navigator.pop(context);
-          Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()),);
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage()),);
         },
       );
       final high = MediaQuery.of(context).size.width;
