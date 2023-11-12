@@ -19,7 +19,12 @@ class BottomNavBar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            SvgPicture.asset(Adress.home,color: SolidColors.primaryColor,height: size.height/31.06,width: size.width/14.4,),
+            SvgPicture.asset(
+              Adress.home,
+              color: SolidColors.primaryColor,
+              height: size.height / 31.06,
+              width: size.width / 14.4,
+            ),
             SvgPicture.asset(Adress.discover),
             SvgPicture.asset(Adress.addArticle),
             SvgPicture.asset(Adress.myArticlesIc),
