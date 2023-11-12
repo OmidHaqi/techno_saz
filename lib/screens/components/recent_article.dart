@@ -110,8 +110,7 @@ class RecentArticle extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox( 
-                              
+                            SizedBox(
                               width: size.width / 5.60,
                               child: Text(
                                 Data_Class
