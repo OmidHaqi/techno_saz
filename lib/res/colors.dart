@@ -4,7 +4,7 @@ class SolidColors {
   static const Color textColor = Color.fromARGB(255, 54, 47, 47);
   static const Color secondTextColor = Color.fromRGBO(0, 0, 0, 0.6);
   static const Color primaryColor = Color.fromARGB(255, 164, 99, 77);
-  static const Color primaryVariantColor = Color.fromARGB(255, 240, 217, 210);
+  static const Color primaryVariantColor = Color.fromRGBO(240, 217, 210, 1);
   static const Color onPrimaryVariantColor = Color.fromARGB(255, 0, 0, 0);
   static const Color onPrimaryColor = Color.fromARGB(255, 255, 255, 255);
   static const Color iconColor = Color.fromARGB(255, 113, 40, 16);
