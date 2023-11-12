@@ -448,7 +448,7 @@ ________________________________________
         idArticleUr: "1",
         imageArticleUr: Adress.artc_img_Bokmrk_one,
         writerProfilePhotoUr: Adress.writersImageOne,
-        aFewDaysOrHoursAgo: "2" + " "  + Strings.daysAgo_str,
+        aFewDaysOrHoursAgo: "2" + " " + Strings.daysAgo_str,
         writersName: "فاطی",
         more: Adress.more,
         whatTimeOfDay: "3:45" + " " + Strings.am_str,
@@ -457,7 +457,7 @@ ________________________________________
         idArticleUr: "2",
         imageArticleUr: Adress.artc_img_Bokmrk_tow,
         writerProfilePhotoUr: Adress.writersImageTwo,
-        aFewDaysOrHoursAgo: "6" + " "  + Strings.daysAgo_str,
+        aFewDaysOrHoursAgo: "6" + " " + Strings.daysAgo_str,
         writersName: "علی",
         more: Adress.more,
         whatTimeOfDay: "4:13" + " " + Strings.pm_str,
@@ -524,7 +524,7 @@ ________________________________________
         writersName: "زلیخا",
         more: Adress.more,
         whatTimeOfDay: "13:45" + " " + Strings.pm_str,
-        noticeTitle:" نظر شما را لایک کرد."),
+        noticeTitle: " نظر شما را لایک کرد."),
     NotificationsPagePublic(
         idArticleUr: "9",
         imageArticleUr: Adress.artc_img_Bokmrk_ten,
@@ -534,7 +534,5 @@ ________________________________________
         more: Adress.more,
         whatTimeOfDay: "3:16" + " " + Strings.pm_str,
         noticeTitle: "به مقاله شما نظر داد."),
-       
-        
   ];
 }
