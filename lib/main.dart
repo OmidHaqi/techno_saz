@@ -9,6 +9,7 @@ void main() {
     statusBarIconBrightness: Brightness.dark,
     systemNavigationBarColor: SolidColors.primaryVariantColor,
     systemNavigationBarIconBrightness: Brightness.dark,
+    
   ));
   runApp(SplashScreen());
   
