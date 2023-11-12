@@ -12,6 +12,7 @@ class Hashtag extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return SizedBox(
       height: size.height / 27.0,
       width: size.width / 1.02,
