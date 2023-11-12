@@ -57,4 +57,8 @@ class Adress {
   static const myArticlesImageIdTwo = "assets/images/img_nasa_sahabi.jpg";
   static const myArticlesImageIdThree = "assets/images/img_photo_lab.jpg";
   static const myArticlesImageIdFour = "assets/images/img_car_game.jpg";
+  static const ic_gmail = "assets/icons/ic_gmail.svg";
+  static const ic_mail = "assets/icons/ic_mail.svg";
+  static const welcom_vc = "assets/images/svg_welcome.svg";
+
 }
