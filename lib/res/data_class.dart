@@ -431,7 +431,7 @@ ________________________________________
     ArticleBookmarkedPage(
         idArticleUr: "10",
         imageArticleUr: Adress.artc_img_Bokmrk_ten,
-        titleArticleUr: "",
+        titleArticleUr: "رقص تانگو",
         writerProfilePhotoUr: Adress.writersImageTen,
         PublicationDateArticleUr: "8" + "  " + Strings.daysAgo_str,
         readingTime: "6" + Strings.minutes,
