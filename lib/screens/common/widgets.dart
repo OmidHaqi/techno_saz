@@ -1,4 +1,3 @@
-
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -17,19 +16,18 @@ Future customDialoge(
     context: context,
     builder: (context) {
       Timer.periodic(Duration(milliseconds: 500), (timer) {
-        
-        
         if (timer.tick == 500) {
           timer.cancel();
         }
       });
       Timer(
         Duration(seconds: 1),
-
-        
         () {
           Navigator.pop(context);
-          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage()),);
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => HomePage()),
+          );
         },
       );
       final high = MediaQuery.of(context).size.width;
@@ -46,36 +44,34 @@ Future customDialoge(
             child: FittedBox(
               child: Column(
                 children: [
-                  
                   Stack(
                     alignment: Alignment.center,
                     children: [
                       Container(
-                        padding: EdgeInsets.all(42),
-                        decoration:BoxDecoration(
-                          color: SolidColors.primaryColor,
-                          shape: BoxShape.circle
-                        )
-                         
-                      ),
-                      Icon(Icons.person, size: 50, color:Colors.white)
+                          padding: EdgeInsets.all(42),
+                          decoration: BoxDecoration(
+                              color: SolidColors.primaryColor,
+                              shape: BoxShape.circle)),
+                      Icon(Icons.person, size: 50, color: Colors.white)
                     ],
                   ),
-                  SizedBox(height: 15,),
-                  
-                  Text('تبریک!' ,style: TextStyle(fontWeight: FontWeight.bold ,fontSize: 24),),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    'تبریک!',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                  ),
                   SizedBox(height: 10),
                   Text(
                     '\nحساب شما آماده استفاده است.\n در عرض چند ثانیه به صفحه اصلی \nهدایت خواهید شد',
                     textAlign: TextAlign.center,
-                    
                   ),
                   SizedBox(height: 15),
                   SpinKitCircle(
-              size: 40,
-              color:SolidColors.primaryColor,
-
-            )
+                    size: 40,
+                    color: SolidColors.primaryColor,
+                  )
                 ],
               ),
             ),
