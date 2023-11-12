@@ -180,6 +180,8 @@ class logInPage extends StatelessWidget {
                       fontWeight: FontWeight.w400,
                       fontSize: 15,
                       color: SolidColors.primaryColor),
+
+                      
                 ),
               ),
             ],
