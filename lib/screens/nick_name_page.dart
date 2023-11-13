@@ -23,7 +23,7 @@ class NickNamePage extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(top: size.height / 21.67441860465116),
                 child: Text(
-                  Strings.verifiedEmail,
+                  Strings.verifiedEmail_str,
                   style: TextStyle(
                       fontWeight: FontWeight.w400,
                       fontSize: 17,
@@ -34,7 +34,7 @@ class NickNamePage extends StatelessWidget {
                 padding: EdgeInsets.only(top: size.height / 100),
                 child: Text(
                   textAlign: TextAlign.center,
-                  Strings.complateLogInInfo,
+                  Strings.complateLogInInfo_str,
                   style: TextStyle(
                       fontWeight: FontWeight.w700,
                       fontSize: 17,
@@ -42,13 +42,22 @@ class NickNamePage extends StatelessWidget {
                       color: SolidColors.textColor),
                 ),
               ),
-              TextField(
-                controller: nickName,
-                textDirection: TextDirection.rtl,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(50),
-                    borderSide: BorderSide(color: SolidColors.primaryColor),
+              Padding(
+                padding:  EdgeInsets.fromLTRB(size.width/11.02564102564103, size.height/34.51851851851852, size.width/11.02564102564103, 0),
+                child: TextField(
+                  controller: nickName,
+                  textDirection: TextDirection.rtl,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(color: SolidColors.black),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(color: SolidColors.primaryColor),
+                    ),
+                    hintText: Strings.nickname_str,
+                    prefixIcon: SvgPicture.asset(Adress.ic_nickName_eadite,width: size.width/24,height: size.height/24,)
                   ),
                 ),
               ),
