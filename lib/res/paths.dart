@@ -55,4 +55,11 @@ class Adress {
   static const ic_gmail = "assets/icons/ic_gmail.svg";
   static const ic_mail = "assets/icons/ic_mail.svg";
   static const welcom_vc = "assets/images/svg_welcome.svg";
+
+  static const ic_successfully_NotificationPage = "assets/icons/ic_successfully_NotificationPage.svg";
+  static const ic_saved_NotificationPage = "assets/icons/ic_saved_NotificationPage.svg";
+  static const ic_profile_NotificationPage = "assets/icons/ic_profile_NotificationPage.svg";
+  static const ic_updating_NotificationPage = "assets/icons/ic_updating_NotificationPage.svg";
+  static const ic_myFiles_NotificationPage = "assets/icons/ic_myFiles_NotificationPage.svg";
+  
 }
