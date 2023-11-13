@@ -5,7 +5,7 @@ import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/screens/common/widgets.dart';
 
-class logInPage extends StatelessWidget {
+class LogInPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
