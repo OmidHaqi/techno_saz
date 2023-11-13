@@ -98,7 +98,7 @@ class NickNamePage extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(top: size.height / 25.88),
                 child: Container(
-                  color: Colors.amber,
+                  color: const Color.fromARGB(255, 255, 255, 255),
                   width: size.width / 1.11,
                   height: size.height / 11.79,
                   child: GridView.builder(
@@ -125,7 +125,7 @@ class NickNamePage extends StatelessWidget {
                 color: SolidColors.primaryColor,
                 borderRadius: BorderRadius.circular(100),
               ),
-              child: Row(
+              child: Row(mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 8, 12, 4),
