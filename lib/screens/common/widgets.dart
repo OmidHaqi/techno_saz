@@ -32,7 +32,7 @@ Future customDialoge(
         content: Container(
           alignment: Alignment.topCenter,
           padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-          width: size / 6 * 3,
+          width: size / 18,
           child: FittedBox(
             child: Column(
               children: [
@@ -43,7 +43,7 @@ Future customDialoge(
                         padding: EdgeInsets.all(42),
                         decoration: BoxDecoration(
                             color: SolidColors.primaryColor,
-                            shape: BoxShape.circle)),
+                            shape: BoxShape.circle),),
                     Icon(Icons.person, size: 50, color: Colors.white)
                   ],
                 ),

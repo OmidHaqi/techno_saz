@@ -174,7 +174,7 @@ class logInPage extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: size.height / 44.38095238095238),
+                padding: EdgeInsets.only(top: size.height / 46.7),
                 child: Text(
                   Strings.creatAccont,
                   style: TextStyle(
