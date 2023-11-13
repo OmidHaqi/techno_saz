@@ -61,5 +61,6 @@ class Adress {
   static const ic_profile_NotificationPage = "assets/icons/ic_profile_NotificationPage.svg";
   static const ic_updating_NotificationPage = "assets/icons/ic_updating_NotificationPage.svg";
   static const ic_myFiles_NotificationPage = "assets/icons/ic_myFiles_NotificationPage.svg";
+  static const vc_sing_up = "assets/icons/vc_sing_up_.svg";
   
 }
