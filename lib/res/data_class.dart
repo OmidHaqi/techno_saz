@@ -5,7 +5,7 @@ import 'package:techno_saz/res/strings.dart';
 class Data_Class {
   static Map homePagePosterMap = {
     "imageAsset": Adress.banner,
-    "titleOnBanner": Strings.titleOnBanner,
+    "titleOnBanner": Strings.titleOnBanner_str,
   };
 
   static List<HashTagModel> tagList = [
