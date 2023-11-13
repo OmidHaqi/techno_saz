@@ -77,8 +77,8 @@ class MyArticles extends StatelessWidget {
                             SizedBox(
                               width: size.width / 2.8,
                               child: Text(
-                                Data_Class
-                                    .MyArticlePageModelList[index].titleArticleUr,
+                                Data_Class.MyArticlePageModelList[index]
+                                    .titleArticleUr,
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
                                 style: TextStyle(

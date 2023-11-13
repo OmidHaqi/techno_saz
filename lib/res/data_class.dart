@@ -193,7 +193,7 @@ class Data_Class {
         commentArticleUr: "14",
         writersName: "امید"),
   ];
-  
+
   static List<ArticleBookmarkedPage> BookMarkedArticlePageModelList = [
     ArticleBookmarkedPage(
         idArticleUr: "1",
@@ -442,5 +442,124 @@ ________________________________________
         likedArticleUr: "",
         commentArticleUr: "",
         writersName: "علیرضا محمدی"),
+  ];
+  static List<NotificationsPagePublic> NotificationsPagePublicModelList = [
+    NotificationsPagePublic(
+        idArticleUr: "1",
+        imageArticleUr: Adress.artc_img_Bokmrk_one,
+        writerProfilePhotoUr: Adress.writersImageOne,
+        aFewDaysOrHoursAgo: "2" + " " + Strings.daysAgo_str,
+        writersName: "فاطی",
+        more: Adress.more,
+        whatTimeOfDay: "3:45" + " " + Strings.am_str,
+        noticeTitle: "به مقاله شما نظر داد."),
+    NotificationsPagePublic(
+        idArticleUr: "2",
+        imageArticleUr: Adress.artc_img_Bokmrk_tow,
+        writerProfilePhotoUr: Adress.writersImageTwo,
+        aFewDaysOrHoursAgo: "6" + " " + Strings.daysAgo_str,
+        writersName: "علی",
+        more: Adress.more,
+        whatTimeOfDay: "4:13" + " " + Strings.pm_str,
+        noticeTitle: "مقاله شما را لایک کرد."),
+    NotificationsPagePublic(
+        idArticleUr: "3",
+        imageArticleUr: Adress.artc_img_Bokmrk_three,
+        writerProfilePhotoUr: Adress.writersImageThree,
+        aFewDaysOrHoursAgo: "5" + " " + Strings.daysAgo_str,
+        writersName: "رضا",
+        more: Adress.more,
+        whatTimeOfDay: "7:18" + " " + Strings.am_str,
+        noticeTitle: "مقاله ی جدیدی منتشر کرد."),
+    NotificationsPagePublic(
+        idArticleUr: "4",
+        imageArticleUr: Adress.artc_img_Bokmrk_four,
+        writerProfilePhotoUr: Adress.writersImageFour,
+        aFewDaysOrHoursAgo: "10" + " " + Strings.daysAgo_str,
+        writersName: "تایلر",
+        more: Adress.more,
+        whatTimeOfDay: "12:49" + " " + Strings.pm_str,
+        noticeTitle: "نظر شما را لایک کرد."),
+    NotificationsPagePublic(
+        idArticleUr: "5",
+        imageArticleUr: Adress.artc_img_Bokmrk_five,
+        writerProfilePhotoUr: Adress.writersImageFive,
+        aFewDaysOrHoursAgo: "4" + " " + Strings.daysAgo_str,
+        writersName: "کتی",
+        more: Adress.more,
+        whatTimeOfDay: "01:11" + " " + Strings.pm_str,
+        noticeTitle: "به نظر شما پاسخ داد."),
+    NotificationsPagePublic(
+        idArticleUr: "5",
+        imageArticleUr: Adress.artc_img_Bokmrk_six,
+        writerProfilePhotoUr: Adress.writersImageSix,
+        aFewDaysOrHoursAgo: "7" + " " + Strings.daysAgo_str,
+        writersName: "کوین",
+        more: Adress.more,
+        whatTimeOfDay: "6:15" + " " + Strings.am_str,
+        noticeTitle: "مقاله جدیدی را منتشر کرد."),
+    NotificationsPagePublic(
+        idArticleUr: "6",
+        imageArticleUr: Adress.artc_img_Bokmrk_seven,
+        writerProfilePhotoUr: Adress.writersImageSeven,
+        aFewDaysOrHoursAgo: "4" + " " + Strings.daysAgo_str,
+        writersName: "ابراهام",
+        more: Adress.more,
+        whatTimeOfDay: "5:37" + " " + Strings.pm_str,
+        noticeTitle: "مقاله شما را لایک کرد."),
+    NotificationsPagePublic(
+        idArticleUr: "7",
+        imageArticleUr: Adress.artc_img_Bokmrk_eight,
+        writerProfilePhotoUr: Adress.writersImageEight,
+        aFewDaysOrHoursAgo: "3" + " " + Strings.daysAgo_str,
+        writersName: "مهدیس",
+        more: Adress.more,
+        whatTimeOfDay: "14:59" + " " + Strings.pm_str,
+        noticeTitle: "به مقاله شما نظر داد."),
+    NotificationsPagePublic(
+        idArticleUr: "8",
+        imageArticleUr: Adress.artc_img_Bokmrk_nine,
+        writerProfilePhotoUr: Adress.writersImageNine,
+        aFewDaysOrHoursAgo: "6" + " " + Strings.daysAgo_str,
+        writersName: "زلیخا",
+        more: Adress.more,
+        whatTimeOfDay: "13:45" + " " + Strings.pm_str,
+        noticeTitle: " نظر شما را لایک کرد."),
+    NotificationsPagePublic(
+        idArticleUr: "9",
+        imageArticleUr: Adress.artc_img_Bokmrk_ten,
+        writerProfilePhotoUr: Adress.writersImageTen,
+        aFewDaysOrHoursAgo: "2" + " " + Strings.daysAgo_str,
+        writersName: "جولیا",
+        more: Adress.more,
+        whatTimeOfDay: "3:16" + " " + Strings.pm_str,
+        noticeTitle: "به مقاله شما نظر داد."),
+  ];
+  static List<NotificationsPageSystem> NotificationsPageSystemModelList = [
+    NotificationsPageSystem(
+        idArticleUr: "1",
+        iconNoticeUr: Adress.ic_profile_NotificationPage,
+        noticeText: "تنظیمات حساب شما بروزرسانی شد.",
+        timeNotice: "جدید"),
+    NotificationsPageSystem(
+        idArticleUr: "2",
+        iconNoticeUr: Adress.ic_updating_NotificationPage,
+        noticeText: "آپدیت جدید در دسترس است.",
+        timeNotice: "جدید"),
+    NotificationsPageSystem(
+        idArticleUr: "3",
+        iconNoticeUr: Adress.ic_myFiles_NotificationPage,
+        noticeText: "حافظه شما پر است.    ",
+        timeNotice: "جدید"),
+    NotificationsPageSystem(
+        idArticleUr: "4",
+        iconNoticeUr: Adress.ic_saved_NotificationPage,
+        noticeText: "‘غذای فرانسوی’ با موفقیت ذخیره شد.",
+        timeNotice: "جدید"),
+    NotificationsPageSystem(
+        idArticleUr: "5",
+        iconNoticeUr: Adress.ic_successfully_NotificationPage,
+        noticeText: "ایمیلتان با موفقیت تایید شد !",
+        timeNotice: "جدید"),
   ];
 }

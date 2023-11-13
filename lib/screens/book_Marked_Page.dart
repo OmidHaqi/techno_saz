@@ -100,7 +100,7 @@ class BookMarkedPage extends StatelessWidget {
                     ),
                     itemBuilder: (context, index) {
                       return InkWell(
-                        onTap: (){},
+                        onTap: () {},
                         child: Container(
                           width: size.width / 2.10,
                           height: size.height / 3,
@@ -125,14 +125,18 @@ class BookMarkedPage extends StatelessWidget {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
+                                padding:
+                                    const EdgeInsets.fromLTRB(12, 12, 12, 12),
                                 child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     SizedBox(
                                       width: size.width / 2.8,
                                       child: Text(
-                                        Data_Class.BookMarkedArticlePageModelList[index]
+                                        Data_Class
+                                            .BookMarkedArticlePageModelList[
+                                                index]
                                             .titleArticleUr,
                                         overflow: TextOverflow.ellipsis,
                                         maxLines: 2,
@@ -151,16 +155,18 @@ class BookMarkedPage extends StatelessWidget {
                                 child: Row(
                                   children: [
                                     Padding(
-                                      padding:
-                                          const EdgeInsets.fromLTRB(8, 0, 10, 0),
+                                      padding: const EdgeInsets.fromLTRB(
+                                          8, 0, 10, 0),
                                       child: Container(
                                         height: size.height / 37.28,
                                         width: size.width / 17.2,
                                         decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(400),
+                                          borderRadius:
+                                              BorderRadius.circular(400),
                                           image: DecorationImage(
                                               image: AssetImage(Data_Class
-                                                  .BookMarkedArticlePageModelList[index]
+                                                  .BookMarkedArticlePageModelList[
+                                                      index]
                                                   .writerProfilePhotoUr),
                                               fit: BoxFit.cover),
                                         ),
@@ -169,7 +175,9 @@ class BookMarkedPage extends StatelessWidget {
                                     SizedBox(
                                       width: size.width / 5.60,
                                       child: Text(
-                                        Data_Class.BookMarkedArticlePageModelList[index]
+                                        Data_Class
+                                            .BookMarkedArticlePageModelList[
+                                                index]
                                             .writersName,
                                         overflow: TextOverflow.ellipsis,
                                         maxLines: 1,
@@ -181,7 +189,8 @@ class BookMarkedPage extends StatelessWidget {
                                     SizedBox(
                                       width: 5,
                                     ),
-                                    Text(Data_Class.BookMarkedArticlePageModelList[index]
+                                    Text(Data_Class
+                                        .BookMarkedArticlePageModelList[index]
                                         .PublicationDateArticleUr),
                                   ],
                                 ),

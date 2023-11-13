@@ -11,5 +11,4 @@ void main() {
     systemNavigationBarIconBrightness: Brightness.dark,
   ));
   runApp(SplashScreen());
-  
 }

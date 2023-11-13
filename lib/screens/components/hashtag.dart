@@ -40,7 +40,7 @@ class Hashtag extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(12,2, 0, 0),
+                    padding: const EdgeInsets.fromLTRB(12, 2, 0, 0),
                     child: Text(
                       Data_Class.tagList[index].title,
                       style: TextStyle(

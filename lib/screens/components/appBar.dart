@@ -35,28 +35,27 @@ class appBar extends StatelessWidget {
                   fontWeight: FontWeight.bold),
             ),
           )),
-          InkWell(onTap: () async {
-                            await customDialoge(context);
-                          },
-            child: SvgPicture.asset(Adress.search)),
+          InkWell(
+              onTap: () async {
+                await customDialoge(context);
+              },
+              child: SvgPicture.asset(Adress.search)),
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
             child: InkWell(
-              onTap:() {
-              Navigator.push(
-                
-                context,
-                MaterialPageRoute(
-                  builder: (context) => Notifications(titleSize: 25),
-                ),
-              );
-            } ,
-              child:SvgPicture.asset(Adress.bell)),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Notifications(titleSize: 25),
+                    ),
+                  );
+                },
+                child: SvgPicture.asset(Adress.bell)),
           ),
           InkWell(
             onTap: () {
               Navigator.push(
-                
                 context,
                 MaterialPageRoute(
                   builder: (context) => BookMarkedPage(titleSize: 25),

@@ -36,9 +36,10 @@ class HomePagesBanner extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(18),
                       image: DecorationImage(
-                          image: AssetImage(Data_Class.homePagePosterMap["imageAsset"],),
+                          image: AssetImage(
+                            Data_Class.homePagePosterMap["imageAsset"],
+                          ),
                           fit: BoxFit.cover),
-                          
                     ),
                     child: Container(
                       decoration: BoxDecoration(
@@ -58,7 +59,8 @@ class HomePagesBanner extends StatelessWidget {
                           Positioned(
                             right: 10,
                             top: 75,
-                            child: Text(Data_Class.homePagePosterMap["titleOnBanner"],
+                            child: Text(
+                              Data_Class.homePagePosterMap["titleOnBanner"],
                               style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
@@ -74,25 +76,22 @@ class HomePagesBanner extends StatelessWidget {
                               style: ButtonStyle(
                                 overlayColor: MaterialStateProperty.all(
                                     Color.fromARGB(81, 240, 217, 210)),
-                                backgroundColor:
-                                    MaterialStateProperty.all(
-                                        SolidColors.primaryColor),
+                                backgroundColor: MaterialStateProperty.all(
+                                    SolidColors.primaryColor),
                                 shape: MaterialStateProperty.all<
                                     RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
-                                    borderRadius:
-                                        BorderRadius.circular(18),
+                                    borderRadius: BorderRadius.circular(18),
                                   ),
                                 ),
                               ),
                               child: Padding(
-                                padding: const EdgeInsets.fromLTRB(
-                                    16, 0, 16, 0),
+                                padding:
+                                    const EdgeInsets.fromLTRB(16, 0, 16, 0),
                                 child: Text(
                                   Strings.more_str,
                                   style: TextStyle(
-                                      color:
-                                          SolidColors.onPrimaryColor),
+                                      color: SolidColors.onPrimaryColor),
                                 ),
                               ),
                             ),

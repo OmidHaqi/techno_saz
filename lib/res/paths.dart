@@ -1,5 +1,6 @@
 class Adress {
   static const save = "assets/icons/ic_save.svg";
+  static const notification = "assets/icons/ic_notification.svg";
   static const bell = "assets/icons/ic_bell.svg";
   static const feather = "assets/icons/ic_feather.svg";
   static const menu = "assets/icons/ic_menu.svg";
@@ -23,26 +24,20 @@ class Adress {
       "assets/images/img_ConcurrencyControl.png";
   static const articlesImageidFour =
       "assets/images/img_emotionalIntelligence.png";
-  static const artc_img_Bokmrk_one =
-      "assets/images/img_Accounting_Article.png";
-  static const artc_img_Bokmrk_tow =
-      "assets/images/img_balletDanceArticle.png";
+  static const artc_img_Bokmrk_one = "assets/images/img_Accounting_Article.png";
+  static const artc_img_Bokmrk_tow = "assets/images/img_balletDanceArticle.png";
   static const artc_img_Bokmrk_three =
       "assets/images/img_BrewingCoffee_Article.png";
   static const artc_img_Bokmrk_four =
       "assets/images/img_father_doughter_article.png";
   static const artc_img_Bokmrk_five =
       "assets/images/Img_GroupStudy_Article.png";
-  static const artc_img_Bokmrk_six =
-      "assets/images/img_hugArticle.png";
+  static const artc_img_Bokmrk_six = "assets/images/img_hugArticle.png";
   static const artc_img_Bokmrk_seven =
       "assets/images/img_mathematicsOnIntelligence_Article.png";
-  static const artc_img_Bokmrk_eight =
-      "assets/images/img_ParentingArticle.png";
-  static const artc_img_Bokmrk_nine =
-      "assets/images/img_sherakatArticle.png";
-  static const artc_img_Bokmrk_ten =
-      "assets/images/img_tangoArticle.png";
+  static const artc_img_Bokmrk_eight = "assets/images/img_ParentingArticle.png";
+  static const artc_img_Bokmrk_nine = "assets/images/img_sherakatArticle.png";
+  static const artc_img_Bokmrk_ten = "assets/images/img_tangoArticle.png";
   static const writersImageOne = "assets/images/img_writersImageOne.png";
   static const writersImageTwo = "assets/images/img-writersImageTwo.png";
   static const writersImageThree = "assets/images/img_writersImageThree.png";
@@ -61,4 +56,10 @@ class Adress {
   static const ic_mail = "assets/icons/ic_mail.svg";
   static const welcom_vc = "assets/images/svg_welcome.svg";
 
+  static const ic_successfully_NotificationPage = "assets/icons/ic_successfully_NotificationPage.svg";
+  static const ic_saved_NotificationPage = "assets/icons/ic_saved_NotificationPage.svg";
+  static const ic_profile_NotificationPage = "assets/icons/ic_profile_NotificationPage.svg";
+  static const ic_updating_NotificationPage = "assets/icons/ic_updating_NotificationPage.svg";
+  static const ic_myFiles_NotificationPage = "assets/icons/ic_myFiles_NotificationPage.svg";
+  
 }

@@ -13,15 +13,14 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        localizationsDelegates: [
-    GlobalMaterialLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-  ],
-  supportedLocales: [
-    Locale('fa'), // Farsi
-  ],
-
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [
+        Locale('fa'), // Farsi
+      ],
       theme: ThemeData(fontFamily: 'IranYekan'),
       home: MySplash(),
       debugShowCheckedModeBanner: false,
@@ -39,11 +38,11 @@ class _MySplashState extends State<MySplash> {
   void initState() {
     super.initState();
     Timer(
-      const Duration(seconds: 5),
+      const Duration(seconds: 1),
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) =>logInPage(),
+          builder: (context) => logInPage(),
         ),
       ),
     );
@@ -61,17 +60,23 @@ class _MySplashState extends State<MySplash> {
                 SvgPicture.asset(
                   "assets/images/svg_splash.svg",
                 ),
-                Text(Strings.technoSaz_str,
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 48,color: SolidColors.textColor),
+                Text(
+                  Strings.technoSaz_str,
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 48,
+                      color: SolidColors.textColor),
                 ),
               ],
             ),
-            SpinKitWave(
-              size: 40,
-              color:SolidColors.primaryColor,
-
+            SpinKitCircle(
+              size: 45,
+              color: SolidColors.primaryColor,
+            ),
+            Text(
+              Strings.madeWith_str,
+              style: TextStyle(color: SolidColors.textColor),
             )
-            ,Text(Strings.madeWith_str,style: TextStyle(color: SolidColors.textColor),)
           ],
         ),
       ),
