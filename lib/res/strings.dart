@@ -27,10 +27,15 @@ class Strings {
   static const String am_str = "صبح";
   static const String new_str = "جدید";
   static const String writerName_str = "هری پاتر.";
-  static const String titleOnBanner = "چطور میتونیم نویسنده خوبی باشیم ؟";
+  static const String titleOnBanner_str = "چطور میتونیم نویسنده خوبی باشیم ؟";
   static const String minutes = "دقیقه";
   static const String article_str = "مقاله";
   static const String savedArticle_str = "نشان شده ها";
-  static const String welcome = "به تکنوساز خوش اومدی";
-  static const String shouldLogIn = "برای ارسال مطلب باید حتما ثبت نام کنی";
+  static const String welcome_str = "به تکنوساز خوش اومدی";
+  static const String shouldLogIn_str = "برای ارسال مطلب باید حتما ثبت نام کنی";
+  static const String nickname_str = "اسم مستعار";
+  static const String verifiedEmail_str =
+      "تبریک میگیم،ایمیل با موفقیت تایید شد.";
+  static const String complateLogInInfo_str =
+      "لطفا اطلاعات ثبت نام رو کامل کن.";
 }

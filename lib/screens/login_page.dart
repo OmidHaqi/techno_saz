@@ -154,8 +154,8 @@ class LogInPage extends StatelessWidget {
               Container(
                 margin: EdgeInsets.fromLTRB(
                     0, size.height / 34.51851851851852, 0, 0),
-                width: size.width / 1.0969387,
-                height: size.height / 14.5625,
+                width: size.width /1.1969387,
+                height: size.height / 16.5625,
                 decoration: BoxDecoration(
                   color: SolidColors.primaryColor,
                   borderRadius: BorderRadius.circular(1000),
@@ -174,7 +174,7 @@ class LogInPage extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: size.height / 46.7),
+                padding: EdgeInsets.only(top: size.height / 75),
                 child: Text(
                   Strings.creatAccont,
                   style: TextStyle(
