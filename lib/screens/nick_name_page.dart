@@ -5,6 +5,7 @@ import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
+import 'package:techno_saz/screens/home_page.dart';
 
 class NickNamePage extends StatelessWidget {
   TextEditingController nickName = TextEditingController();
@@ -108,7 +109,7 @@ class NickNamePage extends StatelessWidget {
                       physics: ClampingScrollPhysics(),
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
-                      childAspectRatio: 0.3,
+                        childAspectRatio: 0.3,
                         crossAxisSpacing: 8,
                         mainAxisSpacing: 8,
                       ),
@@ -116,47 +117,79 @@ class NickNamePage extends StatelessWidget {
                         return InkWell(
                           onTap: () {},
                           child: Container(
-                            decoration: BoxDecoration(color: SolidColors.primaryColor,
-                            borderRadius: BorderRadius.circular(1000))
-                            ,child: Padding(
-            padding: const EdgeInsets.fromLTRB(2, 0, 4, 0),
-            child: Container(
-              decoration: BoxDecoration(
-                color: SolidColors.primaryColor,
-                borderRadius: BorderRadius.circular(100),
-              ),
-              child: Row(mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 8, 12, 4),
-                    child: Text(
-                      "# ",
-                      style: TextStyle(
-                          color: SolidColors.onPrimaryColor,
-                          fontSize: 17,
-                          fontWeight: FontWeight.w300),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(12, 2, 0, 0),
-                    child: Text(
-                      Data_Class.tagList[index].title,
-                      style: TextStyle(
-                          color: SolidColors.onPrimaryColor,
-                          fontSize: 17,
-                          fontWeight: FontWeight.w300),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-                            
-                            
-                            
+                            decoration: BoxDecoration(
+                                color: SolidColors.primaryColor,
+                                borderRadius: BorderRadius.circular(1000)),
+                            child: Padding(
+                              padding: const EdgeInsets.fromLTRB(2, 0, 4, 0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: SolidColors.primaryColor,
+                                  borderRadius: BorderRadius.circular(100),
+                                ),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          0, 8, 12, 4),
+                                      child: Text(
+                                        "# ",
+                                        style: TextStyle(
+                                            color: SolidColors.onPrimaryColor,
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w300),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          12, 2, 0, 0),
+                                      child: Text(
+                                        Data_Class.tagList[index].title,
+                                        style: TextStyle(
+                                            color: SolidColors.onPrimaryColor,
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w300),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
                           ),
                         );
                       }),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.fromLTRB(0, size.height / 18, 0, 0),
+                child: Container(
+                  width: size.width / 3.071428571428571,
+                  height: size.height / 18.64,
+                  decoration: BoxDecoration(
+                    color: SolidColors.primaryColor,
+                    borderRadius: BorderRadius.circular(1000),
+                  ),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => HomePage(),
+                        ),
+                      );
+                    },
+                    child: Center(
+                      child: Text(
+                        textAlign: TextAlign.center,
+                        Strings.countinu_str,
+                        style: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            fontSize: 24,
+                            color: SolidColors.onPrimaryColor),
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ],

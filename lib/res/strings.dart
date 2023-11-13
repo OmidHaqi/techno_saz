@@ -32,6 +32,7 @@ class Strings {
   static const String article_str = "مقاله";
   static const String savedArticle_str = "نشان شده ها";
   static const String welcome_str = "به تکنوساز خوش اومدی";
+  static const String countinu_str = "ادامه";
   static const String shouldLogIn_str = "برای ارسال مطلب باید حتما ثبت نام کنی";
   static const String nickname_str = "اسم مستعار";
   static const String choseFavorite_str =
