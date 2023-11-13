@@ -96,8 +96,79 @@ class _NotificationsState extends State<Notifications>
         physics: BouncingScrollPhysics(),
         controller: _tabController,
         children: <Widget>[
-          Center(
-            child: Text("It's cloudy here"),
+          Column(
+            children: [
+              Padding(
+                padding: EdgeInsets.fromLTRB(0, size.height / 58.25, 0, 0),
+                child: SizedBox(
+                  width: size.width / 1.075,
+                  height: size.height / 1.29,
+                  child: ListView.builder(
+                      physics: BouncingScrollPhysics(),
+                      itemCount:
+                          Data_Class.NotificationsPageSystemModelList.length,
+                      scrollDirection: Axis.vertical,
+                      itemBuilder: (context, index) {
+                        return Padding(
+                          padding: EdgeInsets.fromLTRB(
+                              0,
+                              size.height / 155.3333333333333,
+                              0,
+                              size.height / 155.3333333333333),
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.fromLTRB(
+                                    size.width / 21.5, 0, 0, 0),
+                                child: Container(
+                                  height: 50,
+                                  width: 50,
+                                  child: SvgPicture.asset(Data_Class
+                                      .NotificationsPageSystemModelList[index]
+                                      .iconNoticeUr,height: size.height/18.64,
+                                  width: size.width/.6,),
+                                ),
+                              ),
+                              Text(
+                                Data_Class
+                                    .NotificationsPageSystemModelList[index]
+                                    .noticeText,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w600, fontSize: 16),
+                              ),
+                              Expanded(
+                                child: Align(
+                                  alignment: Alignment.centerLeft,
+                                  child: Container(
+                                    height: size.height/42.36363636363636,
+                                    width: size.width/11.31578947368421,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(5),
+                                      color: SolidColors.primaryColor,
+                                    ),
+                                    child: Align(
+                                      alignment: Alignment.center,
+                                      child: Text(
+                                        Data_Class
+                                            .NotificationsPageSystemModelList[
+                                                index]
+                                            .timeNotice,
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w400,
+                                            fontSize: 12,
+                                            color: SolidColors.white),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      }),
+                ),
+              )
+            ],
           ),
           Column(
             children: [
