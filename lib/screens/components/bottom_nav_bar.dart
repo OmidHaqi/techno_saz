@@ -28,15 +28,39 @@ class BottomNavBar extends StatelessWidget {
             ),
             SvgPicture.asset(Adress.discover),
             InkWell(
-              onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => LogInTwoPage(),
-                ),
-              );
-            },
-              child: SvgPicture.asset(Adress.addArticle)),
+                onTap: () {
+                  showModalBottomSheet(
+                    context: context,
+                    shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(10.0),
+                        topRight: Radius.circular(10.0),
+                      ),
+                    ),
+                    builder: (BuildContext context) {
+                      return Container(
+                        height: 500,
+                        child: Center(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Text('Bottom Sheet'),
+                            ],
+                          ),
+                        ),
+                      );
+                    },
+                  );
+                },
+                //   onTap: () {
+                //   Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //       builder: (context) => LogInTwoPage(),
+                //     ),
+                //   );
+                // },
+                child: SvgPicture.asset(Adress.addArticle)),
             SvgPicture.asset(Adress.myArticlesIc),
             SvgPicture.asset(Adress.myProfile),
           ],
