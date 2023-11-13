@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/paths.dart';
@@ -43,21 +44,34 @@ class NickNamePage extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding:  EdgeInsets.fromLTRB(size.width/11.02564102564103, size.height/34.51851851851852, size.width/11.02564102564103, 0),
+                padding: EdgeInsets.fromLTRB(size.width / 11.02,
+                    size.height / 34.51, size.width / 11.02, 0),
                 child: TextField(
                   controller: nickName,
                   textDirection: TextDirection.rtl,
                   decoration: InputDecoration(
+                    contentPadding: EdgeInsets.symmetric(
+                        vertical: size.height / 40, horizontal: 10),
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(color: SolidColors.black),
+                      borderRadius: BorderRadius.circular(15),
+                      borderSide:
+                          BorderSide(color: SolidColors.black, width: 2),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(color: SolidColors.primaryColor),
+                      borderRadius: BorderRadius.circular(15),
+                      borderSide:
+                          BorderSide(color: SolidColors.primaryColor, width: 2),
                     ),
                     hintText: Strings.nickname_str,
-                    prefixIcon: SvgPicture.asset(Adress.ic_nickName_eadite,width: size.width/24,height: size.height/24,)
+                    suffixIconConstraints: BoxConstraints(
+                      maxHeight: 48.0,
+                    ),
+                    suffixIcon: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: SvgPicture.asset(
+                        Adress.ic_nickName_eadite,
+                      ),
+                    ),
                   ),
                 ),
               ),
