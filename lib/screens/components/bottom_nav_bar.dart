@@ -61,7 +61,16 @@ class BottomNavBar extends StatelessWidget {
                 //   );
                 // },
                 child: SvgPicture.asset(Adress.addArticle)),
-            SvgPicture.asset(Adress.myArticlesIc),
+            InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => LogInTwoPage(),
+                    ),
+                  );
+                },
+                child: SvgPicture.asset(Adress.myArticlesIc)),
             SvgPicture.asset(Adress.myProfile),
           ],
         ));
