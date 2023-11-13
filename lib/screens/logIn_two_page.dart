@@ -23,7 +23,7 @@ class LogInTwoPage extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(top: size.height / 8.62962962962963),
                 child: Text(
-                  Strings.welcome,
+                  Strings.welcome_str,
                   style: TextStyle(
                       fontWeight: FontWeight.w700,
                       fontSize: 20,
@@ -37,7 +37,7 @@ class LogInTwoPage extends StatelessWidget {
                   height: size.height / 18.64,
                   child: Text(
                     textAlign: TextAlign.center,
-                    Strings.shouldLogIn,
+                    Strings.shouldLogIn_str,
                     style: TextStyle(
                         fontWeight: FontWeight.w400,
                         fontSize: 16,
@@ -49,7 +49,6 @@ class LogInTwoPage extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.fromLTRB(0, size.height / 11.65, 0, 0),
                 child: Container(
-                 
                   width: size.width / 3.071428571428571,
                   height: size.height / 18.64,
                   decoration: BoxDecoration(
