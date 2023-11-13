@@ -75,3 +75,17 @@ class NotificationsPagePublic {
     required this.noticeTitle,
   });
 }
+class NotificationsPageSystem {
+  String idArticleUr;
+  String iconNoticeUr;
+  String noticeText;
+  String timeNotice;
+ 
+  NotificationsPageSystem({
+    required this.idArticleUr,
+    required this.iconNoticeUr,
+    required this.noticeText,
+    required this.timeNotice,
+
+  });
+}
