@@ -3,9 +3,9 @@ import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
-import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/screens/home_page.dart';
 
+// ignore: must_be_immutable
 class Notifications extends StatefulWidget {
   double titleSize;
   Notifications({required this.titleSize});
@@ -16,6 +16,8 @@ class Notifications extends StatefulWidget {
 
 class _NotificationsState extends State<Notifications>
     with TickerProviderStateMixin {
+  
+  
   late final TabController _tabController;
 
   @override
