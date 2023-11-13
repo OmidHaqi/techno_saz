@@ -13,7 +13,7 @@ class Data_Class {
     HashTagModel(title: "کاتلین"),
     HashTagModel(title: "وب"),
     HashTagModel(title: "سلامتی"),
-    HashTagModel(title: "هوش مصنوعی"),
+    HashTagModel(title: "پایتون"),
     HashTagModel(title: "دارت"),
     HashTagModel(title: "فلاتر"),
     HashTagModel(title: "تکنولوژی"),
