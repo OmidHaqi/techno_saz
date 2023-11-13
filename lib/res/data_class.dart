@@ -535,4 +535,31 @@ ________________________________________
         whatTimeOfDay: "3:16" + " " + Strings.pm_str,
         noticeTitle: "به مقاله شما نظر داد."),
   ];
+  static List<NotificationsPageSystem> NotificationsPageSystemModelList = [
+    NotificationsPageSystem(
+        idArticleUr: "1",
+        iconNoticeUr: Adress.ic_profile_NotificationPage,
+        noticeText: "تنظیمات حساب شما بروزرسانی شد.",
+        timeNotice: "جدید"),
+    NotificationsPageSystem(
+        idArticleUr: "2",
+        iconNoticeUr: Adress.ic_updating_NotificationPage,
+        noticeText: "آپدیت جدید در دسترس است.",
+        timeNotice: "جدید"),
+    NotificationsPageSystem(
+        idArticleUr: "3",
+        iconNoticeUr: Adress.ic_myFiles_NotificationPage,
+        noticeText: "حافظه شما پر است.    ",
+        timeNotice: "جدید"),
+    NotificationsPageSystem(
+        idArticleUr: "4",
+        iconNoticeUr: Adress.ic_saved_NotificationPage,
+        noticeText: "‘غذای فرانسوی’ با موفقیت ذخیره شد.",
+        timeNotice: "جدید"),
+    NotificationsPageSystem(
+        idArticleUr: "5",
+        iconNoticeUr: Adress.ic_successfully_NotificationPage,
+        noticeText: "ایمیلتان با موفقیت تایید شد !",
+        timeNotice: "جدید"),
+  ];
 }
