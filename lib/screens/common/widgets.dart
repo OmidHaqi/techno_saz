@@ -4,12 +4,10 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/screens/home_page.dart';
 
-Future customDialoge(
+customDialoge(
   BuildContext context, {
   final GestureTapCallback? onTap,
-  final List<Widget>? actions,
-  var arguments,
-}) {
+  final List<Widget>? actions,}){
   return showDialog(
     context: context,
     builder: (context) {
@@ -40,10 +38,11 @@ Future customDialoge(
                   alignment: Alignment.center,
                   children: [
                     Container(
-                        padding: EdgeInsets.all(42),
-                        decoration: BoxDecoration(
-                            color: SolidColors.primaryColor,
-                            shape: BoxShape.circle),),
+                      padding: EdgeInsets.all(42),
+                      decoration: BoxDecoration(
+                          color: SolidColors.primaryColor,
+                          shape: BoxShape.circle),
+                    ),
                     Icon(Icons.person, size: 50, color: Colors.white)
                   ],
                 ),
