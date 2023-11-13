@@ -31,4 +31,6 @@ class Strings {
   static const String minutes = "دقیقه";
   static const String article_str = "مقاله";
   static const String savedArticle_str = "نشان شده ها";
+  static const String welcome = "به تکنوساز خوش اومدی";
+  static const String shouldLogIn = "برای ارسال مطلب باید حتما ثبت نام کنی";
 }

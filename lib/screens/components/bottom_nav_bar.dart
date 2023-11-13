@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/paths.dart';
+import 'package:techno_saz/screens/logIn_two_page.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({
@@ -26,7 +27,16 @@ class BottomNavBar extends StatelessWidget {
               width: size.width / 14.4,
             ),
             SvgPicture.asset(Adress.discover),
-            SvgPicture.asset(Adress.addArticle),
+            InkWell(
+              onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => LogInTwoPage(),
+                ),
+              );
+            },
+              child: SvgPicture.asset(Adress.addArticle)),
             SvgPicture.asset(Adress.myArticlesIc),
             SvgPicture.asset(Adress.myProfile),
           ],
