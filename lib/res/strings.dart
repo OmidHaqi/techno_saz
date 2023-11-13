@@ -33,4 +33,7 @@ class Strings {
   static const String savedArticle_str = "نشان شده ها";
   static const String welcome = "به تکنوساز خوش اومدی";
   static const String shouldLogIn = "برای ارسال مطلب باید حتما ثبت نام کنی";
+  static const String verifiedEmail = "تبریک میگیم،ایمیل با موفقیت تایید شد.";
+  static const String complateLogInInfo = "لطفا اطلاعات ثبت نام رو کامل کن.";
+
 }
