@@ -5,6 +5,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/strings.dart';
+import 'package:techno_saz/screens/articles_management_page.dart';
 import 'package:techno_saz/screens/login_page.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -40,7 +41,7 @@ class _MySplashState extends State<MySplash> {
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => LogInPage(),
+          builder: (context) => ArticlesManagementPage(),
         ),
       ),
     );
