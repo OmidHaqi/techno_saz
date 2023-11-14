@@ -53,6 +53,7 @@ class Adress {
   static const myArticlesImageIdThree = "assets/images/img_photo_lab.jpg";
   static const myArticlesImageIdFour = "assets/images/img_car_game.jpg";
   static const ic_gmail = "assets/icons/ic_gmail.svg";
+  static const vc_trash = "assets/icons/vc_trash.svg";
   static const ic_mail = "assets/icons/ic_mail.svg";
   static const welcom_vc = "assets/images/svg_welcome.svg";
 
