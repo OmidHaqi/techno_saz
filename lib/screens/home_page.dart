@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
           backgroundColor: SolidColors.white,
           title: Padding(
             padding: const EdgeInsets.fromLTRB(12, 15, 12, 15),
-            child: appBar(titleSize: titleSize),
+            child: HomePagesAppbar(titleSize: titleSize),
           ),
         ),
         body: SingleChildScrollView(
