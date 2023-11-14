@@ -13,11 +13,10 @@ class NickNamePage extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
-      resizeToAvoidBottomInset: false,
-      body: Center(
-        child: Padding(
-          padding: EdgeInsets.fromLTRB(0, size.height / 7.831, 0, 0),
-          child: SingleChildScrollView(
+      body: SingleChildScrollView(
+        child: Center(
+          child: Padding(
+            padding: EdgeInsets.fromLTRB(0, size.height / 7.831, 0, 0),
             child: Column(
               children: [
                 SvgPicture.asset(
@@ -107,7 +106,7 @@ class NickNamePage extends StatelessWidget {
                         itemCount: Data_Class.tagList.length,
                         shrinkWrap: true,
                         scrollDirection: Axis.horizontal,
-                        physics: ClampingScrollPhysics(),
+                        physics: BouncingScrollPhysics(),
                         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                           childAspectRatio: 0.3,
