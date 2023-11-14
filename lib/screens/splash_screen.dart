@@ -1,14 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/strings.dart';
-import 'package:techno_saz/screens/articles_management_page.dart';
 import 'package:techno_saz/screens/login_page.dart';
-
-
 
 class MySplash extends StatefulWidget {
   @override
