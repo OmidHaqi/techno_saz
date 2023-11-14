@@ -56,13 +56,23 @@ class Adress {
   static const ic_mail = "assets/icons/ic_mail.svg";
   static const welcom_vc = "assets/images/svg_welcome.svg";
 
-  static const ic_successfully_NotificationPage = "assets/icons/ic_successfully_NotificationPage.svg";
-  static const ic_saved_NotificationPage = "assets/icons/ic_saved_NotificationPage.svg";
-  static const ic_profile_NotificationPage = "assets/icons/ic_profile_NotificationPage.svg";
-  static const ic_updating_NotificationPage = "assets/icons/ic_updating_NotificationPage.svg";
-  static const ic_myFiles_NotificationPage = "assets/icons/ic_myFiles_NotificationPage.svg";
+  static const ic_successfully_NotificationPage =
+      "assets/icons/ic_successfully_NotificationPage.svg";
+  static const ic_saved_NotificationPage =
+      "assets/icons/ic_saved_NotificationPage.svg";
+  static const ic_profile_NotificationPage =
+      "assets/icons/ic_profile_NotificationPage.svg";
+  static const ic_updating_NotificationPage =
+      "assets/icons/ic_updating_NotificationPage.svg";
+  static const ic_myFiles_NotificationPage =
+      "assets/icons/ic_myFiles_NotificationPage.svg";
   static const vc_sing_up = "assets/icons/vc_sing_up_.svg";
   static const vc_nick_name_pic = "assets/icons/vc_nick_name_pic.svg";
   static const ic_nickName_eadite = "assets/icons/ic_nickName_eadite.svg";
-  
+  static const ic_email_shape = "assets/icons/svg_email_shape.svg";
+  static const ic_verficaton_shape = "assets/icons/svg_verficaton_shape.svg";
+  static const vc_email_butommsheet_Email =
+      "assets/icons/vc_email_butommsheet_Email.svg";
+  static const vc_verficaton_butommsheet_verficaton =
+      "assets/icons/vc_verficaton_butommsheet_verficaton.svg";
 }
