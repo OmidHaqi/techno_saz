@@ -26,7 +26,6 @@ class BottomNavBar extends StatelessWidget {
               height: size.height / 31.06,
               width: size.width / 14.4,
             ),
-            SvgPicture.asset(Adress.discover),
             InkWell(
                 onTap: () {
                   showModalBottomSheet(
@@ -47,19 +46,22 @@ class BottomNavBar extends StatelessWidget {
                             decoration: BoxDecoration(
                                 border: Border(
                                     top: BorderSide(
-                                       color: SolidColors.primaryColor,
+                                      color: SolidColors.primaryColor,
                                       width: 1.5,
                                     ),
                                     right: BorderSide(
-                                       color: const Color.fromRGBO(164, 99, 77, 1),
+                                      color:
+                                          const Color.fromRGBO(164, 99, 77, 1),
                                       width: 1.5,
                                     ),
                                     left: BorderSide(
-                                      color: const Color.fromRGBO(164, 99, 77, 1),
+                                      color:
+                                          const Color.fromRGBO(164, 99, 77, 1),
                                       width: 1.5,
                                     ),
                                     bottom: BorderSide(
-                                      color:  const Color.fromRGBO(164, 99, 77, 1),
+                                      color:
+                                          const Color.fromRGBO(164, 99, 77, 1),
                                       width: 0,
                                     )),
                                 borderRadius: BorderRadius.only(
@@ -80,15 +82,7 @@ class BottomNavBar extends StatelessWidget {
                     },
                   );
                 },
-                //   onTap: () {
-                //   Navigator.push(
-                //     context,
-                //     MaterialPageRoute(
-                //       builder: (context) => LogInTwoPage(),
-                //     ),
-                //   );
-                // },
-                child: SvgPicture.asset(Adress.addArticle)),
+                child: SvgPicture.asset(Adress.discover)),
             InkWell(
                 onTap: () {
                   Navigator.push(
@@ -98,7 +92,17 @@ class BottomNavBar extends StatelessWidget {
                     ),
                   );
                 },
-                child: SvgPicture.asset(Adress.myArticlesIc)),
+
+                //   onTap: () {
+                //   Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //       builder: (context) => LogInTwoPage(),
+                //     ),
+                //   );
+                // },
+                child: SvgPicture.asset(Adress.addArticle)),
+            InkWell(child: SvgPicture.asset(Adress.myArticlesIc)),
             SvgPicture.asset(Adress.myProfile),
           ],
         ));
