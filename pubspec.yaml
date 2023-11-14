@@ -41,6 +41,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   intl: any
+  adaptive_theme: ^3.4.1
 
 dev_dependencies:
   flutter_test:
