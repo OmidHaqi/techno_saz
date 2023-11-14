@@ -35,11 +35,7 @@ class HomePagesAppbar extends StatelessWidget {
                   fontWeight: FontWeight.bold),
             ),
           )),
-          InkWell(
-              onTap: () async {
-                await customDialoge(context);
-              },
-              child: SvgPicture.asset(Adress.search)),
+          SvgPicture.asset(Adress.search),
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
             child: InkWell(
