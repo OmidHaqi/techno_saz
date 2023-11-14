@@ -25,7 +25,8 @@ class NickNamePage extends StatelessWidget {
                   height: size.height / 3.28169014084507,
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: size.height / 21.67441860465116),
+                  padding:
+                      EdgeInsets.only(top: size.height / 21.67441860465116),
                   child: Text(
                     Strings.verifiedEmail_str,
                     style: TextStyle(
@@ -163,22 +164,69 @@ class NickNamePage extends StatelessWidget {
                 ),
                 Padding(
                   padding: EdgeInsets.fromLTRB(0, size.height / 18, 0, 0),
-                  child: Container(
-                    width: size.width / 3.071428571428571,
-                    height: size.height / 18.64,
-                    decoration: BoxDecoration(
-                      color: SolidColors.primaryColor,
-                      borderRadius: BorderRadius.circular(1000),
-                    ),
-                    child: InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => HomePage(),
+                  child: InkWell(
+                    onTap: () {
+                      showModalBottomSheet(
+                        showDragHandle: true,
+                        context: context,
+                        shape: const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(24.0),
+                            topRight: Radius.circular(24.0),
                           ),
-                        );
-                      },
+                        ),
+                        builder: (BuildContext context) {
+                          return Container(
+                            height: 500,
+                            child: Padding(
+                              padding: const EdgeInsets.fromLTRB(10, 1, 10, 0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    border: Border(
+                                        top: BorderSide(
+                                          color: SolidColors.primaryColor,
+                                          width: 1.5,
+                                        ),
+                                        right: BorderSide(
+                                          color: const Color.fromRGBO(
+                                              164, 99, 77, 1),
+                                          width: 1.5,
+                                        ),
+                                        left: BorderSide(
+                                          color: const Color.fromRGBO(
+                                              164, 99, 77, 1),
+                                          width: 1.5,
+                                        ),
+                                        bottom: BorderSide(
+                                          color: const Color.fromRGBO(
+                                              164, 99, 77, 1),
+                                          width: 0,
+                                        )),
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(16.0),
+                                      topRight: Radius.circular(16.0),
+                                    )),
+                                child: Center(
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      const Text('Bottom Sheet'),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          );
+                        },
+                      );
+                    },
+                    child: Container(
+                      width: size.width / 3.071428571428571,
+                      height: size.height / 18.64,
+                      decoration: BoxDecoration(
+                        color: SolidColors.primaryColor,
+                        borderRadius: BorderRadius.circular(1000),
+                      ),
                       child: Center(
                         child: Text(
                           textAlign: TextAlign.center,
