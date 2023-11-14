@@ -21,7 +21,7 @@ customDialoge(
           );
         },
       );
-      final size = MediaQuery.of(context).size.width;
+      final sizeW = MediaQuery.of(context).size.width;
       return AlertDialog(
         scrollable: true,
         actions: actions,
@@ -30,10 +30,10 @@ customDialoge(
         content: Container(
           alignment: Alignment.topCenter,
           padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-          width: size / 18,
+          width: sizeW / 18,
           child: FittedBox(
             child: Column(
-              children: [
+              children:[
                 Stack(
                   alignment: Alignment.center,
                   children: [
