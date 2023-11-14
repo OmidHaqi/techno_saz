@@ -69,10 +69,12 @@ class Adress {
   static const vc_sing_up = "assets/icons/vc_sing_up_.svg";
   static const vc_nick_name_pic = "assets/icons/vc_nick_name_pic.svg";
   static const ic_nickName_eadite = "assets/icons/ic_nickName_eadite.svg";
-  static const ic_email_shape = "assets/icons/svg_email_shape.svg";
-  static const ic_verficaton_shape = "assets/icons/svg_verficaton_shape.svg";
+  static const ic_email_shape = "assets/icons/ic_email_shape.svg";
+  static const ic_verficaton_shape = "assets/icons/ic_verficaton_shape.svg";
   static const vc_email_butommsheet_Email =
       "assets/icons/vc_email_butommsheet_Email.svg";
   static const vc_verficaton_butommsheet_verficaton =
       "assets/icons/vc_verficaton_butommsheet_verficaton.svg";
+      static const ic_articles_managment =
+      "assets/icons/ic_articlesmanegment.svg";
 }
