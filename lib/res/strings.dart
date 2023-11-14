@@ -41,4 +41,6 @@ class Strings {
       "تبریک میگیم،ایمیل با موفقیت تایید شد.";
   static const String complateLogInInfo_str =
       "لطفا اطلاعات ثبت نام رو کامل کن.";
+      static const String article_managment_str =
+      "مدیریت مقاله ها";
 }
