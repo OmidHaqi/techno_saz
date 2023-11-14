@@ -8,24 +8,7 @@ import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/screens/articles_management_page.dart';
 import 'package:techno_saz/screens/login_page.dart';
 
-class SplashScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      localizationsDelegates: [
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      supportedLocales: [
-        Locale('fa'), // Farsi
-      ],
-      theme: ThemeData(fontFamily: 'IranYekan'),
-      home: MySplash(),
-      debugShowCheckedModeBanner: false,
-    );
-  }
-}
+
 
 class MySplash extends StatefulWidget {
   @override
