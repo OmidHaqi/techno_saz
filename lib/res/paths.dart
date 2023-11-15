@@ -1,6 +1,6 @@
 class Adress {
-  static const changeThemeLight = "assets/icons/ic_theme_light.png";  
-  static const changeThemeDark = "assets/icons/ic_theme_dark.png";  
+  static const changeThemeLight = "assets/icons/ic_theme_light.png";
+  static const changeThemeDark = "assets/icons/ic_theme_dark.png";
 
   static const save = "assets/icons/ic_save.svg";
   static const notification = "assets/icons/ic_notification.svg";
@@ -79,6 +79,19 @@ class Adress {
       "assets/icons/vc_email_butommsheet_Email.svg";
   static const vc_verficaton_butommsheet_verficaton =
       "assets/icons/vc_verficaton_butommsheet_verficaton.svg";
-      static const ic_articles_managment =
-      "assets/icons/ic_articlesmanegment.svg";
+  static const ic_articles_managment = "assets/icons/ic_articlesmanegment.svg";
+  static const img_artificial_intelligence_Managemen_page =
+      "assets/images/Img_artificial_intelligence_Managemen_page.png";
+  static const img_graduation_Managemen_page =
+      "assets/images/Img_graduation_Managemen_page.png";
+  static const Img_Camera_Managemen_page = "assets/images/";
+  static const Img_Birth_history_Managemen_page = "assets/images/Img_Birth_history_Managemen_page.png";
+  static const Img_egyptian_pyramids_Managemen_page = "assets/images/Img_egyptian_pyramids_Managemen_page.png";
+  static const Img_fashion_Managemen_page  = "assets/images/Img_fashion_Managemen_page.png";
+  static const Img_Interior_decoration_Managemen_page = "assets/images/Img_Interior_decoration_Managemen_page.png";
+  static const  Img_Santorini_Managemen_page= "assets/images/Img_Santorini_Managemen_page.png";
+  static const  img_Social_damage_in_the_family_Management_page= "assets/images/img_Social_damage_in_the_family_Management_page.png";
+  static const  = "assets/images/";
+  static const  = "assets/images/";
+  static const  = "assets/images/";
 }
