@@ -83,7 +83,7 @@ class Adress {
   static const img_artificial_intelligence_Managemen_page =
       "assets/images/Img_artificial_intelligence_Managemen_page.png";
   static const img_graduation_Managemen_page =
-      "assets/images/Img_graduation_Managemen_page.png";
+      "assets/images/img_graduation_managemen_page.png";
   static const Img_Camera_Managemen_page = "assets/images/";
   static const Img_Birth_history_Managemen_page =
       "assets/images/Img_Birth_history_Managemen_page.png";
