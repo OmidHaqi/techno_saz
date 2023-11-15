@@ -15,10 +15,13 @@ class NickNamePage extends StatelessWidget {
     var size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
+        
         child: Center(
           child: Padding(
             padding: EdgeInsets.fromLTRB(0, size.height / 7.831, 0, 0),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisSize: MainAxisSize.max,
               children: [
                 SvgPicture.asset(
                   Adress.vc_nick_name_pic,
