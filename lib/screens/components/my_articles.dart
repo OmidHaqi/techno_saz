@@ -25,7 +25,7 @@ class MyArticles extends StatelessWidget {
               Text(
                 Strings.myArticles_str,
                 style: TextStyle(
-                    color: SolidColors.textColor,
+                    
                     fontSize: 20,
                     fontWeight: FontWeight.bold),
               ),
@@ -84,7 +84,7 @@ class MyArticles extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
-                                    color: SolidColors.textColor),
+                                    ),
                               ),
                             ),
                             SvgPicture.asset(Adress.more)

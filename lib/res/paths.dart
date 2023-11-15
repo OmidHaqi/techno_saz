@@ -1,4 +1,7 @@
 class Adress {
+  static const changeThemeLight = "assets/icons/ic_theme_light.png";  
+  static const changeThemeDark = "assets/icons/ic_theme_dark.png";  
+
   static const save = "assets/icons/ic_save.svg";
   static const notification = "assets/icons/ic_notification.svg";
   static const bell = "assets/icons/ic_bell.svg";

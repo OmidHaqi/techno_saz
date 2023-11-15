@@ -25,7 +25,7 @@ class RecentArticle extends StatelessWidget {
               Text(
                 Strings.recentArticles_str,
                 style: TextStyle(
-                    color: SolidColors.textColor,
+                    
                     fontSize: 20,
                     fontWeight: FontWeight.bold),
               ),
@@ -84,7 +84,7 @@ class RecentArticle extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
-                                    color: SolidColors.textColor),
+                                    ),
                               ),
                             ),
                             SvgPicture.asset(Adress.more)

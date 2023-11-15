@@ -1,6 +1,6 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/screens/book_Marked_Page.dart';
 import 'package:techno_saz/screens/notifications.dart';
@@ -9,6 +9,7 @@ import '../../res/strings.dart';
 // ignore: must_be_immutable
 class HomePagesAppbar extends StatelessWidget {
   double titleSize;
+
   HomePagesAppbar({required this.titleSize});
   @override
   Widget build(BuildContext context) {
@@ -30,11 +31,25 @@ class HomePagesAppbar extends StatelessWidget {
               Strings.technoSaz_str,
               style: TextStyle(
                   fontSize: titleSize,
-                  color: SolidColors.textColor,
                   fontWeight: FontWeight.bold),
             ),
           )),
-          SvgPicture.asset(Adress.search),
+          Switch(
+           inactiveThumbImage: AssetImage(Adress.changeThemeLight),
+           activeThumbImage: AssetImage(Adress.changeThemeDark),
+            value: AdaptiveTheme.of(context).mode.isDark,
+            onChanged: (value) {
+              if (value) {
+                AdaptiveTheme.of(context).setDark();
+              } else {
+                AdaptiveTheme.of(context).setLight();
+              }
+            },
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right: 8),
+            child: SvgPicture.asset(Adress.search),
+          ),
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
             child: InkWell(

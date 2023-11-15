@@ -25,7 +25,6 @@ customDialoge(
       return AlertDialog(
         scrollable: true,
         actions: actions,
-        backgroundColor: Colors.white,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(36)),
         content: Container(
           alignment: Alignment.topCenter,
