@@ -16,7 +16,7 @@ class Data_Class {
     HashTagModel(title: "پایتون"),
     HashTagModel(title: "دارت"),
     HashTagModel(title: "فلاتر"),
-    HashTagModel(title: "تکنولوژی"),
+    HashTagModel(title: "تغذیه"),
     HashTagModel(title: "هنر"),
     HashTagModel(title: "ورزش"),
     HashTagModel(title: "بیزنس"),
