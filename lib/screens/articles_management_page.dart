@@ -176,7 +176,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
         ),
         ListView.builder(
           physics: BouncingScrollPhysics(),
-          itemCount: Data_Class.ArticleManagementPagepublishedModelList.length,
+          itemCount: Data_Class.ArticleManagementPagedraftModelList.length,
           itemBuilder: (context, index) {
             return Padding(
               padding: EdgeInsets.fromLTRB(size.width / 25.29,
@@ -199,7 +199,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                         borderRadius: BorderRadius.circular(5),
                         image: DecorationImage(
                             image: AssetImage(Data_Class
-                                .ArticleManagementPagepublishedModelList[index]
+                                .ArticleManagementPagedraftModelList[index]
                                 .imageArticleUr),
                             fit: BoxFit.cover),
                       ),
@@ -214,7 +214,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                           children: [
                             Text(
                               Data_Class
-                                  .ArticleManagementPagepublishedModelList[
+                                  .ArticleManagementPagedraftModelList[
                                       index]
                                   .titleArticleUr,
                               style: TextStyle(
@@ -227,7 +227,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                               children: [
                                 Text(
                                   Data_Class
-                                          .ArticleManagementPagepublishedModelList[
+                                          .ArticleManagementPagedraftModelList[
                                               index]
                                           .PublicationDateArticleUr +
                                       " | ",
@@ -235,8 +235,8 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                                 ),
                                 Text(
                                   Data_Class
-                                      .ArticleManagementPagepublishedModelList[index]
-                                      .whatTimeOfDay,
+                                      .ArticleManagementPagedraftModelList[index]
+                                    .whatTimeOfDay,
                                   style: TextStyle(fontSize: 14),
                                 )
                               ],
