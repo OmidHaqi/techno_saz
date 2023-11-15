@@ -126,9 +126,9 @@ class ArticleManagementPagedraftModel {
   String PublicationDateArticleUr;
   String readingTime;
   String whatTimeOfDay;
-  String commentArticleUr;
+
   String writersName;
-  
+  String ContentArticleUr;
 
   ArticleManagementPagedraftModel({
     required this.idArticleUr,
@@ -140,7 +140,5 @@ class ArticleManagementPagedraftModel {
     required this.ContentArticleUr,
     required this.writersName,
     required this.whatTimeOfDay,
-    
   });
 }
-
