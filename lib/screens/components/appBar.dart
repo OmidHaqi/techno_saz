@@ -3,7 +3,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/screens/book_Marked_Page.dart';
-import 'package:techno_saz/screens/common/widgets.dart';
 import 'package:techno_saz/screens/notifications.dart';
 import '../../res/strings.dart';
 
