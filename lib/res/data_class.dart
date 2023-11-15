@@ -652,10 +652,10 @@ ________________________________________
       ArticleManagementPagedraftModelList = [
     ArticleManagementPagedraftModel(
         idArticleUr: "1",
-        imageArticleUr: Adress.img_Social_damage_in_the_family_Management_page,
+        imageArticleUr: Adress.img_graduation_Managemen_page,
         titleArticleUr: " زندگی دانشجویی در امریکا",
         writerProfilePhotoUr: Adress.Img_writer_of_managing_articles,
-        PublicationDateArticleUr: Adress.Img_writer_of_managing_articles,
+        PublicationDateArticleUr: "7" + "  " + Strings.daysAgo_str,
         readingTime: "15",
         ContentArticleUr:
             """امریکا یکی از مقاصد محبوب و مورد تقاضای دانشجویان از سراسر جهان هست که می خوان در دانشگاه های معتبر و با کیفیت اون تحصیل کنن. اما زندگی دانشجویی در امریکا چه ویژگی ها و چالش هایی داره؟ در این مقاله قصد داریم به بررسی برخی از جنبه های زندگی دانشجویی در امریکا بپردازیم.
@@ -671,7 +671,7 @@ ________________________________________
         imageArticleUr: Adress.img_artificial_intelligence_Managemen_page,
         titleArticleUr: "رابطه هوش مصنوعی با انسان",
         writerProfilePhotoUr: Adress.Img_writer_of_managing_articles,
-        PublicationDateArticleUr: Adress.Img_writer_of_managing_articles,
+        PublicationDateArticleUr: "9" + "  " + Strings.daysAgo_str,
         readingTime: "17",
         ContentArticleUr:
             """هوش مصنوعی یا AI یکی از پیشرفته ترین و جذاب ترین شاخه های علم کامپیوتر هست که به مطالعه و ساخت ماشین ها و نرم افزار هایی می پردازه که می تونن به طور خودکار وضعیت ها رو تحلیل کنن، تصمیم بگیرن و یاد بگیرن. هوش مصنوعی در زمینه های مختلفی از جمله بازی های کامپیوتری، پزشکی، رباتیک، امنیت، تجارت و آموزش کاربرد داره و هر روز بیشتر و بیشتر در زندگی روزمره ما نفوذ می کنه.
@@ -688,7 +688,7 @@ ________________________________________
         imageArticleUr: Adress.Img_Santorini_Managemen_page,
         titleArticleUr: "جزیره ی سانتورینی",
         writerProfilePhotoUr: Adress.Img_writer_of_managing_articles,
-        PublicationDateArticleUr: Adress.Img_writer_of_managing_articles,
+        PublicationDateArticleUr: "3" + "  " + Strings.daysAgo_str,
         readingTime: "13",
         ContentArticleUr:
             """جزیره ی سانتورینی یا تیرا یکی از زیباترین و مشهورترین جزایر یونان هست که در دریای اژه واقع شده و بخشی از مجموعه جزایر سیکلاد هست. این جزیره با داشتن مناظر خیره کننده، آب و هوای معتدل، فرهنگ غنی و تاریخ باستانی جذابیت های زیادی برای گردشگران از سراسر جهان داره. در این مقاله قصد داریم به بررسی برخی از جاذبه های جزیره ی سانتورینی بپردازیم.
