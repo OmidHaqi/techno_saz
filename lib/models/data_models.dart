@@ -117,3 +117,30 @@ class ArticleManagementPagePublishedModel {
     required this.Visit,
   });
 }
+
+class ArticleManagementPagedraftModel {
+  String idArticleUr;
+  String imageArticleUr;
+  String titleArticleUr;
+  String writerProfilePhotoUr;
+  String PublicationDateArticleUr;
+  String readingTime;
+  String whatTimeOfDay;
+  String commentArticleUr;
+  String writersName;
+  
+
+  ArticleManagementPagedraftModel({
+    required this.idArticleUr,
+    required this.imageArticleUr,
+    required this.titleArticleUr,
+    required this.writerProfilePhotoUr,
+    required this.PublicationDateArticleUr,
+    required this.readingTime,
+    required this.ContentArticleUr,
+    required this.writersName,
+    required this.whatTimeOfDay,
+    
+  });
+}
+
