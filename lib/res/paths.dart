@@ -85,13 +85,26 @@ class Adress {
   static const img_graduation_Managemen_page =
       "assets/images/Img_graduation_Managemen_page.png";
   static const Img_Camera_Managemen_page = "assets/images/";
-  static const Img_Birth_history_Managemen_page = "assets/images/Img_Birth_history_Managemen_page.png";
-  static const Img_egyptian_pyramids_Managemen_page = "assets/images/Img_egyptian_pyramids_Managemen_page.png";
-  static const Img_fashion_Managemen_page  = "assets/images/Img_fashion_Managemen_page.png";
-  static const Img_Interior_decoration_Managemen_page = "assets/images/Img_Interior_decoration_Managemen_page.png";
-  static const  Img_Santorini_Managemen_page= "assets/images/Img_Santorini_Managemen_page.png";
-  static const  img_Social_damage_in_the_family_Management_page= "assets/images/img_Social_damage_in_the_family_Management_page.png";
-  static const  = "assets/images/";
-  static const  = "assets/images/";
-  static const  = "assets/images/";
+  static const Img_Birth_history_Managemen_page =
+      "assets/images/Img_Birth_history_Managemen_page.png";
+  static const Img_egyptian_pyramids_Managemen_page =
+      "assets/images/Img_egyptian_pyramids_Managemen_page.png";
+  static const Img_fashion_Managemen_page =
+      "assets/images/Img_fashion_Managemen_page.png";
+  static const Img_Interior_decoration_Managemen_page =
+      "assets/images/Img_Interior_decoration_Managemen_page.png";
+  static const Img_Santorini_Managemen_page =
+      "assets/images/Img_Santorini_Managemen_page.png";
+  static const img_Social_damage_in_the_family_Management_page =
+      "assets/images/img_Social_damage_in_the_family_Management_page.png";
+  static const Img_solar_system_Managemen_page =
+      "assets/images/Img_solar_system_Managemen_page.png";
+  static const Img_tattoo_Managemen_page =
+      "assets/images/Img_tattoo_Managemen_page.png";
+  static const Img_team_work_Managemen_page =
+      "assets/images/Img_team_work_Managemen_page.png";
+  static const Img_types_of_houses_Managemen_page =
+      "assets/images/Img_types_of_houses_Managemen_page.png";
+  static const Img_writer_of_managing_articles =
+      "assets/images/Img_writer_of_managing_articles.png";
 }
