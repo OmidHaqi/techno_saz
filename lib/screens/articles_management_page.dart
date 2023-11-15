@@ -114,8 +114,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                         ],
                         borderRadius: BorderRadius.circular(5),
                         image: DecorationImage(
-                            image: AssetImage(Data_Class
-                                .ArticlePageModelList[index].imageArticleUr),
+                            image: AssetImage(Data_Class.ArticleManagementPageModelList[index].imageArticleUr),
                             fit: BoxFit.cover),
                       ),
                     ),
