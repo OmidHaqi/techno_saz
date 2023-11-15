@@ -38,7 +38,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
       appBar: AppBar(
         automaticallyImplyLeading: false,
         elevation: 0,
-        backgroundColor: SolidColors.white,
+        
         title: Column(
           children: [
             Row(
@@ -51,7 +51,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                   Strings.article_managment_str,
                   style: TextStyle(
                       fontSize: widget.titleSize,
-                      color: SolidColors.textColor,
+                      
                       fontWeight: FontWeight.bold),
                 ),
                 Expanded(
