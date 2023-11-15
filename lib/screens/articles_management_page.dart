@@ -92,7 +92,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
       body: TabBarView(controller: _tabcontroler, children: [
         ListView.builder(
           physics: BouncingScrollPhysics(),
-          itemCount: Data_Class.ArticlePageModelList.length,
+          itemCount: Data_Class.ArticleManagementPagepublishedModelList.length,
           itemBuilder: (context, index) {
             return Padding(
               padding: EdgeInsets.fromLTRB(size.width / 25.29,
@@ -114,7 +114,9 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                         ],
                         borderRadius: BorderRadius.circular(5),
                         image: DecorationImage(
-                            image: AssetImage(Data_Class.ArticleManagementPageModelList[index].imageArticleUr),
+                            image: AssetImage(Data_Class
+                                .ArticleManagementPagepublishedModelList[index]
+                                .imageArticleUr),
                             fit: BoxFit.cover),
                       ),
                     ),
@@ -127,12 +129,10 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              Data_Class.NotificationsPagePublicModelList[index]
-                                      .writersName +
-                                  "." +
-                                  Data_Class
-                                      .NotificationsPagePublicModelList[index]
-                                      .noticeTitle,
+                              Data_Class
+                                  .ArticleManagementPagepublishedModelList[
+                                      index]
+                                  .titleArticleUr,
                               style: TextStyle(
                                   fontWeight: FontWeight.w600, fontSize: 16),
                             ),
@@ -143,16 +143,18 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                               children: [
                                 Text(
                                   Data_Class
-                                          .NotificationsPagePublicModelList[
+                                          .ArticleManagementPagepublishedModelList[
                                               index]
-                                          .aFewDaysOrHoursAgo +
+                                          .PublicationDateArticleUr +
                                       " | ",
                                   style: TextStyle(fontSize: 14),
                                 ),
                                 Text(
                                   Data_Class
-                                      .NotificationsPagePublicModelList[index]
-                                      .whatTimeOfDay,
+                                          .ArticleManagementPagepublishedModelList[
+                                              index]
+                                          .Visit +
+                                      " بازدید",
                                   style: TextStyle(fontSize: 14),
                                 )
                               ],
