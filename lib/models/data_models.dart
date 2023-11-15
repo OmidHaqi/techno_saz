@@ -75,21 +75,22 @@ class NotificationsPagePublic {
     required this.noticeTitle,
   });
 }
+
 class NotificationsPageSystem {
   String idArticleUr;
   String iconNoticeUr;
   String noticeText;
   String timeNotice;
- 
+
   NotificationsPageSystem({
     required this.idArticleUr,
     required this.iconNoticeUr,
     required this.noticeText,
     required this.timeNotice,
-
   });
-  }
-class ArticleManagementPageModel {
+}
+
+class ArticleManagementPagePublishedModel {
   String idArticleUr;
   String imageArticleUr;
   String titleArticleUr;
@@ -102,8 +103,7 @@ class ArticleManagementPageModel {
   String writersName;
   String Visit;
 
-
-  ArticleManagementPageModel({
+  ArticleManagementPagePublishedModel({
     required this.idArticleUr,
     required this.imageArticleUr,
     required this.titleArticleUr,
