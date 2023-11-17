@@ -5,6 +5,7 @@ import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
+import 'package:techno_saz/screens/home_page.dart';
 
 // ignore: must_be_immutable
 class NickNamePage extends StatelessWidget {
@@ -461,6 +462,17 @@ class NickNamePage extends StatelessWidget {
                                                                               .height /
                                                                           30),
                                                               child: InkWell(
+                                                                onTap: () {
+                                                                  Navigator
+                                                                      .push(
+                                                                    context,
+                                                                    MaterialPageRoute(
+                                                                      builder:
+                                                                          (context) =>
+                                                                              HomePage(),
+                                                                    ),
+                                                                  );
+                                                                },
                                                                 child:
                                                                     Container(
                                                                   width: size
@@ -541,7 +553,7 @@ class NickNamePage extends StatelessWidget {
                       width: size.width / 3.071428571428571,
                       height: size.height / 18.64,
                       decoration: BoxDecoration(
-                        color:SolidColors.primaryColor,
+                        color: SolidColors.primaryColor,
                         borderRadius: BorderRadius.circular(1000),
                       ),
                       child: Center(
