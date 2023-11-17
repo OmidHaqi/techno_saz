@@ -27,7 +27,7 @@ class LogInTwoPage extends StatelessWidget {
                   style: TextStyle(
                       fontWeight: FontWeight.w700,
                       fontSize: 20,
-                      color: SolidColors.textColor),
+                      ),
                 ),
               ),
               Padding(
@@ -42,7 +42,7 @@ class LogInTwoPage extends StatelessWidget {
                         fontWeight: FontWeight.w400,
                         fontSize: 16,
                         height: 1.5,
-                        color: SolidColors.textColor),
+                        ),
                   ),
                 ),
               ),
