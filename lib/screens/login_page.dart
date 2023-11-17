@@ -27,7 +27,7 @@ class LogInPage extends StatelessWidget {
                   style: TextStyle(
                       fontWeight: FontWeight.w400,
                       fontSize: 48,
-                      color: SolidColors.textColor),
+                      ),
                 ),
               ),
               Container(
@@ -132,7 +132,7 @@ class LogInPage extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.w600,
                         fontSize: 20,
-                        color: SolidColors.textColor),
+                       ),
                   ),
                   Padding(
                     padding:
