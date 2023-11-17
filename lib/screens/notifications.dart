@@ -46,11 +46,11 @@ class _NotificationsState extends State<Notifications>
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.white,
+      
       appBar: AppBar(
         automaticallyImplyLeading: false,
         elevation: 0,
-        backgroundColor: SolidColors.white,
+        
         title: Column(
           children: [
             Padding(
@@ -65,7 +65,7 @@ class _NotificationsState extends State<Notifications>
                     "اعلان‌ها",
                     style: TextStyle(
                         fontSize: widget.titleSize,
-                        color: SolidColors.textColor,
+                        
                         fontWeight: FontWeight.bold),
                   ),
                   Expanded(
@@ -215,7 +215,7 @@ class GeneralNotice extends StatelessWidget {
                           child: Align(
                             alignment: Alignment.centerLeft,
                             child: Container(
-                              color: Color.fromARGB(255, 255, 255, 255),
+                              
                               width: 83,
                               height: 50,
                               child: Row(
