@@ -142,3 +142,27 @@ class ArticleManagementPagedraftModel {
     required this.whatTimeOfDay,
   });
 }
+
+class ArticleManagementPageAwaitingConfirmationModel {
+  String idArticleUr;
+  String imageArticleUr;
+  String titleArticleUr;
+  String writerProfilePhotoUr;
+  String PublicationDateArticleUr;
+  String readingTime;
+  String whatTimeOfDay;
+  String writersName;
+  String ContentArticleUr;
+
+  ArticleManagementPageAwaitingConfirmationModel({
+    required this.idArticleUr,
+    required this.imageArticleUr,
+    required this.titleArticleUr,
+    required this.writerProfilePhotoUr,
+    required this.PublicationDateArticleUr,
+    required this.readingTime,
+    required this.ContentArticleUr,
+    required this.writersName,
+    required this.whatTimeOfDay,
+  });
+}
