@@ -35,7 +35,7 @@ class NickNamePage extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.w400,
                         fontSize: 17,
-                        color: SolidColors.textColor),
+                        ),
                   ),
                 ),
                 Padding(
@@ -47,7 +47,7 @@ class NickNamePage extends StatelessWidget {
                         fontWeight: FontWeight.w700,
                         fontSize: 17,
                         height: 1.5,
-                        color: SolidColors.textColor),
+                        ),
                   ),
                 ),
                 Padding(
@@ -97,13 +97,13 @@ class NickNamePage extends StatelessWidget {
                         fontWeight: FontWeight.w700,
                         fontSize: 12,
                         height: 1.5,
-                        color: SolidColors.textColor),
+                        ),
                   ),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: size.height / 25.88),
                   child: Container(
-                    color: const Color.fromARGB(255, 255, 255, 255),
+                    
                     width: size.width / 1.11,
                     height: size.height / 11.79,
                     child: GridView.builder(
@@ -140,7 +140,7 @@ class NickNamePage extends StatelessWidget {
                                         child: Text(
                                           "# ",
                                           style: TextStyle(
-                                              color: SolidColors.onPrimaryColor,
+                                              
                                               fontSize: 17,
                                               fontWeight: FontWeight.w300),
                                         ),
@@ -151,7 +151,7 @@ class NickNamePage extends StatelessWidget {
                                         child: Text(
                                           Data_Class.tagList[index].title,
                                           style: TextStyle(
-                                              color: SolidColors.onPrimaryColor,
+                                             
                                               fontSize: 17,
                                               fontWeight: FontWeight.w300),
                                         ),
