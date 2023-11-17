@@ -279,8 +279,8 @@ class NickNamePage extends StatelessWidget {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsets.fromLTRB(
-                                            0, size.height / 30, 0, 0),
+                                        padding: EdgeInsets.only(
+                                            top: size.height / 30),
                                         child: InkWell(
                                           onTap: () {
                                             showModalBottomSheet(
@@ -364,7 +364,7 @@ class NickNamePage extends StatelessWidget {
                                                               child: SvgPicture
                                                                   .asset(
                                                                 Adress
-                                                                    .vc_email_butommsheet_Email,
+                                                                    .vc_verficaton_butommsheet_verficaton,
                                                                 // width: size.width / 1.64,
                                                                 // height: size.height / 3.14,
                                                               ),
@@ -377,7 +377,7 @@ class NickNamePage extends StatelessWidget {
                                                                           42.8),
                                                               child: Text(
                                                                 Strings
-                                                                    .enter_your_email_str,
+                                                                    .enter_verified_email_code_str,
                                                                 style: TextStyle(
                                                                     fontSize:
                                                                         17,
@@ -433,7 +433,7 @@ class NickNamePage extends StatelessWidget {
                                                                             2),
                                                                   ),
                                                                   hintText: Strings
-                                                                      .email_str,
+                                                                      .verified_code_str,
                                                                   suffixIconConstraints:
                                                                       BoxConstraints(
                                                                     maxHeight:
@@ -448,7 +448,7 @@ class NickNamePage extends StatelessWidget {
                                                                     child: SvgPicture
                                                                         .asset(
                                                                       Adress
-                                                                          .ic_email_shape,
+                                                                          .ic_verficaton_shape,
                                                                     ),
                                                                   ),
                                                                 ),
@@ -456,35 +456,45 @@ class NickNamePage extends StatelessWidget {
                                                             ),
                                                             Padding(
                                                               padding: EdgeInsets
-                                                                  .fromLTRB(
-                                                                      0,
-                                                                      size.height /
-                                                                          30,
-                                                                      0,
-                                                                      0),
+                                                                  .only(
+                                                                      top: size
+                                                                              .height /
+                                                                          30),
                                                               child: InkWell(
-
-                                                                  // child: Container(
-                                                                  //   width: size.width / 3.071428571428571,
-                                                                  //   height: size.height / 18.64,
-                                                                  //   decoration: BoxDecoration(
-                                                                  //     color: SolidColors.primaryColor,
-                                                                  //     borderRadius:
-                                                                  //         BorderRadius.circular(1000),
-                                                                  //   ),
-                                                                  //   child: Center(
-                                                                  //     child: Text(
-                                                                  //       textAlign: TextAlign.center,
-                                                                  //       Strings.countinu_str,
-                                                                  //       style: TextStyle(
-                                                                  //           fontWeight: FontWeight.w400,
-                                                                  //           fontSize: 24,
-                                                                  //           color: SolidColors
-                                                                  //               .onPrimaryColor),
-                                                                  //     ),
-                                                                  //   ),
-                                                                  // ),
+                                                                child:
+                                                                    Container(
+                                                                  width: size
+                                                                          .width /
+                                                                      3.071428571428571,
+                                                                  height:
+                                                                      size.height /
+                                                                          18.64,
+                                                                  decoration:
+                                                                      BoxDecoration(
+                                                                    color: SolidColors
+                                                                        .primaryColor,
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
+                                                                            1000),
                                                                   ),
+                                                                  child: Center(
+                                                                    child: Text(
+                                                                      textAlign:
+                                                                          TextAlign
+                                                                              .center,
+                                                                      Strings
+                                                                          .countinu_str,
+                                                                      style: TextStyle(
+                                                                          fontWeight: FontWeight
+                                                                              .w400,
+                                                                          fontSize:
+                                                                              24,
+                                                                          color:
+                                                                              SolidColors.onPrimaryColor),
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                              ),
                                                             ),
                                                           ],
                                                         ),
@@ -516,27 +526,6 @@ class NickNamePage extends StatelessWidget {
                                               ),
                                             ),
                                           ),
-
-                                          // child: Container(
-                                          //   width: size.width / 3.071428571428571,
-                                          //   height: size.height / 18.64,
-                                          //   decoration: BoxDecoration(
-                                          //     color: SolidColors.primaryColor,
-                                          //     borderRadius:
-                                          //         BorderRadius.circular(1000),
-                                          //   ),
-                                          //   child: Center(
-                                          //     child: Text(
-                                          //       textAlign: TextAlign.center,
-                                          //       Strings.countinu_str,
-                                          //       style: TextStyle(
-                                          //           fontWeight: FontWeight.w400,
-                                          //           fontSize: 24,
-                                          //           color: SolidColors
-                                          //               .onPrimaryColor),
-                                          //     ),
-                                          //   ),
-                                          // ),
                                         ),
                                       ),
                                     ],
@@ -552,7 +541,7 @@ class NickNamePage extends StatelessWidget {
                       width: size.width / 3.071428571428571,
                       height: size.height / 18.64,
                       decoration: BoxDecoration(
-                        color: SolidColors.primaryColor,
+                        color: Color.fromARGB(255, 33, 211, 21),
                         borderRadius: BorderRadius.circular(1000),
                       ),
                       child: Center(
