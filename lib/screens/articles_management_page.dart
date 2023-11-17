@@ -214,8 +214,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                           children: [
                             Text(
                               Data_Class
-                                  .ArticleManagementPagedraftModelList[
-                                      index]
+                                  .ArticleManagementPagedraftModelList[index]
                                   .titleArticleUr,
                               style: TextStyle(
                                   fontWeight: FontWeight.w600, fontSize: 16),
@@ -235,8 +234,9 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                                 ),
                                 Text(
                                   Data_Class
-                                      .ArticleManagementPagedraftModelList[index]
-                                    .whatTimeOfDay,
+                                      .ArticleManagementPagedraftModelList[
+                                          index]
+                                      .whatTimeOfDay,
                                   style: TextStyle(fontSize: 14),
                                 )
                               ],
@@ -259,9 +259,91 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
             );
           },
         ),
-        Center(
-          child: Text("boos"),
-        )
+        ListView.builder(
+          physics: BouncingScrollPhysics(),
+          itemCount: Data_Class.ArticleManagementPagedraftModelList.length,
+          itemBuilder: (context, index) {
+            return Padding(
+              padding: EdgeInsets.fromLTRB(size.width / 25.29,
+                  size.height / 58.25, size.width / 25.29, 0),
+              child: Container(
+                width: size.width / 1.1,
+                height: size.height / 11.65,
+                child: Row(
+                  children: [
+                    Container(
+                      width: size.width / 5.375,
+                      height: size.height / 11.65,
+                      decoration: BoxDecoration(
+                        boxShadow: <BoxShadow>[
+                          BoxShadow(
+                              blurRadius: 4,
+                              color: Color.fromARGB(78, 164, 99, 77),
+                              offset: Offset(2, 4)),
+                        ],
+                        borderRadius: BorderRadius.circular(5),
+                        image: DecorationImage(
+                            image: AssetImage(Data_Class
+                                .ArticleManagementPagedraftModelList[index]
+                                .imageArticleUr),
+                            fit: BoxFit.cover),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(0, 0, size.width / 33.07, 0),
+                      child: Container(
+                        width: size.width / 1.8,
+                        height: size.height / 15.53,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              Data_Class
+                                  .ArticleManagementPagedraftModelList[index]
+                                  .titleArticleUr,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w600, fontSize: 16),
+                            ),
+                            SizedBox(
+                              height: 13,
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  Data_Class
+                                          .ArticleManagementPagedraftModelList[
+                                              index]
+                                          .PublicationDateArticleUr +
+                                      " | ",
+                                  style: TextStyle(fontSize: 14),
+                                ),
+                                Text(
+                                  Data_Class
+                                      .ArticleManagementPagedraftModelList[
+                                          index]
+                                      .whatTimeOfDay,
+                                  style: TextStyle(fontSize: 14),
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Padding(
+                            padding: EdgeInsets.only(left: size.width / 28.66),
+                            child: SvgPicture.asset(Adress.vc_trash),
+                          )),
+                    ),
+                  ],
+                ),
+              ),
+            );
+          },
+        ),
       ]),
     );
   }
