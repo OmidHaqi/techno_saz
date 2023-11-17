@@ -8,6 +8,7 @@ import 'package:techno_saz/screens/home_page.dart';
 
 // ignore: must_be_immutable
 class ArticlesManagementPage extends StatefulWidget {
+  
   double titleSize;
   ArticlesManagementPage({required this.titleSize});
 
