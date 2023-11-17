@@ -20,7 +20,6 @@ class BookMarkedPage extends StatelessWidget {
           automaticallyImplyLeading: false,
           toolbarHeight: 90.0,
           elevation: 0,
-          backgroundColor: SolidColors.white,
           title: Container(
             decoration: BoxDecoration(
               border: Border(
@@ -43,9 +42,7 @@ class BookMarkedPage extends StatelessWidget {
                       Text(
                         Strings.bookmarked_str,
                         style: TextStyle(
-                            fontSize: titleSize,
-                            color: SolidColors.textColor,
-                            fontWeight: FontWeight.bold),
+                            fontSize: titleSize, fontWeight: FontWeight.bold),
                       ),
                       Expanded(
                         child: Align(
@@ -72,10 +69,8 @@ class BookMarkedPage extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Text(
                       "24" + Strings.article_str,
-                      style: TextStyle(
-                          fontSize: 14,
-                          color: SolidColors.textColor,
-                          fontWeight: FontWeight.w300),
+                      style:
+                          TextStyle(fontSize: 14, fontWeight: FontWeight.w300),
                     ),
                   ),
                 ),
@@ -133,6 +128,7 @@ class BookMarkedPage extends StatelessWidget {
                                   children: [
                                     SizedBox(
                                       width: size.width / 2.8,
+                                      height: size.height / 20,
                                       child: Text(
                                         Data_Class
                                             .BookMarkedArticlePageModelList[
