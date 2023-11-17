@@ -541,7 +541,7 @@ class NickNamePage extends StatelessWidget {
                       width: size.width / 3.071428571428571,
                       height: size.height / 18.64,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 33, 211, 21),
+                        color:SolidColors.primaryColor,
                         borderRadius: BorderRadius.circular(1000),
                       ),
                       child: Center(
