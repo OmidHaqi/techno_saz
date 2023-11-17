@@ -44,4 +44,7 @@ class Strings {
   static const String article_managment_str = "مدیریت مقاله ها";
   static const String enter_your_email_str = "ایمیلت رو وارد کن!";
   static const String email_str = "ایمیل";
+  static const String enter_verified_email_code_str =
+      "لطفا کد فعالسازی ارسال شده به ایمیل‌تان را وارد کنید.";
+  static const String verified_code_str = "کد فعالسازی";
 }
