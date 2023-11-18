@@ -43,9 +43,9 @@ class MyApp extends StatelessWidget {
             onSurface: SolidColors.black),
       ),
       dark: ThemeData(
-fontFamily: 'IranYekan',
-scaffoldBackgroundColor: SolidColors.black,
-            colorScheme: ColorScheme(
+        fontFamily: 'IranYekan',
+        scaffoldBackgroundColor: SolidColors.black,
+        colorScheme: ColorScheme(
             brightness: Brightness.dark,
             primary: const Color.fromARGB(255, 26, 21, 19),
             onPrimary: SolidColors.onPrimaryColor,
@@ -57,11 +57,9 @@ scaffoldBackgroundColor: SolidColors.black,
             onBackground: const Color.fromARGB(255, 255, 255, 255),
             surface: const Color.fromARGB(255, 0, 0, 0),
             onSurface: const Color.fromARGB(255, 255, 255, 255)),
-        
       ),
       initial: savedThemeMode ?? AdaptiveThemeMode.light,
       builder: (theme, darkTheme) => MaterialApp(
-        
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
           GlobalWidgetsLocalizations.delegate,
