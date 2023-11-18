@@ -6,6 +6,7 @@ import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/screens/login_page.dart';
 
+
 class MySplash extends StatefulWidget {
   @override
   _MySplashState createState() => _MySplashState();

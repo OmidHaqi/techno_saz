@@ -18,17 +18,17 @@ class ArticlesManagementPage extends StatefulWidget {
 
 class _ArticlesManagementPageState extends State<ArticlesManagementPage>
     with TickerProviderStateMixin {
-  late final TabController _tabcontroler;
+  late final TabController _tabController;
 
   @override
   void initState() {
-    _tabcontroler = TabController(length: 3, vsync: this);
+    _tabController = TabController(length: 3, vsync: this);
     super.initState();
   }
 
   @override
   void dispose() {
-    _tabcontroler.dispose;
+    _tabController.dispose;
     super.dispose();
   }
 
@@ -70,10 +70,8 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
           ],
         ),
         bottom: TabBar(
-          unselectedLabelColor: Colors.grey,
-          labelColor: Colors.black,
-          indicatorColor: Colors.black,
-          controller: _tabcontroler,
+          
+          controller: _tabController,
           tabs: [
             Tab(
               text: "منتشر شده",
@@ -87,7 +85,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
           ],
         ),
       ),
-      body: TabBarView(controller: _tabcontroler, children: [
+      body: TabBarView(controller: _tabController, children: [
         ListView.builder(
           physics: BouncingScrollPhysics(),
           itemCount: Data_Class.ArticleManagementPagepublishedModelList.length,
