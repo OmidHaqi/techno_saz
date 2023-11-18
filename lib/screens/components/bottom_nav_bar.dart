@@ -22,12 +22,12 @@ class BottomNavBar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             SvgPicture.asset(
-              Adress.home,
+              Address.home,
               color: SolidColors.primaryColor,
               height: size.height / 31.06,
               width: size.width / 14.4,
             ),
-            InkWell(child: SvgPicture.asset(Adress.discover)),
+            InkWell(child: SvgPicture.asset(Address.discover)),
             InkWell(
                 onTap: () {
                   Navigator.push(
@@ -46,18 +46,20 @@ class BottomNavBar extends StatelessWidget {
                 //     ),
                 //   );
                 // },
-                child: SvgPicture.asset(Adress.addArticle)),
+                child: SvgPicture.asset(Address.addArticle)),
             InkWell(
-              onTap: () {
+                onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => ArticlesManagementPage(titleSize: 25,),
+                      builder: (context) => ArticlesManagementPage(
+                        titleSize: 25,
+                      ),
                     ),
                   );
                 },
-              child: SvgPicture.asset(Adress.myArticlesIc)),
-            SvgPicture.asset(Adress.myProfile),
+                child: SvgPicture.asset(Address.myArticlesIc)),
+            SvgPicture.asset(Address.myProfile),
           ],
         ));
   }
