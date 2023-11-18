@@ -18,25 +18,24 @@ class HomePagesAppbar extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
-            child: SvgPicture.asset(Adress.menu),
+            child: SvgPicture.asset(Address.menu),
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
-            child: SvgPicture.asset(Adress.feather),
+            child: SvgPicture.asset(Address.feather),
           ),
           Expanded(
               child: Padding(
             padding: const EdgeInsets.fromLTRB(0, 2, 0, 0),
             child: Text(
               Strings.technoSaz_str,
-              style: TextStyle(
-                  fontSize: titleSize,
-                  fontWeight: FontWeight.bold),
+              style:
+                  TextStyle(fontSize: titleSize, fontWeight: FontWeight.bold),
             ),
           )),
           Switch(
-           inactiveThumbImage: AssetImage(Adress.changeThemeLight),
-           activeThumbImage: AssetImage(Adress.changeThemeDark),
+            inactiveThumbImage: AssetImage(Address.changeThemeLight),
+            activeThumbImage: AssetImage(Address.changeThemeDark),
             value: AdaptiveTheme.of(context).mode.isDark,
             onChanged: (value) {
               if (value) {
@@ -48,7 +47,7 @@ class HomePagesAppbar extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(right: 8),
-            child: SvgPicture.asset(Adress.search),
+            child: SvgPicture.asset(Address.search),
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
@@ -61,7 +60,7 @@ class HomePagesAppbar extends StatelessWidget {
                     ),
                   );
                 },
-                child: SvgPicture.asset(Adress.bell)),
+                child: SvgPicture.asset(Address.bell)),
           ),
           InkWell(
             onTap: () {
@@ -74,7 +73,7 @@ class HomePagesAppbar extends StatelessWidget {
             },
             child: Padding(
               padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
-              child: SvgPicture.asset(Adress.save),
+              child: SvgPicture.asset(Address.save),
             ),
           ),
         ],
