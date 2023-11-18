@@ -4,7 +4,7 @@ import 'package:techno_saz/res/strings.dart';
 
 class Data_Class {
   static Map homePagePosterMap = {
-    "imageAsset": Adress.banner,
+    "imageAsset": Address.banner,
     "titleOnBanner": Strings.titleOnBanner_str,
   };
 
@@ -25,11 +25,11 @@ class Data_Class {
   static List<ArticlePageModel> ArticlePageModelList = [
     ArticlePageModel(
         idArticleUr: "1",
-        imageArticleUr: Adress.articlesImageidOne,
+        imageArticleUr: Address.articlesImageidOne,
         titleArticleUr: """
 رژیم 15 روز تا سلامتی استاد جمشید خدادادی
 """,
-        writerProfilePhotoUr: Adress.writersImageOne,
+        writerProfilePhotoUr: Address.writersImageOne,
         PublicationDateArticleUr: "3" + "  " + Strings.daysAgo_str,
         readingTime: "5" + Strings.minutes,
         ContentArticleUr: """
@@ -40,11 +40,11 @@ class Data_Class {
         writersName: "هری پاتر"),
     ArticlePageModel(
         idArticleUr: "2",
-        imageArticleUr: Adress.articlesImageidTwo,
+        imageArticleUr: Address.articlesImageidTwo,
         titleArticleUr: """
 عسل دارویی چیست و چه تفاوتی با عسل معمولی دارد؟
 """,
-        writerProfilePhotoUr: Adress.writersImageTwo,
+        writerProfilePhotoUr: Address.writersImageTwo,
         PublicationDateArticleUr: "2" + "  " + Strings.daysAgo_str,
         readingTime: "10" + Strings.minutes,
         ContentArticleUr: """
@@ -82,11 +82,11 @@ class Data_Class {
         writersName: "اَ.ویلسون"),
     ArticlePageModel(
         idArticleUr: "3",
-        imageArticleUr: Adress.articlesImageidThree,
+        imageArticleUr: Address.articlesImageidThree,
         titleArticleUr: """
 کنترل همروندی چیست؟ 
 """,
-        writerProfilePhotoUr: Adress.writersImageThree,
+        writerProfilePhotoUr: Address.writersImageThree,
         PublicationDateArticleUr: "4" + "  " + Strings.daysAgo_str,
         readingTime: "14" + Strings.minutes,
         ContentArticleUr: """
@@ -99,11 +99,11 @@ class Data_Class {
         writersName: "شایرا"),
     ArticlePageModel(
         idArticleUr: "4",
-        imageArticleUr: Adress.articlesImageidFour,
+        imageArticleUr: Address.articlesImageidFour,
         titleArticleUr: """
 هوش احساسی چیست؟
 """,
-        writerProfilePhotoUr: Adress.writersImageFour,
+        writerProfilePhotoUr: Address.writersImageFour,
         PublicationDateArticleUr: "5" + "  " + Strings.daysAgo_str,
         readingTime: "13" + Strings.minutes,
         ContentArticleUr: """
@@ -128,10 +128,10 @@ class Data_Class {
   static List<ArticlePageModel> MyArticlePageModelList = [
     ArticlePageModel(
         idArticleUr: "1",
-        imageArticleUr: Adress.myArticlesImageIdOne,
+        imageArticleUr: Address.myArticlesImageIdOne,
         titleArticleUr:
             "آی‌مک پرو 32 اینچی احتمالاً تا سال 2025 معرفی نخواهد شد ",
-        writerProfilePhotoUr: Adress.writersImageOne,
+        writerProfilePhotoUr: Address.writersImageOne,
         PublicationDateArticleUr: "3" + "  " + Strings.daysAgo_str,
         readingTime: "5" + Strings.minutes,
         ContentArticleUr: """
@@ -145,10 +145,10 @@ class Data_Class {
         writersName: "جک بندر"),
     ArticlePageModel(
         idArticleUr: "2",
-        imageArticleUr: Adress.myArticlesImageIdTwo,
+        imageArticleUr: Address.myArticlesImageIdTwo,
         titleArticleUr: """
 تصویر روز ناسا: غبار و سحابی پرده غربی""",
-        writerProfilePhotoUr: Adress.writersImageTwo,
+        writerProfilePhotoUr: Address.writersImageTwo,
         PublicationDateArticleUr: "2" + "  " + Strings.daysAgo_str,
         readingTime: "10" + Strings.minutes,
         ContentArticleUr: """
@@ -160,11 +160,11 @@ class Data_Class {
         writersName: "آ.آدام"),
     ArticlePageModel(
         idArticleUr: "3",
-        imageArticleUr: Adress.myArticlesImageIdThree,
+        imageArticleUr: Address.myArticlesImageIdThree,
         titleArticleUr: """
 معرفی برنامه Photo Lab
 """,
-        writerProfilePhotoUr: Adress.writersImageThree,
+        writerProfilePhotoUr: Address.writersImageThree,
         PublicationDateArticleUr: "4" + "  " + Strings.daysAgo_str,
         readingTime: "14" + Strings.minutes,
         ContentArticleUr: """
@@ -179,10 +179,10 @@ class Data_Class {
         writersName: "دنیا"),
     ArticlePageModel(
         idArticleUr: "4",
-        imageArticleUr: Adress.myArticlesImageIdFour,
+        imageArticleUr: Address.myArticlesImageIdFour,
         titleArticleUr: """
 ۱۵ بازی شبیه‌ساز اتومبیل‌رانی برتر""",
-        writerProfilePhotoUr: Adress.writersImageFour,
+        writerProfilePhotoUr: Address.writersImageFour,
         PublicationDateArticleUr: "5" + "  " + Strings.daysAgo_str,
         readingTime: "13" + Strings.minutes,
         ContentArticleUr: """
@@ -197,9 +197,9 @@ class Data_Class {
   static List<ArticleBookmarkedPage> BookMarkedArticlePageModelList = [
     ArticleBookmarkedPage(
         idArticleUr: "1",
-        imageArticleUr: Adress.artc_img_Bokmrk_one,
+        imageArticleUr: Address.artc_img_Bokmrk_one,
         titleArticleUr: "نقش هوش مصنوعی و اهمیت آن در سیستم های حسابداری",
-        writerProfilePhotoUr: Adress.writersImageOne,
+        writerProfilePhotoUr: Address.writersImageOne,
         PublicationDateArticleUr: "3" + "  " + Strings.daysAgo_str,
         readingTime: "5" + Strings.minutes,
         ContentArticleUr: """هوش مصنوعی و آینده حسابداری
@@ -222,9 +222,9 @@ class Data_Class {
         writersName: "سنا عزیزی"),
     ArticleBookmarkedPage(
         idArticleUr: "2",
-        imageArticleUr: Adress.artc_img_Bokmrk_tow,
+        imageArticleUr: Address.artc_img_Bokmrk_tow,
         titleArticleUr: "رقص باله",
-        writerProfilePhotoUr: Adress.writersImageTwo,
+        writerProfilePhotoUr: Address.writersImageTwo,
         PublicationDateArticleUr: "5" + "  " + Strings.daysAgo_str,
         readingTime: "15" + Strings.minutes,
         ContentArticleUr:
@@ -242,9 +242,9 @@ class Data_Class {
         writersName: "علی شجاعی"),
     ArticleBookmarkedPage(
         idArticleUr: "3",
-        imageArticleUr: Adress.artc_img_Bokmrk_three,
+        imageArticleUr: Address.artc_img_Bokmrk_three,
         titleArticleUr: "شناخت انواع قهوه و روش های دم آوری قهوه",
-        writerProfilePhotoUr: Adress.writersImageThree,
+        writerProfilePhotoUr: Address.writersImageThree,
         PublicationDateArticleUr: "9" + "  " + Strings.daysAgo_str,
         readingTime: "20" + Strings.minutes,
         ContentArticleUr:
@@ -265,9 +265,9 @@ class Data_Class {
         writersName: "رضا شفیعی"),
     ArticleBookmarkedPage(
         idArticleUr: "4",
-        imageArticleUr: Adress.artc_img_Bokmrk_four,
+        imageArticleUr: Address.artc_img_Bokmrk_four,
         titleArticleUr: "کمبود محبت پدر چه نشانه هایی دارد؟",
-        writerProfilePhotoUr: Adress.writersImageFour,
+        writerProfilePhotoUr: Address.writersImageFour,
         PublicationDateArticleUr: "8" + "  " + Strings.daysAgo_str,
         readingTime: "6" + Strings.minutes,
         ContentArticleUr:
@@ -299,9 +299,9 @@ class Data_Class {
         writersName: "علیرضا محمدی"),
     ArticleBookmarkedPage(
         idArticleUr: "5",
-        imageArticleUr: Adress.artc_img_Bokmrk_five,
+        imageArticleUr: Address.artc_img_Bokmrk_five,
         titleArticleUr: "مطالعه گروهی؛ مزایا و راهکارها",
-        writerProfilePhotoUr: Adress.writersImageFive,
+        writerProfilePhotoUr: Address.writersImageFive,
         PublicationDateArticleUr: "7" + "  " + Strings.daysAgo_str,
         readingTime: "4" + Strings.minutes,
         ContentArticleUr: """مطالعه گروهی چیست و انواع آن کدام است؟
@@ -315,9 +315,9 @@ class Data_Class {
         writersName: "محسن نعمتی"),
     ArticleBookmarkedPage(
         idArticleUr: "6",
-        imageArticleUr: Adress.artc_img_Bokmrk_six,
+        imageArticleUr: Address.artc_img_Bokmrk_six,
         titleArticleUr: "روانشناسی آغوش و تاثیرات جالب بغل کردن",
-        writerProfilePhotoUr: Adress.writersImageSix,
+        writerProfilePhotoUr: Address.writersImageSix,
         PublicationDateArticleUr: "5" + "  " + Strings.daysAgo_str,
         readingTime: "8" + Strings.minutes,
         ContentArticleUr:
@@ -327,9 +327,9 @@ class Data_Class {
         writersName: "دنیا آسایش"),
     ArticleBookmarkedPage(
         idArticleUr: "7",
-        imageArticleUr: Adress.artc_img_Bokmrk_seven,
+        imageArticleUr: Address.artc_img_Bokmrk_seven,
         titleArticleUr: "تاثیر ریاضیات بر هوش",
-        writerProfilePhotoUr: Adress.writersImageSeven,
+        writerProfilePhotoUr: Address.writersImageSeven,
         PublicationDateArticleUr: "9" + "  " + Strings.daysAgo_str,
         readingTime: "10" + Strings.minutes,
         ContentArticleUr:
@@ -364,9 +364,9 @@ ________________________________________
         writersName: "نیما خدایی"),
     ArticleBookmarkedPage(
         idArticleUr: "8",
-        imageArticleUr: Adress.artc_img_Bokmrk_eight,
+        imageArticleUr: Address.artc_img_Bokmrk_eight,
         titleArticleUr: "سبک فرزند پروری",
-        writerProfilePhotoUr: Adress.writersImageEight,
+        writerProfilePhotoUr: Address.writersImageEight,
         PublicationDateArticleUr: "2" + "  " + Strings.daysAgo_str,
         readingTime: "4" + Strings.minutes,
         ContentArticleUr: """سبک فرزندپروری چیست؟
@@ -404,9 +404,9 @@ ________________________________________
         writersName: "راحله"),
     ArticleBookmarkedPage(
         idArticleUr: "9",
-        imageArticleUr: Adress.artc_img_Bokmrk_nine,
+        imageArticleUr: Address.artc_img_Bokmrk_nine,
         titleArticleUr: "اصول شراکت و آنچه که باید بدانید",
-        writerProfilePhotoUr: Adress.writersImageNine,
+        writerProfilePhotoUr: Address.writersImageNine,
         PublicationDateArticleUr: "1" + "  " + Strings.daysAgo_str,
         readingTime: "7" + Strings.minutes,
         ContentArticleUr:
@@ -430,9 +430,9 @@ ________________________________________
         writersName: "شقایق جعفری"),
     ArticleBookmarkedPage(
         idArticleUr: "10",
-        imageArticleUr: Adress.artc_img_Bokmrk_ten,
+        imageArticleUr: Address.artc_img_Bokmrk_ten,
         titleArticleUr: "رقص تانگو",
-        writerProfilePhotoUr: Adress.writersImageTen,
+        writerProfilePhotoUr: Address.writersImageTen,
         PublicationDateArticleUr: "8" + "  " + Strings.daysAgo_str,
         readingTime: "6" + Strings.minutes,
         ContentArticleUr:
@@ -446,119 +446,119 @@ ________________________________________
   static List<NotificationsPagePublic> NotificationsPagePublicModelList = [
     NotificationsPagePublic(
         idArticleUr: "1",
-        imageArticleUr: Adress.artc_img_Bokmrk_one,
-        writerProfilePhotoUr: Adress.writersImageOne,
+        imageArticleUr: Address.artc_img_Bokmrk_one,
+        writerProfilePhotoUr: Address.writersImageOne,
         aFewDaysOrHoursAgo: "2" + " " + Strings.daysAgo_str,
         writersName: "فاطی",
-        more: Adress.more,
+        more: Address.more,
         whatTimeOfDay: "3:45" + " " + Strings.am_str,
         noticeTitle: "به مقاله شما نظر داد."),
     NotificationsPagePublic(
         idArticleUr: "2",
-        imageArticleUr: Adress.artc_img_Bokmrk_tow,
-        writerProfilePhotoUr: Adress.writersImageTwo,
+        imageArticleUr: Address.artc_img_Bokmrk_tow,
+        writerProfilePhotoUr: Address.writersImageTwo,
         aFewDaysOrHoursAgo: "6" + " " + Strings.daysAgo_str,
         writersName: "علی",
-        more: Adress.more,
+        more: Address.more,
         whatTimeOfDay: "4:13" + " " + Strings.pm_str,
         noticeTitle: "مقاله شما را لایک کرد."),
     NotificationsPagePublic(
         idArticleUr: "3",
-        imageArticleUr: Adress.artc_img_Bokmrk_three,
-        writerProfilePhotoUr: Adress.writersImageThree,
+        imageArticleUr: Address.artc_img_Bokmrk_three,
+        writerProfilePhotoUr: Address.writersImageThree,
         aFewDaysOrHoursAgo: "5" + " " + Strings.daysAgo_str,
         writersName: "رضا",
-        more: Adress.more,
+        more: Address.more,
         whatTimeOfDay: "7:18" + " " + Strings.am_str,
         noticeTitle: "مقاله ی جدیدی منتشر کرد."),
     NotificationsPagePublic(
         idArticleUr: "4",
-        imageArticleUr: Adress.artc_img_Bokmrk_four,
-        writerProfilePhotoUr: Adress.writersImageFour,
+        imageArticleUr: Address.artc_img_Bokmrk_four,
+        writerProfilePhotoUr: Address.writersImageFour,
         aFewDaysOrHoursAgo: "10" + " " + Strings.daysAgo_str,
         writersName: "تایلر",
-        more: Adress.more,
+        more: Address.more,
         whatTimeOfDay: "12:49" + " " + Strings.pm_str,
         noticeTitle: "نظر شما را لایک کرد."),
     NotificationsPagePublic(
         idArticleUr: "5",
-        imageArticleUr: Adress.artc_img_Bokmrk_five,
-        writerProfilePhotoUr: Adress.writersImageFive,
+        imageArticleUr: Address.artc_img_Bokmrk_five,
+        writerProfilePhotoUr: Address.writersImageFive,
         aFewDaysOrHoursAgo: "4" + " " + Strings.daysAgo_str,
         writersName: "کتی",
-        more: Adress.more,
+        more: Address.more,
         whatTimeOfDay: "01:11" + " " + Strings.pm_str,
         noticeTitle: "به نظر شما پاسخ داد."),
     NotificationsPagePublic(
         idArticleUr: "5",
-        imageArticleUr: Adress.artc_img_Bokmrk_six,
-        writerProfilePhotoUr: Adress.writersImageSix,
+        imageArticleUr: Address.artc_img_Bokmrk_six,
+        writerProfilePhotoUr: Address.writersImageSix,
         aFewDaysOrHoursAgo: "7" + " " + Strings.daysAgo_str,
         writersName: "کوین",
-        more: Adress.more,
+        more: Address.more,
         whatTimeOfDay: "6:15" + " " + Strings.am_str,
         noticeTitle: "مقاله جدیدی را منتشر کرد."),
     NotificationsPagePublic(
         idArticleUr: "6",
-        imageArticleUr: Adress.artc_img_Bokmrk_seven,
-        writerProfilePhotoUr: Adress.writersImageSeven,
+        imageArticleUr: Address.artc_img_Bokmrk_seven,
+        writerProfilePhotoUr: Address.writersImageSeven,
         aFewDaysOrHoursAgo: "4" + " " + Strings.daysAgo_str,
         writersName: "ابراهام",
-        more: Adress.more,
+        more: Address.more,
         whatTimeOfDay: "5:37" + " " + Strings.pm_str,
         noticeTitle: "مقاله شما را لایک کرد."),
     NotificationsPagePublic(
         idArticleUr: "7",
-        imageArticleUr: Adress.artc_img_Bokmrk_eight,
-        writerProfilePhotoUr: Adress.writersImageEight,
+        imageArticleUr: Address.artc_img_Bokmrk_eight,
+        writerProfilePhotoUr: Address.writersImageEight,
         aFewDaysOrHoursAgo: "3" + " " + Strings.daysAgo_str,
         writersName: "مهدیس",
-        more: Adress.more,
+        more: Address.more,
         whatTimeOfDay: "14:59" + " " + Strings.pm_str,
         noticeTitle: "به مقاله شما نظر داد."),
     NotificationsPagePublic(
         idArticleUr: "8",
-        imageArticleUr: Adress.artc_img_Bokmrk_nine,
-        writerProfilePhotoUr: Adress.writersImageNine,
+        imageArticleUr: Address.artc_img_Bokmrk_nine,
+        writerProfilePhotoUr: Address.writersImageNine,
         aFewDaysOrHoursAgo: "6" + " " + Strings.daysAgo_str,
         writersName: "زلیخا",
-        more: Adress.more,
+        more: Address.more,
         whatTimeOfDay: "13:45" + " " + Strings.pm_str,
         noticeTitle: " نظر شما را لایک کرد."),
     NotificationsPagePublic(
         idArticleUr: "9",
-        imageArticleUr: Adress.artc_img_Bokmrk_ten,
-        writerProfilePhotoUr: Adress.writersImageTen,
+        imageArticleUr: Address.artc_img_Bokmrk_ten,
+        writerProfilePhotoUr: Address.writersImageTen,
         aFewDaysOrHoursAgo: "2" + " " + Strings.daysAgo_str,
         writersName: "جولیا",
-        more: Adress.more,
+        more: Address.more,
         whatTimeOfDay: "3:16" + " " + Strings.pm_str,
         noticeTitle: "به مقاله شما نظر داد."),
   ];
   static List<NotificationsPageSystem> NotificationsPageSystemModelList = [
     NotificationsPageSystem(
         idArticleUr: "1",
-        iconNoticeUr: Adress.ic_profile_NotificationPage,
+        iconNoticeUr: Address.ic_profile_NotificationPage,
         noticeText: "تنظیمات حساب شما بروزرسانی شد.",
         timeNotice: "جدید"),
     NotificationsPageSystem(
         idArticleUr: "2",
-        iconNoticeUr: Adress.ic_updating_NotificationPage,
+        iconNoticeUr: Address.ic_updating_NotificationPage,
         noticeText: "آپدیت جدید در دسترس است.",
         timeNotice: "جدید"),
     NotificationsPageSystem(
         idArticleUr: "3",
-        iconNoticeUr: Adress.ic_myFiles_NotificationPage,
+        iconNoticeUr: Address.ic_myFiles_NotificationPage,
         noticeText: "حافظه شما پر است.    ",
         timeNotice: "جدید"),
     NotificationsPageSystem(
         idArticleUr: "4",
-        iconNoticeUr: Adress.ic_saved_NotificationPage,
+        iconNoticeUr: Address.ic_saved_NotificationPage,
         noticeText: "‘غذای فرانسوی’ با موفقیت ذخیره شد.",
         timeNotice: "جدید"),
     NotificationsPageSystem(
         idArticleUr: "5",
-        iconNoticeUr: Adress.ic_successfully_NotificationPage,
+        iconNoticeUr: Address.ic_successfully_NotificationPage,
         noticeText: "ایمیلتان با موفقیت تایید شد !",
         timeNotice: "جدید"),
   ];
@@ -566,9 +566,9 @@ ________________________________________
       ArticleManagementPagepublishedModelList = [
     ArticleManagementPagePublishedModel(
         idArticleUr: "1",
-        imageArticleUr: Adress.img_Social_damage_in_the_family_Management_page,
+        imageArticleUr: Address.img_Social_damage_in_the_family_Management_page,
         titleArticleUr: "آسیب های اجتماعی در خانواده",
-        writerProfilePhotoUr: Adress.Img_writer_of_managing_articles,
+        writerProfilePhotoUr: Address.Img_writer_of_managing_articles,
         PublicationDateArticleUr: "3" + "  " + Strings.daysAgo_str,
         readingTime: "5" + Strings.minutes,
         ContentArticleUr:
@@ -584,9 +584,9 @@ ________________________________________
         Visit: "600"),
     ArticleManagementPagePublishedModel(
         idArticleUr: "2",
-        imageArticleUr: Adress.Img_Birth_history_Managemen_page,
+        imageArticleUr: Address.Img_Birth_history_Managemen_page,
         titleArticleUr: "تاریخچه تولد گرفتن",
-        writerProfilePhotoUr: Adress.Img_writer_of_managing_articles,
+        writerProfilePhotoUr: Address.Img_writer_of_managing_articles,
         PublicationDateArticleUr: "6" + "  " + Strings.daysAgo_str,
         readingTime: "8" + Strings.minutes,
         ContentArticleUr:
@@ -611,9 +611,9 @@ ________________________________________
         Visit: "200"),
     ArticleManagementPagePublishedModel(
         idArticleUr: "3",
-        imageArticleUr: Adress.Img_team_work_Managemen_page,
+        imageArticleUr: Address.Img_team_work_Managemen_page,
         titleArticleUr: "تاثیر کار تیمی در پروژه",
-        writerProfilePhotoUr: Adress.Img_writer_of_managing_articles,
+        writerProfilePhotoUr: Address.Img_writer_of_managing_articles,
         PublicationDateArticleUr: "2" + "  " + Strings.daysAgo_str,
         readingTime: "7" + Strings.minutes,
         ContentArticleUr:
@@ -629,9 +629,9 @@ ________________________________________
         Visit: "321"),
     ArticleManagementPagePublishedModel(
         idArticleUr: "4",
-        imageArticleUr: Adress.Img_fashion_Managemen_page,
+        imageArticleUr: Address.Img_fashion_Managemen_page,
         titleArticleUr: "فشن مد در 2024",
-        writerProfilePhotoUr: Adress.Img_writer_of_managing_articles,
+        writerProfilePhotoUr: Address.Img_writer_of_managing_articles,
         PublicationDateArticleUr: "7" + "  " + Strings.daysAgo_str,
         readingTime: "3" + Strings.minutes,
         ContentArticleUr:
@@ -652,9 +652,9 @@ ________________________________________
       ArticleManagementPagedraftModelList = [
     ArticleManagementPagedraftModel(
         idArticleUr: "1",
-        imageArticleUr: Adress.img_graduation_Managemen_page,
+        imageArticleUr: Address.img_graduation_Managemen_page,
         titleArticleUr: " زندگی دانشجویی در امریکا",
-        writerProfilePhotoUr: Adress.Img_writer_of_managing_articles,
+        writerProfilePhotoUr: Address.Img_writer_of_managing_articles,
         PublicationDateArticleUr: "7" + "  " + Strings.daysAgo_str,
         readingTime: "15",
         ContentArticleUr:
@@ -668,9 +668,9 @@ ________________________________________
         whatTimeOfDay: "3:45" + " " + Strings.am_str),
     ArticleManagementPagedraftModel(
         idArticleUr: "2",
-        imageArticleUr: Adress.img_artificial_intelligence_Managemen_page,
+        imageArticleUr: Address.img_artificial_intelligence_Managemen_page,
         titleArticleUr: "رابطه هوش مصنوعی با انسان",
-        writerProfilePhotoUr: Adress.Img_writer_of_managing_articles,
+        writerProfilePhotoUr: Address.Img_writer_of_managing_articles,
         PublicationDateArticleUr: "9" + "  " + Strings.daysAgo_str,
         readingTime: "17",
         ContentArticleUr:
@@ -685,9 +685,9 @@ ________________________________________
         whatTimeOfDay: "7:48" + " " + Strings.am_str),
     ArticleManagementPagedraftModel(
         idArticleUr: "3",
-        imageArticleUr: Adress.Img_Santorini_Managemen_page,
+        imageArticleUr: Address.Img_Santorini_Managemen_page,
         titleArticleUr: "جزیره ی سانتورینی",
-        writerProfilePhotoUr: Adress.Img_writer_of_managing_articles,
+        writerProfilePhotoUr: Address.Img_writer_of_managing_articles,
         PublicationDateArticleUr: "3" + "  " + Strings.daysAgo_str,
         readingTime: "13",
         ContentArticleUr:
@@ -706,9 +706,9 @@ ________________________________________
       ArticleManagementPageAwaitingConfirmationModelList = [
     ArticleManagementPageAwaitingConfirmationModel(
         idArticleUr: "1",
-        imageArticleUr: Adress.Img_Interior_decoration_Managemen_page,
+        imageArticleUr: Address.Img_Interior_decoration_Managemen_page,
         titleArticleUr: "دکوراسیون داخلی منزل",
-        writerProfilePhotoUr: Adress.Img_writer_of_managing_articles,
+        writerProfilePhotoUr: Address.Img_writer_of_managing_articles,
         PublicationDateArticleUr: "6" + "  " + Strings.daysAgo_str,
         readingTime: "15",
         ContentArticleUr:
@@ -717,9 +717,9 @@ ________________________________________
         whatTimeOfDay: "09:45" + " " + Strings.am_str),
     ArticleManagementPageAwaitingConfirmationModel(
         idArticleUr: "2",
-        imageArticleUr: Adress.Img_tattoo_Managemen_page,
+        imageArticleUr: Address.Img_tattoo_Managemen_page,
         titleArticleUr: "تتو و انواع آن",
-        writerProfilePhotoUr: Adress.Img_writer_of_managing_articles,
+        writerProfilePhotoUr: Address.Img_writer_of_managing_articles,
         PublicationDateArticleUr: "4" + "  " + Strings.daysAgo_str,
         readingTime: "6",
         ContentArticleUr:
@@ -734,12 +734,13 @@ ________________________________________
         whatTimeOfDay: "07:25" + " " + Strings.am_str),
     ArticleManagementPageAwaitingConfirmationModel(
         idArticleUr: "3",
-        imageArticleUr: Adress.Img_types_of_houses_Managemen_page,
+        imageArticleUr: Address.Img_types_of_houses_Managemen_page,
         titleArticleUr: "انواع مدل خانه",
-        writerProfilePhotoUr: Adress.Img_writer_of_managing_articles,
+        writerProfilePhotoUr: Address.Img_writer_of_managing_articles,
         PublicationDateArticleUr: "4" + "  " + Strings.daysAgo_str,
         readingTime: "8",
-        ContentArticleUr: """ مدل های خانه به شکل، سبک، طراحی و معماری خانه اطلاق می‌شود که بر اساس نیازها، سلیقه‌ها، فرهنگ‌ها و شرایط آب و هوایی متفاوت است. برخی از انواع مدل های خانه عبارتند از:
+        ContentArticleUr:
+            """ مدل های خانه به شکل، سبک، طراحی و معماری خانه اطلاق می‌شود که بر اساس نیازها، سلیقه‌ها، فرهنگ‌ها و شرایط آب و هوایی متفاوت است. برخی از انواع مدل های خانه عبارتند از:
 
 خانه سنتی: خانه‌ای که از مصالح محلی و با رعایت سنن و آداب محلی ساخته شده است. این خانه‌ها معمولا دارای حیاط، ایوان، بام، آب‌انبار و سرداب هستند. این خانه‌ها با توجه به آب و هوای منطقه، شکل و اندازه مختلفی دارند. برای مثال، خانه‌های سنتی کرمان، یزد، اصفهان، کاشان، تبریز و شیراز.
 خانه مدرن: خانه‌ای که از مصالح جدید و با استفاده از تکنولوژی و مهندسی پیشرفته ساخته شده است. این خانه‌ها معمولا دارای خطوط ساده، رنگ‌های روشن، پنجره‌های بزرگ، فضاهای باز و روشنایی زیاد هستند. این خانه‌ها با توجه به سلیقه و نیازهای مالکان، شکل و اندازه مختلفی دارند. برای مثال، خانه‌های مدرن تهران، کرج، شمال، شیراز و اصفهان.
