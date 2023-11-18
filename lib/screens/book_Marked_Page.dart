@@ -37,7 +37,7 @@ class BookMarkedPage extends StatelessWidget {
                     children: [
                       Padding(
                         padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
-                        child: SvgPicture.asset(Adress.save),
+                        child: SvgPicture.asset(Address.save),
                       ),
                       Text(
                         Strings.bookmarked_str,
@@ -56,7 +56,7 @@ class BookMarkedPage extends StatelessWidget {
                                 ),
                               );
                             },
-                            child: SvgPicture.asset(Adress.arrowLeft),
+                            child: SvgPicture.asset(Address.arrowLeft),
                           ),
                         ),
                       ),
@@ -142,7 +142,7 @@ class BookMarkedPage extends StatelessWidget {
                                             color: SolidColors.textColor),
                                       ),
                                     ),
-                                    SvgPicture.asset(Adress.more)
+                                    SvgPicture.asset(Address.more)
                                   ],
                                 ),
                               ),
