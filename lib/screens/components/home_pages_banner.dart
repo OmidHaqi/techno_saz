@@ -54,7 +54,7 @@ class HomePagesBanner extends StatelessWidget {
                           Positioned(
                             bottom: 0,
                             left: 0,
-                            child: SvgPicture.asset(Adress.wave),
+                            child: SvgPicture.asset(Address.wave),
                           ),
                           Positioned(
                             right: 10,
