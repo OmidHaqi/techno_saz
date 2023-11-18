@@ -16,7 +16,7 @@ class LogInPage extends StatelessWidget {
           child: Column(
             children: [
               SvgPicture.asset(
-                Adress.welcom_vc,
+                Address.welcom_vc,
                 width: size.width / 1.72,
                 height: size.height / 3.728,
               ),
@@ -25,9 +25,9 @@ class LogInPage extends StatelessWidget {
                 child: Text(
                   Strings.letsGo_str,
                   style: TextStyle(
-                      fontWeight: FontWeight.w400,
-                      fontSize: 48,
-                      ),
+                    fontWeight: FontWeight.w400,
+                    fontSize: 48,
+                  ),
                 ),
               ),
               Container(
@@ -52,7 +52,7 @@ class LogInPage extends StatelessWidget {
                     SizedBox(
                       width: size.width / 16.53846153846154,
                     ),
-                    SvgPicture.asset(Adress.ic_gmail)
+                    SvgPicture.asset(Address.ic_gmail)
                   ],
                 ),
               ),
@@ -78,7 +78,7 @@ class LogInPage extends StatelessWidget {
                     SizedBox(
                       width: size.width / 16.53846153846154,
                     ),
-                    SvgPicture.asset(Adress.ic_mail)
+                    SvgPicture.asset(Address.ic_mail)
                   ],
                 ),
               ),
@@ -130,9 +130,9 @@ class LogInPage extends StatelessWidget {
                   Text(
                     Strings.or_str,
                     style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 20,
-                       ),
+                      fontWeight: FontWeight.w600,
+                      fontSize: 20,
+                    ),
                   ),
                   Padding(
                     padding:
@@ -154,7 +154,7 @@ class LogInPage extends StatelessWidget {
               Container(
                 margin: EdgeInsets.fromLTRB(
                     0, size.height / 34.51851851851852, 0, 0),
-                width: size.width /1.1969387,
+                width: size.width / 1.1969387,
                 height: size.height / 16.5625,
                 decoration: BoxDecoration(
                   color: SolidColors.primaryColor,
