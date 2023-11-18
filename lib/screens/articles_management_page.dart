@@ -7,7 +7,6 @@ import 'package:techno_saz/screens/home_page.dart';
 
 // ignore: must_be_immutable
 class ArticlesManagementPage extends StatefulWidget {
-  
   double titleSize;
   ArticlesManagementPage({required this.titleSize});
 
@@ -44,7 +43,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
               children: [
                 Padding(
                   padding: const EdgeInsets.only(left: 5),
-                  child: SvgPicture.asset(Adress.ic_articles_managment),
+                  child: SvgPicture.asset(Address.ic_articles_managment),
                 ),
                 Text(
                   Strings.article_managment_str,
@@ -62,14 +61,13 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                                   builder: (context) => HomePage(),
                                 ));
                           },
-                          child: SvgPicture.asset(Adress.arrowLeft))),
+                          child: SvgPicture.asset(Address.arrowLeft))),
                 ),
               ],
             )
           ],
         ),
         bottom: TabBar(
-          
           controller: _tabController,
           tabs: [
             Tab(
@@ -163,7 +161,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                           alignment: Alignment.centerLeft,
                           child: Padding(
                             padding: EdgeInsets.only(left: size.width / 28.66),
-                            child: SvgPicture.asset(Adress.vc_trash),
+                            child: SvgPicture.asset(Address.vc_trash),
                           )),
                     ),
                   ],
@@ -248,7 +246,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                           alignment: Alignment.centerLeft,
                           child: Padding(
                             padding: EdgeInsets.only(left: size.width / 28.66),
-                            child: SvgPicture.asset(Adress.vc_trash),
+                            child: SvgPicture.asset(Address.vc_trash),
                           )),
                     ),
                   ],
@@ -259,7 +257,8 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
         ),
         ListView.builder(
           physics: BouncingScrollPhysics(),
-          itemCount: Data_Class.ArticleManagementPageAwaitingConfirmationModelList.length,
+          itemCount: Data_Class
+              .ArticleManagementPageAwaitingConfirmationModelList.length,
           itemBuilder: (context, index) {
             return Padding(
               padding: EdgeInsets.fromLTRB(size.width / 25.29,
@@ -282,7 +281,8 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                         borderRadius: BorderRadius.circular(5),
                         image: DecorationImage(
                             image: AssetImage(Data_Class
-                                .ArticleManagementPageAwaitingConfirmationModelList[index]
+                                .ArticleManagementPageAwaitingConfirmationModelList[
+                                    index]
                                 .imageArticleUr),
                             fit: BoxFit.cover),
                       ),
@@ -297,7 +297,8 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                           children: [
                             Text(
                               Data_Class
-                                  .ArticleManagementPageAwaitingConfirmationModelList[index]
+                                  .ArticleManagementPageAwaitingConfirmationModelList[
+                                      index]
                                   .titleArticleUr,
                               style: TextStyle(
                                   fontWeight: FontWeight.w600, fontSize: 16),
@@ -333,7 +334,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                           alignment: Alignment.centerLeft,
                           child: Padding(
                             padding: EdgeInsets.only(left: size.width / 28.66),
-                            child: SvgPicture.asset(Adress.vc_trash),
+                            child: SvgPicture.asset(Address.vc_trash),
                           )),
                     ),
                   ],
