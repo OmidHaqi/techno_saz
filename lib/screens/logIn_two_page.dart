@@ -16,7 +16,7 @@ class LogInTwoPage extends StatelessWidget {
           child: Column(
             children: [
               SvgPicture.asset(
-                Adress.vc_sing_up,
+                Address.vc_sing_up,
                 width: size.width / 1.32716049382716,
                 height: size.height / 3.28169014084507,
               ),
@@ -25,9 +25,9 @@ class LogInTwoPage extends StatelessWidget {
                 child: Text(
                   Strings.welcome_str,
                   style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 20,
-                      ),
+                    fontWeight: FontWeight.w700,
+                    fontSize: 20,
+                  ),
                 ),
               ),
               Padding(
@@ -39,10 +39,10 @@ class LogInTwoPage extends StatelessWidget {
                     textAlign: TextAlign.center,
                     Strings.shouldLogIn_str,
                     style: TextStyle(
-                        fontWeight: FontWeight.w400,
-                        fontSize: 16,
-                        height: 1.5,
-                        ),
+                      fontWeight: FontWeight.w400,
+                      fontSize: 16,
+                      height: 1.5,
+                    ),
                   ),
                 ),
               ),
