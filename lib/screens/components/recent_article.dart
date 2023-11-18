@@ -23,12 +23,9 @@ class RecentArticle extends StatelessWidget {
             children: [
               Text(
                 Strings.recentArticles_str,
-                style: TextStyle(
-                    
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
-              SvgPicture.asset(Adress.arrowLeft),
+              SvgPicture.asset(Address.arrowLeft),
             ],
           ),
         ),
@@ -81,12 +78,12 @@ class RecentArticle extends StatelessWidget {
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
                                 style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    ),
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
-                            SvgPicture.asset(Adress.more)
+                            SvgPicture.asset(Address.more)
                           ],
                         ),
                       ),
