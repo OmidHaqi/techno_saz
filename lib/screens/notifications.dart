@@ -19,7 +19,7 @@ class _NotificationsState extends State<Notifications>
   /**
    * 
    */
-  
+
   late final TabController _tabController;
   /**
    * 
@@ -46,11 +46,9 @@ class _NotificationsState extends State<Notifications>
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
-      
       appBar: AppBar(
         automaticallyImplyLeading: false,
         elevation: 0,
-        
         title: Column(
           children: [
             Padding(
@@ -59,13 +57,12 @@ class _NotificationsState extends State<Notifications>
                 children: [
                   Padding(
                     padding: const EdgeInsets.fromLTRB(5, 0, 0, 0),
-                    child: SvgPicture.asset(Adress.notification),
+                    child: SvgPicture.asset(Address.notification),
                   ),
                   Text(
                     "اعلان‌ها",
                     style: TextStyle(
                         fontSize: widget.titleSize,
-                        
                         fontWeight: FontWeight.bold),
                   ),
                   Expanded(
@@ -80,7 +77,7 @@ class _NotificationsState extends State<Notifications>
                             ),
                           );
                         },
-                        child: SvgPicture.asset(Adress.arrowLeft),
+                        child: SvgPicture.asset(Address.arrowLeft),
                       ),
                     ),
                   ),
@@ -113,7 +110,7 @@ class _NotificationsState extends State<Notifications>
       body: TabBarView(
         physics: BouncingScrollPhysics(),
         controller: _tabController,
-        children:[
+        children: [
           SysNotice(size: size),
           GeneralNotice(size: size),
         ],
@@ -141,8 +138,7 @@ class GeneralNotice extends StatelessWidget {
             height: size.height / 1.29,
             child: ListView.builder(
                 physics: BouncingScrollPhysics(),
-                itemCount:
-                    Data_Class.NotificationsPagePublicModelList.length,
+                itemCount: Data_Class.NotificationsPagePublicModelList.length,
                 scrollDirection: Axis.vertical,
                 itemBuilder: (context, index) {
                   return Padding(
@@ -154,8 +150,8 @@ class GeneralNotice extends StatelessWidget {
                     child: Row(
                       children: [
                         Padding(
-                          padding: EdgeInsets.fromLTRB(
-                              size.width / 21.5, 0, 0, 0),
+                          padding:
+                              EdgeInsets.fromLTRB(size.width / 21.5, 0, 0, 0),
                           child: Container(
                             height: 50,
                             width: 50,
@@ -163,8 +159,7 @@ class GeneralNotice extends StatelessWidget {
                               borderRadius: BorderRadius.circular(1000),
                               image: DecorationImage(
                                   image: AssetImage(Data_Class
-                                      .NotificationsPagePublicModelList[
-                                          index]
+                                      .NotificationsPagePublicModelList[index]
                                       .writerProfilePhotoUr),
                                   fit: BoxFit.cover),
                             ),
@@ -174,18 +169,14 @@ class GeneralNotice extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              Data_Class
-                                      .NotificationsPagePublicModelList[
-                                          index]
+                              Data_Class.NotificationsPagePublicModelList[index]
                                       .writersName +
                                   "." +
                                   Data_Class
-                                      .NotificationsPagePublicModelList[
-                                          index]
+                                      .NotificationsPagePublicModelList[index]
                                       .noticeTitle,
                               style: TextStyle(
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 16),
+                                  fontWeight: FontWeight.w600, fontSize: 16),
                             ),
                             SizedBox(
                               height: 6,
@@ -202,8 +193,7 @@ class GeneralNotice extends StatelessWidget {
                                 ),
                                 Text(
                                   Data_Class
-                                      .NotificationsPagePublicModelList[
-                                          index]
+                                      .NotificationsPagePublicModelList[index]
                                       .whatTimeOfDay,
                                   style: TextStyle(fontSize: 14),
                                 )
@@ -215,7 +205,6 @@ class GeneralNotice extends StatelessWidget {
                           child: Align(
                             alignment: Alignment.centerLeft,
                             child: Container(
-                              
                               width: 83,
                               height: 50,
                               child: Row(
@@ -227,8 +216,7 @@ class GeneralNotice extends StatelessWidget {
                                       height: 50,
                                       width: 50,
                                       decoration: BoxDecoration(
-                                        borderRadius:
-                                            BorderRadius.circular(5),
+                                        borderRadius: BorderRadius.circular(5),
                                         image: DecorationImage(
                                             image: AssetImage(Data_Class
                                                 .NotificationsPagePublicModelList[
@@ -274,8 +262,7 @@ class SysNotice extends StatelessWidget {
             height: size.height / 1.29,
             child: ListView.builder(
                 physics: BouncingScrollPhysics(),
-                itemCount:
-                    Data_Class.NotificationsPageSystemModelList.length,
+                itemCount: Data_Class.NotificationsPageSystemModelList.length,
                 scrollDirection: Axis.vertical,
                 itemBuilder: (context, index) {
                   return Padding(
@@ -287,20 +274,21 @@ class SysNotice extends StatelessWidget {
                     child: Row(
                       children: [
                         Padding(
-                          padding: EdgeInsets.fromLTRB(
-                              size.width / 21.5, 0, 0, 0),
+                          padding:
+                              EdgeInsets.fromLTRB(size.width / 21.5, 0, 0, 0),
                           child: Container(
                             height: 50,
                             width: 50,
-                            child: SvgPicture.asset(Data_Class
-                                .NotificationsPageSystemModelList[index]
-                                .iconNoticeUr,height: size.height/18.64,
-                            width: size.width/.6,),
+                            child: SvgPicture.asset(
+                              Data_Class.NotificationsPageSystemModelList[index]
+                                  .iconNoticeUr,
+                              height: size.height / 18.64,
+                              width: size.width / .6,
+                            ),
                           ),
                         ),
                         Text(
-                          Data_Class
-                              .NotificationsPageSystemModelList[index]
+                          Data_Class.NotificationsPageSystemModelList[index]
                               .noticeText,
                           style: TextStyle(
                               fontWeight: FontWeight.w600, fontSize: 16),
@@ -309,8 +297,8 @@ class SysNotice extends StatelessWidget {
                           child: Align(
                             alignment: Alignment.centerLeft,
                             child: Container(
-                              height: size.height/42.36363636363636,
-                              width: size.width/11.31578947368421,
+                              height: size.height / 42.36363636363636,
+                              width: size.width / 11.31578947368421,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(5),
                                 color: SolidColors.primaryColor,
@@ -319,8 +307,7 @@ class SysNotice extends StatelessWidget {
                                 alignment: Alignment.center,
                                 child: Text(
                                   Data_Class
-                                      .NotificationsPageSystemModelList[
-                                          index]
+                                      .NotificationsPageSystemModelList[index]
                                       .timeNotice,
                                   style: TextStyle(
                                       fontWeight: FontWeight.w400,
