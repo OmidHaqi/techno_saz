@@ -107,4 +107,6 @@ class Address {
       "assets/images/Img_types_of_houses_Managemen_page.png";
   static const Img_writer_of_managing_articles =
       "assets/images/Img_writer_of_managing_articles.png";
+      static const vc_share_Knowledge_others =
+      "assets/icons/vc_share_Knowledge_others.svg";
 }
