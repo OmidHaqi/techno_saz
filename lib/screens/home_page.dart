@@ -76,7 +76,7 @@ class HomePage extends StatelessWidget {
                                   : SolidColors.iconColor,
                               BlendMode.srcIn),
                         ),
-                        title: Text("بروزرسانی"),
+                        title: Text("اشتراک گذاری"),
                       ),
                       ListTile(
                         leading: SvgPicture.asset(
@@ -88,7 +88,7 @@ class HomePage extends StatelessWidget {
                                   : SolidColors.iconColor,
                               BlendMode.srcIn),
                         ),
-                        title: Text("اشتراک گذاری "),
+                        title: Text("بروزرسانی"),
                       ),
                       ListTile(
                         leading: SvgPicture.asset(
@@ -100,7 +100,7 @@ class HomePage extends StatelessWidget {
                                   : SolidColors.iconColor,
                               BlendMode.srcIn),
                         ),
-                        title: Text("بروزرسانی"),
+                        title: Text("گیت هاب"),
                       ),
                       ListTile(
                         leading: SvgPicture.asset(
