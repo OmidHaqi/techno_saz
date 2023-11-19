@@ -56,7 +56,7 @@ class HomePage extends StatelessWidget {
                       ),
                       ListTile(
                         leading: SvgPicture.asset(
-                          Address.menu,
+                          Address.ic_profile_drewer,
                           colorFilter: ColorFilter.mode(
                               AdaptiveTheme.of(context).brightness ==
                                       Brightness.dark
@@ -68,7 +68,7 @@ class HomePage extends StatelessWidget {
                       ),
                       ListTile(
                         leading: SvgPicture.asset(
-                          Address.menu,
+                          Address.ic_share_drewer,
                           colorFilter: ColorFilter.mode(
                               AdaptiveTheme.of(context).brightness ==
                                       Brightness.dark
@@ -80,7 +80,7 @@ class HomePage extends StatelessWidget {
                       ),
                       ListTile(
                         leading: SvgPicture.asset(
-                          Address.menu,
+                          Address.ic_update_drewer,
                           colorFilter: ColorFilter.mode(
                               AdaptiveTheme.of(context).brightness ==
                                       Brightness.dark
@@ -92,7 +92,7 @@ class HomePage extends StatelessWidget {
                       ),
                       ListTile(
                         leading: SvgPicture.asset(
-                          Address.menu,
+                          Address.ic_github_drewer,
                           colorFilter: ColorFilter.mode(
                               AdaptiveTheme.of(context).brightness ==
                                       Brightness.dark
@@ -104,7 +104,7 @@ class HomePage extends StatelessWidget {
                       ),
                       ListTile(
                         leading: SvgPicture.asset(
-                          Address.menu,
+                          Address.ic_about_drewer,
                           colorFilter: ColorFilter.mode(
                               AdaptiveTheme.of(context).brightness ==
                                       Brightness.dark
