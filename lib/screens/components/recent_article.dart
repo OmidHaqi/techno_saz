@@ -1,5 +1,7 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
@@ -23,12 +25,16 @@ class RecentArticle extends StatelessWidget {
             children: [
               Text(
                 Strings.recentArticles_str,
-                style: TextStyle(
-                    
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
-              SvgPicture.asset(Adress.arrowLeft),
+              SvgPicture.asset(
+                Address.arrowLeft,
+                colorFilter: ColorFilter.mode(
+                    AdaptiveTheme.of(context).brightness == Brightness.dark
+                        ? SolidColors.primaryVariantColor
+                        : SolidColors.iconColor,
+                    BlendMode.srcIn),
+              ),
             ],
           ),
         ),
@@ -81,12 +87,20 @@ class RecentArticle extends StatelessWidget {
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
                                 style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    ),
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
-                            SvgPicture.asset(Adress.more)
+                            SvgPicture.asset(
+                              Address.more,
+                              colorFilter: ColorFilter.mode(
+                                  AdaptiveTheme.of(context).brightness ==
+                                          Brightness.dark
+                                      ? SolidColors.primaryVariantColor
+                                      : SolidColors.iconColor,
+                                  BlendMode.srcIn),
+                            )
                           ],
                         ),
                       ),
