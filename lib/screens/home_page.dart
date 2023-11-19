@@ -122,7 +122,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
         appBar: AppBar(
-          automaticallyImplyLeading: false,
+          automaticallyImplyLeading: true,
           elevation: 0,
           title: Padding(
             padding: const EdgeInsets.fromLTRB(12, 15, 12, 15),
