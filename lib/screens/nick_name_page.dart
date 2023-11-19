@@ -8,10 +8,18 @@ import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/screens/home_page.dart';
 
 // ignore: must_be_immutable
-class NickNamePage extends StatelessWidget {
+class NickNamePage extends StatefulWidget {
+  @override
+  State<NickNamePage> createState() => _NickNamePageState();
+}
+
+class _NickNamePageState extends State<NickNamePage> {
   TextEditingController nickName = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
+    List<bool> isSelected =
+        List.generate(DataClass.tagList.length, (index) => false);
     var size = MediaQuery.of(context).size;
     return Scaffold(
       resizeToAvoidBottomInset: false,
@@ -119,17 +127,22 @@ class NickNamePage extends StatelessWidget {
                         mainAxisSpacing: 8,
                       ),
                       itemBuilder: (context, index) {
-                        return InkWell(
-                          onTap: () {},
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: SolidColors.primaryColor,
-                                borderRadius: BorderRadius.circular(1000)),
-                            child: Padding(
-                              padding: const EdgeInsets.fromLTRB(2, 0, 4, 0),
+                        return Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(1000)),
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(2, 0, 4, 0),
+                            child: GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  isSelected[index] = !isSelected[index];
+                                });
+                              },
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: SolidColors.primaryColor,
+                                  color: isSelected[index]
+                                      ? SolidColors.primaryVariantColor
+                                      : SolidColors.primaryColor,
                                   borderRadius: BorderRadius.circular(100),
                                 ),
                                 child: Row(
