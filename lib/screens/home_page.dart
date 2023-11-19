@@ -1,4 +1,9 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:techno_saz/res/colors.dart';
+import 'package:techno_saz/res/paths.dart';
+import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/screens/components/appBar.dart';
 
 import 'components/bottom_nav_bar.dart';
@@ -15,6 +20,107 @@ class HomePage extends StatelessWidget {
     double titleSize = 20;
     return SafeArea(
       child: Scaffold(
+        drawer: Drawer(
+          backgroundColor: SolidColors.white,
+          child: ListView(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 10),
+                child: Center(
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        height: 50,
+                      ),
+                      SvgPicture.asset(
+                        "assets/images/svg_splash.svg",
+                        height: 200,
+                        width: 150,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        Strings.technoSaz_str,
+                        style: TextStyle(
+                            fontSize: 24, fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Divider(
+                        color: SolidColors.primaryVariantColor,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      ListTile(
+                        leading: SvgPicture.asset(
+                          Address.menu,
+                          colorFilter: ColorFilter.mode(
+                              AdaptiveTheme.of(context).brightness ==
+                                      Brightness.dark
+                                  ? SolidColors.primaryVariantColor
+                                  : SolidColors.iconColor,
+                              BlendMode.srcIn),
+                        ),
+                        title: Text("پروفایل"),
+                      ),
+                      ListTile(
+                        leading: SvgPicture.asset(
+                          Address.menu,
+                          colorFilter: ColorFilter.mode(
+                              AdaptiveTheme.of(context).brightness ==
+                                      Brightness.dark
+                                  ? SolidColors.primaryVariantColor
+                                  : SolidColors.iconColor,
+                              BlendMode.srcIn),
+                        ),
+                        title: Text("بروزرسانی"),
+                      ),
+                      ListTile(
+                        leading: SvgPicture.asset(
+                          Address.menu,
+                          colorFilter: ColorFilter.mode(
+                              AdaptiveTheme.of(context).brightness ==
+                                      Brightness.dark
+                                  ? SolidColors.primaryVariantColor
+                                  : SolidColors.iconColor,
+                              BlendMode.srcIn),
+                        ),
+                        title: Text("اشتراک گذاری "),
+                      ),
+                      ListTile(
+                        leading: SvgPicture.asset(
+                          Address.menu,
+                          colorFilter: ColorFilter.mode(
+                              AdaptiveTheme.of(context).brightness ==
+                                      Brightness.dark
+                                  ? SolidColors.primaryVariantColor
+                                  : SolidColors.iconColor,
+                              BlendMode.srcIn),
+                        ),
+                        title: Text("بروزرسانی"),
+                      ),
+                      ListTile(
+                        leading: SvgPicture.asset(
+                          Address.menu,
+                          colorFilter: ColorFilter.mode(
+                              AdaptiveTheme.of(context).brightness ==
+                                      Brightness.dark
+                                  ? SolidColors.primaryVariantColor
+                                  : SolidColors.iconColor,
+                              BlendMode.srcIn),
+                        ),
+                        title: Text("درباره تکنوساز"),
+                      ),
+                    ],
+                  ),
+                ),
+              )
+            ],
+          ),
+        ),
         appBar: AppBar(
           automaticallyImplyLeading: false,
           elevation: 0,
