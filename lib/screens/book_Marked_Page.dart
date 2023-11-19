@@ -37,8 +37,8 @@ class BookMarkedPage extends StatelessWidget {
                   child: Row(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
-                        child: SvgPicture.asset(Address.save),
+                        padding: const EdgeInsets.fromLTRB(4, 0, 0, 0),
+                        child: SvgPicture.asset(Address.save,colorFilter: ColorFilter.mode(AdaptiveTheme.of(context).brightness == Brightness.dark? SolidColors.primaryVariantColor:SolidColors.iconColor, BlendMode.srcIn),),
                       ),
                       Text(
                         Strings.bookmarked_str,
