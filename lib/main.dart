@@ -6,17 +6,12 @@ import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/screens/splash_screen.dart';
 
 class MyApp extends StatelessWidget {
-  /**
-   * 
-   */
+
   final AdaptiveThemeMode? savedThemeMode;
   const MyApp({required this.savedThemeMode});
 
   @override
   Widget build(BuildContext context) {
-    /**
-     * 
-     */
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
         statusBarColor: SolidColors.primaryVariantColor,
@@ -68,9 +63,7 @@ class MyApp extends StatelessWidget {
         supportedLocales: [
           Locale('fa'), // Farsi
         ],
-        /**
-         * 
-         */
+
         theme: theme,
         darkTheme: darkTheme,
         home: MySplash(),
