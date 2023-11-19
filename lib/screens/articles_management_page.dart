@@ -1,5 +1,7 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
@@ -7,7 +9,6 @@ import 'package:techno_saz/screens/home_page.dart';
 
 // ignore: must_be_immutable
 class ArticlesManagementPage extends StatefulWidget {
-  
   double titleSize;
   ArticlesManagementPage({required this.titleSize});
 
@@ -44,7 +45,14 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
               children: [
                 Padding(
                   padding: const EdgeInsets.only(left: 5),
-                  child: SvgPicture.asset(Adress.ic_articles_managment),
+                  child: SvgPicture.asset(
+                    Address.ic_articles_managment,
+                    colorFilter: ColorFilter.mode(
+                        AdaptiveTheme.of(context).brightness == Brightness.dark
+                            ? SolidColors.primaryVariantColor
+                            : SolidColors.iconColor,
+                        BlendMode.srcIn),
+                  ),
                 ),
                 Text(
                   Strings.article_managment_str,
@@ -62,14 +70,13 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                                   builder: (context) => HomePage(),
                                 ));
                           },
-                          child: SvgPicture.asset(Adress.arrowLeft))),
+                          child: SvgPicture.asset(Address.arrowLeft))),
                 ),
               ],
             )
           ],
         ),
         bottom: TabBar(
-          
           controller: _tabController,
           tabs: [
             Tab(
@@ -87,7 +94,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
       body: TabBarView(controller: _tabController, children: [
         ListView.builder(
           physics: BouncingScrollPhysics(),
-          itemCount: Data_Class.ArticleManagementPagepublishedModelList.length,
+          itemCount: DataClass.ArticleManagementPagepublishedModelList.length,
           itemBuilder: (context, index) {
             return Padding(
               padding: EdgeInsets.fromLTRB(size.width / 25.29,
@@ -109,7 +116,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                         ],
                         borderRadius: BorderRadius.circular(5),
                         image: DecorationImage(
-                            image: AssetImage(Data_Class
+                            image: AssetImage(DataClass
                                 .ArticleManagementPagepublishedModelList[index]
                                 .imageArticleUr),
                             fit: BoxFit.cover),
@@ -124,7 +131,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              Data_Class
+                              DataClass
                                   .ArticleManagementPagepublishedModelList[
                                       index]
                                   .titleArticleUr,
@@ -137,7 +144,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                             Row(
                               children: [
                                 Text(
-                                  Data_Class
+                                  DataClass
                                           .ArticleManagementPagepublishedModelList[
                                               index]
                                           .PublicationDateArticleUr +
@@ -145,7 +152,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                                   style: TextStyle(fontSize: 14),
                                 ),
                                 Text(
-                                  Data_Class
+                                  DataClass
                                           .ArticleManagementPagepublishedModelList[
                                               index]
                                           .Visit +
@@ -163,7 +170,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                           alignment: Alignment.centerLeft,
                           child: Padding(
                             padding: EdgeInsets.only(left: size.width / 28.66),
-                            child: SvgPicture.asset(Adress.vc_trash),
+                            child: SvgPicture.asset(Address.vc_trash),
                           )),
                     ),
                   ],
@@ -174,7 +181,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
         ),
         ListView.builder(
           physics: BouncingScrollPhysics(),
-          itemCount: Data_Class.ArticleManagementPagedraftModelList.length,
+          itemCount: DataClass.ArticleManagementPagedraftModelList.length,
           itemBuilder: (context, index) {
             return Padding(
               padding: EdgeInsets.fromLTRB(size.width / 25.29,
@@ -196,7 +203,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                         ],
                         borderRadius: BorderRadius.circular(5),
                         image: DecorationImage(
-                            image: AssetImage(Data_Class
+                            image: AssetImage(DataClass
                                 .ArticleManagementPagedraftModelList[index]
                                 .imageArticleUr),
                             fit: BoxFit.cover),
@@ -211,7 +218,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              Data_Class
+                              DataClass
                                   .ArticleManagementPagedraftModelList[index]
                                   .titleArticleUr,
                               style: TextStyle(
@@ -223,7 +230,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                             Row(
                               children: [
                                 Text(
-                                  Data_Class
+                                  DataClass
                                           .ArticleManagementPagedraftModelList[
                                               index]
                                           .PublicationDateArticleUr +
@@ -231,7 +238,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                                   style: TextStyle(fontSize: 14),
                                 ),
                                 Text(
-                                  Data_Class
+                                  DataClass
                                       .ArticleManagementPagedraftModelList[
                                           index]
                                       .whatTimeOfDay,
@@ -248,7 +255,15 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                           alignment: Alignment.centerLeft,
                           child: Padding(
                             padding: EdgeInsets.only(left: size.width / 28.66),
-                            child: SvgPicture.asset(Adress.vc_trash),
+                            child: SvgPicture.asset(
+                              Address.vc_trash,
+                              colorFilter: ColorFilter.mode(
+                                  AdaptiveTheme.of(context).brightness ==
+                                          Brightness.dark
+                                      ? SolidColors.primaryVariantColor
+                                      : SolidColors.iconColor,
+                                  BlendMode.srcIn),
+                            ),
                           )),
                     ),
                   ],
@@ -259,7 +274,8 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
         ),
         ListView.builder(
           physics: BouncingScrollPhysics(),
-          itemCount: Data_Class.ArticleManagementPageAwaitingConfirmationModelList.length,
+          itemCount: DataClass
+              .ArticleManagementPageAwaitingConfirmationModelList.length,
           itemBuilder: (context, index) {
             return Padding(
               padding: EdgeInsets.fromLTRB(size.width / 25.29,
@@ -281,8 +297,9 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                         ],
                         borderRadius: BorderRadius.circular(5),
                         image: DecorationImage(
-                            image: AssetImage(Data_Class
-                                .ArticleManagementPageAwaitingConfirmationModelList[index]
+                            image: AssetImage(DataClass
+                                .ArticleManagementPageAwaitingConfirmationModelList[
+                                    index]
                                 .imageArticleUr),
                             fit: BoxFit.cover),
                       ),
@@ -296,8 +313,9 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              Data_Class
-                                  .ArticleManagementPageAwaitingConfirmationModelList[index]
+                              DataClass
+                                  .ArticleManagementPageAwaitingConfirmationModelList[
+                                      index]
                                   .titleArticleUr,
                               style: TextStyle(
                                   fontWeight: FontWeight.w600, fontSize: 16),
@@ -308,7 +326,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                             Row(
                               children: [
                                 Text(
-                                  Data_Class
+                                  DataClass
                                           .ArticleManagementPageAwaitingConfirmationModelList[
                                               index]
                                           .PublicationDateArticleUr +
@@ -316,7 +334,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                                   style: TextStyle(fontSize: 14),
                                 ),
                                 Text(
-                                  Data_Class
+                                  DataClass
                                       .ArticleManagementPageAwaitingConfirmationModelList[
                                           index]
                                       .whatTimeOfDay,
@@ -333,7 +351,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                           alignment: Alignment.centerLeft,
                           child: Padding(
                             padding: EdgeInsets.only(left: size.width / 28.66),
-                            child: SvgPicture.asset(Adress.vc_trash),
+                            child: SvgPicture.asset(Address.vc_trash),
                           )),
                     ),
                   ],
