@@ -1,4 +1,4 @@
-class Adress {
+class Address {
   static const changeThemeLight = "assets/icons/ic_theme_light.png";
   static const changeThemeDark = "assets/icons/ic_theme_dark.png";
 

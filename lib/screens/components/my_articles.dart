@@ -1,5 +1,7 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:techno_saz/res/colors.dart';
 
 import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
@@ -24,12 +26,16 @@ class MyArticles extends StatelessWidget {
             children: [
               Text(
                 Strings.myArticles_str,
-                style: TextStyle(
-                    
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
-              SvgPicture.asset(Adress.arrowLeft),
+              SvgPicture.asset(
+                Address.arrowLeft,
+                colorFilter: ColorFilter.mode(
+                    AdaptiveTheme.of(context).brightness == Brightness.dark
+                        ? SolidColors.primaryVariantColor
+                        : SolidColors.iconColor,
+                    BlendMode.srcIn),
+              ),
             ],
           ),
         ),
@@ -38,7 +44,7 @@ class MyArticles extends StatelessWidget {
           width: size.width / 1.02,
           child: ListView.builder(
             physics: BouncingScrollPhysics(),
-            itemCount: Data_Class.MyArticlePageModelList.length,
+            itemCount: DataClass.MyArticlePageModelList.length,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
               return Padding(
@@ -62,7 +68,7 @@ class MyArticles extends StatelessWidget {
                             ],
                             borderRadius: BorderRadius.circular(35),
                             image: DecorationImage(
-                                image: AssetImage(Data_Class
+                                image: AssetImage(DataClass
                                     .MyArticlePageModelList[index]
                                     .imageArticleUr),
                                 fit: BoxFit.cover),
@@ -77,17 +83,25 @@ class MyArticles extends StatelessWidget {
                             SizedBox(
                               width: size.width / 2.8,
                               child: Text(
-                                Data_Class.MyArticlePageModelList[index]
+                                DataClass.MyArticlePageModelList[index]
                                     .titleArticleUr,
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
                                 style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    ),
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
-                            SvgPicture.asset(Adress.more)
+                            SvgPicture.asset(
+                              Address.more,
+                              colorFilter: ColorFilter.mode(
+                                  AdaptiveTheme.of(context).brightness ==
+                                          Brightness.dark
+                                      ? SolidColors.primaryVariantColor
+                                      : SolidColors.iconColor,
+                                  BlendMode.srcIn),
+                            )
                           ],
                         ),
                       ),
@@ -103,7 +117,7 @@ class MyArticles extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(400),
                                   image: DecorationImage(
-                                      image: AssetImage(Data_Class
+                                      image: AssetImage(DataClass
                                           .MyArticlePageModelList[1]
                                           .writerProfilePhotoUr),
                                       fit: BoxFit.cover),
@@ -113,8 +127,7 @@ class MyArticles extends StatelessWidget {
                             SizedBox(
                               width: size.width / 5.60,
                               child: Text(
-                                Data_Class
-                                    .MyArticlePageModelList[1].writersName,
+                                DataClass.MyArticlePageModelList[1].writersName,
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 1,
                                 style: TextStyle(
@@ -124,7 +137,7 @@ class MyArticles extends StatelessWidget {
                             SizedBox(
                               width: 5,
                             ),
-                            Text(Data_Class.MyArticlePageModelList[index]
+                            Text(DataClass.MyArticlePageModelList[index]
                                 .PublicationDateArticleUr),
                           ],
                         ),

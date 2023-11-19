@@ -16,7 +16,7 @@ class LogInPage extends StatelessWidget {
           child: Column(
             children: [
               SvgPicture.asset(
-                Adress.welcom_vc,
+                Address.welcom_vc,
                 width: size.width / 1.72,
                 height: size.height / 3.728,
               ),
@@ -52,7 +52,7 @@ class LogInPage extends StatelessWidget {
                     SizedBox(
                       width: size.width / 16.53846153846154,
                     ),
-                    SvgPicture.asset(Adress.ic_gmail)
+                    SvgPicture.asset(Address.ic_gmail)
                   ],
                 ),
               ),
@@ -78,7 +78,7 @@ class LogInPage extends StatelessWidget {
                     SizedBox(
                       width: size.width / 16.53846153846154,
                     ),
-                    SvgPicture.asset(Adress.ic_mail)
+                    SvgPicture.asset(Address.ic_mail,)
                   ],
                 ),
               ),

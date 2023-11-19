@@ -43,7 +43,7 @@ class RecentArticle extends StatelessWidget {
           width: size.width / 1.02,
           child: ListView.builder(
             physics: BouncingScrollPhysics(),
-            itemCount: Data_Class.ArticlePageModelList.length,
+            itemCount: DataClass.ArticlePageModelList.length,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
               return Padding(
@@ -67,7 +67,7 @@ class RecentArticle extends StatelessWidget {
                             ],
                             borderRadius: BorderRadius.circular(35),
                             image: DecorationImage(
-                                image: AssetImage(Data_Class
+                                image: AssetImage(DataClass
                                     .ArticlePageModelList[index]
                                     .imageArticleUr),
                                 fit: BoxFit.cover),
@@ -82,7 +82,7 @@ class RecentArticle extends StatelessWidget {
                             SizedBox(
                               width: size.width / 2.8,
                               child: Text(
-                                Data_Class
+                                DataClass
                                     .ArticlePageModelList[index].titleArticleUr,
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
@@ -116,7 +116,7 @@ class RecentArticle extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(400),
                                   image: DecorationImage(
-                                      image: AssetImage(Data_Class
+                                      image: AssetImage(DataClass
                                           .ArticlePageModelList[index]
                                           .writerProfilePhotoUr),
                                       fit: BoxFit.cover),
@@ -126,7 +126,7 @@ class RecentArticle extends StatelessWidget {
                             SizedBox(
                               width: size.width / 5.60,
                               child: Text(
-                                Data_Class
+                                DataClass
                                     .ArticlePageModelList[index].writersName,
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 1,
@@ -137,7 +137,7 @@ class RecentArticle extends StatelessWidget {
                             SizedBox(
                               width: 5,
                             ),
-                            Text(Data_Class.ArticlePageModelList[index]
+                            Text(DataClass.ArticlePageModelList[index]
                                 .PublicationDateArticleUr),
                           ],
                         ),

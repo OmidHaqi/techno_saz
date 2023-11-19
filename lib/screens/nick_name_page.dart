@@ -1,3 +1,4 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
@@ -16,25 +17,25 @@ class NickNamePage extends StatelessWidget {
       resizeToAvoidBottomInset: false,
       body: Center(
         child: Padding(
-          padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
+          padding:
+              EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: [
               SvgPicture.asset(
-                Adress.vc_nick_name_pic,
+                Address.vc_nick_name_pic,
                 width: size.width / 1.32716049382716,
                 height: size.height / 3.28169014084507,
               ),
               Padding(
-                padding:
-                    EdgeInsets.only(top: size.height / 21.67441860465116),
+                padding: EdgeInsets.only(top: size.height / 21.67441860465116),
                 child: Text(
                   Strings.verifiedEmail_str,
                   style: TextStyle(
-                      fontWeight: FontWeight.w400,
-                      fontSize: 17,
-                      ),
+                    fontWeight: FontWeight.w400,
+                    fontSize: 17,
+                  ),
                 ),
               ),
               Padding(
@@ -43,10 +44,10 @@ class NickNamePage extends StatelessWidget {
                   textAlign: TextAlign.center,
                   Strings.complateLogInInfo_str,
                   style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 17,
-                      height: 1.5,
-                      ),
+                    fontWeight: FontWeight.w700,
+                    fontSize: 17,
+                    height: 1.5,
+                  ),
                 ),
               ),
               Padding(
@@ -65,8 +66,8 @@ class NickNamePage extends StatelessWidget {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
-                      borderSide: BorderSide(
-                          color: SolidColors.primaryColor, width: 2),
+                      borderSide:
+                          BorderSide(color: SolidColors.primaryColor, width: 2),
                     ),
                     hintText: Strings.nickname_str,
                     suffixIconConstraints: BoxConstraints(
@@ -75,7 +76,13 @@ class NickNamePage extends StatelessWidget {
                     suffixIcon: Padding(
                       padding: const EdgeInsets.all(10.0),
                       child: SvgPicture.asset(
-                        Adress.ic_nickName_eadite,
+                        Address.ic_nickName_eadite,
+                        colorFilter: ColorFilter.mode(
+                            AdaptiveTheme.of(context).brightness ==
+                                    Brightness.dark
+                                ? SolidColors.primaryVariantColor
+                                : SolidColors.iconColor,
+                            BlendMode.srcIn),
                       ),
                     ),
                   ),
@@ -83,26 +90,25 @@ class NickNamePage extends StatelessWidget {
               ),
               Padding(
                 padding: EdgeInsets.only(
-                    top: size.height / 19.41,
-                    ),
+                  top: size.height / 19.41,
+                ),
                 child: Text(
                   textAlign: TextAlign.center,
                   Strings.choseFavorite_str,
                   style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 12,
-                      height: 1.5,
-                      ),
+                    fontWeight: FontWeight.w700,
+                    fontSize: 12,
+                    height: 1.5,
+                  ),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.only(top: size.height / 25.88),
                 child: Container(
-                  
                   width: size.width / 1.11,
                   height: size.height / 11.79,
                   child: GridView.builder(
-                      itemCount: Data_Class.tagList.length,
+                      itemCount: DataClass.tagList.length,
                       shrinkWrap: true,
                       scrollDirection: Axis.horizontal,
                       physics: BouncingScrollPhysics(),
@@ -135,7 +141,6 @@ class NickNamePage extends StatelessWidget {
                                       child: Text(
                                         "# ",
                                         style: TextStyle(
-                                            
                                             fontSize: 17,
                                             fontWeight: FontWeight.w300),
                                       ),
@@ -144,9 +149,8 @@ class NickNamePage extends StatelessWidget {
                                       padding: const EdgeInsets.fromLTRB(
                                           12, 2, 0, 0),
                                       child: Text(
-                                        Data_Class.tagList[index].title,
+                                        DataClass.tagList[index].title,
                                         style: TextStyle(
-                                           
                                             fontSize: 17,
                                             fontWeight: FontWeight.w300),
                                       ),
@@ -176,7 +180,8 @@ class NickNamePage extends StatelessWidget {
                       ),
                       builder: (BuildContext context) {
                         return Padding(
-                          padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
+                          padding: EdgeInsets.only(
+                              bottom: MediaQuery.of(context).viewInsets.bottom),
                           child: Container(
                             height: 500,
                             child: Padding(
@@ -218,9 +223,10 @@ class NickNamePage extends StatelessWidget {
                                             size.width / 6.05,
                                             0),
                                         child: SvgPicture.asset(
-                                          Adress.vc_email_butommsheet_Email,
+                                          Address.vc_email_butommsheet_Email
                                           // width: size.width / 1.64,
                                           // height: size.height / 3.14,
+                                          ,
                                         ),
                                       ),
                                       Padding(
@@ -271,7 +277,15 @@ class NickNamePage extends StatelessWidget {
                                               padding:
                                                   const EdgeInsets.all(10.0),
                                               child: SvgPicture.asset(
-                                                Adress.ic_email_shape,
+                                                Address.ic_email_shape,
+                                                colorFilter: ColorFilter.mode(
+                                                    AdaptiveTheme.of(context)
+                                                                .brightness ==
+                                                            Brightness.dark
+                                                        ? SolidColors
+                                                            .primaryVariantColor
+                                                        : SolidColors.iconColor,
+                                                    BlendMode.srcIn),
                                               ),
                                             ),
                                           ),
@@ -297,57 +311,70 @@ class NickNamePage extends StatelessWidget {
                                               ),
                                               builder: (BuildContext context) {
                                                 return Padding(
-                                                  padding:  EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
+                                                  padding: EdgeInsets.only(
+                                                      bottom:
+                                                          MediaQuery.of(context)
+                                                              .viewInsets
+                                                              .bottom),
                                                   child: Container(
                                                     height: 500,
                                                     child: Padding(
                                                       padding: const EdgeInsets
-                                                          .fromLTRB(10, 1, 10, 0),
+                                                          .fromLTRB(
+                                                          10, 1, 10, 0),
                                                       child: Container(
-                                                        decoration: BoxDecoration(
-                                                            border: Border(
-                                                                top: BorderSide(
-                                                                  color: SolidColors
-                                                                      .primaryColor,
-                                                                  width: 1.5,
-                                                                ),
-                                                                right: BorderSide(
-                                                                  color: const Color
-                                                                      .fromRGBO(
-                                                                      164,
-                                                                      99,
-                                                                      77,
-                                                                      1),
-                                                                  width: 1.5,
-                                                                ),
-                                                                left: BorderSide(
-                                                                  color: const Color
-                                                                      .fromRGBO(
-                                                                      164,
-                                                                      99,
-                                                                      77,
-                                                                      1),
-                                                                  width: 1.5,
-                                                                ),
-                                                                bottom:
-                                                                    BorderSide(
-                                                                  color: const Color
-                                                                      .fromRGBO(
-                                                                      164,
-                                                                      99,
-                                                                      77,
-                                                                      1),
-                                                                  width: 0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                                border: Border(
+                                                                    top:
+                                                                        BorderSide(
+                                                                      color: SolidColors
+                                                                          .primaryColor,
+                                                                      width:
+                                                                          1.5,
+                                                                    ),
+                                                                    right:
+                                                                        BorderSide(
+                                                                      color: const Color
+                                                                          .fromRGBO(
+                                                                          164,
+                                                                          99,
+                                                                          77,
+                                                                          1),
+                                                                      width:
+                                                                          1.5,
+                                                                    ),
+                                                                    left:
+                                                                        BorderSide(
+                                                                      color: const Color
+                                                                          .fromRGBO(
+                                                                          164,
+                                                                          99,
+                                                                          77,
+                                                                          1),
+                                                                      width:
+                                                                          1.5,
+                                                                    ),
+                                                                    bottom:
+                                                                        BorderSide(
+                                                                      color: const Color
+                                                                          .fromRGBO(
+                                                                          164,
+                                                                          99,
+                                                                          77,
+                                                                          1),
+                                                                      width: 0,
+                                                                    )),
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .only(
+                                                                  topLeft: Radius
+                                                                      .circular(
+                                                                          16.0),
+                                                                  topRight: Radius
+                                                                      .circular(
+                                                                          16.0),
                                                                 )),
-                                                            borderRadius:
-                                                                BorderRadius.only(
-                                                              topLeft:
-                                                                  Radius.circular(
-                                                                      16.0),
-                                                              topRight:
-                                                                  Radius.circular(
-                                                                      16.0),
-                                                            )),
                                                         child: Center(
                                                           child: Column(
                                                             mainAxisAlignment:
@@ -355,28 +382,28 @@ class NickNamePage extends StatelessWidget {
                                                                     .center,
                                                             children: [
                                                               Padding(
-                                                                padding: EdgeInsets
-                                                                    .fromLTRB(
-                                                                        size.width /
-                                                                            6.05,
-                                                                        0,
-                                                                        size.width /
-                                                                            6.05,
-                                                                        0),
-                                                                child: SvgPicture
-                                                                    .asset(
-                                                                  Adress
+                                                                padding: EdgeInsets.fromLTRB(
+                                                                    size.width /
+                                                                        6.05,
+                                                                    0,
+                                                                    size.width /
+                                                                        6.05,
+                                                                    0),
+                                                                child:
+                                                                    SvgPicture
+                                                                        .asset(
+                                                                  Address
                                                                       .vc_verficaton_butommsheet_verficaton,
+
                                                                   // width: size.width / 1.64,
                                                                   // height: size.height / 3.14,
                                                                 ),
                                                               ),
                                                               Padding(
-                                                                padding: EdgeInsets
-                                                                    .only(
-                                                                        top: size
-                                                                                .height /
-                                                                            42.8),
+                                                                padding: EdgeInsets.only(
+                                                                    top: size
+                                                                            .height /
+                                                                        42.8),
                                                                 child: Text(
                                                                   Strings
                                                                       .enter_verified_email_code_str,
@@ -389,16 +416,16 @@ class NickNamePage extends StatelessWidget {
                                                                 ),
                                                               ),
                                                               Padding(
-                                                                padding: EdgeInsets
-                                                                    .fromLTRB(
-                                                                        size.width /
-                                                                            11.02,
-                                                                        size.height /
-                                                                            34.51,
-                                                                        size.width /
-                                                                            11.02,
-                                                                        0),
-                                                                child: TextField(
+                                                                padding: EdgeInsets.fromLTRB(
+                                                                    size.width /
+                                                                        11.02,
+                                                                    size.height /
+                                                                        34.51,
+                                                                    size.width /
+                                                                        11.02,
+                                                                    0),
+                                                                child:
+                                                                    TextField(
                                                                   controller:
                                                                       nickName,
                                                                   textDirection:
@@ -434,8 +461,9 @@ class NickNamePage extends StatelessWidget {
                                                                           width:
                                                                               2),
                                                                     ),
-                                                                    hintText: Strings
-                                                                        .verified_code_str,
+                                                                    hintText:
+                                                                        Strings
+                                                                            .verified_code_str,
                                                                     suffixIconConstraints:
                                                                         BoxConstraints(
                                                                       maxHeight:
@@ -443,14 +471,18 @@ class NickNamePage extends StatelessWidget {
                                                                     ),
                                                                     suffixIcon:
                                                                         Padding(
-                                                                      padding:
-                                                                          const EdgeInsets
-                                                                              .all(
-                                                                              10.0),
+                                                                      padding: const EdgeInsets
+                                                                          .all(
+                                                                          10.0),
                                                                       child: SvgPicture
                                                                           .asset(
-                                                                        Adress
+                                                                        Address
                                                                             .ic_verficaton_shape,
+                                                                        colorFilter: ColorFilter.mode(
+                                                                            AdaptiveTheme.of(context).brightness == Brightness.dark
+                                                                                ? SolidColors.primaryVariantColor
+                                                                                : SolidColors.iconColor,
+                                                                            BlendMode.srcIn),
                                                                       ),
                                                                     ),
                                                                   ),
@@ -459,8 +491,7 @@ class NickNamePage extends StatelessWidget {
                                                               Padding(
                                                                 padding: EdgeInsets
                                                                     .only(
-                                                                        top: size
-                                                                                .height /
+                                                                        top: size.height /
                                                                             30),
                                                                 child: InkWell(
                                                                   onTap: () {
@@ -479,9 +510,9 @@ class NickNamePage extends StatelessWidget {
                                                                     width: size
                                                                             .width /
                                                                         3.071428571428571,
-                                                                    height:
-                                                                        size.height /
-                                                                            18.64,
+                                                                    height: size
+                                                                            .height /
+                                                                        18.64,
                                                                     decoration:
                                                                         BoxDecoration(
                                                                       color: SolidColors
@@ -490,11 +521,12 @@ class NickNamePage extends StatelessWidget {
                                                                           BorderRadius.circular(
                                                                               1000),
                                                                     ),
-                                                                    child: Center(
-                                                                      child: Text(
+                                                                    child:
+                                                                        Center(
+                                                                      child:
+                                                                          Text(
                                                                         textAlign:
-                                                                            TextAlign
-                                                                                .center,
+                                                                            TextAlign.center,
                                                                         Strings
                                                                             .countinu_str,
                                                                         style: TextStyle(

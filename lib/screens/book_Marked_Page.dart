@@ -1,3 +1,4 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -37,7 +38,7 @@ class BookMarkedPage extends StatelessWidget {
                     children: [
                       Padding(
                         padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
-                        child: SvgPicture.asset(Adress.save),
+                        child: SvgPicture.asset(Address.save),
                       ),
                       Text(
                         Strings.bookmarked_str,
@@ -56,7 +57,15 @@ class BookMarkedPage extends StatelessWidget {
                                 ),
                               );
                             },
-                            child: SvgPicture.asset(Adress.arrowLeft),
+                            child: SvgPicture.asset(
+                              Address.arrowLeft,
+                              colorFilter: ColorFilter.mode(
+                                  AdaptiveTheme.of(context).brightness ==
+                                          Brightness.dark
+                                      ? SolidColors.primaryVariantColor
+                                      : SolidColors.iconColor,
+                                  BlendMode.srcIn),
+                            ),
                           ),
                         ),
                       ),
@@ -84,7 +93,7 @@ class BookMarkedPage extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
                 child: GridView.builder(
-                    itemCount: Data_Class.BookMarkedArticlePageModelList.length,
+                    itemCount: DataClass.BookMarkedArticlePageModelList.length,
                     physics: BouncingScrollPhysics(),
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
@@ -113,7 +122,7 @@ class BookMarkedPage extends StatelessWidget {
                                   ],
                                   borderRadius: BorderRadius.circular(35),
                                   image: DecorationImage(
-                                      image: AssetImage(Data_Class
+                                      image: AssetImage(DataClass
                                           .BookMarkedArticlePageModelList[index]
                                           .imageArticleUr),
                                       fit: BoxFit.cover),
@@ -130,7 +139,7 @@ class BookMarkedPage extends StatelessWidget {
                                       width: size.width / 2.8,
                                       height: size.height / 20,
                                       child: Text(
-                                        Data_Class
+                                        DataClass
                                             .BookMarkedArticlePageModelList[
                                                 index]
                                             .titleArticleUr,
@@ -142,7 +151,7 @@ class BookMarkedPage extends StatelessWidget {
                                             color: SolidColors.textColor),
                                       ),
                                     ),
-                                    SvgPicture.asset(Adress.more)
+                                    SvgPicture.asset(Address.more)
                                   ],
                                 ),
                               ),
@@ -160,7 +169,7 @@ class BookMarkedPage extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(400),
                                           image: DecorationImage(
-                                              image: AssetImage(Data_Class
+                                              image: AssetImage(DataClass
                                                   .BookMarkedArticlePageModelList[
                                                       index]
                                                   .writerProfilePhotoUr),
@@ -171,7 +180,7 @@ class BookMarkedPage extends StatelessWidget {
                                     SizedBox(
                                       width: size.width / 5.60,
                                       child: Text(
-                                        Data_Class
+                                        DataClass
                                             .BookMarkedArticlePageModelList[
                                                 index]
                                             .writersName,
@@ -185,7 +194,7 @@ class BookMarkedPage extends StatelessWidget {
                                     SizedBox(
                                       width: 5,
                                     ),
-                                    Text(Data_Class
+                                    Text(DataClass
                                         .BookMarkedArticlePageModelList[index]
                                         .PublicationDateArticleUr),
                                   ],
