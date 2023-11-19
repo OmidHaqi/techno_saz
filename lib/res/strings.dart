@@ -34,6 +34,7 @@ class Strings {
   static const String welcome_str = "به تکنوساز خوش اومدی";
   static const String countinu_str = "ادامه";
   static const String shouldLogIn_str = "برای ارسال مطلب باید حتما ثبت نام کنی";
+  static const String share_knowlage_str = "دونسته هات رو با بقیه به اشتراک بذار ...";
   static const String nickname_str = "اسم مستعار";
   static const String choseFavorite_str =
       "دسته بندی هایی که دوس داری رو انتخاب کن ";

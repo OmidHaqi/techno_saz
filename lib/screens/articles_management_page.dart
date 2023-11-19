@@ -70,7 +70,15 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                                   builder: (context) => HomePage(),
                                 ));
                           },
-                          child: SvgPicture.asset(Address.arrowLeft))),
+                          child: SvgPicture.asset(
+                            Address.arrowLeft,
+                            colorFilter: ColorFilter.mode(
+                                AdaptiveTheme.of(context).brightness ==
+                                        Brightness.dark
+                                    ? SolidColors.primaryVariantColor
+                                    : SolidColors.iconColor,
+                                BlendMode.srcIn),
+                          ))),
                 ),
               ],
             )
@@ -170,7 +178,15 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                           alignment: Alignment.centerLeft,
                           child: Padding(
                             padding: EdgeInsets.only(left: size.width / 28.66),
-                            child: SvgPicture.asset(Address.vc_trash),
+                            child: SvgPicture.asset(
+                              Address.vc_trash,
+                              colorFilter: ColorFilter.mode(
+                                  AdaptiveTheme.of(context).brightness ==
+                                          Brightness.dark
+                                      ? SolidColors.primaryVariantColor
+                                      : SolidColors.iconColor,
+                                  BlendMode.srcIn),
+                            ),
                           )),
                     ),
                   ],
@@ -351,7 +367,15 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                           alignment: Alignment.centerLeft,
                           child: Padding(
                             padding: EdgeInsets.only(left: size.width / 28.66),
-                            child: SvgPicture.asset(Address.vc_trash),
+                            child: SvgPicture.asset(
+                              Address.vc_trash,
+                              colorFilter: ColorFilter.mode(
+                                  AdaptiveTheme.of(context).brightness ==
+                                          Brightness.dark
+                                      ? SolidColors.primaryVariantColor
+                                      : SolidColors.iconColor,
+                                  BlendMode.srcIn),
+                            ),
                           )),
                     ),
                   ],

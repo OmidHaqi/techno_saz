@@ -35,7 +35,9 @@ class MyApp extends StatelessWidget {
             background: SolidColors.white,
             onBackground: SolidColors.textColor,
             surface: SolidColors.white,
-            onSurface: SolidColors.black),
+            onSurface: SolidColors.black,
+            ),
+            tabBarTheme: TabBarTheme(labelColor: SolidColors.black,unselectedLabelColor: Colors.grey)
       ),
       dark: ThemeData(
         fontFamily: 'IranYekan',
