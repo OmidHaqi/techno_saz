@@ -108,9 +108,7 @@ class _NotificationsState extends State<Notifications>
          */
         bottom: TabBar(
             physics: BouncingScrollPhysics(),
-            unselectedLabelColor: Colors.grey,
-            labelColor: Colors.black,
-            indicatorColor: Colors.black,
+            
             controller: _tabController,
             tabs: [
               Tab(
@@ -300,13 +298,7 @@ class SysNotice extends StatelessWidget {
                               DataClass.NotificationsPageSystemModelList[index]
                                   .iconNoticeUr,
                               height: size.height / 18.64,
-                              width: size.width / .6,
-                              colorFilter: ColorFilter.mode(
-                                  AdaptiveTheme.of(context).brightness ==
-                                          Brightness.dark
-                                      ? SolidColors.primaryVariantColor
-                                      : SolidColors.iconColor,
-                                  BlendMode.srcIn),
+                              width: size.width / .6
                             ),
                           ),
                         ),
@@ -351,3 +343,5 @@ class SysNotice extends StatelessWidget {
     );
   }
 }
+
+                      
