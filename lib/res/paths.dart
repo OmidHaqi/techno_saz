@@ -109,4 +109,10 @@ class Address {
       "assets/images/Img_writer_of_managing_articles.png";
       static const vc_share_Knowledge_others =
       "assets/icons/vc_share_Knowledge_others.svg";
+      static const ic_about_drewer ="assets/icons/ic_about_drewer.svg";
+      static const ic_github_drewer ="assets/icons/ic_github_drewer.svg";
+      static const ic_profile_drewer ="assets/icons/ic_profile_drewer.svg";
+      static const ic_share_drewer ="assets/icons/ic_share_drewer.svg";
+      static const ic_update_drewer ="assets/icons/ic_update_drewer.svg";
+      
 }
