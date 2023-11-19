@@ -23,30 +23,21 @@ class BottomNavBar extends StatelessWidget {
           children: [
             SvgPicture.asset(
               Address.home,
-              color: SolidColors.primaryColor,
               height: size.height / 31.06,
               width: size.width / 14.4,
             ),
             InkWell(child: SvgPicture.asset(Address.discover)),
             InkWell(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => LogInTwoPage(),
-                    ),
-                  );
-                },
-
-                //   onTap: () {
-                //   Navigator.push(
-                //     context,
-                //     MaterialPageRoute(
-                //       builder: (context) => LogInTwoPage(),
-                //     ),
-                //   );
-                // },
-                child: SvgPicture.asset(Address.addArticle)),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => LogInTwoPage(),
+                  ),
+                );
+              },
+              child: SvgPicture.asset(Address.addArticle),
+            ),
             InkWell(
                 onTap: () {
                   Navigator.push(
