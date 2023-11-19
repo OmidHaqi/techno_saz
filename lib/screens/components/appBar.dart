@@ -1,6 +1,7 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/screens/book_Marked_Page.dart';
 import 'package:techno_saz/screens/notifications.dart';
@@ -48,7 +49,7 @@ class HomePagesAppbar extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(right: 8),
-            child: SvgPicture.asset(Adress.search),
+            child: SvgPicture.asset(Adress.search,colorFilter: ColorFilter.mode(AdaptiveTheme.of(context).brightness == Brightness.dark? SolidColors.primaryVariantColor:SolidColors.iconColor, BlendMode.srcIn),),
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
