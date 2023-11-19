@@ -25,9 +25,9 @@ class LogInPage extends StatelessWidget {
                 child: Text(
                   Strings.letsGo_str,
                   style: TextStyle(
-                      fontWeight: FontWeight.w400,
-                      fontSize: 48,
-                      ),
+                    fontWeight: FontWeight.w400,
+                    fontSize: 48,
+                  ),
                 ),
               ),
               Container(
@@ -130,9 +130,9 @@ class LogInPage extends StatelessWidget {
                   Text(
                     Strings.or_str,
                     style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 20,
-                       ),
+                      fontWeight: FontWeight.w600,
+                      fontSize: 20,
+                    ),
                   ),
                   Padding(
                     padding:
@@ -154,7 +154,7 @@ class LogInPage extends StatelessWidget {
               Container(
                 margin: EdgeInsets.fromLTRB(
                     0, size.height / 34.51851851851852, 0, 0),
-                width: size.width /1.1969387,
+                width: size.width / 1.1969387,
                 height: size.height / 16.5625,
                 decoration: BoxDecoration(
                   color: SolidColors.primaryColor,

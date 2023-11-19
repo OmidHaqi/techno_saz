@@ -18,10 +18,9 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           automaticallyImplyLeading: false,
           elevation: 0,
-         
           title: Padding(
             padding: const EdgeInsets.fromLTRB(12, 15, 12, 15),
-            child: HomePagesAppbar(titleSize: titleSize),
+            child: HomePagesAppBar(titleSize: titleSize),
           ),
         ),
         body: SingleChildScrollView(

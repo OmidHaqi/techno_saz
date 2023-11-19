@@ -8,10 +8,10 @@ import 'package:techno_saz/screens/notifications.dart';
 import '../../res/strings.dart';
 
 // ignore: must_be_immutable
-class HomePagesAppbar extends StatelessWidget {
+class HomePagesAppBar extends StatelessWidget {
   double titleSize;
 
-  HomePagesAppbar({required this.titleSize});
+  HomePagesAppBar({required this.titleSize});
   @override
   Widget build(BuildContext context) {
     return Container(
