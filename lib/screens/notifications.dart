@@ -70,9 +70,7 @@ class _NotificationsState extends State<Notifications>
                   ),
                   Text(
                     "اعلان‌ها",
-                    style: TextStyle(
-                        fontSize: widget.titleSize,
-                        fontWeight: FontWeight.bold),
+                    
                   ),
                   Expanded(
                     child: Align(

@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         drawer: Drawer(
-          backgroundColor: SolidColors.white,
+         width: 200,
           child: ListView(
             children: [
               Padding(

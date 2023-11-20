@@ -25,7 +25,10 @@ class BookMarkedPage extends StatelessWidget {
             decoration: BoxDecoration(
               border: Border(
                 bottom: BorderSide(
-                  color: Colors.black,
+                  color: AdaptiveTheme.of(context).brightness ==
+                                    Brightness.light
+                                ? SolidColors.textColor
+                                : SolidColors.white,
                   width: 1.0,
                 ),
               ),
@@ -42,8 +45,7 @@ class BookMarkedPage extends StatelessWidget {
                       ),
                       Text(
                         Strings.bookmarked_str,
-                        style: TextStyle(
-                            fontSize: titleSize, fontWeight: FontWeight.bold),
+                        
                       ),
                       Expanded(
                         child: Align(
@@ -148,10 +150,16 @@ class BookMarkedPage extends StatelessWidget {
                                         style: TextStyle(
                                             fontSize: 18,
                                             fontWeight: FontWeight.bold,
-                                            color: SolidColors.textColor),
+                                            ),
                                       ),
                                     ),
-                                    SvgPicture.asset(Address.more)
+                                    SvgPicture.asset(Address.more,
+                              colorFilter: ColorFilter.mode(
+                                  AdaptiveTheme.of(context).brightness ==
+                                          Brightness.dark
+                                      ? SolidColors.primaryVariantColor
+                                      : SolidColors.iconColor,
+                                  BlendMode.srcIn),)
                                   ],
                                 ),
                               ),

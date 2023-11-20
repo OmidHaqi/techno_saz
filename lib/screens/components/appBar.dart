@@ -42,8 +42,8 @@ class HomePagesAppBar extends StatelessWidget {
             ),
           )),
           Switch(
-              inactiveThumbImage: AssetImage(Address.changeThemeDark),
-              activeThumbImage: AssetImage(Address.changeThemeLight),
+              inactiveThumbImage: AssetImage(Address.changeThemeLight),
+              activeThumbImage: AssetImage(Address.changeThemeDark),
               value: AdaptiveTheme.of(context).mode.isDark,
               onChanged: (value) {
                 if (value) {

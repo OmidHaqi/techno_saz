@@ -6,9 +6,8 @@ import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/screens/splash_screen.dart';
 
 class MyApp extends StatelessWidget {
-
   final AdaptiveThemeMode? savedThemeData;
-  MyApp({ required this.savedThemeData});
+  MyApp({required this.savedThemeData});
 
   @override
   Widget build(BuildContext context) {
@@ -22,34 +21,97 @@ class MyApp extends StatelessWidget {
     );
     return AdaptiveTheme(
       light: ThemeData(
-        fontFamily: 'IranYekan',
+          elevatedButtonTheme: ElevatedButtonThemeData(
+            style: ButtonStyle(
+              textStyle: MaterialStatePropertyAll(TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 20,
+                color: SolidColors.textColor,
+                fontFamily: 'IranYekan',
+              )),
+              backgroundColor: MaterialStateProperty.all(
+                  const Color.fromARGB(255, 242, 242, 242)),
+              foregroundColor: MaterialStateProperty.all(SolidColors.textColor),
+              shape: MaterialStateProperty.all(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(1000),
+                ),
+              ),
+            ),
+          ),
+          fontFamily: 'IranYekan',
+          tabBarTheme: TabBarTheme(
+              labelColor: SolidColors.black,
+              unselectedLabelColor: Colors.grey,
+              indicatorColor: SolidColors.primaryColor),
+          scaffoldBackgroundColor: SolidColors.white,
+          appBarTheme: AppBarTheme(
+              backgroundColor: SolidColors.white,
+              titleTextStyle: TextStyle(
+                  color: SolidColors.textColor,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'IranYekan')),
           colorScheme: ColorScheme(
               brightness: Brightness.light,
               primary: SolidColors.primaryColor,
               onPrimary: SolidColors.onPrimaryColor,
-              secondary: SolidColors.primaryVariantColor,
+              secondary: SolidColors.primaryColor,
               onSecondary: SolidColors.onPrimaryVariantColor,
               error: Colors.red,
               onError: SolidColors.white,
               background: SolidColors.white,
-              onBackground: SolidColors.black,
+              onBackground: SolidColors.textColor,
               surface: SolidColors.primaryColor,
               onSurface: SolidColors.onPrimaryColor)),
       dark: ThemeData(
-        fontFamily: 'IranYekan',
+          elevatedButtonTheme: ElevatedButtonThemeData(
+            
+            style: ButtonStyle(
+            
+              textStyle: MaterialStatePropertyAll(TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 20,
+                color: SolidColors.textColor,
+                fontFamily: 'IranYekan',
+              )),
+              backgroundColor: MaterialStateProperty.all(
+                  SolidColors.primaryVariantColor),
+                  
+              foregroundColor: MaterialStateProperty.all(SolidColors.textColor),
+              shape: MaterialStateProperty.all(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(1000),
+                ),
+              ),
+            ),
+          ),
+          fontFamily: 'IranYekan',
+          tabBarTheme: TabBarTheme(
+              labelColor: const Color.fromARGB(255, 255, 255, 255),
+              unselectedLabelColor: Colors.grey,
+              indicatorColor: SolidColors.primaryVariantColor),
+          scaffoldBackgroundColor: const Color.fromARGB(255, 39, 39, 39),
+          appBarTheme: AppBarTheme(
+              backgroundColor: const Color.fromARGB(255, 39, 39, 39),
+              titleTextStyle: TextStyle(
+                  color: SolidColors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'IranYekan')),
           colorScheme: ColorScheme(
               brightness: Brightness.dark,
-              primary: SolidColors.primaryColor,
-              onPrimary: SolidColors.onPrimaryColor,
-              secondary: SolidColors.onPrimaryVariantColor,
+              primary: SolidColors.primaryVariantColor,
+              onPrimary: const Color.fromARGB(255, 255, 255, 255),
+              secondary: SolidColors.primaryVariantColor,
               onSecondary: SolidColors.onPrimaryVariantColor,
               error: Colors.red,
               onError: SolidColors.white,
-              background: SolidColors.black,
+              background: const Color.fromARGB(255, 39, 39, 39),
               onBackground: SolidColors.white,
-              surface: SolidColors.primaryColor,
-              onSurface: SolidColors.onPrimaryColor)),
-      initial: savedThemeData?? AdaptiveThemeMode.light,
+              surface: const Color.fromARGB(255, 0, 0, 0),
+              onSurface: const Color.fromARGB(255, 255, 255, 255))),
+      initial: savedThemeData ?? AdaptiveThemeMode.light,
       builder: (light, dark) => MaterialApp(
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
@@ -68,8 +130,8 @@ class MyApp extends StatelessWidget {
   }
 }
 
-void main()async  {
-  WidgetsFlutterBinding.ensureInitialized;
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   final savedThemeData = await AdaptiveTheme.getThemeMode();
-    runApp(MyApp(savedThemeData:savedThemeData ));
+  runApp(MyApp(savedThemeData: savedThemeData));
 }

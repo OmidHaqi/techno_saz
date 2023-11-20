@@ -56,8 +56,7 @@ class _ArticlesManagementPageState extends State<ArticlesManagementPage>
                 ),
                 Text(
                   Strings.article_managment_str,
-                  style: TextStyle(
-                      fontSize: widget.titleSize, fontWeight: FontWeight.bold),
+                  
                 ),
                 Expanded(
                   child: Align(
