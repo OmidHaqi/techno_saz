@@ -1,6 +1,10 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/data_class.dart';
+import 'package:techno_saz/res/paths.dart';
 
 class Hashtag extends StatelessWidget {
   const Hashtag({
@@ -13,7 +17,7 @@ class Hashtag extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: size.height / 27.0,
+      height: size.height / 21.5,
       width: size.width / 1.02,
       child: ListView.builder(
         physics: BouncingScrollPhysics(),
@@ -22,34 +26,25 @@ class Hashtag extends StatelessWidget {
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.fromLTRB(2, 0, 4, 0),
-            child: Container(
-              decoration: BoxDecoration(
-                color: SolidColors.primaryColor,
-                borderRadius: BorderRadius.circular(100),
-              ),
-              child: Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 8, 12, 4),
-                    child: Text(
-                      "# ",
-                      style: TextStyle(
-                          color: SolidColors.onPrimaryColor,
-                          fontSize: 17,
-                          fontWeight: FontWeight.w300),
+            child: SizedBox(
+              child: TextButton(
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 7, 12, 4),
+                      child: Text(
+                        "# ",
+                      ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(12, 2, 0, 0),
-                    child: Text(
-                      DataClass.tagList[index].title,
-                      style: TextStyle(
-                          color: SolidColors.onPrimaryColor,
-                          fontSize: 17,
-                          fontWeight: FontWeight.w300),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(12, 2, 0, 0),
+                      child: Text(
+                        DataClass.tagList[index].title,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
+                onPressed: () {},
               ),
             ),
           );
