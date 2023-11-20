@@ -1,11 +1,9 @@
-import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/screens/articles_management_page.dart';
-import 'package:techno_saz/screens/home_page.dart';
 import 'package:techno_saz/screens/logIn_two_page.dart';
 
 class BottomNavBar extends StatefulWidget {
