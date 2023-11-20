@@ -114,5 +114,6 @@ class Address {
       static const ic_profile_drewer ="assets/icons/ic_profile_drewer.svg";
       static const ic_share_drewer ="assets/icons/ic_share_drewer.svg";
       static const ic_update_drewer ="assets/icons/ic_update_drewer.svg";
+      static const ic_hashtag ="assets/icons/ic_hashtag.svg";
       
 }
