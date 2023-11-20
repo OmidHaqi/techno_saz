@@ -41,7 +41,17 @@ class HomePagesAppBar extends StatelessWidget {
                   TextStyle(fontSize: titleSize, fontWeight: FontWeight.bold),
             ),
           )),
-          
+          Switch(
+              inactiveThumbImage: AssetImage(Address.changeThemeDark),
+              activeThumbImage: AssetImage(Address.changeThemeLight),
+              value: AdaptiveTheme.of(context).mode.isDark,
+              onChanged: (value) {
+                if (value) {
+                  AdaptiveTheme.of(context).setDark();
+                } else {
+                  AdaptiveTheme.of(context).setLight();
+                }
+              }),
           Padding(
             padding: const EdgeInsets.only(right: 8),
             child: SvgPicture.asset(
