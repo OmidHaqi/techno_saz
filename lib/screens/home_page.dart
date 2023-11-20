@@ -55,6 +55,7 @@ class HomePage extends StatelessWidget {
                         height: 10,
                       ),
                       ListTile(
+                        onTap: (){},
                         leading: SvgPicture.asset(
                           Address.ic_profile_drewer,
                           colorFilter: ColorFilter.mode(
@@ -67,6 +68,7 @@ class HomePage extends StatelessWidget {
                         title: Text("پروفایل"),
                       ),
                       ListTile(
+                        onTap: (){},
                         leading: SvgPicture.asset(
                           Address.ic_share_drewer,
                           colorFilter: ColorFilter.mode(
@@ -79,6 +81,7 @@ class HomePage extends StatelessWidget {
                         title: Text("اشتراک گذاری"),
                       ),
                       ListTile(
+                        onTap: (){},
                         leading: SvgPicture.asset(
                           Address.ic_update_drewer,
                           colorFilter: ColorFilter.mode(
@@ -91,6 +94,7 @@ class HomePage extends StatelessWidget {
                         title: Text("بروزرسانی"),
                       ),
                       ListTile(
+                        onTap: (){},
                         leading: SvgPicture.asset(
                           Address.ic_github_drewer,
                           colorFilter: ColorFilter.mode(
@@ -103,6 +107,7 @@ class HomePage extends StatelessWidget {
                         title: Text("گیت هاب"),
                       ),
                       ListTile(
+                        onTap: (){},
                         leading: SvgPicture.asset(
                           Address.ic_about_drewer,
                           colorFilter: ColorFilter.mode(
