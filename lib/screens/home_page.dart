@@ -5,7 +5,6 @@ import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/screens/book_Marked_Page.dart';
-import 'package:techno_saz/screens/components/appBar.dart';
 import 'package:techno_saz/screens/notifications.dart';
 
 import 'components/bottom_nav_bar.dart';
