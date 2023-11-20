@@ -21,6 +21,24 @@ class MyApp extends StatelessWidget {
     );
     return AdaptiveTheme(
       light: ThemeData(
+          textButtonTheme: TextButtonThemeData(
+            style: ButtonStyle(
+              textStyle: MaterialStatePropertyAll(TextStyle(
+                color: SolidColors.onPrimaryColor,
+                fontSize: 17,
+                fontWeight: FontWeight.w600,
+                fontFamily: 'IranYekan',
+              )),
+              backgroundColor:
+                  MaterialStateProperty.all(SolidColors.primaryColor),
+              foregroundColor: MaterialStateProperty.all(SolidColors.white),
+              shape: MaterialStateProperty.all(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(1000),
+                ),
+              ),
+            ),
+          ),
           elevatedButtonTheme: ElevatedButtonThemeData(
             style: ButtonStyle(
               textStyle: MaterialStatePropertyAll(TextStyle(
@@ -65,19 +83,35 @@ class MyApp extends StatelessWidget {
               surface: SolidColors.primaryColor,
               onSurface: SolidColors.onPrimaryColor)),
       dark: ThemeData(
-          elevatedButtonTheme: ElevatedButtonThemeData(
-            
+          textButtonTheme: TextButtonThemeData(
             style: ButtonStyle(
-            
+              textStyle: MaterialStatePropertyAll(TextStyle(
+                color: SolidColors.onPrimaryColor,
+                fontSize: 17,
+                fontWeight: FontWeight.w600,
+                fontFamily: 'IranYekan',
+              )),
+              backgroundColor:
+                  MaterialStateProperty.all(SolidColors.primaryVariantColor),
+              foregroundColor:
+                  MaterialStateProperty.all((SolidColors.textColor)),
+              shape: MaterialStateProperty.all(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(1000),
+                ),
+              ),
+            ),
+          ),
+          elevatedButtonTheme: ElevatedButtonThemeData(
+            style: ButtonStyle(
               textStyle: MaterialStatePropertyAll(TextStyle(
                 fontWeight: FontWeight.w400,
                 fontSize: 20,
                 color: SolidColors.textColor,
                 fontFamily: 'IranYekan',
               )),
-              backgroundColor: MaterialStateProperty.all(
-                  SolidColors.primaryVariantColor),
-                  
+              backgroundColor:
+                  MaterialStateProperty.all(SolidColors.primaryVariantColor),
               foregroundColor: MaterialStateProperty.all(SolidColors.textColor),
               shape: MaterialStateProperty.all(
                 RoundedRectangleBorder(
