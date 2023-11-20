@@ -112,7 +112,8 @@ class _NickNamePageState extends State<NickNamePage> {
               ),
               Padding(
                 padding: EdgeInsets.only(top: size.height / 25.88),
-                child: Container(
+                child: SizedBox(
+                
                   width: size.width / 1.11,
                   height: size.height / 11.79,
                   child: GridView.builder(
@@ -127,53 +128,69 @@ class _NickNamePageState extends State<NickNamePage> {
                         mainAxisSpacing: 8,
                       ),
                       itemBuilder: (context, index) {
-                        return Container(
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(1000)),
-                          child: Padding(
-                            padding: const EdgeInsets.fromLTRB(2, 0, 4, 0),
-                            child: GestureDetector(
-                              onTap: () {
-                                setState(() {
-                                  isSelected[index] = !isSelected[index];
-                                });
-                              },
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: isSelected[index]
-                                      ? SolidColors.primaryVariantColor
-                                      : SolidColors.primaryColor,
-                                  borderRadius: BorderRadius.circular(100),
+                        return SizedBox(
+                         
+                          child: TextButton(
+                            child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "# ",
                                 ),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          0, 8, 12, 4),
-                                      child: Text(
-                                        "# ",
-                                        style: TextStyle(
-                                            fontSize: 17,
-                                            fontWeight: FontWeight.w300),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          12, 2, 0, 0),
-                                      child: Text(
-                                        DataClass.tagList[index].title,
-                                        style: TextStyle(
-                                            fontSize: 17,
-                                            fontWeight: FontWeight.w300),
-                                      ),
-                                    ),
-                                  ],
+                                Text(
+                                  DataClass.tagList[index].title,
                                 ),
-                              ),
+                              ],
                             ),
+                            onPressed: () {},
                           ),
                         );
+                        // return Container(
+                        //   decoration: BoxDecoration(
+                        //       borderRadius: BorderRadius.circular(1000)),
+                        //   child: Padding(
+                        //     padding: const EdgeInsets.fromLTRB(2, 0, 4, 0),
+                        //     child: GestureDetector(
+                        //       onTap: () {
+                        //         setState(() {
+                        //           isSelected[index] = !isSelected[index];
+                        //         });
+                        //       },
+                        //       child: Container(
+                        //         decoration: BoxDecoration(
+                        //           color: isSelected[index]
+                        //               ? SolidColors.primaryVariantColor
+                        //               : SolidColors.primaryColor,
+                        //           borderRadius: BorderRadius.circular(100),
+                        //         ),
+                        //         child: Row(
+                        //           mainAxisAlignment: MainAxisAlignment.center,
+                        //           children: [
+                        //             Padding(
+                        //               padding: const EdgeInsets.fromLTRB(
+                        //                   0, 8, 12, 4),
+                        //               child: Text(
+                        //                 "# ",
+                        //                 style: TextStyle(
+                        //                     fontSize: 17,
+                        //                     fontWeight: FontWeight.w300),
+                        //               ),
+                        //             ),
+                        //             Padding(
+                        //               padding: const EdgeInsets.fromLTRB(
+                        //                   12, 2, 0, 0),
+                        //               child: Text(
+                        //                 DataClass.tagList[index].title,
+                        //                 style: TextStyle(
+                        //                     fontSize: 17,
+                        //                     fontWeight: FontWeight.w300),
+                        //               ),
+                        //             ),
+                        //           ],
+                        //         ),
+                        //       ),
+                        //     ),
+                        //   ),
+                        // );
                       }),
                 ),
               ),
