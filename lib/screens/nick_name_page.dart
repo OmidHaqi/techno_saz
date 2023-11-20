@@ -18,8 +18,6 @@ class _NickNamePageState extends State<NickNamePage> {
 
   @override
   Widget build(BuildContext context) {
-    List<bool> isSelected =
-        List.generate(DataClass.tagList.length, (index) => false);
     var size = MediaQuery.of(context).size;
     return Scaffold(
       resizeToAvoidBottomInset: false,
