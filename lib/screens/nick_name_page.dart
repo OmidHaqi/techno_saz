@@ -65,16 +65,7 @@ class _NickNamePageState extends State<NickNamePage> {
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.symmetric(
                         vertical: size.height / 40, horizontal: 10),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(15),
-                      borderSide:
-                          BorderSide(color: SolidColors.black, width: 2),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(15),
-                      borderSide:
-                          BorderSide(color: SolidColors.primaryColor, width: 2),
-                    ),
+                    
                     hintText: Strings.nickname_str,
                     suffixIconConstraints: BoxConstraints(
                       maxHeight: 48.0,
@@ -275,26 +266,12 @@ class _NickNamePageState extends State<NickNamePage> {
                                         child: TextField(
                                           controller: nickName,
                                           textDirection: TextDirection.rtl,
-                                          decoration:  InputDecoration(
+                                          decoration: InputDecoration(
                                             contentPadding:
                                                 EdgeInsets.symmetric(
                                                     vertical: size.height / 40,
                                                     horizontal: 10),
-                                            border:  OutlineInputBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(15),
-                                              borderSide:  BorderSide(
-                                                 
-                                                  width: 1),
-                                            ),
-                                            focusedBorder: OutlineInputBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(15),
-                                              borderSide: BorderSide(
-                                                  color:
-                                                      SolidColors.primaryColor,
-                                                  width: 2),
-                                            ),
+                                            
                                             hintText: Strings.email_str,
                                             suffixIconConstraints:
                                                 BoxConstraints(
@@ -466,28 +443,7 @@ class _NickNamePageState extends State<NickNamePage> {
                                                                                 40,
                                                                         horizontal:
                                                                             10),
-                                                                    border:
-                                                                        OutlineInputBorder(
-                                                                      borderRadius:
-                                                                          BorderRadius.circular(
-                                                                              15),
-                                                                      borderSide: BorderSide(
-                                                                          color: SolidColors
-                                                                              .black,
-                                                                          width:
-                                                                              2),
-                                                                    ),
-                                                                    focusedBorder:
-                                                                        OutlineInputBorder(
-                                                                      borderRadius:
-                                                                          BorderRadius.circular(
-                                                                              15),
-                                                                      borderSide: BorderSide(
-                                                                          color: SolidColors
-                                                                              .primaryColor,
-                                                                          width:
-                                                                              2),
-                                                                    ),
+                                                                    
                                                                     hintText:
                                                                         Strings
                                                                             .verified_code_str,
