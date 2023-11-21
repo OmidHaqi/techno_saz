@@ -71,17 +71,24 @@ class HomePageBanner extends StatelessWidget {
                                 ),
                                 Positioned(
                                   right: 10,
-                                  top: 75,
-                                  child: Text(
-                                    DataClass
-                                        .ArticleManagementPagepublishedModelList[
-                                            index]
-                                        .titleArticleUr,
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
-                                      color:
-                                          SolidColors.onPrimaryColor,
+                                  top:65,
+                                  child: Container(
+                                    // color: Colors.amber,
+                                    width: size.width / 1.5,
+                                        height: size.height /15,
+                                    child: Text(
+                                      
+                                      DataClass
+                                          .ArticleManagementPagepublishedModelList[
+                                              index]
+                                          .titleArticleUr,
+                                      style: TextStyle(
+                                        height: 1.5,
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color:
+                                            SolidColors.onPrimaryColor,
+                                      ),
                                     ),
                                   ),
                                 ),
