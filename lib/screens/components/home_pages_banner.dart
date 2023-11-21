@@ -59,12 +59,19 @@ class HomePagesBanner extends StatelessWidget {
                           Positioned(
                             right: 10,
                             top: 75,
-                            child: Text(
-                              DataClass.homePagePosterMap["titleOnBanner"],
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                                color: SolidColors.onPrimaryColor,
+                            child: Container(
+                              // color: Colors.amber,
+                              width: size.width / 1.5,
+                                height: size.height / 20,
+                                
+                              child: Text(
+                                DataClass.homePagePosterMap["titleOnBanner"],overflow: TextOverflow.ellipsis,
+                                  maxLines: 2,
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: SolidColors.onPrimaryColor,
+                                ),
                               ),
                             ),
                           ),
