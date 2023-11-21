@@ -60,6 +60,7 @@ customDialoge(
                 SizedBox(height: 15),
                 SpinKitCircle(
                   size: 40,
+                  
                   color: SolidColors.primaryColor,
                 )
               ],

@@ -4,6 +4,7 @@ import 'package:techno_saz/res/colors.dart';
 
 ThemeData lightTheme(Size size) {
   return ThemeData(
+    
       inputDecorationTheme: InputDecorationTheme(
         contentPadding:
             EdgeInsets.symmetric(vertical: size.height / 40, horizontal: 10),
