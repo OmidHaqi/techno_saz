@@ -108,9 +108,9 @@ class BookMarkedPage extends StatelessWidget {
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       childAspectRatio:
-                          0.60, // change this value for different results
-                      crossAxisSpacing: 10,
-                      mainAxisSpacing: 5,
+                          0.62, // change this value for different results
+                      crossAxisSpacing: 15,
+                      mainAxisSpacing: 10,
                     ),
                     itemBuilder: (context, index) {
                       return InkWell(
@@ -118,7 +118,7 @@ class BookMarkedPage extends StatelessWidget {
                         child: Padding(
                           padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                           child: Container(
-                            color: Colors.amber,
+                            // color: Colors.amber,
                             width: size.width / 2.5,
                             height: size.height / 3.9,
                             child: Column(
@@ -145,13 +145,13 @@ class BookMarkedPage extends StatelessWidget {
                                 ),
                                 Padding(
                                   padding:
-                                      const EdgeInsets.fromLTRB(6, 12, 6, 12),
+                                      const EdgeInsets.fromLTRB(0, 12, 6, 12),
                                   child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       Container(
-                                        color: Colors.blue,
+                                        // color: Colors.blue,
                                         width: size.width / 3.3,
                                         height: size.height / 20,
                                         child: 
