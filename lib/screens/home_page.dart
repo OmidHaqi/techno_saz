@@ -21,10 +21,13 @@ class HomePage extends StatefulWidget {
 
 
 class _HomePageState extends State<HomePage> {
+
   final GlobalKey<ScaffoldState> _key = GlobalKey();
+  
     void _openDrawer() {
     _key.currentState!.openDrawer();
   }
+
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
