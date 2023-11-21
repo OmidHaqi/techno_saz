@@ -40,7 +40,8 @@ customDialoge(
                     Container(
                       padding: EdgeInsets.all(42),
                       decoration: BoxDecoration(
-                          color: SolidColors.primaryColor,
+                        
+                          color:AdaptiveTheme.of(context).brightness==Brightness.light? SolidColors.primaryColor:SolidColors.primaryVariantColor ,
                           shape: BoxShape.circle),
                     ),
                     Icon(Icons.person, size: 50, color: Colors.white)
