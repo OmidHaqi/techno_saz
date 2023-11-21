@@ -14,7 +14,7 @@ customDialoge(
     context: context,
     builder: (context) {
       Timer(
-        Duration(seconds: 1),
+        Duration(seconds: 5),
         () {
           Navigator.pop(context);
           Navigator.pushReplacement(
