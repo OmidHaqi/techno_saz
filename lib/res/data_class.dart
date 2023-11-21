@@ -571,7 +571,7 @@ ________________________________________
     ArticleManagementPagePublishedModel(
         idArticleUr: "1",
         imageArticleUr: Address.img_Social_damage_in_the_family_Management_page,
-        titleArticleUr: "آسیب های اجتماعی  یک دو سخ چهاتیسبنتاینتاینستبیار چختدینتز در خانواده",
+        titleArticleUr: "آسیب های اجتماعی در خانواده",
         writerProfilePhotoUr: Address.Img_writer_of_managing_articles,
         PublicationDateArticleUr: "3" + "  " + Strings.daysAgo_str,
         readingTime: "5" + Strings.minutes,
