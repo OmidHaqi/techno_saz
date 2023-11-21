@@ -98,14 +98,14 @@ class BookMarkedPage extends StatelessWidget {
             Expanded(
               child: Padding(
                 padding: EdgeInsets.fromLTRB(
-              size.width / 30.71, 0, size.width / 30.71, size.height / 66.57),
+                    size.width / 11.2, 5, size.width / 11.2, 0),
                 child: GridView.builder(
                     itemCount: DataClass.BookMarkedArticlePageModelList.length,
                     physics: BouncingScrollPhysics(),
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       childAspectRatio:
-                          0.72, // change this value for different results
+                          0.62, // change this value for different results
                       crossAxisSpacing: 15,
                       mainAxisSpacing: 10,
                     ),
@@ -115,7 +115,7 @@ class BookMarkedPage extends StatelessWidget {
                         child: Padding(
                           padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                           child: Container(
-                          
+                            
                             decoration: BoxDecoration(
                                 boxShadow: <BoxShadow>[
                                   BoxShadow(
@@ -124,9 +124,9 @@ class BookMarkedPage extends StatelessWidget {
                                       Color.fromARGB(43, 164, 99, 77):Color.fromARGB(12, 255, 255, 255),
                                       offset: Offset(1, 2)),
                                 ],
-                                border: Border.all(width: 0.01),
+                                
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(20))),
+                                    BorderRadius.all(Radius.circular(15))),
                             // color: Colors.amber,
                             width: size.width / 2.5,
                             height: size.height / 3.9,
@@ -136,13 +136,7 @@ class BookMarkedPage extends StatelessWidget {
                                   width: size.width / 2.5,
                                   height: size.height / 5.3,
                                   decoration: BoxDecoration(
-                                    boxShadow: <BoxShadow>[
-                                      BoxShadow(
-                                          blurRadius: 4,
-                                          color:
-                                              Color.fromARGB(78, 164, 99, 77),
-                                          offset: Offset(2, 4)),
-                                    ],
+                                    
                                     borderRadius: BorderRadius.circular(20),
                                     image: DecorationImage(
                                         image: AssetImage(DataClass

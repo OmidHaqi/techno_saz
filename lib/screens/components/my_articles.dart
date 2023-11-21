@@ -79,7 +79,7 @@ class MyArticles extends StatelessWidget {
                                     : Color.fromARGB(12, 255, 255, 255),
                                 offset: Offset(1, 2)),
                           ],
-                          border: Border.all(width: 0.01),
+                          
                           borderRadius: BorderRadius.all(Radius.circular(20))),
                       // color: Colors.amber,
                       width: size.width / 2.5,
@@ -90,12 +90,7 @@ class MyArticles extends StatelessWidget {
                             width: size.width / 2.5,
                             height: size.height / 5.3,
                             decoration: BoxDecoration(
-                              boxShadow: <BoxShadow>[
-                                BoxShadow(
-                                    blurRadius: 4,
-                                    color: Color.fromARGB(78, 164, 99, 77),
-                                    offset: Offset(2, 4)),
-                              ],
+                              
                               borderRadius: BorderRadius.circular(20),
                               image: DecorationImage(
                                   image: AssetImage(DataClass
