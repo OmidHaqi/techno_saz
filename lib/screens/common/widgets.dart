@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:techno_saz/res/colors.dart';
@@ -39,7 +40,8 @@ customDialoge(
                     Container(
                       padding: EdgeInsets.all(42),
                       decoration: BoxDecoration(
-                          color: SolidColors.primaryColor,
+                        
+                          color:AdaptiveTheme.of(context).brightness==Brightness.light? SolidColors.primaryColor:SolidColors.primaryVariantColor ,
                           shape: BoxShape.circle),
                     ),
                     Icon(Icons.person, size: 50, color: Colors.white)
@@ -61,7 +63,7 @@ customDialoge(
                 SpinKitCircle(
                   size: 40,
                   
-                  color: SolidColors.primaryColor,
+                  color:AdaptiveTheme.of(context).brightness==Brightness.light? SolidColors.primaryColor:SolidColors.primaryVariantColor,
                 )
               ],
             ),
