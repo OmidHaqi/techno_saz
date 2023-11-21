@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:techno_saz/res/colors.dart';
@@ -61,7 +62,7 @@ customDialoge(
                 SpinKitCircle(
                   size: 40,
                   
-                  color: SolidColors.primaryColor,
+                  color:AdaptiveTheme.of(context).brightness==Brightness.light? SolidColors.primaryColor:SolidColors.primaryVariantColor,
                 )
               ],
             ),
