@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
         statusBarColor: SolidColors.primaryVariantColor,
@@ -21,6 +22,18 @@ class MyApp extends StatelessWidget {
     );
     return AdaptiveTheme(
       light: ThemeData(
+          inputDecorationTheme: InputDecorationTheme(
+            contentPadding: EdgeInsets.symmetric(
+                vertical: size.height / 40, horizontal: 10),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(15),
+              borderSide: BorderSide(width: 2, color: SolidColors.primaryColor),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(15),
+              borderSide: BorderSide(color: SolidColors.iconColor, width: 2),
+            ),
+          ),
           textButtonTheme: TextButtonThemeData(
             style: ButtonStyle(
               textStyle: MaterialStatePropertyAll(TextStyle(
@@ -83,6 +96,20 @@ class MyApp extends StatelessWidget {
               surface: SolidColors.primaryColor,
               onSurface: SolidColors.onPrimaryColor)),
       dark: ThemeData(
+          inputDecorationTheme: InputDecorationTheme(
+            contentPadding: EdgeInsets.symmetric(
+                vertical: size.height / 40, horizontal: 10),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(15),
+              borderSide: BorderSide(
+                  width: 1, color: const Color.fromARGB(255, 255, 255, 255)),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(15),
+              borderSide: BorderSide(
+                  color: const Color.fromARGB(255, 255, 255, 255), width: 2),
+            ),
+          ),
           textButtonTheme: TextButtonThemeData(
             style: ButtonStyle(
               textStyle: MaterialStatePropertyAll(TextStyle(
