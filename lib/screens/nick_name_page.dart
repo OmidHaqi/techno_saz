@@ -113,22 +113,26 @@ class _NickNamePageState extends State<NickNamePage> {
                       mainAxisSpacing: 8,
                     ),
                     itemBuilder: (context, index) {
-                      return SizedBox(
-                        child: TextButton(
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "# ",
-                              ),
-                              Text(
-                                DataClass.tagList[index].title,
-                              ),
-                            ],
-                          ),
-                          onPressed: () {},
-                        ),
-                      );
+                      return Padding(
+            padding: const EdgeInsets.fromLTRB(2, 0, 4, 0),
+            child: TextButton(
+              
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(3, 0, 3, 0),
+                child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "# ",
+                    ),
+                    Text(
+                      DataClass.tagList[index].title,
+                    ),
+                  ],
+                ),
+              ),
+              onPressed: () {},
+            ),
+          );
                       
                     }),
               ),
