@@ -19,10 +19,8 @@ class RecentArticle extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding:  EdgeInsets.fromLTRB(size.width / 30.71,
-                   0,
-                    size.width / 30.71,
-                    size.height / 66.57),
+          padding: EdgeInsets.fromLTRB(
+              size.width / 30.71, 0, size.width / 30.71, size.height / 66.57),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -42,10 +40,8 @@ class RecentArticle extends StatelessWidget {
           ),
         ),
         Padding(
-          padding:  EdgeInsets.fromLTRB(size.width / 30.71,
-                    0,
-                    size.width / 30.71,
-                    size.height / 66.57),
+          padding: EdgeInsets.fromLTRB(
+              size.width / 30.71, 0, size.width / 30.71, size.height / 66.57),
           child: Container(
             // color: Colors.amber,
             height: size.height / 3,
@@ -132,7 +128,8 @@ class RecentArticle extends StatelessWidget {
                             child: Row(
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.fromLTRB(4, 0, 10, 0),
+                                  padding:
+                                      const EdgeInsets.fromLTRB(4, 0, 10, 0),
                                   child: Container(
                                     height: size.height / 37.28,
                                     width: size.width / 17.2,
@@ -149,8 +146,8 @@ class RecentArticle extends StatelessWidget {
                                 SizedBox(
                                   width: size.width / 7,
                                   child: Text(
-                                    DataClass
-                                        .ArticlePageModelList[index].writersName,
+                                    DataClass.ArticlePageModelList[index]
+                                        .writersName,
                                     overflow: TextOverflow.ellipsis,
                                     maxLines: 1,
                                     style: TextStyle(
@@ -162,7 +159,8 @@ class RecentArticle extends StatelessWidget {
                                   DataClass.ArticlePageModelList[index]
                                       .PublicationDateArticleUr,
                                   style: TextStyle(
-                                      fontSize: 12, fontWeight: FontWeight.bold),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold),
                                 ),
                               ],
                             ),
