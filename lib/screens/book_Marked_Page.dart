@@ -25,10 +25,10 @@ class BookMarkedPage extends StatelessWidget {
             decoration: BoxDecoration(
               border: Border(
                 bottom: BorderSide(
-                  color: AdaptiveTheme.of(context).brightness ==
-                                    Brightness.light
-                                ? SolidColors.textColor
-                                : SolidColors.white,
+                  color:
+                      AdaptiveTheme.of(context).brightness == Brightness.light
+                          ? SolidColors.textColor
+                          : SolidColors.white,
                   width: 1.0,
                 ),
               ),
@@ -41,11 +41,18 @@ class BookMarkedPage extends StatelessWidget {
                     children: [
                       Padding(
                         padding: const EdgeInsets.fromLTRB(4, 0, 0, 0),
-                        child: SvgPicture.asset(Address.save,colorFilter: ColorFilter.mode(AdaptiveTheme.of(context).brightness == Brightness.dark? SolidColors.primaryVariantColor:SolidColors.iconColor, BlendMode.srcIn),),
+                        child: SvgPicture.asset(
+                          Address.save,
+                          colorFilter: ColorFilter.mode(
+                              AdaptiveTheme.of(context).brightness ==
+                                      Brightness.dark
+                                  ? SolidColors.primaryVariantColor
+                                  : SolidColors.iconColor,
+                              BlendMode.srcIn),
+                        ),
                       ),
                       Text(
                         Strings.bookmarked_str,
-                        
                       ),
                       Expanded(
                         child: Align(
@@ -93,22 +100,23 @@ class BookMarkedPage extends StatelessWidget {
           children: [
             Expanded(
               child: Padding(
-                padding:  EdgeInsets.fromLTRB(size.width / 11.2, 5, size.width / 11.2, 0),
+                padding: EdgeInsets.fromLTRB(
+                    size.width / 11.2, 5, size.width / 11.2, 0),
                 child: GridView.builder(
                     itemCount: DataClass.BookMarkedArticlePageModelList.length,
                     physics: BouncingScrollPhysics(),
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       childAspectRatio:
-                          0.70, // change this value for different results
-                      crossAxisSpacing: 0,
-                      mainAxisSpacing: 0,
+                          0.60, // change this value for different results
+                      crossAxisSpacing: 10,
+                      mainAxisSpacing: 5,
                     ),
                     itemBuilder: (context, index) {
                       return InkWell(
                         onTap: () {},
                         child: Padding(
-                          padding:  EdgeInsets.fromLTRB(0, 0,0 , 0),
+                          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                           child: Container(
                             color: Colors.amber,
                             width: size.width / 2.5,
@@ -122,13 +130,15 @@ class BookMarkedPage extends StatelessWidget {
                                     boxShadow: <BoxShadow>[
                                       BoxShadow(
                                           blurRadius: 4,
-                                          color: Color.fromARGB(78, 164, 99, 77),
+                                          color:
+                                              Color.fromARGB(78, 164, 99, 77),
                                           offset: Offset(2, 4)),
                                     ],
                                     borderRadius: BorderRadius.circular(25),
                                     image: DecorationImage(
                                         image: AssetImage(DataClass
-                                            .BookMarkedArticlePageModelList[index]
+                                            .BookMarkedArticlePageModelList[
+                                                index]
                                             .imageArticleUr),
                                         fit: BoxFit.cover),
                                   ),
@@ -140,34 +150,44 @@ class BookMarkedPage extends StatelessWidget {
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
-                                      SizedBox(
-                                        width: size.width / 2.8,
+                                      Container(
+                                        color: Colors.blue,
+                                        width: size.width / 3,
                                         height: size.height / 20,
-                                        child: Text(
-                                          DataClass
-                                              .BookMarkedArticlePageModelList[
-                                                  index]
-                                              .titleArticleUr,
-                                          overflow: TextOverflow.ellipsis,
-                                          maxLines: 2,
-                                          style: TextStyle(
-                                              fontSize: 18,
-                                              fontWeight: FontWeight.bold,
+                                        child: Row(
+                                          children: [
+                                            Text(
+                                              DataClass
+                                                  .BookMarkedArticlePageModelList[
+                                                      index]
+                                                  .titleArticleUr,
+                                              overflow: TextOverflow.ellipsis,
+                                              maxLines: 2,
+                                              style: TextStyle(
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.bold,
                                               ),
+                                            ),
+                                            SvgPicture.asset(
+                                              Address.more,
+                                              colorFilter: ColorFilter.mode(
+                                                  AdaptiveTheme.of(context)
+                                                              .brightness ==
+                                                          Brightness.dark
+                                                      ? SolidColors
+                                                          .primaryVariantColor
+                                                      : SolidColors.iconColor,
+                                                  BlendMode.srcIn),
+                                            )
+                                          ],
                                         ),
                                       ),
-                                      SvgPicture.asset(Address.more,
-                                colorFilter: ColorFilter.mode(
-                                    AdaptiveTheme.of(context).brightness ==
-                                            Brightness.dark
-                                        ? SolidColors.primaryVariantColor
-                                        : SolidColors.iconColor,
-                                    BlendMode.srcIn),)
                                     ],
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.fromLTRB(8, 0, 1, 0),
+                                  padding:
+                                      const EdgeInsets.fromLTRB(8, 0, 1, 0),
                                   child: Row(
                                     children: [
                                       Padding(
