@@ -108,31 +108,25 @@ class _NickNamePageState extends State<NickNamePage> {
                     physics: BouncingScrollPhysics(),
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
-                      childAspectRatio: 0.3,
-                      crossAxisSpacing: 8,
-                      mainAxisSpacing: 8,
+                      childAspectRatio: 0.29,
+                      crossAxisSpacing: 1,
+                      mainAxisSpacing:1,
                     ),
                     itemBuilder: (context, index) {
-                      return Padding(
-            padding: const EdgeInsets.fromLTRB(2, 0, 4, 0),
-            child: TextButton(
-              
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(3, 0, 3, 0),
-                child: Row(mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "# ",
-                    ),
-                    Text(
-                      DataClass.tagList[index].title,
-                    ),
-                  ],
-                ),
-              ),
-              onPressed: () {},
-            ),
-          );
+                      return TextButton(
+                        
+                        child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "# ",
+                            ),
+                            Text(
+                              DataClass.tagList[index].title,
+                            ),
+                          ],
+                        ),
+                        onPressed: () {},
+                      );
                       
                     }),
               ),
