@@ -35,51 +35,48 @@ class BookMarkedPage extends StatelessWidget {
             ),
             child: Column(
               children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(4, 0, 0, 0),
-                        child: SvgPicture.asset(
-                          Address.save,
-                          colorFilter: ColorFilter.mode(
-                              AdaptiveTheme.of(context).brightness ==
-                                      Brightness.dark
-                                  ? SolidColors.primaryVariantColor
-                                  : SolidColors.iconColor,
-                              BlendMode.srcIn),
-                        ),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(4, 0, 0, 0),
+                      child: SvgPicture.asset(
+                        Address.save,
+                        colorFilter: ColorFilter.mode(
+                            AdaptiveTheme.of(context).brightness ==
+                                    Brightness.dark
+                                ? SolidColors.primaryVariantColor
+                                : SolidColors.iconColor,
+                            BlendMode.srcIn),
                       ),
-                      Text(
-                        Strings.bookmarked_str,
-                      ),
-                      Expanded(
-                        child: Align(
-                          alignment: Alignment.centerLeft,
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => HomePage(),
-                                ),
-                              );
-                            },
-                            child: SvgPicture.asset(
-                              Address.arrowLeft,
-                              colorFilter: ColorFilter.mode(
-                                  AdaptiveTheme.of(context).brightness ==
-                                          Brightness.dark
-                                      ? SolidColors.primaryVariantColor
-                                      : SolidColors.iconColor,
-                                  BlendMode.srcIn),
-                            ),
+                    ),
+                    Text(
+                      Strings.bookmarked_str,
+                    ),
+                    Expanded(
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => HomePage(),
+                              ),
+                            );
+                          },
+                          child: SvgPicture.asset(
+                            Address.arrowLeft,
+                            colorFilter: ColorFilter.mode(
+                                AdaptiveTheme.of(context).brightness ==
+                                        Brightness.dark
+                                    ? SolidColors.primaryVariantColor
+                                    : SolidColors.iconColor,
+                                BlendMode.srcIn),
                           ),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
@@ -101,14 +98,14 @@ class BookMarkedPage extends StatelessWidget {
             Expanded(
               child: Padding(
                 padding: EdgeInsets.fromLTRB(
-                    size.width / 11.2, 5, size.width / 11.2, 0),
+              size.width / 30.71, 0, size.width / 30.71, size.height / 66.57),
                 child: GridView.builder(
                     itemCount: DataClass.BookMarkedArticlePageModelList.length,
                     physics: BouncingScrollPhysics(),
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       childAspectRatio:
-                          0.62, // change this value for different results
+                          0.72, // change this value for different results
                       crossAxisSpacing: 15,
                       mainAxisSpacing: 10,
                     ),
@@ -118,6 +115,7 @@ class BookMarkedPage extends StatelessWidget {
                         child: Padding(
                           padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                           child: Container(
+                          
                             decoration: BoxDecoration(
                                 boxShadow: <BoxShadow>[
                                   BoxShadow(
