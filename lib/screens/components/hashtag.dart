@@ -22,26 +22,22 @@ class Hashtag extends StatelessWidget {
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.fromLTRB(2, 0, 4, 0),
-            child: SizedBox(
-              child: TextButton(
-                child: Row(
+            child: TextButton(
+              
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(3, 0, 3, 0),
+                child: Row(mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 7, 12, 4),
-                      child: Text(
-                        "# ",
-                      ),
+                    Text(
+                      "# ",
                     ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(12, 2, 0, 0),
-                      child: Text(
-                        DataClass.tagList[index].title,
-                      ),
+                    Text(
+                      DataClass.tagList[index].title,
                     ),
                   ],
                 ),
-                onPressed: () {},
               ),
+              onPressed: () {},
             ),
           );
         },
