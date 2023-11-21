@@ -95,10 +95,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
                                     children: [
                                       SvgPicture.asset(
                                         Address
-                                            .vc_share_Knowledge_others,
-
-                                        // width: size.width / 1.64,
-                                        // height: size.height / 3.14,
+                                            .vc_share_Knowledge_others,fit: BoxFit.fill,
                                       ),
                                       Text(
                                         Strings.share_knowlage_str,
