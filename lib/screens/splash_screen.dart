@@ -4,6 +4,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/strings.dart';
+import 'package:techno_saz/screens/book_Marked_Page.dart';
 import 'package:techno_saz/screens/login_page.dart';
 
 
@@ -17,11 +18,11 @@ class _MySplashState extends State<MySplash> {
   void initState() {
     super.initState();
     Timer(
-      const Duration(seconds: 5),
+      const Duration(seconds: 1),
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => LogInPage(),
+          builder: (context) => BookMarkedPage(titleSize: 20),
         ),
       ),
     );
