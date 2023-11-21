@@ -1,7 +1,6 @@
 class Address {
   static const changeThemeLight = "assets/icons/ic_theme_light.png";
   static const changeThemeDark = "assets/icons/ic_theme_dark.png";
-
   static const save = "assets/icons/ic_save.svg";
   static const notification = "assets/icons/ic_notification.svg";
   static const bell = "assets/icons/ic_bell.svg";
@@ -114,6 +113,5 @@ class Address {
       static const ic_profile_drewer ="assets/icons/ic_profile_drewer.svg";
       static const ic_share_drewer ="assets/icons/ic_share_drewer.svg";
       static const ic_update_drewer ="assets/icons/ic_update_drewer.svg";
-      static const ic_hashtag ="assets/icons/ic_hashtag.svg";
-      
+      static const ic_hashtag ="assets/icons/ic_hashtag.svg";   
 }

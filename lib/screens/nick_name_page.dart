@@ -113,7 +113,6 @@ class _NickNamePageState extends State<NickNamePage> {
               Padding(
                 padding: EdgeInsets.only(top: size.height / 25.88),
                 child: SizedBox(
-                
                   width: size.width / 1.11,
                   height: size.height / 11.79,
                   child: GridView.builder(
@@ -129,9 +128,9 @@ class _NickNamePageState extends State<NickNamePage> {
                       ),
                       itemBuilder: (context, index) {
                         return SizedBox(
-                         
                           child: TextButton(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
                                   "# ",
@@ -278,17 +277,18 @@ class _NickNamePageState extends State<NickNamePage> {
                                         child: TextField(
                                           controller: nickName,
                                           textDirection: TextDirection.rtl,
-                                          decoration: InputDecoration(
+                                          decoration: new InputDecoration(
                                             contentPadding:
                                                 EdgeInsets.symmetric(
                                                     vertical: size.height / 40,
                                                     horizontal: 10),
-                                            border: OutlineInputBorder(
+                                            border: new OutlineInputBorder(
                                               borderRadius:
                                                   BorderRadius.circular(15),
-                                              borderSide: BorderSide(
-                                                  color: SolidColors.black,
-                                                  width: 2),
+                                              borderSide: new BorderSide(
+                                                  color:
+                                                      Colors.red,
+                                                  width: 20),
                                             ),
                                             focusedBorder: OutlineInputBorder(
                                               borderRadius:

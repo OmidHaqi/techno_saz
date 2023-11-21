@@ -17,7 +17,7 @@ class _MySplashState extends State<MySplash> {
   void initState() {
     super.initState();
     Timer(
-      const Duration(seconds: 1),
+      const Duration(seconds: 5),
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
@@ -44,7 +44,7 @@ class _MySplashState extends State<MySplash> {
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 48,
-                      color: SolidColors.textColor),
+                      ),
                 ),
               ],
             ),
@@ -54,7 +54,7 @@ class _MySplashState extends State<MySplash> {
             ),
             Text(
               Strings.madeWith_str,
-              style: TextStyle(color: SolidColors.textColor),
+              
             )
           ],
         ),
