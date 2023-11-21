@@ -32,7 +32,8 @@ class LogInPage extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(0, size.height / 21.674418, 0, size.height / 109.647058823),
+                padding: EdgeInsets.fromLTRB(
+                    0, size.height / 21.674418, 0, size.height / 109.647058823),
                 child: SizedBox(
                   width: size.width / 1.0969387,
                   height: size.height / 14.5625,
@@ -52,32 +53,6 @@ class LogInPage extends StatelessWidget {
                       )),
                 ),
               ),
-              // Container(
-              //   margin: EdgeInsets.fromLTRB(
-              //       0, size.height / 21.674418, 0, size.height / 109.647058823),
-              //   width: size.width / 1.0969387,
-              //   height: size.height / 14.5625,
-              //   decoration: BoxDecoration(
-              //     // color: Color.fromARGB(255, 242, 242, 242),
-              //     borderRadius: BorderRadius.circular(1000),
-              //   ),
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.center,
-              //     children: [
-              //       Text(
-              //         Strings.byGoogle_str,
-              //         style: TextStyle(
-              //             fontWeight: FontWeight.w400,
-              //             fontSize: 20,
-              //             color: SolidColors.textColor),
-              //       ),
-              //       SizedBox(
-              //         width: size.width / 16.53846153846154,
-              //       ),
-              //       SvgPicture.asset(Address.ic_gmail)
-              //     ],
-              //   ),
-              // ),
               Padding(
                 padding: EdgeInsets.fromLTRB(0, size.height / 109.647058823, 0,
                     size.height / 109.647058823),
@@ -100,87 +75,23 @@ class LogInPage extends StatelessWidget {
                       )),
                 ),
               ),
-              // Container(
-              //   margin: EdgeInsets.fromLTRB(0, size.height / 109.647058823, 0,
-              //       size.height / 109.647058823),
-              //   width: size.width / 1.0969387,
-              //   height: size.height / 14.5625,
-              //   decoration: BoxDecoration(
-              //     // color: Color.fromARGB(255, 242, 242, 242),
-              //     borderRadius: BorderRadius.circular(1000),
-              //   ),
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.center,
-              //     children: [
-              //       Text(
-              //         Strings.byEmail_str,
-              //         style: TextStyle(
-              //             fontWeight: FontWeight.w400,
-              //             fontSize: 20,
-              //             color: SolidColors.textColor),
-              //       ),
-              //       SizedBox(
-              //         width: size.width / 16.53846153846154,
-              //       ),
-              //       SvgPicture.asset(
-              //         Address.ic_mail,
-              //       )
-              //     ],
-              //   ),
-              // ),
               Padding(
                 padding: EdgeInsets.fromLTRB(0, size.height / 109.647058823, 0,
                     size.height / 25.88888888888889),
                 child: SizedBox(
                   width: size.width / 1.0969387,
                   height: size.height / 14.5625,
-                  child: ElevatedButton.icon(
+                  child: ElevatedButton(
+                    
                       onPressed: () {
                         customDialoge(context);
                       },
-                      label: Text(
+                      child: Text(
                         Strings.skip_str,
                       ),
-                      icon: SvgPicture.asset(
-                        Address.ic_gmail,
-                        colorFilter: ColorFilter.mode(
-                            AdaptiveTheme.of(context).brightness ==
-                                    Brightness.dark
-                                ? SolidColors.iconColor
-                                : SolidColors.black,
-                            BlendMode.srcIn),
-                      )),
+                      ),
                 ),
               ),
-
-              // InkWell(
-              //   onTap: () {
-              //     customDialoge(context);
-              //   },
-              //   child: Container(
-              //     margin: EdgeInsets.fromLTRB(0, size.height / 109.647058823, 0,
-              //         size.height / 25.88888888888889),
-              //     width: size.width / 1.0969387,
-              //     height: size.height / 14.5625,
-              //     decoration: BoxDecoration(
-              //       // color: Color.fromARGB(255, 242, 242, 242),
-              //       borderRadius: BorderRadius.circular(1000),
-              //     ),
-              //     child: Row(
-              //       mainAxisAlignment: MainAxisAlignment.center,
-              //       children: [
-              //         Text(
-              //           Strings.skip_str,
-              //           style: TextStyle(
-              //               fontWeight: FontWeight.w400,
-              //               fontSize: 20,
-              //               color: SolidColors.textColor),
-              //         ),
-              //       ],
-              //     ),
-              //   ),
-              // ),
-
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
