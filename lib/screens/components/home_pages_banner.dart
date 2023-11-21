@@ -19,8 +19,9 @@ class HomePageBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: size.height / 3.9,
+    return Container(
+      // color: const Color.fromARGB(255, 7, 255, 106),
+      height: size.height / 3.3,
       width: size.width / 1.02,
       child: Stack(
         children: [
@@ -29,104 +30,90 @@ class HomePageBanner extends StatelessWidget {
             controller: pageController,
             itemCount: DataClass.ArticleManagementPagepublishedModelList.length,
             itemBuilder: (context, index) {
-              return Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 1, 0, 16),
-                    child: SizedBox(
-                      height: size.height / 3.9,
-                      width: size.width / 1.02,
-                      child: Padding(
-                        padding: const EdgeInsets.fromLTRB(8, 0, 4, 0),
-                        child: Container(
-                          height: size.height / 4.5,
-                          width: size.width / 1.04,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(18),
-                            image: DecorationImage(
-                                image: AssetImage(DataClass
-                                    .ArticleManagementPagepublishedModelList[
-                                        index]
-                                    .imageArticleUr),
-                                fit: BoxFit.cover),
-                          ),
+              return Padding(
+                padding: EdgeInsets.fromLTRB(
+                    size.width / 30.71,
+                    size.height / 66.57,
+                    size.width / 30.71,
+                    size.height / 66.57),
+                child: Container(
+                  height: size.height / 4.8,
+                  width: size.width / 1.096,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(18),
+                    image: DecorationImage(
+                        image: AssetImage(DataClass
+                            .ArticleManagementPagepublishedModelList[index]
+                            .imageArticleUr),
+                        fit: BoxFit.cover),
+                  ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(18),
+                      gradient: LinearGradient(
+                          colors: GradientColors.onBaner,
+                          begin: Alignment.bottomCenter,
+                          end: Alignment.topCenter),
+                    ),
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          bottom: 0,
+                          left: 0,
+                          child: SvgPicture.asset(Address.wave),
+                        ),
+                        Positioned(
+                          right: 20,
+                          top: 55,
                           child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(18),
-                              gradient: LinearGradient(
-                                  colors: GradientColors.onBaner,
-                                  begin: Alignment.bottomCenter,
-                                  end: Alignment.topCenter),
-                            ),
-                            child: Stack(
-                              children: [
-                                Positioned(
-                                  bottom: 0,
-                                  left: 0,
-                                  child: SvgPicture.asset(Address.wave),
-                                ),
-                                Positioned(
-                                  right: 10,
-                                  top:65,
-                                  child: Container(
-                                    // color: Colors.amber,
-                                    width: size.width / 1.5,
-                                        height: size.height /15,
-                                    child: Text(
-                                      
-                                      DataClass
-                                          .ArticleManagementPagepublishedModelList[
-                                              index]
-                                          .titleArticleUr,
-                                      style: TextStyle(
-                                        height: 1.5,
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold,
-                                        color:
-                                            SolidColors.onPrimaryColor,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Positioned(
-                                  top: 110,
-                                  right: 30,
-                                  child: TextButton(
-                                    onPressed: () {},
-                                    style: ButtonStyle(
-                                      overlayColor: MaterialStateProperty.all(
-                                          Color.fromARGB(81, 240, 217, 210)),
-                                      backgroundColor:
-                                          MaterialStateProperty.all(
-                                              SolidColors.primaryColor),
-                                      shape: MaterialStateProperty.all<
-                                          RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(18),
-                                        ),
-                                      ),
-                                    ),
-                                    child: Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          16, 0, 16, 0),
-                                      child: Text(
-                                        Strings.more_str,
-                                        style: TextStyle(
-                                            color: SolidColors.onPrimaryColor),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
+                            // color: Colors.amber,
+                            width: size.width / 1.5,
+                            height: size.height / 15,
+                            child: Text(
+                              DataClass
+                                  .ArticleManagementPagepublishedModelList[
+                                      index]
+                                  .titleArticleUr,
+                              style: TextStyle(
+                                height: 1.5,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: SolidColors.onPrimaryColor,
+                              ),
                             ),
                           ),
                         ),
-                      ),
+                        Positioned(
+                          top: 110,
+                          right: 30,
+                          child: TextButton(
+                            onPressed: () {},
+                            style: ButtonStyle(
+                              overlayColor: MaterialStateProperty.all(
+                                  Color.fromARGB(81, 240, 217, 210)),
+                              backgroundColor: MaterialStateProperty.all(
+                                  SolidColors.primaryColor),
+                              shape: MaterialStateProperty.all<
+                                  RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(18),
+                                ),
+                              ),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
+                              child: Text(
+                                Strings.more_str,
+                                style: TextStyle(
+                                    color: SolidColors.onPrimaryColor),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                ],
+                ),
               );
             },
           ),
