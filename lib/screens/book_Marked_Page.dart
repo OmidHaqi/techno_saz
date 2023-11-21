@@ -145,17 +145,16 @@ class BookMarkedPage extends StatelessWidget {
                                 ),
                                 Padding(
                                   padding:
-                                      const EdgeInsets.fromLTRB(12, 12, 12, 12),
+                                      const EdgeInsets.fromLTRB(6, 12, 6, 12),
                                   child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       Container(
                                         color: Colors.blue,
-                                        width: size.width / 3,
+                                        width: size.width / 3.3,
                                         height: size.height / 20,
-                                        child: Row(
-                                          children: [
+                                        child: 
                                             Text(
                                               DataClass
                                                   .BookMarkedArticlePageModelList[
@@ -168,7 +167,10 @@ class BookMarkedPage extends StatelessWidget {
                                                 fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                            SvgPicture.asset(
+                                            
+                                       
+                                      ),
+                                      SvgPicture.asset(
                                               Address.more,
                                               colorFilter: ColorFilter.mode(
                                                   AdaptiveTheme.of(context)
@@ -179,21 +181,19 @@ class BookMarkedPage extends StatelessWidget {
                                                       : SolidColors.iconColor,
                                                   BlendMode.srcIn),
                                             )
-                                          ],
-                                        ),
-                                      ),
                                     ],
                                   ),
                                 ),
                                 Padding(
                                   padding:
-                                      const EdgeInsets.fromLTRB(8, 0, 1, 0),
+                                      const EdgeInsets.fromLTRB(6, 0, 0, 0),
                                   child: Row(
                                     children: [
                                       Padding(
                                         padding: const EdgeInsets.fromLTRB(
-                                            8, 0, 10, 0),
+                                            4, 0, 10, 0),
                                         child: Container(
+                                          
                                           height: size.height / 37.28,
                                           width: size.width / 17.2,
                                           decoration: BoxDecoration(
@@ -209,7 +209,7 @@ class BookMarkedPage extends StatelessWidget {
                                         ),
                                       ),
                                       SizedBox(
-                                        width: size.width / 5.60,
+                                        width: size.width / 7,
                                         child: Text(
                                           DataClass
                                               .BookMarkedArticlePageModelList[
@@ -218,16 +218,16 @@ class BookMarkedPage extends StatelessWidget {
                                           overflow: TextOverflow.ellipsis,
                                           maxLines: 1,
                                           style: TextStyle(
-                                              fontSize: 20,
+                                              fontSize: 12,
                                               fontWeight: FontWeight.bold),
                                         ),
                                       ),
-                                      SizedBox(
-                                        width: 5,
-                                      ),
+                                      
                                       Text(DataClass
                                           .BookMarkedArticlePageModelList[index]
-                                          .PublicationDateArticleUr),
+                                          .PublicationDateArticleUr,style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.bold),),
                                     ],
                                   ),
                                 )
