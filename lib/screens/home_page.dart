@@ -5,11 +5,11 @@ import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/screens/book_Marked_Page.dart';
+import 'package:techno_saz/screens/components/home_pages_banner.dart';
 import 'package:techno_saz/screens/notifications.dart';
 
 import 'components/bottom_nav_bar.dart';
 import 'components/hashtag.dart';
-import 'components/home_pages_banner.dart';
 import 'components/my_articles.dart';
 import 'components/recent_article.dart';
 
@@ -18,13 +18,11 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-
-
 class _HomePageState extends State<HomePage> {
-
+  PageController pageController = PageController(initialPage: 5);
   final GlobalKey<ScaffoldState> _key = GlobalKey();
-  
-    void _openDrawer() {
+
+  void _openDrawer() {
     _key.currentState!.openDrawer();
   }
 
@@ -256,7 +254,7 @@ class _HomePageState extends State<HomePage> {
               BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
           child: Column(
             children: [
-              HomePagesBanner(size: size),
+              HomePageBanner(size: size, pageController: pageController),
               Hashtag(size: size),
               RecentArticle(size: size),
               MyArticles(size: size)
@@ -268,3 +266,4 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+

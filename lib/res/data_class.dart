@@ -6,7 +6,10 @@ class DataClass {
   static Map homePagePosterMap = {
     "imageAsset": Address.banner,
     "titleOnBanner": Strings.titleOnBanner_str,
+    
   };
+
+
 
   static List<HashTagModel> tagList = [
     HashTagModel(title: "جاوا"),
@@ -563,7 +566,7 @@ ________________________________________
         timeNotice: "جدید"),
   ];
   static List<ArticleManagementPagePublishedModel>
-      ArticleManagementPagepublishedModelList = [
+    ArticleManagementPagepublishedModelList = [
     ArticleManagementPagePublishedModel(
         idArticleUr: "1",
         imageArticleUr: Address.img_Social_damage_in_the_family_Management_page,
