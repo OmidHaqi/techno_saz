@@ -198,6 +198,7 @@ class DataClass {
   ];
 
   static List<ArticleBookmarkedPage> BookMarkedArticlePageModelList = [
+    /*
     ArticleBookmarkedPage(
         idArticleUr: "1",
         imageArticleUr: Address.artc_img_Bokmrk_one,
@@ -444,7 +445,7 @@ ________________________________________
 """,
         likedArticleUr: "",
         commentArticleUr: "",
-        writersName: "علیرضا محمدی"),
+        writersName: "علیرضا محمدی"),*/
   ];
   static List<NotificationsPagePublic> NotificationsPagePublicModelList = [
     NotificationsPagePublic(
