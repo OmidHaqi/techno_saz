@@ -18,9 +18,16 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-final GlobalKey<ScaffoldState> _key = GlobalKey();
+
 
 class _HomePageState extends State<HomePage> {
+
+  final GlobalKey<ScaffoldState> _key = GlobalKey();
+  
+    void _openDrawer() {
+    _key.currentState!.openDrawer();
+  }
+
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -147,7 +154,7 @@ class _HomePageState extends State<HomePage> {
                       padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
                       child: InkWell(
                         onTap: () {
-                          _key.currentState!.openDrawer();
+                          _openDrawer();
                         },
                         child: SvgPicture.asset(
                           Address.menu,
