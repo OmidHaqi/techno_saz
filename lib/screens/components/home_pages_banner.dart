@@ -20,15 +20,14 @@ class HomePageBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: size.width,
-      height: 250,
+      height: size.height / 3.9,
+      width: size.width / 1.02,
       child: Stack(
         children: [
           PageView.builder(
             physics: BouncingScrollPhysics(),
             controller: pageController,
-            itemCount:
-                DataClass.ArticleManagementPagepublishedModelList.length,
+            itemCount: DataClass.ArticleManagementPagepublishedModelList.length,
             itemBuilder: (context, index) {
               return Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -39,8 +38,7 @@ class HomePageBanner extends StatelessWidget {
                       height: size.height / 3.9,
                       width: size.width / 1.02,
                       child: Padding(
-                        padding:
-                            const EdgeInsets.fromLTRB(8, 0, 4, 0),
+                        padding: const EdgeInsets.fromLTRB(8, 0, 4, 0),
                         child: Container(
                           height: size.height / 4.5,
                           width: size.width / 1.04,
@@ -66,8 +64,7 @@ class HomePageBanner extends StatelessWidget {
                                 Positioned(
                                   bottom: 0,
                                   left: 0,
-                                  child:
-                                      SvgPicture.asset(Address.wave),
+                                  child: SvgPicture.asset(Address.wave),
                                 ),
                                 Positioned(
                                   right: 10,
@@ -80,8 +77,7 @@ class HomePageBanner extends StatelessWidget {
                                     style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
-                                      color:
-                                          SolidColors.onPrimaryColor,
+                                      color: SolidColors.onPrimaryColor,
                                     ),
                                   ),
                                 ),
@@ -91,33 +87,26 @@ class HomePageBanner extends StatelessWidget {
                                   child: TextButton(
                                     onPressed: () {},
                                     style: ButtonStyle(
-                                      overlayColor:
-                                          MaterialStateProperty.all(
-                                              Color.fromARGB(
-                                                  81, 240, 217, 210)),
+                                      overlayColor: MaterialStateProperty.all(
+                                          Color.fromARGB(81, 240, 217, 210)),
                                       backgroundColor:
                                           MaterialStateProperty.all(
-                                              SolidColors
-                                                  .primaryColor),
-                                      shape:
-                                          MaterialStateProperty.all<
-                                              RoundedRectangleBorder>(
+                                              SolidColors.primaryColor),
+                                      shape: MaterialStateProperty.all<
+                                          RoundedRectangleBorder>(
                                         RoundedRectangleBorder(
                                           borderRadius:
-                                              BorderRadius.circular(
-                                                  18),
+                                              BorderRadius.circular(18),
                                         ),
                                       ),
                                     ),
                                     child: Padding(
-                                      padding:
-                                          const EdgeInsets.fromLTRB(
-                                              16, 0, 16, 0),
+                                      padding: const EdgeInsets.fromLTRB(
+                                          16, 0, 16, 0),
                                       child: Text(
                                         Strings.more_str,
                                         style: TextStyle(
-                                            color: SolidColors
-                                                .onPrimaryColor),
+                                            color: SolidColors.onPrimaryColor),
                                       ),
                                     ),
                                   ),
@@ -140,17 +129,17 @@ class HomePageBanner extends StatelessWidget {
               controller: pageController,
               count: DataClass.ArticleManagementPagepublishedModelList.length,
               effect: ExpandingDotsEffect(
-                  dotHeight: 10,
-                  dotWidth: 10,
-                  activeDotColor:
-                      AdaptiveTheme.of(context).brightness ==
-                              Brightness.light
-                          ? SolidColors.primaryColor
-                          : SolidColors.primaryVariantColor,
-                          dotColor: AdaptiveTheme.of(context).brightness ==
-                              Brightness.light
-                          ? SolidColors.primaryVariantColor
-                          : SolidColors.primaryColor, ),
+                dotHeight: 10,
+                dotWidth: 10,
+                activeDotColor:
+                    AdaptiveTheme.of(context).brightness == Brightness.light
+                        ? SolidColors.primaryColor
+                        : SolidColors.primaryVariantColor,
+                dotColor:
+                    AdaptiveTheme.of(context).brightness == Brightness.light
+                        ? SolidColors.primaryVariantColor
+                        : SolidColors.primaryColor,
+              ),
             ),
           ),
         ],
