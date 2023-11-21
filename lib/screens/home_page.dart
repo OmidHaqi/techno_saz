@@ -19,7 +19,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  PageController pageController = PageController(initialPage: 5);
+  PageController pageController = PageController(initialPage: 0);
   final GlobalKey<ScaffoldState> _key = GlobalKey();
 
   void _openDrawer() {
@@ -144,7 +144,7 @@ class _HomePageState extends State<HomePage> {
           automaticallyImplyLeading: false,
           elevation: 0,
           title: Padding(
-              padding: const EdgeInsets.fromLTRB(12, 15, 12, 15),
+              padding: const EdgeInsets.fromLTRB(10, 15, 10, 15),
               child: Container(
                 child: Row(
                   children: [
