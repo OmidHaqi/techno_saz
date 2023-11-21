@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:techno_saz/res/colors.dart';
 
 ThemeData lightTheme(Size size) {
@@ -103,7 +104,9 @@ ThemeData darkTheme(Size size) {
           )),
           backgroundColor:
               MaterialStateProperty.all(SolidColors.primaryVariantColor),
-          foregroundColor: MaterialStateProperty.all((SolidColors.textColor)),
+          foregroundColor: MaterialStateProperty.all(
+            (SolidColors.textColor),
+          ),
           shape: MaterialStateProperty.all(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(1000),
