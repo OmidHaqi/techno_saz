@@ -8,7 +8,8 @@ import 'package:techno_saz/screens/home_page.dart';
 customDialoge(
   BuildContext context, {
   final GestureTapCallback? onTap,
-  final List<Widget>? actions,}){
+  final List<Widget>? actions,
+}) {
   return showDialog(
     context: context,
     builder: (context) {
@@ -33,18 +34,25 @@ customDialoge(
           width: sizeW / 18,
           child: FittedBox(
             child: Column(
-              children:[
+              children: [
                 Stack(
                   alignment: Alignment.center,
                   children: [
                     Container(
                       padding: EdgeInsets.all(42),
                       decoration: BoxDecoration(
-                        
-                          color:AdaptiveTheme.of(context).brightness==Brightness.light? SolidColors.primaryColor:SolidColors.primaryVariantColor ,
+                          color: AdaptiveTheme.of(context).brightness ==
+                                  Brightness.light
+                              ? SolidColors.primaryColor
+                              : SolidColors.primaryVariantColor,
                           shape: BoxShape.circle),
                     ),
-                    Icon(Icons.person, size: 50, color: Colors.white)
+                    Icon(Icons.person,
+                        size: 50,
+                        color: AdaptiveTheme.of(context).brightness ==
+                                Brightness.light
+                            ? const Color.fromARGB(255, 255, 255, 255)
+                            : SolidColors.primaryColor)
                   ],
                 ),
                 SizedBox(
@@ -62,8 +70,10 @@ customDialoge(
                 SizedBox(height: 15),
                 SpinKitCircle(
                   size: 40,
-                  
-                  color:AdaptiveTheme.of(context).brightness==Brightness.light? SolidColors.primaryColor:SolidColors.primaryVariantColor,
+                  color:
+                      AdaptiveTheme.of(context).brightness == Brightness.light
+                          ? SolidColors.primaryColor
+                          : SolidColors.primaryVariantColor,
                 )
               ],
             ),
