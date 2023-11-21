@@ -59,12 +59,12 @@ class RecentArticle extends StatelessWidget {
                       decoration: BoxDecoration(
                           boxShadow: <BoxShadow>[
                             BoxShadow(
-                                blurRadius: 1,
+                                blurRadius: 0,
                                 color: AdaptiveTheme.of(context).brightness ==
                                         Brightness.light
                                     ? Color.fromARGB(43, 164, 99, 77)
                                     : Color.fromARGB(12, 255, 255, 255),
-                                offset: Offset(1, 2)),
+                                ),
                           ],
                           
                           borderRadius: BorderRadius.all(Radius.circular(20))),
