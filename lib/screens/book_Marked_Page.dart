@@ -25,10 +25,10 @@ class BookMarkedPage extends StatelessWidget {
             decoration: BoxDecoration(
               border: Border(
                 bottom: BorderSide(
-                  color: AdaptiveTheme.of(context).brightness ==
-                                    Brightness.light
-                                ? SolidColors.textColor
-                                : SolidColors.white,
+                  color:
+                      AdaptiveTheme.of(context).brightness == Brightness.light
+                          ? SolidColors.textColor
+                          : SolidColors.white,
                   width: 1.0,
                 ),
               ),
@@ -41,11 +41,18 @@ class BookMarkedPage extends StatelessWidget {
                     children: [
                       Padding(
                         padding: const EdgeInsets.fromLTRB(4, 0, 0, 0),
-                        child: SvgPicture.asset(Address.save,colorFilter: ColorFilter.mode(AdaptiveTheme.of(context).brightness == Brightness.dark? SolidColors.primaryVariantColor:SolidColors.iconColor, BlendMode.srcIn),),
+                        child: SvgPicture.asset(
+                          Address.save,
+                          colorFilter: ColorFilter.mode(
+                              AdaptiveTheme.of(context).brightness ==
+                                      Brightness.dark
+                                  ? SolidColors.primaryVariantColor
+                                  : SolidColors.iconColor,
+                              BlendMode.srcIn),
+                        ),
                       ),
                       Text(
                         Strings.bookmarked_str,
-                        
                       ),
                       Expanded(
                         child: Align(
@@ -94,27 +101,21 @@ class BookMarkedPage extends StatelessWidget {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
-                child: GridView.builder(
+                child: ListView.builder(
                     itemCount: DataClass.BookMarkedArticlePageModelList.length,
                     physics: BouncingScrollPhysics(),
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      childAspectRatio:
-                          0.70, // change this value for different results
-                      crossAxisSpacing: 5,
-                      mainAxisSpacing: 5,
-                    ),
                     itemBuilder: (context, index) {
                       return InkWell(
                         onTap: () {},
                         child: Container(
+                          color: Colors.amber,
                           width: size.width / 2.10,
                           height: size.height / 3,
                           child: Column(
                             children: [
                               Container(
-                                width: size.width / 2.20,
-                                height: size.height / 4.5,
+                                width: size.width / 2.8,
+                                height: size.height / 6.2,
                                 decoration: BoxDecoration(
                                   boxShadow: <BoxShadow>[
                                     BoxShadow(
@@ -148,18 +149,21 @@ class BookMarkedPage extends StatelessWidget {
                                         overflow: TextOverflow.ellipsis,
                                         maxLines: 2,
                                         style: TextStyle(
-                                            fontSize: 18,
-                                            fontWeight: FontWeight.bold,
-                                            ),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
-                                    SvgPicture.asset(Address.more,
-                              colorFilter: ColorFilter.mode(
-                                  AdaptiveTheme.of(context).brightness ==
-                                          Brightness.dark
-                                      ? SolidColors.primaryVariantColor
-                                      : SolidColors.iconColor,
-                                  BlendMode.srcIn),)
+                                    SvgPicture.asset(
+                                      Address.more,
+                                      colorFilter: ColorFilter.mode(
+                                          AdaptiveTheme.of(context)
+                                                      .brightness ==
+                                                  Brightness.dark
+                                              ? SolidColors.primaryVariantColor
+                                              : SolidColors.iconColor,
+                                          BlendMode.srcIn),
+                                    )
                                   ],
                                 ),
                               ),
