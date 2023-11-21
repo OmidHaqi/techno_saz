@@ -275,18 +275,17 @@ class _NickNamePageState extends State<NickNamePage> {
                                         child: TextField(
                                           controller: nickName,
                                           textDirection: TextDirection.rtl,
-                                          decoration: new InputDecoration(
+                                          decoration:  InputDecoration(
                                             contentPadding:
                                                 EdgeInsets.symmetric(
                                                     vertical: size.height / 40,
                                                     horizontal: 10),
-                                            border: new OutlineInputBorder(
+                                            border:  OutlineInputBorder(
                                               borderRadius:
                                                   BorderRadius.circular(15),
-                                              borderSide: new BorderSide(
-                                                  color:
-                                                      Colors.red,
-                                                  width: 20),
+                                              borderSide:  BorderSide(
+                                                 
+                                                  width: 1),
                                             ),
                                             focusedBorder: OutlineInputBorder(
                                               borderRadius:
