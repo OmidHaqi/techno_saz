@@ -24,6 +24,7 @@ class _HomePageState extends State<HomePage> {
 
   void _openDrawer() {
     _key.currentState!.openDrawer();
+    
   }
 
   @override
