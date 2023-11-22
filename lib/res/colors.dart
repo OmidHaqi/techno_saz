@@ -7,6 +7,7 @@ class SolidColors {
   static const Color primaryVariantColor = Color.fromRGBO(240, 217, 210, 1);
   static const Color onPrimaryVariantColor = Color.fromARGB(255, 0, 0, 0);
   static const Color onPrimaryColor = Color.fromARGB(255, 255, 255, 255);
+  
   static const Color iconColor = Color.fromARGB(255, 113, 40, 16);
   static const Color white = Color.fromARGB(255, 255, 255, 255);
   static const Color black = Color.fromARGB(255, 0, 0, 0);
