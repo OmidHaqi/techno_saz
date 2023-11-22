@@ -35,6 +35,7 @@ customeDialogee(
             padding: EdgeInsets.symmetric(horizontal: 14, vertical: 16),
             alignment: Alignment.topCenter,
             width: sizeW / 18,
+            
             child: FittedBox(
               child: Column(
                 children: [
