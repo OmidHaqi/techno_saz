@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
+import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/screens/home_page.dart';
 
 // ignore: must_be_immutable
@@ -70,7 +71,6 @@ class _NotificationsState extends State<Notifications>
                   ),
                   Text(
                     "اعلان‌ها",
-                    
                   ),
                   Expanded(
                     child: Align(
@@ -106,7 +106,6 @@ class _NotificationsState extends State<Notifications>
          */
         bottom: TabBar(
             physics: BouncingScrollPhysics(),
-            
             controller: _tabController,
             tabs: [
               Tab(
@@ -142,117 +141,132 @@ class GeneralNotice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(
-          padding: EdgeInsets.fromLTRB(0, size.height / 58.25, 0, 0),
-          child: SizedBox(
-            width: size.width / 1.075,
-            height: size.height / 1.29,
-            child: ListView.builder(
-                physics: BouncingScrollPhysics(),
-                itemCount: DataClass.NotificationsPagePublicModelList.length,
-                scrollDirection: Axis.vertical,
-                itemBuilder: (context, index) {
-                  return Padding(
-                    padding: EdgeInsets.fromLTRB(
-                        0,
-                        size.height / 49.05263157894737,
-                        0,
-                        size.height / 49.05263157894737),
-                    child: Row(
-                      children: [
-                        Padding(
-                          padding:
-                              EdgeInsets.fromLTRB(size.width / 21.5, 0, 0, 0),
-                          child: Container(
-                            height: 50,
-                            width: 50,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(1000),
-                              image: DecorationImage(
-                                  image: AssetImage(DataClass
-                                      .NotificationsPagePublicModelList[index]
-                                      .writerProfilePhotoUr),
-                                  fit: BoxFit.cover),
-                            ),
-                          ),
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              DataClass.NotificationsPagePublicModelList[index]
-                                      .writersName +
-                                  "." +
-                                  DataClass
-                                      .NotificationsPagePublicModelList[index]
-                                      .noticeTitle,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.w600, fontSize: 16),
-                            ),
-                            SizedBox(
-                              height: 6,
-                            ),
-                            Row(
-                              children: [
-                                Text(
-                                  DataClass
-                                          .NotificationsPagePublicModelList[
-                                              index]
-                                          .aFewDaysOrHoursAgo +
-                                      " | ",
-                                  style: TextStyle(fontSize: 14),
-                                ),
-                                Text(
-                                  DataClass
-                                      .NotificationsPagePublicModelList[index]
-                                      .whatTimeOfDay,
-                                  style: TextStyle(fontSize: 14),
-                                )
-                              ],
-                            ),
-                          ],
-                        ),
-                        Expanded(
-                          child: Align(
-                            alignment: Alignment.centerLeft,
+    if (DataClass.NotificationsPagePublicModelList.isEmpty) {
+      return Scaffold(
+        body: Center(
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                SvgPicture.asset(Address.vc_empty),
+                Text("هنوز هیچ اعلانی ندارید!")
+              ]),
+        ),
+      );
+    } else {
+      return Column(
+        children: [
+          Padding(
+            padding: EdgeInsets.fromLTRB(0, size.height / 58.25, 0, 0),
+            child: SizedBox(
+              width: size.width / 1.075,
+              height: size.height / 1.29,
+              child: ListView.builder(
+                  physics: BouncingScrollPhysics(),
+                  itemCount: DataClass.NotificationsPagePublicModelList.length,
+                  scrollDirection: Axis.vertical,
+                  itemBuilder: (context, index) {
+                    return Padding(
+                      padding: EdgeInsets.fromLTRB(
+                          0,
+                          size.height / 49.05263157894737,
+                          0,
+                          size.height / 49.05263157894737),
+                      child: Row(
+                        children: [
+                          Padding(
+                            padding:
+                                EdgeInsets.fromLTRB(size.width / 21.5, 0, 0, 0),
                             child: Container(
-                              width: 83,
                               height: 50,
-                              child: Row(
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsets.only(
-                                        left: size.width / 47.77),
-                                    child: Container(
-                                      height: 50,
-                                      width: 50,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(5),
-                                        image: DecorationImage(
-                                            image: AssetImage(DataClass
-                                                .NotificationsPagePublicModelList[
-                                                    index]
-                                                .imageArticleUr),
-                                            fit: BoxFit.cover),
-                                      ),
-                                    ),
-                                  ),
-                                  Icon(Icons.more_vert),
-                                ],
+                              width: 50,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(1000),
+                                image: DecorationImage(
+                                    image: AssetImage(DataClass
+                                        .NotificationsPagePublicModelList[index]
+                                        .writerProfilePhotoUr),
+                                    fit: BoxFit.cover),
                               ),
                             ),
                           ),
-                        ),
-                      ],
-                    ),
-                  );
-                }),
-          ),
-        )
-      ],
-    );
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                DataClass
+                                        .NotificationsPagePublicModelList[index]
+                                        .writersName +
+                                    "." +
+                                    DataClass
+                                        .NotificationsPagePublicModelList[index]
+                                        .noticeTitle,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w600, fontSize: 16),
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    DataClass
+                                            .NotificationsPagePublicModelList[
+                                                index]
+                                            .aFewDaysOrHoursAgo +
+                                        " | ",
+                                    style: TextStyle(fontSize: 14),
+                                  ),
+                                  Text(
+                                    DataClass
+                                        .NotificationsPagePublicModelList[index]
+                                        .whatTimeOfDay,
+                                    style: TextStyle(fontSize: 14),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                          Expanded(
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Container(
+                                width: 83,
+                                height: 50,
+                                child: Row(
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsets.only(
+                                          left: size.width / 47.77),
+                                      child: Container(
+                                        height: 50,
+                                        width: 50,
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(5),
+                                          image: DecorationImage(
+                                              image: AssetImage(DataClass
+                                                  .NotificationsPagePublicModelList[
+                                                      index]
+                                                  .imageArticleUr),
+                                              fit: BoxFit.cover),
+                                        ),
+                                      ),
+                                    ),
+                                    Icon(Icons.more_vert),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                  }),
+            ),
+          )
+        ],
+      );
+    }
   }
 }
 
@@ -266,80 +280,93 @@ class SysNotice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(
-          padding: EdgeInsets.fromLTRB(0, size.height / 58.25, 0, 0),
-          child: SizedBox(
-            width: size.width / 1.075,
-            height: size.height / 1.29,
-            child: ListView.builder(
-                physics: BouncingScrollPhysics(),
-                itemCount: DataClass.NotificationsPageSystemModelList.length,
-                scrollDirection: Axis.vertical,
-                itemBuilder: (context, index) {
-                  return Padding(
-                    padding: EdgeInsets.fromLTRB(
-                        0,
-                        size.height / 155.3333333333333,
-                        0,
-                        size.height / 155.3333333333333),
-                    child: Row(
-                      children: [
-                        Padding(
-                          padding:
-                              EdgeInsets.fromLTRB(size.width / 21.5, 0, 0, 0),
-                          child: Container(
-                            height: 50,
-                            width: 50,
-                            child: SvgPicture.asset(
-                              DataClass.NotificationsPageSystemModelList[index]
-                                  .iconNoticeUr,
-                              height: size.height / 18.64,
-                              width: size.width / .6
-                            ),
-                          ),
-                        ),
-                        Text(
-                          DataClass.NotificationsPageSystemModelList[index]
-                              .noticeText,
-                          style: TextStyle(
-                              fontWeight: FontWeight.w600, fontSize: 16),
-                        ),
-                        Expanded(
-                          child: Align(
-                            alignment: Alignment.centerLeft,
+    if (DataClass.NotificationsPageSystemModelList.isEmpty) {
+      return SafeArea(
+        child: Scaffold(
+          body: Center(
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SvgPicture.asset(Address.vc_empty),
+                  Text("هنوز هیچ اعلانی ندارید!")
+                ]),
+          ),
+        ),
+      );
+    } else {
+      return Column(
+        children: [
+          Padding(
+            padding: EdgeInsets.fromLTRB(0, size.height / 58.25, 0, 0),
+            child: SizedBox(
+              width: size.width / 1.075,
+              height: size.height / 1.29,
+              child: ListView.builder(
+                  physics: BouncingScrollPhysics(),
+                  itemCount: DataClass.NotificationsPageSystemModelList.length,
+                  scrollDirection: Axis.vertical,
+                  itemBuilder: (context, index) {
+                    return Padding(
+                      padding: EdgeInsets.fromLTRB(
+                          0,
+                          size.height / 155.3333333333333,
+                          0,
+                          size.height / 155.3333333333333),
+                      child: Row(
+                        children: [
+                          Padding(
+                            padding:
+                                EdgeInsets.fromLTRB(size.width / 21.5, 0, 0, 0),
                             child: Container(
-                              height: size.height / 42.36363636363636,
-                              width: size.width / 11.31578947368421,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(5),
-                                color: SolidColors.primaryColor,
-                              ),
-                              child: Align(
-                                alignment: Alignment.center,
-                                child: Text(
+                              height: 50,
+                              width: 50,
+                              child: SvgPicture.asset(
                                   DataClass
                                       .NotificationsPageSystemModelList[index]
-                                      .timeNotice,
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.w400,
-                                      fontSize: 12,
-                                      color: SolidColors.white),
+                                      .iconNoticeUr,
+                                  height: size.height / 18.64,
+                                  width: size.width / .6),
+                            ),
+                          ),
+                          Text(
+                            DataClass.NotificationsPageSystemModelList[index]
+                                .noticeText,
+                            style: TextStyle(
+                                fontWeight: FontWeight.w600, fontSize: 16),
+                          ),
+                          Expanded(
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Container(
+                                height: size.height / 42.36363636363636,
+                                width: size.width / 11.31578947368421,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(5),
+                                  color: SolidColors.primaryColor,
+                                ),
+                                child: Align(
+                                  alignment: Alignment.center,
+                                  child: Text(
+                                    DataClass
+                                        .NotificationsPageSystemModelList[index]
+                                        .timeNotice,
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 12,
+                                        color: SolidColors.white),
+                                  ),
                                 ),
                               ),
                             ),
                           ),
-                        ),
-                      ],
-                    ),
-                  );
-                }),
-          ),
-        )
-      ],
-    );
+                        ],
+                      ),
+                    );
+                  }),
+            ),
+          )
+        ],
+      );
+    }
   }
 }
-
-                      
