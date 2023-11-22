@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
+import 'package:techno_saz/screens/common/dialoge.dart';
 import 'package:techno_saz/screens/common/widgets.dart';
 
 class LogInPage extends StatelessWidget {
@@ -84,7 +85,7 @@ class LogInPage extends StatelessWidget {
                   child: ElevatedButton(
                     
                       onPressed: () {
-                        customDialoge(context);
+                        customeDialogee(context);
                       },
                       child: Text(
                         Strings.skip_str,
