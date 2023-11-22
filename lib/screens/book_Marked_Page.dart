@@ -87,7 +87,10 @@ class BookMarkedPage extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        DataClass.BookMarkedArticlePageModelList.length.toString()+" "+ Strings.article_str,
+                        DataClass.BookMarkedArticlePageModelList.length
+                                .toString() +
+                            " " +
+                            Strings.article_str,
                         style: TextStyle(
                             fontSize: 14, fontWeight: FontWeight.w300),
                       ),
@@ -98,11 +101,12 @@ class BookMarkedPage extends StatelessWidget {
             ),
           ),
           body: Center(
-            child: Column(mainAxisAlignment:MainAxisAlignment.spaceEvenly,
-              children: [ 
-              SvgPicture.asset(Address.vc_empty),
-              Text("هنوز هیچ اعلانی ندارید!")
-            ]),
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SvgPicture.asset(Address.vc_empty),
+                  Text("هنوز هیچ اعلانی ندارید!")
+                ]),
           ),
         ),
       );
@@ -178,7 +182,9 @@ class BookMarkedPage extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        DataClass.BookMarkedArticlePageModelList.length.toString() + Strings.article_str,
+                        DataClass.BookMarkedArticlePageModelList.length
+                                .toString() +
+                            Strings.article_str,
                         style: TextStyle(
                             fontSize: 14, fontWeight: FontWeight.w300),
                       ),
