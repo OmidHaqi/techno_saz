@@ -178,7 +178,7 @@ class BookMarkedPage extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        "24" + Strings.article_str,
+                        DataClass.BookMarkedArticlePageModelList.length.toString() + Strings.article_str,
                         style: TextStyle(
                             fontSize: 14, fontWeight: FontWeight.w300),
                       ),
