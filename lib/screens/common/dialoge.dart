@@ -1,6 +1,5 @@
 import 'dart:async';
 
-
 import 'package:flutter/material.dart';
 import 'package:techno_saz/screens/home_page.dart';
 
@@ -13,8 +12,7 @@ customeDialogee(
       context: context,
       builder: (context) {
         Timer(
-          Duration
-          (seconds: 5),
+          Duration(seconds: 10),
           () {
             Navigator.pop(context);
             Navigator.pushReplacement(
@@ -24,6 +22,10 @@ customeDialogee(
           },
         );
         final sizeW = MediaQuery.of(context).size.width;
-        return AlertDialog(scrollable:true ,actions:actions,);
+        return AlertDialog(
+          scrollable: true,
+          actions: actions,
+          
+        );
       });
 }
