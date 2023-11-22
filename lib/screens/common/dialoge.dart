@@ -16,6 +16,7 @@ customeDialogee(
       builder: (context) {
         Timer(
           Duration(seconds:3),
+          
           () {
             Navigator.pop(context);
             Navigator.pushReplacement(
