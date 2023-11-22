@@ -4,7 +4,7 @@ import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:techno_saz/screens/home_page.dart';
 
-customeDialoge(
+customeDialogee(
   BuildContext context, {
   final GestureTapCallback? onTap,
   final List<Widget>? actions,
