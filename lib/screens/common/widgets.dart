@@ -28,7 +28,7 @@ customDialoge(
         scrollable: true,
         actions: actions,
 
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(36)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(36),),
         content: Container(
           alignment: Alignment.topCenter,
           padding: EdgeInsets.symmetric(horizontal: 14, vertical: 16),
