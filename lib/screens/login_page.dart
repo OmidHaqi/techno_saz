@@ -83,14 +83,13 @@ class LogInPage extends StatelessWidget {
                   width: size.width / 1.0969387,
                   height: size.height / 14.5625,
                   child: ElevatedButton(
-                    
-                      onPressed: () {
-                        customeDialogee(context);
-                      },
-                      child: Text(
-                        Strings.skip_str,
-                      ),
-                      ),
+                    onPressed: () {
+                      customeDialogee(context);
+                    },
+                    child: Text(
+                      Strings.skip_str,
+                    ),
+                  ),
                 ),
               ),
               Row(
