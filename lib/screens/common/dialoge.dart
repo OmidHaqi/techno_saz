@@ -15,7 +15,7 @@ customeDialogee(
       context: context,
       builder: (context) {
         Timer(
-          Duration(seconds:3),
+          Duration(seconds: 3),
           () {
             Navigator.pop(context);
             Navigator.pushReplacement(
@@ -53,9 +53,9 @@ customeDialogee(
                       Icon(Icons.person,
                           size: 50,
                           color: AdaptiveTheme.of(context).brightness ==
-                                Brightness.light
-                            ? const Color.fromARGB(255, 255, 255, 255)
-                            : SolidColors.primaryColor)
+                                  Brightness.light
+                              ? const Color.fromARGB(255, 255, 255, 255)
+                              : SolidColors.primaryColor)
                     ],
                   ),
                   SizedBox(
