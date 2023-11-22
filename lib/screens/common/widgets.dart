@@ -27,13 +27,11 @@ customDialoge(
       return AlertDialog(
         scrollable: true,
         actions: actions,
-        
-        // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(36)),
+
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(36)),
         content: Container(
-          color: Colors.amber,
-          
           alignment: Alignment.topCenter,
-          padding: EdgeInsets.symmetric(horizontal: 14, vertical:16),
+          padding: EdgeInsets.symmetric(horizontal: 14, vertical: 16),
           width: sizeW / 18,
           child: FittedBox(
             child: Column(
