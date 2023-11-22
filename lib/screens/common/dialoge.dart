@@ -13,7 +13,7 @@ customeDialoge(
       context: context,
       builder: (context) {
         Timer(
-          Duration,
+          Duration
           (seconds: 5),
           () {
             Navigator.pop(context);
@@ -24,6 +24,6 @@ customeDialoge(
           },
         );
         final sizeW = MediaQuery.of(context).size.width;
-        return AlertDialog(scrollable: ,);
+        return AlertDialog(scrollable:true ,actions:actions,);
       });
 }
