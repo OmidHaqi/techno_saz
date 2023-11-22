@@ -6,10 +6,7 @@ class DataClass {
   static Map homePagePosterMap = {
     "imageAsset": Address.banner,
     "titleOnBanner": Strings.titleOnBanner_str,
-    
   };
-
-
 
   static List<HashTagModel> tagList = [
     HashTagModel(title: "جاوا"),
@@ -198,7 +195,6 @@ class DataClass {
   ];
 
   static List<ArticleBookmarkedPage> BookMarkedArticlePageModelList = [
-    /*
     ArticleBookmarkedPage(
         idArticleUr: "1",
         imageArticleUr: Address.artc_img_Bokmrk_one,
@@ -445,7 +441,7 @@ ________________________________________
 """,
         likedArticleUr: "",
         commentArticleUr: "",
-        writersName: "علیرضا محمدی"),*/
+        writersName: "علیرضا محمدی"),
   ];
   static List<NotificationsPagePublic> NotificationsPagePublicModelList = [
     NotificationsPagePublic(
@@ -567,7 +563,7 @@ ________________________________________
         timeNotice: "جدید"),
   ];
   static List<ArticleManagementPagePublishedModel>
-    ArticleManagementPagepublishedModelList = [
+      ArticleManagementPagepublishedModelList = [
     ArticleManagementPagePublishedModel(
         idArticleUr: "1",
         imageArticleUr: Address.img_Social_damage_in_the_family_Management_page,
