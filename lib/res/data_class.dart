@@ -564,6 +564,8 @@ ________________________________________
   ];
   static List<ArticleManagementPagePublishedModel>
       ArticleManagementPagepublishedModelList = [
+        /*
+        
     ArticleManagementPagePublishedModel(
         idArticleUr: "1",
         imageArticleUr: Address.img_Social_damage_in_the_family_Management_page,
@@ -647,9 +649,12 @@ ________________________________________
         commentArticleUr: "258",
         writersName: "بانوی سبز",
         Visit: "618"),
+        */
   ];
   static List<ArticleManagementPagedraftModel>
       ArticleManagementPagedraftModelList = [
+        /*
+        
     ArticleManagementPagedraftModel(
         idArticleUr: "1",
         imageArticleUr: Address.img_graduation_Managemen_page,
@@ -700,10 +705,12 @@ ________________________________________
 به طور خلاصه، جزیره ی سانتورینی یک جزیره ی فوق العاده زیبا و جذاب هست که با داشتن کالدرا، فیرا، ایا، اکروتیری و دیگر جاذبه ها، یکی از بهترین مقاصد گردشگری در یونان و جهان هست. این جزیره یک تجربه ی بی نظیر و خاطره انگیز رو برای کسانی که به دنبال زیبایی، تاریخ، فرهنگ و آرامش هستن، ارائه می ده.""",
         writersName: "بانوی سبز",
         whatTimeOfDay: "06:51" + " " + Strings.am_str),
+        */
   ];
 
   static List<ArticleManagementPageAwaitingConfirmationModel>
       ArticleManagementPageAwaitingConfirmationModelList = [
+        /*
     ArticleManagementPageAwaitingConfirmationModel(
         idArticleUr: "1",
         imageArticleUr: Address.Img_Interior_decoration_Managemen_page,
@@ -747,5 +754,6 @@ ________________________________________
 خانه اکولوژیک: خانه‌ای که با هدف کاهش تأثیرات منفی بر محیط زیست و افزایش بهره‌وری انرژی ساخته شده است. این خانه‌ها از مصالح طبیعی و بازیافتی، سیستم‌های انرژی تجدیدپذیر، فیلترهای آب و هوا، سیستم‌های کشاورزی و باغچه‌های سبز استفاده می‌کنند. این خانه‌ها با توجه به شرایط محلی، شکل و اندازه مختلفی دارند. برای مثال، خانه‌های اکولوژیک تهران، مشهد، اردبیل، کرمانشاه و بوشهر.""",
         writersName: "بانوی سبز",
         whatTimeOfDay: "07:34" + " " + Strings.am_str),
+        */
   ];
 }
