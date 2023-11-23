@@ -207,14 +207,208 @@ class DarEntezarTaiid extends StatelessWidget {
                         alignment: Alignment.centerLeft,
                         child: Padding(
                           padding: EdgeInsets.only(left: size.width / 28.66),
-                          child: SvgPicture.asset(
-                            Address.vc_trash,
-                            colorFilter: ColorFilter.mode(
-                                AdaptiveTheme.of(context).brightness ==
-                                        Brightness.dark
-                                    ? SolidColors.primaryVariantColor
-                                    : SolidColors.iconColor,
-                                BlendMode.srcIn),
+                          child: InkWell(
+                            onTap: () {
+                              showModalBottomSheet(
+                                isScrollControlled: true,
+                                showDragHandle: true,
+                                context: context,
+                                shape: const RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(24.0),
+                                    topRight: Radius.circular(24.0),
+                                  ),
+                                ),
+                                builder: (BuildContext context) {
+                                  return Padding(
+                                    padding: EdgeInsets.only(
+                                        bottom: MediaQuery.of(context)
+                                            .viewInsets
+                                            .bottom),
+                                    child: Container(
+                                      height: 400,
+                                      child: Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            10, 1, 10, 0),
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              border: Border(
+                                                  top: BorderSide(
+                                                    color: AdaptiveTheme.of(
+                                                                    context)
+                                                                .brightness ==
+                                                            Brightness.dark
+                                                        ? SolidColors
+                                                            .primaryVariantColor
+                                                        : SolidColors
+                                                            .primaryColor,
+                                                    width: 1.5,
+                                                  ),
+                                                  right: BorderSide(
+                                                    color: AdaptiveTheme.of(
+                                                                    context)
+                                                                .brightness ==
+                                                            Brightness.dark
+                                                        ? SolidColors
+                                                            .primaryVariantColor
+                                                        : SolidColors
+                                                            .primaryColor,
+                                                    width: 1.5,
+                                                  ),
+                                                  left: BorderSide(
+                                                    color: AdaptiveTheme.of(
+                                                                    context)
+                                                                .brightness ==
+                                                            Brightness.dark
+                                                        ? SolidColors
+                                                            .primaryVariantColor
+                                                        : SolidColors
+                                                            .primaryColor,
+                                                    width: 1.5,
+                                                  ),
+                                                  bottom: BorderSide(
+                                                    color: AdaptiveTheme.of(
+                                                                    context)
+                                                                .brightness ==
+                                                            Brightness.dark
+                                                        ? SolidColors
+                                                            .primaryVariantColor
+                                                        : SolidColors
+                                                            .primaryColor,
+                                                    width: 0,
+                                                  )),
+                                              borderRadius: BorderRadius.only(
+                                                topLeft: Radius.circular(16.0),
+                                                topRight: Radius.circular(16.0),
+                                              )),
+                                          child: Center(
+                                            child: Column(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.spaceAround,
+                                              children: [
+                                                SvgPicture.asset(
+                                                  Address.vc_throw_away,
+
+                                                  // width: size.width / 1.64,
+                                                  // height: size.height / 3.14,
+                                                ),
+                                                Text(
+                                                  Strings
+                                                      .are_you_shure_delet_article,
+                                                  style: TextStyle(
+                                                      fontSize: 17,
+                                                      fontWeight:
+                                                          FontWeight.w900),
+                                                ),
+                                                Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceEvenly,
+                                                  children: [
+                                                    Container(
+                                                      width: size.width /
+                                                          3.071428571428571,
+                                                      height:
+                                                          size.height / 18.64,
+                                                      decoration: BoxDecoration(
+                                                        color: AdaptiveTheme.of(
+                                                                        context)
+                                                                    .brightness ==
+                                                                Brightness.dark
+                                                            ? SolidColors
+                                                                .primaryVariantColor
+                                                            : SolidColors
+                                                                .primaryColor,
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(1000),
+                                                      ),
+                                                      child: Center(
+                                                        child: Text(
+                                                          textAlign:
+                                                              TextAlign.center,
+                                                          "بله",
+                                                          style: TextStyle(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w400,
+                                                              fontSize: 24,
+                                                              color: AdaptiveTheme.of(
+                                                                              context)
+                                                                          .brightness ==
+                                                                      Brightness
+                                                                          .dark
+                                                                  ? SolidColors
+                                                                      .textColor
+                                                                  : SolidColors
+                                                                      .white),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    Container(
+                                                      width: size.width /
+                                                          3.071428571428571,
+                                                      height:
+                                                          size.height / 18.64,
+                                                      decoration: BoxDecoration(
+                                                        color: AdaptiveTheme.of(
+                                                                        context)
+                                                                    .brightness ==
+                                                                Brightness.dark
+                                                            ? SolidColors
+                                                                .primaryColor
+                                                            : SolidColors
+                                                                .primaryVariantColor,
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(1000),
+                                                      ),
+                                                      child: Center(
+                                                        child: Text(
+                                                          textAlign:
+                                                              TextAlign.center,
+                                                          "خیر",
+                                                          style: TextStyle(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w400,
+                                                              fontSize: 24,
+                                                              color: AdaptiveTheme.of(
+                                                                              context)
+                                                                          .brightness ==
+                                                                      Brightness
+                                                                          .dark
+                                                                  ? SolidColors
+                                                                      .white
+                                                                  : SolidColors
+                                                                      .textColor),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                                SizedBox(
+                                                  height: 20,
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  );
+                                },
+                              );
+                            },
+                            child: SvgPicture.asset(
+                              Address.vc_trash,
+                              colorFilter: ColorFilter.mode(
+                                  AdaptiveTheme.of(context).brightness ==
+                                          Brightness.dark
+                                      ? SolidColors.primaryVariantColor
+                                      : SolidColors.iconColor,
+                                  BlendMode.srcIn),
+                            ),
                           ),
                         )),
                   ),
