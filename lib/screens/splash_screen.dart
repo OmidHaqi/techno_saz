@@ -7,6 +7,7 @@ import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/screens/book_Marked_Page.dart';
 import 'package:techno_saz/screens/home_page.dart';
 import 'package:techno_saz/screens/login_page.dart';
+import 'package:techno_saz/screens/profile.dart';
 
 
 class MySplash extends StatefulWidget {
@@ -23,7 +24,7 @@ class _MySplashState extends State<MySplash> {
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => LogInPage(),
+          builder: (context) => ProfilePageOne(),
         ),
       ),
     );
