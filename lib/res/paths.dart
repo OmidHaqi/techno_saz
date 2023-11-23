@@ -115,4 +115,5 @@ class Address {
       static const ic_update_drewer ="assets/icons/ic_update_drewer.svg";
       static const ic_hashtag ="assets/icons/ic_hashtag.svg";   
       static const vc_empty ="assets/icons/vc_empty_list.svg";   
+      static const vc_empty_management ="assets/icons/vc_not_add_article.svg";   
 }
