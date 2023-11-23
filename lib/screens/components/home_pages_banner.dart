@@ -49,7 +49,6 @@ class HomePageBanner extends StatelessWidget {
                   ),
                   child: Container(
                     decoration: BoxDecoration(
-                      
                       borderRadius: BorderRadius.circular(18),
                       gradient: LinearGradient(
                           colors: GradientColors.onBaner,
@@ -124,7 +123,8 @@ class HomePageBanner extends StatelessWidget {
               textDirection: TextDirection.rtl,
               controller: pageController,
               count: DataClass.ArticleManagementPagepublishedModelList.length,
-              effect: ExpandingDotsEffect(
+              effect: SwapEffect(
+                type: SwapType.yRotation,
                 dotHeight: 10,
                 dotWidth: 10,
                 activeDotColor:
