@@ -28,7 +28,8 @@ class ProfilePageOne extends StatelessWidget {
                     fit: BoxFit.cover),
               ),
             ),
-            Row(mainAxisAlignment: MainAxisAlignment.center,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SvgPicture.asset(
                   Address.ic_edit_profile,
@@ -40,8 +41,22 @@ class ProfilePageOne extends StatelessWidget {
                           : SolidColors.iconColor,
                       BlendMode.srcIn),
                 ),
-                Text(Strings.edit_profile_str)
+                Text(Strings.edit_profile_str),
               ],
+            ),
+            Container(
+              width: sizeW / 1.67,
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(
+                    color:
+                        AdaptiveTheme.of(context).brightness == Brightness.light
+                            ? SolidColors.textColor
+                            : SolidColors.white,
+                    width: 1.0,
+                  ),
+                ),
+              ),
             )
           ],
         )),
