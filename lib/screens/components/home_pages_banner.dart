@@ -124,7 +124,7 @@ class HomePageBanner extends StatelessWidget {
               controller: pageController,
               count: DataClass.ArticleManagementPagepublishedModelList.length,
               effect: SwapEffect(
-                type: SwapType.yRotation,
+               
                 dotHeight: 10,
                 dotWidth: 10,
                 activeDotColor:
