@@ -117,7 +117,7 @@ class DarEntezarTaiid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (DataClass.ArticleManagementPageAwaitingConfirmationModelList.isEmpty) {
-      Scaffold(
+    return  Scaffold(
         body: Center(
           child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
