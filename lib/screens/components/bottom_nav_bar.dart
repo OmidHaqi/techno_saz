@@ -184,7 +184,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
                     ),
                   );
                 },
-                child: SvgPicture.asset(Address.myArticlesIc)),
+                child: InkWell(
+                  
+                  child: SvgPicture.asset(Address.myArticlesIc))),
             SvgPicture.asset(Address.myProfile),
           ],
         ));
