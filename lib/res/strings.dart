@@ -48,4 +48,5 @@ class Strings {
   static const String enter_verified_email_code_str =
       "لطفا کد فعالسازی ارسال شده به ایمیل‌تان را وارد کنید.";
   static const String verified_code_str = "کد فعالسازی";
+  static const String are_you_shure_delet_article = "مطمئنی که میخوای این مقاله رو پاک کنی؟";
 }
