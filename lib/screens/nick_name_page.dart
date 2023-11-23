@@ -157,22 +157,47 @@ class _NickNamePageState extends State<NickNamePage> {
                               decoration: BoxDecoration(
                                   border: Border(
                                       top: BorderSide(
-                                        color: SolidColors.primaryColor,
+                                        color: AdaptiveTheme.of(
+                                                                        context)
+                                                                    .brightness ==
+                                                                Brightness.dark
+                                                            ? SolidColors
+                                                                .primaryVariantColor
+                                                            : SolidColors
+                                                                .primaryColor,
                                         width: 1.5,
                                       ),
                                       right: BorderSide(
-                                        color: const Color.fromRGBO(
-                                            164, 99, 77, 1),
+                                        color:AdaptiveTheme.of(
+                                                                        context)
+                                                                    .brightness ==
+                                                                Brightness.dark
+                                                            ? SolidColors
+                                                                .primaryVariantColor
+                                                            : SolidColors
+                                                                .primaryColor,
                                         width: 1.5,
                                       ),
                                       left: BorderSide(
-                                        color: const Color.fromRGBO(
-                                            164, 99, 77, 1),
+                                        color: AdaptiveTheme.of(
+                                                                        context)
+                                                                    .brightness ==
+                                                                Brightness.dark
+                                                            ? SolidColors
+                                                                .primaryVariantColor
+                                                            : SolidColors
+                                                                .primaryColor,
                                         width: 1.5,
                                       ),
                                       bottom: BorderSide(
-                                        color: const Color.fromRGBO(
-                                            164, 99, 77, 1),
+                                        color: AdaptiveTheme.of(
+                                                                        context)
+                                                                    .brightness ==
+                                                                Brightness.dark
+                                                            ? SolidColors
+                                                                .primaryVariantColor
+                                                            : SolidColors
+                                                                .primaryColor,
                                         width: 0,
                                       )),
                                   borderRadius: BorderRadius.only(
@@ -281,41 +306,53 @@ class _NickNamePageState extends State<NickNamePage> {
                                                               border: Border(
                                                                   top:
                                                                       BorderSide(
-                                                                    color: SolidColors
-                                                                        .primaryColor,
+                                                                    color:AdaptiveTheme.of(
+                                                                        context)
+                                                                    .brightness ==
+                                                                Brightness.dark
+                                                            ? SolidColors
+                                                                .primaryVariantColor
+                                                            : SolidColors
+                                                                .primaryColor,
                                                                     width:
                                                                         1.5,
                                                                   ),
                                                                   right:
                                                                       BorderSide(
-                                                                    color: const Color
-                                                                        .fromRGBO(
-                                                                        164,
-                                                                        99,
-                                                                        77,
-                                                                        1),
+                                                                    color: AdaptiveTheme.of(
+                                                                        context)
+                                                                    .brightness ==
+                                                                Brightness.dark
+                                                            ? SolidColors
+                                                                .primaryVariantColor
+                                                            : SolidColors
+                                                                .primaryColor,
                                                                     width:
                                                                         1.5,
                                                                   ),
                                                                   left:
                                                                       BorderSide(
-                                                                    color: const Color
-                                                                        .fromRGBO(
-                                                                        164,
-                                                                        99,
-                                                                        77,
-                                                                        1),
+                                                                    color: AdaptiveTheme.of(
+                                                                        context)
+                                                                    .brightness ==
+                                                                Brightness.dark
+                                                            ? SolidColors
+                                                                .primaryVariantColor
+                                                            : SolidColors
+                                                                .primaryColor,
                                                                     width:
                                                                         1.5,
                                                                   ),
                                                                   bottom:
                                                                       BorderSide(
-                                                                    color: const Color
-                                                                        .fromRGBO(
-                                                                        164,
-                                                                        99,
-                                                                        77,
-                                                                        1),
+                                                                    color:AdaptiveTheme.of(
+                                                                        context)
+                                                                    .brightness ==
+                                                                Brightness.dark
+                                                            ? SolidColors
+                                                                .primaryVariantColor
+                                                            : SolidColors
+                                                                .primaryColor,
                                                                     width: 0,
                                                                   )),
                                                               borderRadius:
