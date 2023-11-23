@@ -41,7 +41,9 @@ class ProfilePageOne extends StatelessWidget {
                           : SolidColors.iconColor,
                       BlendMode.srcIn),
                 ),
-                Text(Strings.edit_profile_str),
+                Text(Strings.edit_profile_str,style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 16)),
               ],
             ),
             Container(
@@ -57,7 +59,23 @@ class ProfilePageOne extends StatelessWidget {
                   ),
                 ),
               ),
-            )
+            ),
+            Text(
+                  "اولین مقاله خودت رو بنویس ..",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 29,
+                    
+                  ),
+                ),
+                Text(
+                  "دونسته هات رو با بقیه به اشتراک بگذار..",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w200,
+                    fontSize: 19,
+                    
+                  ),
+                ),
           ],
         )),
       ),
