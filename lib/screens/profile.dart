@@ -14,7 +14,7 @@ class ProfilePageOne extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Center(
-            child: Column(
+            child: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Container(
               height: 140,
@@ -41,9 +41,9 @@ class ProfilePageOne extends StatelessWidget {
                           : SolidColors.iconColor,
                       BlendMode.srcIn),
                 ),
-                Text(Strings.edit_profile_str,style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    fontSize: 16)),
+                Text(Strings.edit_profile_str,
+                    style:
+                        TextStyle(fontWeight: FontWeight.w400, fontSize: 16)),
               ],
             ),
             Container(
@@ -61,21 +61,45 @@ class ProfilePageOne extends StatelessWidget {
               ),
             ),
             Text(
-                  "اولین مقاله خودت رو بنویس ..",
+              "اولین مقاله خودت رو بنویس ..",
+              style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 29,
+              ),
+            ),
+            Text(
+              "دونسته هات رو با بقیه به اشتراک بگذار..",
+              style: TextStyle(
+                fontWeight: FontWeight.w200,
+                fontSize: 19,
+              ),
+            ),
+            SvgPicture.asset(
+              Address.vc_share_Knowledge_others,
+              fit: BoxFit.fill,
+            ),
+            Container(
+              width: sizeW / 3.071428571428571,
+              height: sizeH/ 18.64,
+              decoration: BoxDecoration(
+                color: AdaptiveTheme.of(context).brightness == Brightness.light
+                            ? SolidColors.primaryColor
+                            : SolidColors.primaryVariantColor,
+                borderRadius: BorderRadius.circular(1000),
+              ),
+              child: Center(
+                child: Text(
+                  textAlign: TextAlign.center,
+                  Strings.countinu_str,
                   style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    fontSize: 29,
-                    
-                  ),
+                      fontWeight: FontWeight.w400,
+                      fontSize: 24,
+                      color:AdaptiveTheme.of(context).brightness == Brightness.light
+                            ? const Color.fromARGB(255, 255, 255, 255)
+                            : SolidColors.textColor),
                 ),
-                Text(
-                  "دونسته هات رو با بقیه به اشتراک بگذار..",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w200,
-                    fontSize: 19,
-                    
-                  ),
-                ),
+              ),
+            ),
           ],
         )),
       ),
