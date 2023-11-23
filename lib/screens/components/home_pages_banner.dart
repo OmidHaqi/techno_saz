@@ -49,6 +49,7 @@ class HomePageBanner extends StatelessWidget {
                   ),
                   child: Container(
                     decoration: BoxDecoration(
+                      
                       borderRadius: BorderRadius.circular(18),
                       gradient: LinearGradient(
                           colors: GradientColors.onBaner,
