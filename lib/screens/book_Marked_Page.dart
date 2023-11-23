@@ -105,7 +105,7 @@ class BookMarkedPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   SvgPicture.asset(Address.vc_empty),
-                  Text("هنوز هیچ اعلانی ندارید!")
+                  Text("هنوز هیچ مقاله ای به تکنوساز اضافه نکردی!!!")
                 ]),
           ),
         ),
