@@ -174,15 +174,15 @@ class _BottomNavBarState extends State<BottomNavBar> {
                     ),
                   );
                 },
-                child: InkWell(
-                    onTap: () {
+                child: SvgPicture.asset(Address.myArticlesIc)),
+            InkWell(onTap: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: ((context) => ProfilePageOne())));
+                            builder: ((context) => ProfilePageOne())));
                     },
-                    child: SvgPicture.asset(Address.myArticlesIc))),
-            SvgPicture.asset(Address.myProfile),
+                             
+              child: SvgPicture.asset(Address.myProfile)),
           ],
         ));
   }
