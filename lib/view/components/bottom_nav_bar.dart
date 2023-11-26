@@ -1,3 +1,4 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
@@ -67,22 +68,47 @@ class _BottomNavBarState extends State<BottomNavBar> {
                                 decoration: BoxDecoration(
                                     border: Border(
                                         top: BorderSide(
-                                          color: SolidColors.primaryColor,
+                                          color:AdaptiveTheme.of(
+                                                                        context)
+                                                                    .brightness ==
+                                                                Brightness.dark
+                                                            ? SolidColors
+                                                                .primaryVariantColor
+                                                            : SolidColors
+                                                                .primaryColor,
                                           width: 1.5,
                                         ),
                                         right: BorderSide(
-                                          color: const Color.fromRGBO(
-                                              164, 99, 77, 1),
+                                          color: AdaptiveTheme.of(
+                                                                        context)
+                                                                    .brightness ==
+                                                                Brightness.dark
+                                                            ? SolidColors
+                                                                .primaryVariantColor
+                                                            : SolidColors
+                                                                .primaryColor,
                                           width: 1.5,
                                         ),
                                         left: BorderSide(
-                                          color: const Color.fromRGBO(
-                                              164, 99, 77, 1),
+                                          color: AdaptiveTheme.of(
+                                                                        context)
+                                                                    .brightness ==
+                                                                Brightness.dark
+                                                            ? SolidColors
+                                                                .primaryVariantColor
+                                                            : SolidColors
+                                                                .primaryColor,
                                           width: 1.5,
                                         ),
                                         bottom: BorderSide(
-                                          color: const Color.fromRGBO(
-                                              164, 99, 77, 1),
+                                          color: AdaptiveTheme.of(
+                                                                        context)
+                                                                    .brightness ==
+                                                                Brightness.dark
+                                                            ? SolidColors
+                                                                .primaryVariantColor
+                                                            : SolidColors
+                                                                .primaryColor,
                                           width: 0,
                                         )),
                                     borderRadius: BorderRadius.only(

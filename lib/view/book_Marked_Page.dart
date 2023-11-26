@@ -104,7 +104,7 @@ class BookMarkedPage extends StatelessWidget {
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  SvgPicture.asset(Address.vc_empty),
+                  SvgPicture.asset(Address.vc_empty_management),
                   Text("هنوز هیچ مقاله ای به تکنوساز اضافه نکردی!!!")
                 ]),
           ),

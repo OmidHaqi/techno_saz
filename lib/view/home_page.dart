@@ -18,7 +18,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  PageController pageController = PageController(initialPage: 0,viewportFraction:0.9);
+  PageController pageController = PageController(initialPage: 0);
   final GlobalKey<ScaffoldState> _key = GlobalKey();
 
   void _openDrawer() {

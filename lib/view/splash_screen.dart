@@ -23,7 +23,7 @@ class _MySplashState extends State<MySplash> {
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => LogInPage(),
+          builder: (context) => ProfilePageOne(),
         ),
       ),
     );
