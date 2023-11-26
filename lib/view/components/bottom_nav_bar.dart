@@ -4,8 +4,11 @@ import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
+
 import 'package:techno_saz/view/articles_management_page.dart';
 import 'package:techno_saz/view/logIn_two_page.dart';
+import 'package:techno_saz/view/profile.dart';
+
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({
@@ -68,47 +71,35 @@ class _BottomNavBarState extends State<BottomNavBar> {
                                 decoration: BoxDecoration(
                                     border: Border(
                                         top: BorderSide(
-                                          color:AdaptiveTheme.of(
-                                                                        context)
-                                                                    .brightness ==
-                                                                Brightness.dark
-                                                            ? SolidColors
-                                                                .primaryVariantColor
-                                                            : SolidColors
-                                                                .primaryColor,
+                                          color: AdaptiveTheme.of(context)
+                                                      .brightness ==
+                                                  Brightness.dark
+                                              ? SolidColors.primaryVariantColor
+                                              : SolidColors.primaryColor,
                                           width: 1.5,
                                         ),
                                         right: BorderSide(
-                                          color: AdaptiveTheme.of(
-                                                                        context)
-                                                                    .brightness ==
-                                                                Brightness.dark
-                                                            ? SolidColors
-                                                                .primaryVariantColor
-                                                            : SolidColors
-                                                                .primaryColor,
+                                          color: AdaptiveTheme.of(context)
+                                                      .brightness ==
+                                                  Brightness.dark
+                                              ? SolidColors.primaryVariantColor
+                                              : SolidColors.primaryColor,
                                           width: 1.5,
                                         ),
                                         left: BorderSide(
-                                          color: AdaptiveTheme.of(
-                                                                        context)
-                                                                    .brightness ==
-                                                                Brightness.dark
-                                                            ? SolidColors
-                                                                .primaryVariantColor
-                                                            : SolidColors
-                                                                .primaryColor,
+                                          color: AdaptiveTheme.of(context)
+                                                      .brightness ==
+                                                  Brightness.dark
+                                              ? SolidColors.primaryVariantColor
+                                              : SolidColors.primaryColor,
                                           width: 1.5,
                                         ),
                                         bottom: BorderSide(
-                                          color: AdaptiveTheme.of(
-                                                                        context)
-                                                                    .brightness ==
-                                                                Brightness.dark
-                                                            ? SolidColors
-                                                                .primaryVariantColor
-                                                            : SolidColors
-                                                                .primaryColor,
+                                          color: AdaptiveTheme.of(context)
+                                                      .brightness ==
+                                                  Brightness.dark
+                                              ? SolidColors.primaryVariantColor
+                                              : SolidColors.primaryColor,
                                           width: 0,
                                         )),
                                     borderRadius: BorderRadius.only(
@@ -117,11 +108,12 @@ class _BottomNavBarState extends State<BottomNavBar> {
                                     )),
                                 child: Center(
                                   child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceAround,
                                     children: [
                                       SvgPicture.asset(
-                                        Address
-                                            .vc_share_Knowledge_others,fit: BoxFit.fill,
+                                        Address.vc_share_Knowledge_others,
+                                        fit: BoxFit.fill,
                                       ),
                                       Text(
                                         Strings.share_knowlage_str,
@@ -140,8 +132,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
                                           );
                                         },
                                         child: Container(
-                                          width:
-                                              widget.size.width / 3.071428571428571,
+                                          width: widget.size.width /
+                                              3.071428571428571,
                                           height: widget.size.height / 18.64,
                                           decoration: BoxDecoration(
                                             color: SolidColors.primaryColor,
@@ -185,7 +177,14 @@ class _BottomNavBarState extends State<BottomNavBar> {
                   );
                 },
                 child: SvgPicture.asset(Address.myArticlesIc)),
-            SvgPicture.asset(Address.myProfile),
+            InkWell(onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: ((context) => ProfilePageOne())));
+                    },
+                             
+              child: SvgPicture.asset(Address.myProfile)),
           ],
         ));
   }

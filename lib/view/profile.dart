@@ -14,7 +14,7 @@ class ProfilePageOne extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Center(
-            child: Column(
+            child: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Container(
               height: 140,
@@ -28,7 +28,8 @@ class ProfilePageOne extends StatelessWidget {
                     fit: BoxFit.cover),
               ),
             ),
-            Row(mainAxisAlignment: MainAxisAlignment.center,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SvgPicture.asset(
                   Address.ic_edit_profile,
@@ -40,9 +41,65 @@ class ProfilePageOne extends StatelessWidget {
                           : SolidColors.iconColor,
                       BlendMode.srcIn),
                 ),
-                Text(Strings.edit_profile_str)
+                Text(Strings.edit_profile_str,
+                    style:
+                        TextStyle(fontWeight: FontWeight.w400, fontSize: 16)),
               ],
-            )
+            ),
+            Container(
+              width: sizeW / 1.67,
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(
+                    color:
+                        AdaptiveTheme.of(context).brightness == Brightness.light
+                            ? SolidColors.textColor
+                            : SolidColors.white,
+                    width: 1.0,
+                  ),
+                ),
+              ),
+            ),
+            Text(
+              "اولین مقاله خودت رو بنویس ..",
+              style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 29,
+              ),
+            ),
+            Text(
+              "دونسته هات رو با بقیه به اشتراک بگذار..",
+              style: TextStyle(
+                fontWeight: FontWeight.w200,
+                fontSize: 19,
+              ),
+            ),
+            SvgPicture.asset(
+              Address.vc_share_Knowledge_others,
+              fit: BoxFit.fill,
+            ),
+            Container(
+              width: sizeW / 3.071428571428571,
+              height: sizeH/ 18.64,
+              decoration: BoxDecoration(
+                color: AdaptiveTheme.of(context).brightness == Brightness.light
+                            ? SolidColors.primaryColor
+                            : SolidColors.primaryVariantColor,
+                borderRadius: BorderRadius.circular(1000),
+              ),
+              child: Center(
+                child: Text(
+                  textAlign: TextAlign.center,
+                  Strings.countinu_str,
+                  style: TextStyle(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 24,
+                      color:AdaptiveTheme.of(context).brightness == Brightness.light
+                            ? const Color.fromARGB(255, 255, 255, 255)
+                            : SolidColors.textColor),
+                ),
+              ),
+            ),
           ],
         )),
       ),
