@@ -7,6 +7,7 @@ import 'package:techno_saz/res/strings.dart';
 
 import 'package:techno_saz/view/articles_management_page.dart';
 import 'package:techno_saz/view/logIn_two_page.dart';
+import 'package:techno_saz/view/profile.dart';
 
 
 class BottomNavBar extends StatefulWidget {
