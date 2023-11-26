@@ -4,8 +4,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
-import 'package:techno_saz/screens/common/dialoge.dart';
-import 'package:techno_saz/screens/common/widgets.dart';
+import 'package:techno_saz/res/common/dialoge.dart';
+import 'package:techno_saz/res/common/widgets.dart';
 
 class LogInPage extends StatelessWidget {
   @override
@@ -142,9 +142,9 @@ class LogInPage extends StatelessWidget {
               ),
               Container(
                 margin: EdgeInsets.fromLTRB(
-                    0, size.height / 34.51851851851852, 0, 0),
+                    0, size.height / 34.51, 0, 0),
                 width: size.width / 1.1969387,
-                height: size.height / 16.5625,
+                height: size.height / 20.5625,
                 decoration: BoxDecoration(
                   color: SolidColors.primaryColor,
                   borderRadius: BorderRadius.circular(1000),
@@ -162,15 +162,12 @@ class LogInPage extends StatelessWidget {
                   ],
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.only(top: size.height / 75),
-                child: Text(
-                  Strings.creatAccont,
-                  style: TextStyle(
-                      fontWeight: FontWeight.w400,
-                      fontSize: 15,
-                      color: SolidColors.primaryColor),
-                ),
+              Text(
+                Strings.creatAccont,
+                style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 15,
+                    color: SolidColors.primaryColor),
               ),
             ],
           ),

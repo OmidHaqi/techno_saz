@@ -5,7 +5,7 @@ import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
-import 'package:techno_saz/screens/home_page.dart';
+import 'package:techno_saz/view/home_page.dart';
 
 // ignore: must_be_immutable
 class ArticlesManagementPage extends StatefulWidget {

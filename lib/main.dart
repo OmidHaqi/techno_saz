@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/themes.dart';
-import 'package:techno_saz/screens/splash_screen.dart';
+import 'package:techno_saz/view/splash_screen.dart';
 
 class MyApp extends StatelessWidget {
   final AdaptiveThemeMode? savedThemeData;

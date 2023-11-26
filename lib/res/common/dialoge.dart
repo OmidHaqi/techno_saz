@@ -4,7 +4,7 @@ import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:techno_saz/res/colors.dart';
-import 'package:techno_saz/screens/home_page.dart';
+import 'package:techno_saz/view/home_page.dart';
 
 customeDialogee(
   BuildContext context, {

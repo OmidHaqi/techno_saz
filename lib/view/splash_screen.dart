@@ -4,10 +4,9 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/strings.dart';
-import 'package:techno_saz/screens/book_Marked_Page.dart';
-import 'package:techno_saz/screens/home_page.dart';
-import 'package:techno_saz/screens/login_page.dart';
-import 'package:techno_saz/screens/profile.dart';
+import 'package:techno_saz/view/book_Marked_Page.dart';
+import 'package:techno_saz/view/home_page.dart';
+import 'package:techno_saz/view/login_page.dart';
 
 
 class MySplash extends StatefulWidget {

@@ -7,7 +7,7 @@ import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
-import 'package:techno_saz/screens/articles_management_page.dart';
+import 'package:techno_saz/view/articles_management_page.dart';
 
 class MyArticles extends StatelessWidget {
   const MyArticles({
