@@ -17,6 +17,7 @@ class Address {
   static const discover = "assets/icons/ic_discover.svg";
   static const addArticle = "assets/icons/ic_feather.svg";
   static const myArticlesIc = "assets/icons/ic_my_article.svg";
+  static const myArticlesIcDark = "assets/icons/ic_techno_saz_dark.svg";
   static const myProfile = "assets/icons/ic_profile.svg";
   static const profilePhoto = "assets/images/img_profile_photo.png";
   static const myArticlesImg = "assets/images/img_my_article.png";

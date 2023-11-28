@@ -26,6 +26,7 @@ class Hashtag extends StatelessWidget {
             return Padding(
               padding: const EdgeInsets.fromLTRB(2, 0, 0, 0),
               child: TextButton(
+                
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(3, 0, 3, 0),
                   child: Row(
