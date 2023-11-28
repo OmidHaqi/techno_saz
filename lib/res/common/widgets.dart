@@ -133,7 +133,7 @@ customBottomSheet(
                       ),
                       bottom: BorderSide(
                         color: const Color.fromRGBO(164, 99, 77, 1),
-                        width: 0,
+                        width: 1.5,
                       )),
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(16.0),

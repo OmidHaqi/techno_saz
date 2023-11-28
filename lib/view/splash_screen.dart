@@ -7,7 +7,6 @@ import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/view/login_page.dart';
 
 
-
 class MySplash extends StatefulWidget {
   @override
   _MySplashState createState() => _MySplashState();
