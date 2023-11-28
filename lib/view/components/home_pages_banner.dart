@@ -32,14 +32,16 @@ class HomePageBanner extends StatelessWidget {
             itemBuilder: (context, index) {
               return Padding(
                 padding: EdgeInsets.fromLTRB(
-                    size.width / 30.71,
+                    3,
                     size.height / 66.57,
-                    size.width / 30.71,
+                   3,
                     size.height / 66.57),
                 child: Container(
+                  
                   height: size.height / 4.8,
                   width: size.width / 1.096,
                   decoration: BoxDecoration(
+                    
                     borderRadius: BorderRadius.circular(18),
                     image: DecorationImage(
                         image: AssetImage(DataClass
