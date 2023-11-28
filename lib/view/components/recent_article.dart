@@ -41,7 +41,7 @@ class RecentArticle extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.fromLTRB(
-              3, 0, 3, size.height / 66.57),
+              0, 0, 0, size.height / 66.57),
           child: Container(
             // color: Colors.amber,
             height: size.height / 3,
