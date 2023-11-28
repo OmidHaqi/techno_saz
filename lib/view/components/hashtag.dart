@@ -13,7 +13,7 @@ class Hashtag extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.fromLTRB(
-          size.width / 30.71, 0, size.width / 30.71, size.height / 66.57),
+          3, 0, 3, size.height / 66.57),
       child: Container(
         // color: Colors.amber,
         height: size.height / 21.5,
