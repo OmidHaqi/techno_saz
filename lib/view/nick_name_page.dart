@@ -6,7 +6,7 @@ import 'package:techno_saz/res/common/widgets.dart';
 import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
-import 'package:techno_saz/view/home_page.dart';
+
 
 // ignore: must_be_immutable
 class NickNamePage extends StatefulWidget {
