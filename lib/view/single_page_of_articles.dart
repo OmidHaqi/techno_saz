@@ -6,8 +6,11 @@ import 'package:get/get.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
+import 'package:techno_saz/view/home_page.dart';
 
 class SinglePageOfArticles extends StatelessWidget {
+  SinglePageOfArticles({required this.item});
+  final int item;
   @override
   Widget build(BuildContext context) {
     var sizeW = MediaQuery.of(context).size.width;
@@ -20,7 +23,8 @@ class SinglePageOfArticles extends StatelessWidget {
             width: double.infinity,
             decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage(Address.img_fammily_single_page),
+                  image: AssetImage(
+                      DataClass.ArticlePageModelList[item].imageArticleUr),
                   fit: BoxFit.cover),
             ),
             child: SafeArea(
@@ -52,22 +56,30 @@ class SinglePageOfArticles extends StatelessWidget {
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Container(
-                          padding: EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(50)),
-                              color: SolidColors.primaryVariantColor),
-                          child: SvgPicture.asset(
-                            Address.arrowLeft,
-                            width: 30,
-                            height: 30,
-                            colorFilter: ColorFilter.mode(
-                                AdaptiveTheme.of(context).brightness ==
-                                        Brightness.dark
-                                    ? SolidColors.primaryVariantColor
-                                    : SolidColors.iconColor,
-                                BlendMode.srcIn),
+                        child: InkWell(
+                          onTap: () => Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => HomePage(),
+                            ),
+                          ),
+                          child: Container(
+                            padding: EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(50)),
+                                color: SolidColors.primaryVariantColor),
+                            child: SvgPicture.asset(
+                              Address.arrowLeft,
+                              width: 30,
+                              height: 30,
+                              colorFilter: ColorFilter.mode(
+                                  AdaptiveTheme.of(context).brightness ==
+                                          Brightness.dark
+                                      ? SolidColors.primaryVariantColor
+                                      : SolidColors.iconColor,
+                                  BlendMode.srcIn),
+                            ),
                           ),
                         ),
                       )
@@ -88,7 +100,7 @@ class SinglePageOfArticles extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "پیشگیری از آسیب های اجتماعی",
+                        DataClass.ArticlePageModelList[item].titleArticleUr,
                         style: TextStyle(
                             color: SolidColors.textColor,
                             fontSize: 16,
@@ -101,7 +113,7 @@ class SinglePageOfArticles extends StatelessWidget {
                           borderRadius: BorderRadius.circular(400),
                           image: DecorationImage(
                               image: AssetImage(DataClass
-                                  .ArticlePageModelList[2]
+                                  .ArticlePageModelList[item]
                                   .writerProfilePhotoUr),
                               fit: BoxFit.cover),
                         ),
@@ -111,7 +123,8 @@ class SinglePageOfArticles extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        "3 روز پیش",
+                        DataClass.ArticlePageModelList[item]
+                            .PublicationDateArticleUr,
                         style: TextStyle(
                             color: SolidColors.textColor,
                             fontSize: 16,
@@ -121,7 +134,7 @@ class SinglePageOfArticles extends StatelessWidget {
                         width: 5,
                       ),
                       Text(
-                        "5 دقیقه",
+                        DataClass.ArticlePageModelList[item].readingTime,
                         style: TextStyle(
                             color: SolidColors.textColor,
                             fontSize: 16,
@@ -140,8 +153,7 @@ class SinglePageOfArticles extends StatelessWidget {
             child: SingleChildScrollView(
               physics: BouncingScrollPhysics(),
               child: Text(
-                DataClass.ArticleManagementPagepublishedModelList[1]
-                    .ContentArticleUr,
+                DataClass.ArticlePageModelList[item].ContentArticleUr,
                 style: TextStyle(
                     fontSize: 16, height: 1.5, fontWeight: FontWeight.w600),
               ),
@@ -164,7 +176,7 @@ class SinglePageOfArticles extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "4 نظر",
+                        DataClass.ArticlePageModelList[item].commentArticleUr,
                         style: TextStyle(
                             fontSize: 13, fontWeight: FontWeight.bold),
                       ),
@@ -189,7 +201,7 @@ class SinglePageOfArticles extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "65 لایک",
+                      DataClass.ArticlePageModelList[item].likedArticleUr,
                       style:
                           TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
                     ),
@@ -219,25 +231,26 @@ class SinglePageOfArticles extends StatelessWidget {
                       borderRadius: BorderRadius.circular(50),
                     ),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      
-                      children: [
-                      Text(
-                        "دانلود آفلاین",
-                        style: TextStyle(
-                            fontSize: 13, fontWeight: FontWeight.bold),
-                      ),
-                      SizedBox(width: 10,),
-                      SvgPicture.asset(
-                        Address.ic_dl_offline_single_page,
-                        colorFilter: ColorFilter.mode(
-                            AdaptiveTheme.of(context).brightness ==
-                                    Brightness.dark
-                                ? SolidColors.primaryVariantColor
-                                : SolidColors.iconColor,
-                            BlendMode.srcIn),
-                      )
-                    ]),
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "دانلود آفلاین",
+                            style: TextStyle(
+                                fontSize: 13, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          SvgPicture.asset(
+                            Address.ic_dl_offline_single_page,
+                            colorFilter: ColorFilter.mode(
+                                AdaptiveTheme.of(context).brightness ==
+                                        Brightness.dark
+                                    ? SolidColors.primaryVariantColor
+                                    : SolidColors.iconColor,
+                                BlendMode.srcIn),
+                          )
+                        ]),
                   ),
                 )
               ],
