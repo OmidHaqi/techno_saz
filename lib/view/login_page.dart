@@ -5,7 +5,7 @@ import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/res/common/dialoge.dart';
-import 'package:techno_saz/res/common/widgets.dart';
+
 
 class LogInPage extends StatelessWidget {
   @override
