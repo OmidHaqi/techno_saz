@@ -24,7 +24,7 @@ class _SecondProfilePageState extends State<SecondProfilePage> {
       child: Scaffold(
         body: Center(
             child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Padding(
               padding: EdgeInsets.only(top: 1),
@@ -91,7 +91,7 @@ class _SecondProfilePageState extends State<SecondProfilePage> {
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(
-                  size.width / 11.02, 0, size.width / 11.02, 0),
+                  size.width / 11.02, 10, size.width / 11.02, 0),
               child: TextField(
                 controller: nickName,
                 textDirection: TextDirection.rtl,
@@ -117,13 +117,7 @@ class _SecondProfilePageState extends State<SecondProfilePage> {
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.only(top: sizeH / 58.25),
-              child: SvgPicture.asset(
-                Address.vc_share_Knowledge_others,
-                fit: BoxFit.fill,
-              ),
-            ),
+           
             Padding(
               padding: EdgeInsets.only(top: sizeH / 59.47),
               child: InkWell(
@@ -136,7 +130,7 @@ class _SecondProfilePageState extends State<SecondProfilePage> {
                   );
                 },
                 child: Container(
-                  width: sizeW / 3.071428571428571,
+                  width: sizeW / 2,
                   height: sizeH / 18.64,
                   decoration: BoxDecoration(
                     color:
