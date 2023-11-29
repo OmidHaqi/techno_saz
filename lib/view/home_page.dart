@@ -8,7 +8,7 @@ import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/view/book_Marked_Page.dart';
 import 'package:techno_saz/view/components/home_pages_banner.dart';
 import 'package:techno_saz/view/notifications.dart';
-
+import 'package:techno_saz/view/profile.dart';
 
 import 'components/hashtag.dart';
 import 'components/my_articles.dart';
@@ -72,7 +72,12 @@ class _HomePageState extends State<HomePage> {
                         height: 10,
                       ),
                       ListTile(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ProfilePageOne()));
+                        },
                         leading: SvgPicture.asset(
                           Address.ic_profile_drewer,
                           colorFilter: ColorFilter.mode(
@@ -334,7 +339,7 @@ class _customFabState extends State<customFab> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    
+
     widget.controller.addListener(() {
       if (widget.controller.position.userScrollDirection ==
           ScrollDirection.reverse) {
@@ -362,9 +367,9 @@ class _customFabState extends State<customFab> {
         tooltip: 'افزودن مقاله جدید',
         onPressed: () {},
         child: SvgPicture.asset(
-          AdaptiveTheme.of(context).brightness ==
-                                        Brightness.dark?Address.myArticlesIcDark:Address.addArticle
-        ),
+            AdaptiveTheme.of(context).brightness == Brightness.dark
+                ? Address.myArticlesIcDark
+                : Address.addArticle),
       ),
     );
   }
