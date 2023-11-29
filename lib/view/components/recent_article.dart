@@ -45,7 +45,6 @@ class RecentArticle extends StatelessWidget {
           padding: EdgeInsets.fromLTRB(
               0, 0, 0, size.height / 66.57),
           child: Container(
-            // color: Colors.amber,
             height: size.height / 3,
             width: size.width / 1.02,
             child: ListView.builder(
@@ -60,7 +59,7 @@ class RecentArticle extends StatelessWidget {
                      Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => SinglePageOfArticles(),
+                      builder: (context) => SinglePageOfArticles(item:index),
                     ),
                   );
                     },
