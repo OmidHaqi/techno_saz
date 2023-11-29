@@ -1,4 +1,5 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
+import 'package:expandable_text/expandable_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:techno_saz/res/colors.dart';
@@ -80,7 +81,7 @@ class SinglePageOfArticles extends StatelessWidget {
             child: Container(
               width: sizeW / 1.171,
               height: sizeH / 15.53,
-              color: Colors.amber,
+              
               child: Column(
                 children: [
                   Row(
@@ -94,8 +95,8 @@ class SinglePageOfArticles extends StatelessWidget {
                             fontWeight: FontWeight.bold),
                       ),
                       Container(
-                        height: sizeH / 31.06,
-                        width: sizeW / 14.33,
+                        height: sizeH / 23.3,
+                        width: sizeW / 10.75,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(400),
                           image: DecorationImage(
@@ -116,7 +117,9 @@ class SinglePageOfArticles extends StatelessWidget {
                             fontSize: 16,
                             fontWeight: FontWeight.normal),
                       ),
-                      SizedBox(width: 5,),
+                      SizedBox(
+                        width: 5,
+                      ),
                       Text(
                         "5 دقیقه",
                         style: TextStyle(
@@ -130,6 +133,18 @@ class SinglePageOfArticles extends StatelessWidget {
               ),
             ),
           ),
+          Container(
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                    width:sizeW/1.1 ,height:sizeH/2.74 ,
+                    child: SingleChildScrollView(
+                      physics: BouncingScrollPhysics(),
+                      child: Text(
+                        DataClass.ArticleManagementPagepublishedModelList[1].ContentArticleUr,
+                       style: TextStyle(fontSize: 16,height: 1.5,fontWeight: FontWeight.w600),
+                        
+                      ),
+                    ),
+                  ),
         ],
       ),
     );
