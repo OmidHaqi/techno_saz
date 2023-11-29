@@ -1,5 +1,5 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
-import 'package:expandable_text/expandable_text.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:techno_saz/res/colors.dart';
@@ -81,7 +81,6 @@ class SinglePageOfArticles extends StatelessWidget {
             child: Container(
               width: sizeW / 1.171,
               height: sizeH / 15.53,
-              
               child: Column(
                 children: [
                   Row(
@@ -134,19 +133,23 @@ class SinglePageOfArticles extends StatelessWidget {
             ),
           ),
           Container(
-                    color: const Color.fromARGB(255, 255, 255, 255),
-                    width:sizeW/1.1 ,height:sizeH/2.74 ,
-                    child: SingleChildScrollView(
-                      physics: BouncingScrollPhysics(),
-                      child: Text(
-                        DataClass.ArticleManagementPagepublishedModelList[1].ContentArticleUr,
-                       style: TextStyle(fontSize: 16,height: 1.5,fontWeight: FontWeight.w600),
-                        
-                      ),
-                    ),
-                  ),
+            color: const Color.fromARGB(255, 255, 255, 255),
+            width: sizeW / 1.1,
+            height: sizeH / 2.74,
+            child: SingleChildScrollView(
+              physics: BouncingScrollPhysics(),
+              child: Text(
+                DataClass.ArticleManagementPagepublishedModelList[1]
+                    .ContentArticleUr,
+                style: TextStyle(
+                    fontSize: 16, height: 1.5, fontWeight: FontWeight.w600),
+              ),
+            ),
+          ),
+        
         ],
       ),
+      bottomNavigationBar: Container(width:double.infinity ,height: sizeH/14.56,color: Colors.amber,),
     );
   }
 }
