@@ -122,4 +122,5 @@ class Address {
       static const svg_empety_profile ="assets/icons/svg_empety_profile.svg";   
       static const svg_pale_feather ="assets/icons/svg_pale_feather.svg";   
       static const svg_user_edit ="assets/icons/svg_user-edit.svg";   
+      static const img_fammily_single_page ="assets/images/img_fammily_single_page.jpg";   
 }
