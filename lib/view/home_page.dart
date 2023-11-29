@@ -1,5 +1,6 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/paths.dart';
@@ -7,7 +8,8 @@ import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/view/book_Marked_Page.dart';
 import 'package:techno_saz/view/components/home_pages_banner.dart';
 import 'package:techno_saz/view/notifications.dart';
-import 'components/bottom_nav_bar.dart';
+import 'package:validators/validators.dart';
+
 import 'components/hashtag.dart';
 import 'components/my_articles.dart';
 import 'components/recent_article.dart';
@@ -20,15 +22,16 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   PageController pageController = PageController(initialPage: 0);
   final GlobalKey<ScaffoldState> _key = GlobalKey();
+  int _currentIndex = 0;
 
   void _openDrawer() {
     _key.currentState!.openDrawer();
-    
   }
 
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
+    ScrollController controller = ScrollController();
 
     double titleSize = 20;
     return SafeArea(
@@ -250,6 +253,7 @@ class _HomePageState extends State<HomePage> {
               )),
         ),
         body: SingleChildScrollView(
+          controller: controller,
           physics:
               BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
           child: Column(
@@ -261,9 +265,107 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ),
-        bottomNavigationBar: BottomNavBar(size: size),
+        bottomNavigationBar: BottomNavigationBar(
+          currentIndex: _currentIndex,
+          type: BottomNavigationBarType.shifting,
+          selectedItemColor: SolidColors.primaryColor,
+          unselectedItemColor: SolidColors.primaryVariantColor,
+          selectedFontSize: 14,
+          unselectedFontSize: 14,
+          onTap: (value) {
+            // Respond to item press.
+            setState(() => _currentIndex = value);
+          },
+          items: [
+            BottomNavigationBarItem(
+              label: "خانه",
+              icon: SvgPicture.asset(
+                Address.home,
+                height: 24,
+                width: 24,
+              ),
+            ),
+            BottomNavigationBarItem(
+              label: "کاوش",
+              icon: SvgPicture.asset(
+                Address.discover,
+                height: 24,
+                width: 24,
+              ),
+            ),
+            BottomNavigationBarItem(
+              label: "مقاله ها",
+              icon: SvgPicture.asset(
+                Address.myArticlesIc,
+                height: 24,
+                width: 24,
+              ),
+            ),
+            BottomNavigationBarItem(
+              label: "پروفایل",
+              icon: SvgPicture.asset(
+                Address.myProfile,
+                height: 24,
+                width: 24,
+              ),
+            ),
+          ],
+        ),
+        floatingActionButton: customFab(
+          controller: controller,
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
       ),
     );
   }
 }
 
+class customFab extends StatefulWidget {
+  const customFab({super.key, required this.controller});
+  final ScrollController controller;
+
+  @override
+  State<customFab> createState() => _customFabState();
+}
+
+class _customFabState extends State<customFab> {
+  var isVisible = true;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    
+    widget.controller.addListener(() {
+      if (widget.controller.position.userScrollDirection ==
+          ScrollDirection.reverse) {
+        if (isVisible != false) {
+          setState(() {
+            isVisible = false;
+          });
+        }
+      } else {
+        if (isVisible != true) {
+          setState(() {
+            isVisible = true;
+          });
+        }
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Visibility(
+      visible: isVisible,
+      child: FloatingActionButton(
+        isExtended: isVisible,
+        tooltip: 'افزودن مقاله جدید',
+        onPressed: () {},
+        child: SvgPicture.asset(
+          AdaptiveTheme.of(context).brightness ==
+                                        Brightness.dark?Address.myArticlesIcDark:Address.addArticle
+        ),
+      ),
+    );
+  }
+}

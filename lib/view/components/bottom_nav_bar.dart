@@ -32,12 +32,15 @@ class _BottomNavBarState extends State<BottomNavBar> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
+
             SvgPicture.asset(
+              
               Address.home,
               height: widget.size.height / 31.06,
               width: widget.size.width / 14.4,
             ),
-            InkWell(child: SvgPicture.asset(Address.discover)),
+            InkWell(
+              child: SvgPicture.asset(Address.discover)),
             InkWell(
               onTap: () {
                 Navigator.push(

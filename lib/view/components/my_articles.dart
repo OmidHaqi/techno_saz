@@ -1,7 +1,6 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:techno_saz/models/data_models.dart';
 import 'package:techno_saz/res/colors.dart';
 
 import 'package:techno_saz/res/data_class.dart';
@@ -55,7 +54,7 @@ class MyArticles extends StatelessWidget {
         ),
         Padding(
           padding:  EdgeInsets.fromLTRB(
-              size.width / 30.71, 0, size.width / 30.71, size.height / 66.57),
+              0, 0, 0, size.height / 66.57),
           child: Container(
             height: size.height / 3,
             width: size.width / 1.02,
