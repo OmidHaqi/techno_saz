@@ -29,15 +29,15 @@ class SinglePageOfArticles extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                          padding: EdgeInsets.all(10),
+                          padding: EdgeInsets.all(12),
                           decoration: BoxDecoration(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(50)),
                               color: SolidColors.primaryVariantColor),
                           child: SvgPicture.asset(
                             Address.save,
-                            width: 25,
-                            height: 25,
+                            width: 30,
+                            height: 30,
                             colorFilter: ColorFilter.mode(
                                 AdaptiveTheme.of(context).brightness ==
                                         Brightness.dark
@@ -50,15 +50,15 @@ class SinglePageOfArticles extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                          padding: EdgeInsets.all(10),
+                          padding: EdgeInsets.all(12),
                           decoration: BoxDecoration(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(50)),
                               color: SolidColors.primaryVariantColor),
                           child: SvgPicture.asset(
                             Address.arrowLeft,
-                            width: 25,
-                            height: 25,
+                            width: 30,
+                            height: 30,
                             colorFilter: ColorFilter.mode(
                                 AdaptiveTheme.of(context).brightness ==
                                         Brightness.dark
