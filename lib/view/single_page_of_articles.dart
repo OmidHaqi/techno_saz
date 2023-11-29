@@ -24,7 +24,8 @@ class SinglePageOfArticles extends StatelessWidget {
             child: SafeArea(
               child: Stack(
                 children: [
-                  Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -68,6 +69,61 @@ class SinglePageOfArticles extends StatelessWidget {
                           ),
                         ),
                       )
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(0, sizeH / 27.41, 0, sizeH / 58.25),
+            child: Container(
+              width: sizeW / 1.171,
+              height: sizeH / 15.53,
+              color: Colors.amber,
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "پیشگیری از آسیب های اجتماعی",
+                        style: TextStyle(
+                            color: SolidColors.textColor,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Container(
+                        height: sizeH / 31.06,
+                        width: sizeW / 14.33,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(400),
+                          image: DecorationImage(
+                              image: AssetImage(DataClass
+                                  .ArticlePageModelList[2]
+                                  .writerProfilePhotoUr),
+                              fit: BoxFit.cover),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        "3 روز پیش",
+                        style: TextStyle(
+                            color: SolidColors.textColor,
+                            fontSize: 16,
+                            fontWeight: FontWeight.normal),
+                      ),
+                      SizedBox(width: 5,),
+                      Text(
+                        "5 دقیقه",
+                        style: TextStyle(
+                            color: SolidColors.textColor,
+                            fontSize: 16,
+                            fontWeight: FontWeight.normal),
+                      ),
                     ],
                   ),
                 ],
