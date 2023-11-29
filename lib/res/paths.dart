@@ -120,7 +120,11 @@ class Address {
       static const vc_throw_away ="assets/icons/vc_throw_away.svg";   
       static const ic_edit_profile ="assets/icons/ic_edit_profile.svg";   
       static const svg_empety_profile ="assets/icons/svg_empety_profile.svg";   
+      static const ic_coment_single_page ="assets/icons/ic_coment_single_page.svg";   
+      static const ic_dl_offline_single_page ="assets/icons/ic_dl_offline_single_page.svg";   
+      static const ic_liked_single_page ="assets/icons/ic_liked_single_page.svg";   
       static const svg_pale_feather ="assets/icons/svg_pale_feather.svg";   
       static const svg_user_edit ="assets/icons/svg_user-edit.svg";   
       static const img_fammily_single_page ="assets/images/img_fammily_single_page.jpg";   
+   
 }
