@@ -8,7 +8,7 @@ import 'package:techno_saz/res/strings.dart';
 import 'package:techno_saz/view/book_Marked_Page.dart';
 import 'package:techno_saz/view/components/home_pages_banner.dart';
 import 'package:techno_saz/view/notifications.dart';
-import 'package:validators/validators.dart';
+
 
 import 'components/hashtag.dart';
 import 'components/my_articles.dart';
