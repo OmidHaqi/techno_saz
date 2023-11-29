@@ -162,12 +162,15 @@ class LogInPage extends StatelessWidget {
                   ],
                 ),
               ),
-              Text(
-                Strings.creatAccont,
-                style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    fontSize: 15,
-                    color: SolidColors.primaryColor),
+              Padding(
+                padding: const EdgeInsets.all(18),
+                child: Text(
+                  Strings.creatAccont,
+                  style: TextStyle(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 15,
+                      color: SolidColors.primaryColor),
+                ),
               ),
             ],
           ),
