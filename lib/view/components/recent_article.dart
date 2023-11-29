@@ -1,10 +1,12 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
+import 'package:techno_saz/view/single_page_of_articles.dart';
 
 class RecentArticle extends StatelessWidget {
   const RecentArticle({
@@ -51,10 +53,17 @@ class RecentArticle extends StatelessWidget {
               itemCount: DataClass.ArticlePageModelList.length,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return InkWell(
-                  onTap: () {},
-                  child: Padding(
-                    padding: EdgeInsets.fromLTRB(9, 0, 0, 0),
+                return Padding(
+                  padding: EdgeInsets.fromLTRB(9, 0, 0, 0),
+                  child: InkWell(
+                    onTap: (){
+                     Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SinglePageOfArticles(),
+                    ),
+                  );
+                    },
                     child: Container(
                       decoration: BoxDecoration(
                           boxShadow: <BoxShadow>[
