@@ -2,7 +2,7 @@ import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
+
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/themes.dart';
 import 'package:techno_saz/view/splash_screen.dart';
