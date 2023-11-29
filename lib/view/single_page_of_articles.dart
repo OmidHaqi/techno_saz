@@ -2,6 +2,7 @@ import 'package:adaptive_theme/adaptive_theme.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
@@ -146,10 +147,104 @@ class SinglePageOfArticles extends StatelessWidget {
               ),
             ),
           ),
-        
         ],
       ),
-      bottomNavigationBar: Container(width:double.infinity ,height: sizeH/14.56,color: Colors.amber,),
+      bottomNavigationBar: Container(
+        width: double.infinity,
+        height: sizeH / 14.56,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: EdgeInsets.fromLTRB(0, 0, sizeW / 14.33, 0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "4 نظر",
+                        style: TextStyle(
+                            fontSize: 13, fontWeight: FontWeight.bold),
+                      ),
+                      SvgPicture.asset(
+                        Address.ic_coment_single_page,
+                        colorFilter: ColorFilter.mode(
+                            AdaptiveTheme.of(context).brightness ==
+                                    Brightness.dark
+                                ? SolidColors.primaryVariantColor
+                                : SolidColors.iconColor,
+                            BlendMode.srcIn),
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "65 لایک",
+                      style:
+                          TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                    ),
+                    SvgPicture.asset(
+                      Address.ic_liked_single_page,
+                      colorFilter: ColorFilter.mode(
+                          AdaptiveTheme.of(context).brightness ==
+                                  Brightness.dark
+                              ? SolidColors.primaryVariantColor
+                              : SolidColors.iconColor,
+                          BlendMode.srcIn),
+                    )
+                  ],
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: EdgeInsets.fromLTRB(sizeW / 14.33, 0, 0, 0),
+                  child: Container(
+                    width: sizeW / 3.307,
+                    height: sizeH / 25.18,
+                    decoration: BoxDecoration(
+                      color: SolidColors.primaryVariantColor,
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      
+                      children: [
+                      Text(
+                        "دانلود آفلاین",
+                        style: TextStyle(
+                            fontSize: 13, fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(width: 10,),
+                      SvgPicture.asset(
+                        Address.ic_dl_offline_single_page,
+                        colorFilter: ColorFilter.mode(
+                            AdaptiveTheme.of(context).brightness ==
+                                    Brightness.dark
+                                ? SolidColors.primaryVariantColor
+                                : SolidColors.iconColor,
+                            BlendMode.srcIn),
+                      )
+                    ]),
+                  ),
+                )
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
