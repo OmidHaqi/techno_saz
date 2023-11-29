@@ -24,7 +24,7 @@ class _SecondProfilePageState extends State<SecondProfilePage> {
       child: Scaffold(
         body: Center(
             child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
               padding: EdgeInsets.only(top: 1),
@@ -60,7 +60,6 @@ class _SecondProfilePageState extends State<SecondProfilePage> {
                 ],
               ),
             ),
-            
             Padding(
               padding: EdgeInsets.fromLTRB(size.width / 11.02,
                   size.height / 34.51, size.width / 11.02, 0),
@@ -117,7 +116,6 @@ class _SecondProfilePageState extends State<SecondProfilePage> {
                 ),
               ),
             ),
-           
             Padding(
               padding: EdgeInsets.only(top: sizeH / 59.47),
               child: InkWell(
@@ -142,10 +140,10 @@ class _SecondProfilePageState extends State<SecondProfilePage> {
                   child: Center(
                     child: Text(
                       textAlign: TextAlign.center,
-                      Strings.countinu_str,
+                      Strings.log_out_str,
                       style: TextStyle(
                           fontWeight: FontWeight.w400,
-                          fontSize: 24,
+                          fontSize: 18,
                           color: AdaptiveTheme.of(context).brightness ==
                                   Brightness.light
                               ? const Color.fromARGB(255, 255, 255, 255)
@@ -155,6 +153,59 @@ class _SecondProfilePageState extends State<SecondProfilePage> {
                 ),
               ),
             ),
+            Padding(
+              padding: EdgeInsets.only(top: sizeH / 59.47),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomePage(),
+                    ),
+                  );
+                },
+                child: Container(
+                  width: sizeW / 2,
+                  height: sizeH / 18.64,
+                  decoration: BoxDecoration(
+                    color:
+                        AdaptiveTheme.of(context).brightness == Brightness.light
+                            ? SolidColors.primaryColor
+                            : SolidColors.primaryVariantColor,
+                    borderRadius: BorderRadius.circular(1000),
+                  ),
+                  child: Center(
+                    child: Text(
+                      textAlign: TextAlign.center,
+                      Strings.deleted_acount_srt,
+                      style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 18,
+                          color: AdaptiveTheme.of(context).brightness ==
+                                  Brightness.light
+                              ? const Color.fromARGB(255, 255, 255, 255)
+                              : SolidColors.textColor),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            SvgPicture.asset(Address.svg_pale_feather),
+            SizedBox(
+              height: 15,
+            ),
+            Text(
+              Strings.madeWith_str,
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Text(
+              "1.0.0",
+            )
           ],
         )),
       ),
