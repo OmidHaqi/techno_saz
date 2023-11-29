@@ -220,6 +220,8 @@ class _NickNamePageState extends State<NickNamePage> {
                                               horizontal: 10),
                                           hintText: Strings.email_str,
                                           suffixIconConstraints: BoxConstraints(
+
+                                            
                                             maxHeight: 48.0,
                                           ),
                                           suffixIcon: Padding(
