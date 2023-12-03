@@ -6,6 +6,7 @@ import 'package:techno_saz/res/colors.dart';
 import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
+import 'package:techno_saz/view/explore.dart';
 import 'package:techno_saz/view/single_page_of_articles.dart';
 
 class RecentArticle extends StatelessWidget {
@@ -30,20 +31,29 @@ class RecentArticle extends StatelessWidget {
                 Strings.recentArticles_str,
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
-              SvgPicture.asset(
-                Address.arrowLeft,
-                colorFilter: ColorFilter.mode(
-                    AdaptiveTheme.of(context).brightness == Brightness.dark
-                        ? SolidColors.primaryVariantColor
-                        : SolidColors.iconColor,
-                    BlendMode.srcIn),
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Explore(),
+                    ),
+                  );
+                },
+                child: SvgPicture.asset(
+                  Address.arrowLeft,
+                  colorFilter: ColorFilter.mode(
+                      AdaptiveTheme.of(context).brightness == Brightness.dark
+                          ? SolidColors.primaryVariantColor
+                          : SolidColors.iconColor,
+                      BlendMode.srcIn),
+                ),
               ),
             ],
           ),
         ),
         Padding(
-          padding: EdgeInsets.fromLTRB(
-              0, 0, 0, size.height / 66.57),
+          padding: EdgeInsets.fromLTRB(0, 0, 0, size.height / 66.57),
           child: Container(
             height: size.height / 3,
             width: size.width / 1.02,
@@ -55,27 +65,25 @@ class RecentArticle extends StatelessWidget {
                 return Padding(
                   padding: EdgeInsets.fromLTRB(9, 0, 0, 0),
                   child: InkWell(
-                    onTap: (){
-                     Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => SinglePageOfArticles(item:index),
-                    ),
-                  );
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              SinglePageOfArticles(item: index),
+                        ),
+                      );
                     },
                     child: Container(
-                      decoration: BoxDecoration(
-                          boxShadow: <BoxShadow>[
-                            BoxShadow(
-                                blurRadius: 0,
-                                color: AdaptiveTheme.of(context).brightness ==
-                                        Brightness.light
-                                    ? Color.fromARGB(43, 164, 99, 77)
-                                    : Color.fromARGB(12, 255, 255, 255),
-                                ),
-                          ],
-                          
-                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                      decoration: BoxDecoration(boxShadow: <BoxShadow>[
+                        BoxShadow(
+                          blurRadius: 0,
+                          color: AdaptiveTheme.of(context).brightness ==
+                                  Brightness.light
+                              ? Color.fromARGB(43, 164, 99, 77)
+                              : Color.fromARGB(12, 255, 255, 255),
+                        ),
+                      ], borderRadius: BorderRadius.all(Radius.circular(20))),
                       // color: Colors.amber,
                       width: size.width / 2.5,
                       height: size.height / 3.9,
@@ -85,7 +93,6 @@ class RecentArticle extends StatelessWidget {
                             width: size.width / 2.5,
                             height: size.height / 5.3,
                             decoration: BoxDecoration(
-                              
                               borderRadius: BorderRadius.circular(20),
                               image: DecorationImage(
                                   image: AssetImage(DataClass
