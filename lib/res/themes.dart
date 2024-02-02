@@ -4,8 +4,7 @@ import 'package:techno_saz/res/colors.dart';
 
 ThemeData lightTheme(Size size) {
   return ThemeData(
-    
-    useMaterial3: false,
+      useMaterial3: false,
       inputDecorationTheme: InputDecorationTheme(
         contentPadding:
             EdgeInsets.symmetric(vertical: size.height / 40, horizontal: 10),
@@ -82,7 +81,7 @@ ThemeData lightTheme(Size size) {
 
 ThemeData darkTheme(Size size) {
   return ThemeData(
-    useMaterial3: false,
+      useMaterial3: false,
       inputDecorationTheme: InputDecorationTheme(
         contentPadding:
             EdgeInsets.symmetric(vertical: size.height / 40, horizontal: 10),

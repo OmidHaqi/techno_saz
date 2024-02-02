@@ -7,7 +7,6 @@ import 'package:techno_saz/res/data_class.dart';
 import 'package:techno_saz/res/paths.dart';
 import 'package:techno_saz/res/strings.dart';
 
-
 // ignore: must_be_immutable
 class NickNamePage extends StatefulWidget {
   @override
@@ -97,9 +96,8 @@ class _NickNamePageState extends State<NickNamePage> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: size.height / 25.88),
+              padding: EdgeInsets.only(top: size.height / 25.88, right: 10),
               child: SizedBox(
-                width: size.width / 1.11,
                 height: size.height / 11.79,
                 child: GridView.builder(
                     itemCount: DataClass.tagList.length,
@@ -220,8 +218,6 @@ class _NickNamePageState extends State<NickNamePage> {
                                               horizontal: 10),
                                           hintText: Strings.email_str,
                                           suffixIconConstraints: BoxConstraints(
-
-                                            
                                             maxHeight: 48.0,
                                           ),
                                           suffixIcon: Padding(
